@@ -4,20 +4,20 @@ Gemini를 이용한 ASP.NET Core 공부
 ## 비쥬얼 스튜디오 설치
 구글에 Visual Studio를 검색하여 공식 사이트에서 다운로드를 클릭하면 Installer가 다운된다.
   
-![V S 공식 사이트](VS%20공식%20사이트.png)
+<img width="1890" height="796" alt="VS 공식 사이트" src="https://github.com/user-attachments/assets/b95d9160-7c01-48bc-97e2-8e7f9e4f92d9" />
 
-![V Ssetup](VSsetup.png)
+<img width="255" height="37" alt="VSsetup" src="https://github.com/user-attachments/assets/da237c76-91bb-49e7-87f2-8235654652f4" />
 
 설치된 VisualStudioSetup.exe 파일을 실행하여 설치 관리자를 설치한 후
 
-![설치 관리자](설치%20관리자.jpg)
+<img width="467" height="274" alt="설치 관리자" src="https://github.com/user-attachments/assets/9cbd7f5b-141b-4cf5-864d-21f00f522653" />
 
 세부 설치 정보로 ASP.NET 밑 웹 개발과 .NET 데스크톱 개발을 추가로 설치해준다.
 
 (용량이 꽤 크므로 시간이 걸리는 편이다.)
 
-![세부 설치 정보](세부%20설치%20정보.jpg)
+<img width="1260" height="693" alt="세부 설치 정보" src="https://github.com/user-attachments/assets/3c7babc6-5adf-4bd3-b7d8-27ff3b273e32" />
 
 설치가 완료된 후 터미널에서 dotnet --version 명령어를 입력해보며 설치가 이루어졌는지 확인한다.
 
-![설치 확인](설치%20확인.png)
+<img width="252" height="52" alt="설치 확인" src="https://github.com/user-attachments/assets/4fb851b3-66c3-466c-b8fc-e1dbf3113fc1" />
