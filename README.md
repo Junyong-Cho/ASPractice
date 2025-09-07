@@ -27,17 +27,16 @@ Gemini를 이용한 ASP.NET Core 공부
 
 설치한 Visual Studio를 실행한다.  
 프로젝트 생성을 위한 옵션이 나오면 새 프로젝트 만들기를 선택한다.
-![프로젝트 생성](dummy/1%20프로젝트%20생성/프로젝트%20생성.png)
-
+<img width="1004" height="675" alt="프로젝트 생성" src="https://github.com/user-attachments/assets/508d35a7-da26-47fc-a29f-e243ea1f42d4" />
 
 프로젝트 템플릿 단계에서 ASP.NET Core 웹 앱을 선택하고 다음으로 이동한다.
-![웹앱](dummy/1%20프로젝트%20생성/웹앱.png)
+<img width="1006" height="664" alt="웹앱" src="https://github.com/user-attachments/assets/fd759930-7005-4044-8a8c-58a42f0c568a" />
 
 프로젝트 이름(ex. MyWeb)을 입력하고 프로젝트 경로를 설정해 준다.
-![경로 및 프로젝트 이름 설정](dummy/1%20프로젝트%20생성/경로%20및%20프로젝트%20이름%20설정.png)
+<img width="1003" height="664" alt="경로 및 프로젝트 이름 설정" src="https://github.com/user-attachments/assets/0922e9fa-15fa-4862-b0f6-8ec51caa3e6d" />
 
 마지막으로 .NET 버전을 선택하고 생성을 완료한다.
-![버전 선택 및 완료](dummy/1%20프로젝트%20생성/버전%20선택%20및%20완료.png)
+<img width="1001" height="668" alt="버전 선택 및 완료" src="https://github.com/user-attachments/assets/0be18f14-978f-4942-a68b-c06557b3a2dc" />
 
 생성한 프로젝트의 Program.cs 파일을 열어보면 다음과 같다.
-![Program.Cs 파일](dummy/1%20프로젝트%20생성/Program.cs%20파일.png)
+<img width="1918" height="1004" alt="Program cs 파일" src="https://github.com/user-attachments/assets/71ac3b93-4465-401b-ba6b-81818b1d5ed1" />
