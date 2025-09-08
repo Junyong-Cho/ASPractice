@@ -10,7 +10,7 @@ Program.cs에 있는 모든 스크립트를 지운다.
 <img width="1566" height="730" alt="초기화" src="https://github.com/user-attachments/assets/f849eb64-2024-444a-96b5-548c76ececbc" />
 
 다음과 같은 초기 모습을 생성한다.
-```
+```C#
 var builder = WebApplication.CreateBuilder();	// 웹 애플리케이션 빌더 인스턴스 생성
 
 var app = builder.Build();			// 웹 애플리케이션 인스턴스 생성
@@ -25,7 +25,7 @@ app.Run();					// 웹 애플리케이션 실행
 ### 기초
 
 api 구현 부분에 다음과 같은 Get 요청을 처리하는 api를 구현한다.
-```
+```C#
 app.MapGet("/", () => "Hello World");
 ```
 
@@ -36,7 +36,7 @@ app.MapGet("/", () => "Hello World");
 <img width="402" height="140" alt="hello world" src="https://github.com/user-attachments/assets/bc19465c-859e-4622-8348-ccfdb4da0b04" />  
 api에 구현했던 문자열이 돌아온 것을 확인할 수 있다.
 
-```
+```C#
 app.MapGet("/", () =>
 {
 	return "Hello World";
@@ -47,7 +47,7 @@ app.MapGet("/", () =>
 ### url을 통해 정보 받기
 
 이 두 줄의 api를 추가한다.
-```
+```C#
 app.MapGet("/{id}", (int id) => $"id is {id}");
 // url에 명시된 변수와 람다식 매개변수명이 일치해야 함
 app.MapGet("/search", (string q) => $"Results of {q}");
@@ -61,13 +61,13 @@ app.MapGet("/search", (string q) => $"Results of {q}");
 <img width="721" height="557" alt="항목 생성" src="https://github.com/user-attachments/assets/cf0c2019-5fea-4b60-b3c7-4d1d6069829d" />
 
 자동으로 생성된 namespace를 현재 단계에서는 지우고
-```
+```C#
 public record User(int Id, string Username, string Email);
 ```
 다음과 같이 데이터 형식을 추가해본다.
 
 그리고 Program.cs 파일에 다음과 같은 api를 추가한다.
-```
+```C#
 User user = new(1234,"Hong GilDong", "GildongHong@example.com");
 
 app.MapGet("/user", () => user);
@@ -79,7 +79,7 @@ json 형태로 자동으로 변환되어 전달된 것을 확인할 수 있다.
 
 ### url에 명시된 정보를 기반으로 데이터 반환
 유저 데이터가 저장되어 있는 리스트를 생성한다.
-```
+```C#
 SortedList<int, User> users = new();
 User user1 = new(1111, "Kim", "Kim@example.com");
 User user2 = new(2222, "Park", "Park@example.com");
@@ -90,7 +90,7 @@ users.Add(user1.Id, user1); users.Add(user2.Id, user2); users.Add(user3.Id, user
 위 코드처럼 임시로 데이터를 저장하는 트리맵 자료구조를 구현한다.
 
 그리고 다음과 같이 api를 구현하고 빌드 후 확인해본다.
-```
+```C#
 app.MapGet("/user/all", () => 
 {
     Return Results.Ok(users);
@@ -101,7 +101,7 @@ app.MapGet("/user/all", () =>
 
 
 그리고 다음과 같이 url을 통해 id 정보를 입력받는 api를 구현하면
-```
+```C#
 app.MapGet("user/{id}", (int id) =>
 {
     if (!users.ContainsKey(id)) return Results.NotFound(); // id가 없으면 404 반환
@@ -115,7 +115,7 @@ id가 존재하는 유저의 json 데이터를 받환받을 수 있다.
 ## Post 요청 구현(Create)
 Get 요청 단계에서 만들었던 트리맵에 유저를 추가하는 요청을 처리하는 api를 만들어보겠다.
 
-```
+```C#
 app.MapPost("/user/{id}", (User user, int id) =>            // Post 요청이므로 MapPost 메서드 사용
 {
     if (users.ContainsKey(id)) return Results.Conflict();   // 이미 있는 아이디면 충돌
@@ -131,7 +131,7 @@ Visual Studio를 생성하고 첫 프로젝트를 생성할 때와 마찬가지�
 <img width="998" height="661" alt="콘솔 앱" src="https://github.com/user-attachments/assets/8528d577-931d-4ddf-b0c0-95347e58faca" />  
 <img width="989" height="649" alt="Request cs 생성" src="https://github.com/user-attachments/assets/d112ee2c-5f88-484d-ab86-d92b620238d0" />  
 
-```
+```C#
 using System.Net.Http.Json;
 
 HttpClient client = new();
@@ -164,7 +164,7 @@ Update에는 Put과 Patch가 있는데 간단하게 말하자면 Put은 전체 �
 User 인스턴스가 불변인 record로 선언되어 있기 때문에 해당 단계에서는 Put 요청만 구현하도록 할 텐데 Patch도 비슷하게 구현이 가능하다.
 
 다음과 같은 코드를 추가한다.
-```
+```C#
 app.MapPut("/user/{id}", (int id, User user) =>
 {
     if (!users.ContainsKey(id)) return Results.NotFound();  // id가 없으면 404 반환
@@ -177,7 +177,7 @@ app.MapPut("/user/{id}", (int id, User user) =>
 
 그리고 요청 프로젝트를 다음과 같이 수정한다.
 
-```
+```C#
 var user = new
 {
     Id = 1111,
@@ -198,7 +198,7 @@ Post 요청을 했을 때와 동일하게 수행했을 때 NoContent가 출력�
 삭제 요청은 간단하다.  
 삭제할 데이터의 아이디만 url에 추가해주면 삭제되도록 다음과 같은 코드를 작성한다.
 
-```
+```C#
 app.MapDelete("/user/{id}", (int id) =>
 {
     if (!users.ContainsKey(id)) return Results.NotFound();  // id가 없으면 404 반환
@@ -211,7 +211,7 @@ app.MapDelete("/user/{id}", (int id) =>
 
 마찬가지로 요청 프로젝트를 다음과 같이 수정한다.
 
-```
+```C#
 var response = await client.DeleteAsync("http://localhost:5030/user/1111");
 
 WriteLine(response.StatusCode);
