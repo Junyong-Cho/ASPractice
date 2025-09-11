@@ -1,28 +1,28 @@
-# À¯È¿¼º °Ë»ç
+# ìœ íš¨ì„± ê²€ì‚¬
 
-ÀÌÁ¦ Db¿¡ ÀúÀåÇÒ µ¥ÀÌÅÍÀÇ À¯È¿¼ºÀ» °Ë»çÇÏ´Â ÄÚµå¸¦ Ãß°¡ÇØº¸°Ú´Ù.  
-[Key], [Required] °°ÀÌ µ¥ÀÌÅÍ¿¡ ¼Ó¼ºÀ» ºÎ¿©ÇØ ÁÖ¾úÁö¸¸ ÀÌ´Â dbÀÇ µ¥ÀÌÅÍ ±¸Á¶¸¦ Á¤ÀÇÇÒ ¶§ ¾²ÀÌ¸ç µ¥ÀÌÅÍ¸¦ »ý¼ºÇÒ ¶§¿¡´Â ÇØ´ç µ¥ÀÌÅÍ°¡ NullÀÎÁö ÀÌ¸ÞÀÏ Çü½ÄÀÎÁö Áï, À¯È¿ÇÑ Çü½ÄÀÎÁö °Ë»çÇØÁÖÁö ¾Ê´Â´Ù.  
-µ¥ÀÌÅÍÀÇ À¯È¿¼ºÀ» °Ë»çÇÏÁö ¾Ê°í Db¿¡ ÀúÀåÀ» ½ÃµµÇÏ´Â °æ¿ì¿¡ db¿¡¼­ È£ÃâÇÑ ¼­¹ö Ãø¿¡ ¿¹¿Ü¸¦ ´øÁö°Ô µÇ¸ç ¼­¹ö Ãø¿¡¼­ ¿¹¿Ü¸¦ Ã³¸®ÇÏ±â À§ÇÑ ÄÚµå¸¦ Ãß°¡ÇØ ÁÖ¾î¾ß ÇÑ´Ù.  
-try catch¹®À¸·Î ¿¹¿Ü¸¦ Ã³¸®ÇØ ÁÖ¾îµµ µÇÁö¸¸ db¿¡ µ¥ÀÌÅÍ¸¦ º¸³»°í ¿¹¿Ü¸¦ ÀÀ´ä¹Þ´Â »óÈ²Àº ÀÌ»óÀûÀÌÁö ¾Ê´Ù. (db¿¡°Ô µ¥ÀÌÅÍ¸¦ Àü´ÞÇÏ±â Àü¿¡ À¯È¿¼ºÀ» °Ë»çÇÏ´Â °ÍÀÌ ÁÁ´Ù.)  
-±×·¯¹Ç·Î ¼­¹ö Ãø¿¡¼­ ¸ÕÀú µ¥ÀÌÅÍÀÇ À¯È¿¼ºÀ» °Ë»çÇØ ÁÖ´Â °ÍÀÌ ÁÁ´Ù.
+ì´ì œ Dbì— ì €ìž¥í•  ë°ì´í„°ì˜ ìœ íš¨ì„±ì„ ê²€ì‚¬í•˜ëŠ” ì½”ë“œë¥¼ ì¶”ê°€í•´ë³´ê² ë‹¤.  
+[Key], [Required] ê°™ì´ ë°ì´í„°ì— ì†ì„±ì„ ë¶€ì—¬í•´ ì£¼ì—ˆì§€ë§Œ ì´ëŠ” dbì˜ ë°ì´í„° êµ¬ì¡°ë¥¼ ì •ì˜í•  ë•Œ ì“°ì´ë©° ë°ì´í„°ë¥¼ ìƒì„±í•  ë•Œì—ëŠ” í•´ë‹¹ ë°ì´í„°ê°€ Nullì¸ì§€ ì´ë©”ì¼ í˜•ì‹ì¸ì§€ ì¦‰, ìœ íš¨í•œ í˜•ì‹ì¸ì§€ ê²€ì‚¬í•´ì£¼ì§€ ì•ŠëŠ”ë‹¤.  
+ë°ì´í„°ì˜ ìœ íš¨ì„±ì„ ê²€ì‚¬í•˜ì§€ ì•Šê³  Dbì— ì €ìž¥ì„ ì‹œë„í•˜ëŠ” ê²½ìš°ì— dbì—ì„œ í˜¸ì¶œí•œ ì„œë²„ ì¸¡ì— ì˜ˆì™¸ë¥¼ ë˜ì§€ê²Œ ë˜ë©° ì„œë²„ ì¸¡ì—ì„œ ì˜ˆì™¸ë¥¼ ì²˜ë¦¬í•˜ê¸° ìœ„í•œ ì½”ë“œë¥¼ ì¶”ê°€í•´ ì£¼ì–´ì•¼ í•œë‹¤.  
+try catchë¬¸ìœ¼ë¡œ ì˜ˆì™¸ë¥¼ ì²˜ë¦¬í•´ ì£¼ì–´ë„ ë˜ì§€ë§Œ dbì— ë°ì´í„°ë¥¼ ë³´ë‚´ê³  ì˜ˆì™¸ë¥¼ ì‘ë‹µë°›ëŠ” ìƒí™©ì€ ì´ìƒì ì´ì§€ ì•Šë‹¤. (dbì—ê²Œ ë°ì´í„°ë¥¼ ì „ë‹¬í•˜ê¸° ì „ì— ìœ íš¨ì„±ì„ ê²€ì‚¬í•˜ëŠ” ê²ƒì´ ì¢‹ë‹¤.)  
+ê·¸ëŸ¬ë¯€ë¡œ ì„œë²„ ì¸¡ì—ì„œ ë¨¼ì € ë°ì´í„°ì˜ ìœ íš¨ì„±ì„ ê²€ì‚¬í•´ ì£¼ëŠ” ê²ƒì´ ì¢‹ë‹¤.
 
-## FluentValidation ¶óÀÌºê·¯¸®
-À¯È¿¼ºÀ» °Ë»çÇØÁÖ´Â ¶óÀÌºê·¯¸®¸¦ ¼³Ä¡ÇØº¸°Ú´Ù. nuget¿¡ FluentValidation(validator¿Í Çò°¥¸®¸é ¾È µÈ´Ù.)À» °Ë»öÇÑ´Ù.
+## FluentValidation ë¼ì´ë¸ŒëŸ¬ë¦¬
+ìœ íš¨ì„±ì„ ê²€ì‚¬í•´ì£¼ëŠ” ë¼ì´ë¸ŒëŸ¬ë¦¬ë¥¼ ì„¤ì¹˜í•´ë³´ê² ë‹¤. nugetì— FluentValidation(validatorì™€ í—·ê°ˆë¦¬ë©´ ì•ˆ ëœë‹¤.)ì„ ê²€ìƒ‰í•œë‹¤.
 
-![1. Fluent Validation](../dummy/6%20À¯È¿¼º%20°Ë»ç/1.%20FluentValidation.png)
+<img width="1180" height="512" alt="1  FluentValidation" src="https://github.com/user-attachments/assets/030f3afa-0829-4d74-80ee-041d6c64e60b" />
 
-FluentValidation°ú ¹Ø¿¡ ÀÖ´Â DependencyInjectionExtensions È®ÀåÆÑ±îÁö °°ÀÌ ¼³Ä¡ÇØ ÁØ´Ù.
+FluentValidationê³¼ ë°‘ì— ìžˆëŠ” DependencyInjectionExtensions í™•ìž¥íŒ©ê¹Œì§€ ê°™ì´ ì„¤ì¹˜í•´ ì¤€ë‹¤.
 
-```dotnet list package```·Î ¼³Ä¡¸¦ È®ÀÎÇÑ´Ù.
+```dotnet list package```ë¡œ ì„¤ì¹˜ë¥¼ í™•ì¸í•œë‹¤.
 
-## UserValidator ±¸Çö
-¼³Ä¡°¡ ¿Ï·áµÇ¸é User µ¥ÀÌÅÍÀÇ À¯È¿¼ºÀ» °Ë»çÇØ ÁÙ Validator¸¦ ±¸ÇöÇØ ÁÙ °ÍÀÌ´Ù.
+## UserValidator êµ¬í˜„
+ì„¤ì¹˜ê°€ ì™„ë£Œë˜ë©´ User ë°ì´í„°ì˜ ìœ íš¨ì„±ì„ ê²€ì‚¬í•´ ì¤„ Validatorë¥¼ êµ¬í˜„í•´ ì¤„ ê²ƒì´ë‹¤.
 
-ÇÁ·ÎÁ§Æ®¿¡ Validators µð·ºÅÍ¸®¸¦ »ý¼ºÇÏ°í ±× ¹ØÀ¸·Î UserValidator.cs ÆÄÀÏÀ» »ý¼ºÇØ ÁØ´Ù.
+í”„ë¡œì íŠ¸ì— Validators ë””ë ‰í„°ë¦¬ë¥¼ ìƒì„±í•˜ê³  ê·¸ ë°‘ìœ¼ë¡œ UserValidator.cs íŒŒì¼ì„ ìƒì„±í•´ ì¤€ë‹¤.
 
-![2. ÇÁ·ÎÁ§Æ® ±¸Á¶](../dummy/6%20À¯È¿¼º%20°Ë»ç/2.%20ÇÁ·ÎÁ§Æ®%20±¸Á¶.png)
+<img width="268" height="251" alt="2  í”„ë¡œì íŠ¸ êµ¬ì¡°" src="https://github.com/user-attachments/assets/ab889105-570b-4ce1-97c7-b5d0f23e124c" />
 
-UserValidator.cs ÆÄÀÏÀ» ´ÙÀ½°ú °°ÀÌ ÀÛ¼ºÇÑ´Ù.
+UserValidator.cs íŒŒì¼ì„ ë‹¤ìŒê³¼ ê°™ì´ ìž‘ì„±í•œë‹¤.
 
 ```C#
 using FluentValidation;
@@ -34,50 +34,50 @@ public class UserValidator : AbstractValidator<User>
 {
     public UserValidator()
     {
-        RuleFor(u => u.Username).NotEmpty().WithMessage("ÇÊ¼ö ÀÔ·Â");
+        RuleFor(u => u.Username).NotEmpty().WithMessage("í•„ìˆ˜ ìž…ë ¥");
         RuleFor(u => u.Password)
-            .NotEmpty().WithMessage("ÇÊ¼ö ÀÔ·Â")
-            .Length(8,30).WithMessage("8 ÀÌ»ó 30 ÀÌÇÏ ¹®ÀÚ")
-            .Matches(@"[A-Z]").WithMessage("´ë¹®ÀÚ Æ÷ÇÔ")
-            .Matches(@"[a-z]").WithMessage("¼Ò¹®ÀÚ Æ÷ÇÔ")
-            .Matches(@"[0-9]").WithMessage("¼ýÀÚ Æ÷ÇÔ")
-            .Matches(@"[!@#$,.*]").WithMessage("ÁöÁ¤µÈ Æ¯¼ö¹®ÀÚ Æ÷ÇÔ");
-        RuleFor(u => u.Email).EmailAddress().WithMessage("¿Ã¹Ù¸£Áö ¾ÊÀº ÀÌ¸ÞÀÏ Çü½Ä");
+            .NotEmpty().WithMessage("í•„ìˆ˜ ìž…ë ¥")
+            .Length(8,30).WithMessage("8 ì´ìƒ 30 ì´í•˜ ë¬¸ìž")
+            .Matches(@"[A-Z]").WithMessage("ëŒ€ë¬¸ìž í¬í•¨")
+            .Matches(@"[a-z]").WithMessage("ì†Œë¬¸ìž í¬í•¨")
+            .Matches(@"[0-9]").WithMessage("ìˆ«ìž í¬í•¨")
+            .Matches(@"[!@#$,.*]").WithMessage("ì§€ì •ëœ íŠ¹ìˆ˜ë¬¸ìž í¬í•¨");
+        RuleFor(u => u.Email).EmailAddress().WithMessage("ì˜¬ë°”ë¥´ì§€ ì•Šì€ ì´ë©”ì¼ í˜•ì‹");
     }
 }
 ```
 
-À¯È¿¼ºÀ» °Ë»çÇÏ°í ½ÍÀº ¼Ó¼ºÀ» NotEmpty EmailAddress Length MatchesµîÀ¸·Î ¼³Á¤ÇØ ÁØ´Ù.
+ìœ íš¨ì„±ì„ ê²€ì‚¬í•˜ê³  ì‹¶ì€ ì†ì„±ì„ NotEmpty EmailAddress Length Matchesë“±ìœ¼ë¡œ ì„¤ì •í•´ ì¤€ë‹¤.
 
-## api¿¡¼­ °Ë»ç
+## apiì—ì„œ ê²€ì‚¬
 
-Post, Put, Patch ´Ü°è¿¡¼­ Àü´Þ ¹ÞÀº µ¥ÀÌÅÍ¸¦ ÀúÀå È¤Àº ¼öÁ¤ÇÏ±ä Àü¿¡ À¯È¿¼º °Ë»ç ÄÚµå¸¦ ÀÛ¼ºÇØ ÁØ´Ù.
+Post, Put, Patch ë‹¨ê³„ì—ì„œ ì „ë‹¬ ë°›ì€ ë°ì´í„°ë¥¼ ì €ìž¥ í˜¹ì€ ìˆ˜ì •í•˜ê¸´ ì „ì— ìœ íš¨ì„± ê²€ì‚¬ ì½”ë“œë¥¼ ìž‘ì„±í•´ ì¤€ë‹¤.
 
 ```C#
 app.MapPost("/user/{id}",async (UserDbContext db, IValidator<User> validator, User user, int id) =>
 {
-    var result = await validator.ValidateAsync(user);                           // À¯È¿¼º °Ë»ç
+    var result = await validator.ValidateAsync(user);                           // ìœ íš¨ì„± ê²€ì‚¬
     
     if (!result.IsValid)
-        return Results.ValidationProblem(result.ToDictionary());                // À¯È¿¼º¿¡ ¹®Á¦°¡ ÀÖÀ¸¸é ¸Þ¼¼Áö¿Í ÇÔ²² ¹ÝÈ¯
+        return Results.ValidationProblem(result.ToDictionary());                // ìœ íš¨ì„±ì— ë¬¸ì œê°€ ìžˆìœ¼ë©´ ë©”ì„¸ì§€ì™€ í•¨ê»˜ ë°˜í™˜
 
-    if (await db.users.AnyAsync(u => u.Id == id)) return Results.Conflict();    // id Á¸Àç È®ÀÎ
+    if (await db.users.AnyAsync(u => u.Id == id)) return Results.Conflict();    // id ì¡´ìž¬ í™•ì¸
 
     /*
     .....
-    ..... db ÀúÀå ÄÚµå ÀÛ¼º
+    ..... db ì €ìž¥ ì½”ë“œ ìž‘ì„±
     */
-    return Results.Created($"/user/{id}", user);                                // Á¤»ó ÀÛµ¿
+    return Results.Created($"/user/{id}", user);                                // ì •ìƒ ìž‘ë™
 });
 ```
 
-Putµµ Post¿Í ¸¶Âù°¡Áö·Î À¯È¿¼ºÀ» °Ë»çÇÏ´Â ÄÚµå¸¦ db¿¡ ¿äÃ»ÇÏ±â Àü¿¡ ÀÛ¼ºÀ» ÇØ ÁÖ¸é µÇ´Âµ¥ Patch´Â ¼öÁ¤ÇÏÁö ¾Ê´Â µ¥ÀÌÅÍ¸¦ null·Î ºñ¿öµÎ±â ¶§¹®¿¡ UserValidator°¡ ¾Æ´Ñ PatchUserDtoValidator¿Í °°Àº Validator¸¦ »ý¼ºÇØ ÁÖ¾î¾ß ÇÑ´Ù.
+Putë„ Postì™€ ë§ˆì°¬ê°€ì§€ë¡œ ìœ íš¨ì„±ì„ ê²€ì‚¬í•˜ëŠ” ì½”ë“œë¥¼ dbì— ìš”ì²­í•˜ê¸° ì „ì— ìž‘ì„±ì„ í•´ ì£¼ë©´ ë˜ëŠ”ë° PatchëŠ” ìˆ˜ì •í•˜ì§€ ì•ŠëŠ” ë°ì´í„°ë¥¼ nullë¡œ ë¹„ì›Œë‘ê¸° ë•Œë¬¸ì— UserValidatorê°€ ì•„ë‹Œ PatchUserDtoValidatorì™€ ê°™ì€ Validatorë¥¼ ìƒì„±í•´ ì£¼ì–´ì•¼ í•œë‹¤.
 
-DTO(Data Transfer Object)´Â ´ÙÀ½ ´Ü°è¿¡ ÇÒ °ÍÀÌ¹Ç·Î PatchValidator´Â ´ÙÀ½ ´Ü°è¿¡ ±¸ÇöÇØ º¸µµ·Ï ÇÏ°Ú´Ù.
+DTO(Data Transfer Object)ëŠ” ë‹¤ìŒ ë‹¨ê³„ì— í•  ê²ƒì´ë¯€ë¡œ PatchValidatorëŠ” ë‹¤ìŒ ë‹¨ê³„ì— êµ¬í˜„í•´ ë³´ë„ë¡ í•˜ê² ë‹¤.
 
-## À¯È¿¼º °Ë»ç È®ÀÎ
+## ìœ íš¨ì„± ê²€ì‚¬ í™•ì¸
 
-½ÇÁ¦·Î validator°¡ Àß µ¿ÀÛÇÏ´ÂÁö È®ÀÎÇØº¸±â À§ÇØ Àß¸øµÈ µ¥ÀÌÅÍ¸¦ Àü¼ÛÇØº¸°Ú´Ù.
+ì‹¤ì œë¡œ validatorê°€ ìž˜ ë™ìž‘í•˜ëŠ”ì§€ í™•ì¸í•´ë³´ê¸° ìœ„í•´ ìž˜ëª»ëœ ë°ì´í„°ë¥¼ ì „ì†¡í•´ë³´ê² ë‹¤.
 
 ```C#
 using System.Net.Http.Json;
@@ -86,11 +86,11 @@ HttpClient client = new();
 
 User user1, user2, user3, user4;
 
-user1 = new("", "Password!12", "email@example.com");        // ºñ¾î ÀÖ´Â ÀÌ¸§
-user2 = new("username", "21312321", "email@example.com");   // ¿Ã¹Ù¸£Áö ¾ÊÀº ÆÐ½º¿öµå
-user3 = new("username", "Password!12", "emailexamplecom");  // ¿Ã¹Ù¸£Áö ¾ÊÀº ÀÌ¸ÞÀÏ Çü½Ä
+user1 = new("", "Password!12", "email@example.com");        // ë¹„ì–´ ìžˆëŠ” ì´ë¦„
+user2 = new("username", "21312321", "email@example.com");   // ì˜¬ë°”ë¥´ì§€ ì•Šì€ íŒ¨ìŠ¤ì›Œë“œ
+user3 = new("username", "Password!12", "emailexamplecom");  // ì˜¬ë°”ë¥´ì§€ ì•Šì€ ì´ë©”ì¼ í˜•ì‹
 
-user4 = new("", "", "");                                    // ÀüºÎ ¿À·ù
+user4 = new("", "", "");                                    // ì „ë¶€ ì˜¤ë¥˜
 
 var re1 = await client.PostAsJsonAsync($"http://localhost:5009/user/{1}", user1);
 var re2 = await client.PostAsJsonAsync($"http://localhost:5009/user/{1}", user2);
@@ -109,12 +109,12 @@ Console.WriteLine(await re4.Content.ReadAsStringAsync());
 public record User(string Username, string Password, string Email);
 ```
 
-À§¿Í °°ÀÌ ÃÑ 4¹øÀÇ Post ¿äÃ»À» ÇÏ´Â ÄÚµå¸£ ÀÛ¼ºÇÏ°í ½ÇÇàÇÏ¸é ´ÙÀ½°ú °°Àº Ãâ·ÂÀ» ¾òÀ» ¼ö ÀÖ´Ù.
+ìœ„ì™€ ê°™ì´ ì´ 4ë²ˆì˜ Post ìš”ì²­ì„ í•˜ëŠ” ì½”ë“œë¥´ ìž‘ì„±í•˜ê³  ì‹¤í–‰í•˜ë©´ ë‹¤ìŒê³¼ ê°™ì€ ì¶œë ¥ì„ ì–»ì„ ìˆ˜ ìžˆë‹¤.
 
-![3. ¿¡·¯ ¸Þ¼¼Áö](../dummy/6%20À¯È¿¼º%20°Ë»ç/3.%20¿¡·¯%20¸Þ¼¼Áö.png)
+<img width="1505" height="329" alt="3  ì—ëŸ¬ ë©”ì„¸ì§€" src="https://github.com/user-attachments/assets/b271ec68-0c0f-4bde-928d-1a86089e1b44" />
 
-ÃÑ 4¹øÀÇ ¸Þ¼¼Áö°¡ Ãâ·ÂµÇ´Âµ¥ errors ºí·ÏÀ» º¸¸é ¾î¶² °ª¿¡¼­ ¹®Á¦°¡ ÀÖ¾ú´ÂÁö È®ÀÎÇÒ ¼ö ÀÖ´Ù.
+ì´ 4ë²ˆì˜ ë©”ì„¸ì§€ê°€ ì¶œë ¥ë˜ëŠ”ë° errors ë¸”ë¡ì„ ë³´ë©´ ì–´ë–¤ ê°’ì—ì„œ ë¬¸ì œê°€ ìžˆì—ˆëŠ”ì§€ í™•ì¸í•  ìˆ˜ ìžˆë‹¤.
 
-# ¸¶¹«¸®
+# ë§ˆë¬´ë¦¬
 
-À¯È¿¼º °Ë»ç ±â´ÉÀ» ÇÏ´Â ÄÚµå¸¦ Ãß°¡ÇØº¸¾Ò´Ù.
+ìœ íš¨ì„± ê²€ì‚¬ ê¸°ëŠ¥ì„ í•˜ëŠ” ì½”ë“œë¥¼ ì¶”ê°€í•´ë³´ì•˜ë‹¤.
