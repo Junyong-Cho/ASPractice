@@ -49,6 +49,23 @@ public class UserValidator : AbstractValidator<User>
 
 유효성을 검사하고 싶은 속성을 NotEmpty EmailAddress Length Matches등으로 설정해 준다.
 
+## Validator 빌드에 추가
+
+이제 만든 UserValidator를 웹앱에 추가해야 한다.
+
+```C#
+var builder = WebApplication.CreateBuilder();
+
+//...
+// 다른 설정
+
+builder.Services.AddValidatorsFromAssemblyContaining<UserValidator>();
+
+var app = bilder.Build();
+```
+
+다음과 같이 Validator를 추가해줄 수 있다.
+
 ## api에서 검사
 
 Post, Put, Patch 단계에서 전달 받은 데이터를 저장 혹은 수정하긴 전에 유효성 검사 코드를 작성해 준다.
