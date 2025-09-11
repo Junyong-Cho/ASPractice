@@ -1,15 +1,15 @@
-# Db¿Í ¼ÒÅëÇÏ±â
+# Dbì™€ ì†Œí†µí•˜ê¸°
 
-ÀÌÀü ´Ü°è¿¡¼­ µ¥ÀÌÅÍº£ÀÌ½º¿Í ÇÁ·ÎÁ§Æ®¸¦ ¿¬°áÇØÁÖ¾ú´Ù.
+ì´ì „ ë‹¨ê³„ì—ì„œ ë°ì´í„°ë² ì´ìŠ¤ì™€ í”„ë¡œì íŠ¸ë¥¼ ì—°ê²°í•´ì£¼ì—ˆë‹¤.
 
-ÀÌ¹ø ´Ü°è¿¡¼­´Â ¿¬°áµÈ DB¸¦ Á¶ÀÛÇÏ¿© CRUD¸¦ ±¸ÇöÇØ º¸°Ú´Ù.
+ì´ë²ˆ ë‹¨ê³„ì—ì„œëŠ” ì—°ê²°ëœ DBë¥¼ ì¡°ìž‘í•˜ì—¬ CRUDë¥¼ êµ¬í˜„í•´ ë³´ê² ë‹¤.
 
-±×·¯³ª ±× Àü¿¡ User.cs ÆÄÀÏÀÇ User µ¥ÀÌÅÍ¸¦ record·Î ¼³Á¤ÇØ ÁÖ¾ú´Âµ¥ ÀÌ·¸°Ô ¼³Á¤ÇÏ¸é µ¥ÀÌÅÍ¸¦ ¼öÁ¤ÇÒ ¶§ ±âÁ¸ µ¥ÀÌÅÍ¸¦ Áö¿ì°í »õ·Î¿î µ¥ÀÌÅÍ¸¦ »ý¼ºÇÏ´Â ½ÄÀ¸·Î ÁøÇàÇÒ ¼ö ¹Û¿¡ ¾ø±â¿¡(Áï Patch°¡ ºÒ°¡´ÉÇÏ±â¿¡) class·Î ¹Ù²Û ´ÙÀ½¿¡ µ¥ÀÌÅÍº£ÀÌ½º ±¸Á¶¸¦ °»½ÅÇØº¸°Ú´Ù.  
-(»ç½Ç Ã³À½ºÎÅÍ class·Î »ý¼ºÇÑ ´ÙÀ½ db¸¦ ÃÊ±âÈ­ÇØÁÖ¸é µÇ´Âµ¥ ½Ç½ÀÀ» À§ÇØ¼­ record·Î »ý¼ºÇØ ÁØ °ÍÀÌ´Ù.)
+ê·¸ëŸ¬ë‚˜ ê·¸ ì „ì— User.cs íŒŒì¼ì˜ User ë°ì´í„°ë¥¼ recordë¡œ ì„¤ì •í•´ ì£¼ì—ˆëŠ”ë° ì´ë ‡ê²Œ ì„¤ì •í•˜ë©´ ë°ì´í„°ë¥¼ ìˆ˜ì •í•  ë•Œ ê¸°ì¡´ ë°ì´í„°ë¥¼ ì§€ìš°ê³  ìƒˆë¡œìš´ ë°ì´í„°ë¥¼ ìƒì„±í•˜ëŠ” ì‹ìœ¼ë¡œ ì§„í–‰í•  ìˆ˜ ë°–ì— ì—†ê¸°ì—(ì¦‰ Patchê°€ ë¶ˆê°€ëŠ¥í•˜ê¸°ì—) classë¡œ ë°”ê¾¼ ë‹¤ìŒì— ë°ì´í„°ë² ì´ìŠ¤ êµ¬ì¡°ë¥¼ ê°±ì‹ í•´ë³´ê² ë‹¤.  
+(ì‚¬ì‹¤ ì²˜ìŒë¶€í„° classë¡œ ìƒì„±í•œ ë‹¤ìŒ dbë¥¼ ì´ˆê¸°í™”í•´ì£¼ë©´ ë˜ëŠ”ë° ì‹¤ìŠµì„ ìœ„í•´ì„œ recordë¡œ ìƒì„±í•´ ì¤€ ê²ƒì´ë‹¤.)
 
-## User.cs ±¸Á¶ º¯°æ
+## User.cs êµ¬ì¡° ë³€ê²½
 
-User.cs ÆÄÀÏÀ» ´ÙÀ½°ú °°ÀÌ º¯°æÇØ ÁØ´Ù.
+User.cs íŒŒì¼ì„ ë‹¤ìŒê³¼ ê°™ì´ ë³€ê²½í•´ ì¤€ë‹¤.
 
 ```C#
 using System.ComponentModel.DataAnnotations;
@@ -20,53 +20,53 @@ namespace DbApi.Models;
 
 public class User
 {
-    [Key]       // ±âº»Å° ¼Ó¼º
+    [Key]       // ê¸°ë³¸í‚¤ ì†ì„±
     public int Id { get; set; }
-    [Required]  // ¹Ýµå½Ã ÇÊ¿äÇÑ ¼Ó¼º == Not null
+    [Required]  // ë°˜ë“œì‹œ í•„ìš”í•œ ì†ì„± == Not null
     public string? Username { get; set; }
     public string? Email { get; set; }
 }
 ```
 
-±×¸®°í ¸¶ÀÌ±×·¹ÀÌ¼ÇÀ¸·Î db ±¸Á¶¸¦ °»½ÅÇØ ÁÙ °ÍÀÌ´Ù.
+ê·¸ë¦¬ê³  ë§ˆì´ê·¸ë ˆì´ì…˜ìœ¼ë¡œ db êµ¬ì¡°ë¥¼ ê°±ì‹ í•´ ì¤„ ê²ƒì´ë‹¤.
 
-ÅÍ¹Ì³Î¿¡ ```dotnet ef migrations add UserRecordToClass``` ¸í·É¾î¸¦ ÀÔ·ÂÇÑ´Ù.
+í„°ë¯¸ë„ì— ```dotnet ef migrations add UserRecordToClass``` ëª…ë ¹ì–´ë¥¼ ìž…ë ¥í•œë‹¤.
 
-![1. User ±¸Á¶ º¯°æ](../../dummy/5%20DB%20api%20±¸Çö/1.%20User%20±¸Á¶%20º¯°æ.png)
+<img width="948" height="99" alt="1  User êµ¬ì¡° ë³€ê²½" src="https://github.com/user-attachments/assets/685d658d-e3d2-4d24-a2c2-37dfe1660cc8" />
 
-¸¶ÀÌ±×·¹ÀÌ¼Ç Ãß°¡°¡ ¼º°øÇÏ¸é ÇÁ·ÎÁ§Æ®ÀÇ migrations µð·ºÅÍ¸®¿¡ UserRecordToClass.cs ÆÄÀÏÀÌ Ãß°¡µÈ °ÍÀ» È®ÀÎÇÒ ¼ö ÀÖÀ» °ÍÀÌ´Ù.
+ë§ˆì´ê·¸ë ˆì´ì…˜ ì¶”ê°€ê°€ ì„±ê³µí•˜ë©´ í”„ë¡œì íŠ¸ì˜ migrations ë””ë ‰í„°ë¦¬ì— UserRecordToClass.cs íŒŒì¼ì´ ì¶”ê°€ëœ ê²ƒì„ í™•ì¸í•  ìˆ˜ ìžˆì„ ê²ƒì´ë‹¤.
 
-![2. User Record To Class](../../dummy/5%20DB%20api%20±¸Çö/2.%20UserRecordToClass.png)
+<img width="291" height="77" alt="2  UserRecordToClass" src="https://github.com/user-attachments/assets/ce62fa8b-2b5d-4db2-a60b-46bac5f18bc0" />
 
-ÀÌ·¸°Ô db ±¸Á¶ º¯°æ ÀÌ·ÂÀÌ È®ÀÎÇÒ ¼ö ÀÖ´Ù. ±× ´ÙÀ½ ```dotnet ef database update```¸í·É¾î·Î db ±¸Á¶¸¦ ÃÖÁ¾ÀûÀ¸·Î ¾÷µ¥ÀÌÆ® ÇÑ´Ù.
+ì´ë ‡ê²Œ db êµ¬ì¡° ë³€ê²½ ì´ë ¥ì´ í™•ì¸í•  ìˆ˜ ìžˆë‹¤. ê·¸ ë‹¤ìŒ ```dotnet ef database update```ëª…ë ¹ì–´ë¡œ db êµ¬ì¡°ë¥¼ ìµœì¢…ì ìœ¼ë¡œ ì—…ë°ì´íŠ¸ í•œë‹¤.
 
-## ºñµ¿±â api ±¸Çö
+## ë¹„ë™ê¸° api êµ¬í˜„
 
-ÀÌÁ¦ ¿äÃ»ÀÌ µé¾î¿À¸é db¿¡¼­ µ¥ÀÌÅÍ¸¦ Ã£¾Æ¼­ Á¶ÀÛ ÈÄ Ã³¸®ÇÏµµ·Ï ÇÒ ÅÙµ¥ ±× Àü¿¡ ¾Ë¾Æ¾ß ÇÒ °³³äÀÌ Á¸ÀçÇÑ´Ù.  
-C# ÄÚµå ³»¿¡¼­ °ü¸®µÇ´Â µ¥ÀÌÅÍ´Â ¿äÃ» Áï½Ã Á¶ÀÛÇÏ°í Àü´ÞÇÏ´Â µ¥ Å« ½Ã°£ÀÌ µéÁö ¾Ê¾ÒÁö¸¸ db¿Í ¼ÒÅëÇÏ°Ô µÈ´Ù¸é db¿¡¼­ µ¥ÀÌÅÍ¸¦ Àü´Þ¹Þ´Âµ¥ ½Ã°£ÀÌ °É¸± ¼ö ÀÖ±â ¶§¹®¿¡ ºñµ¿±âÀûÀ¸·Î µ¿ÀÛÇÏ´Â api¸¦ ±¸ÇöÇØ¾ß µÈ´Ù.  
+ì´ì œ ìš”ì²­ì´ ë“¤ì–´ì˜¤ë©´ dbì—ì„œ ë°ì´í„°ë¥¼ ì°¾ì•„ì„œ ì¡°ìž‘ í›„ ì²˜ë¦¬í•˜ë„ë¡ í•  í…ë° ê·¸ ì „ì— ì•Œì•„ì•¼ í•  ê°œë…ì´ ì¡´ìž¬í•œë‹¤.  
+C# ì½”ë“œ ë‚´ì—ì„œ ê´€ë¦¬ë˜ëŠ” ë°ì´í„°ëŠ” ìš”ì²­ ì¦‰ì‹œ ì¡°ìž‘í•˜ê³  ì „ë‹¬í•˜ëŠ” ë° í° ì‹œê°„ì´ ë“¤ì§€ ì•Šì•˜ì§€ë§Œ dbì™€ ì†Œí†µí•˜ê²Œ ëœë‹¤ë©´ dbì—ì„œ ë°ì´í„°ë¥¼ ì „ë‹¬ë°›ëŠ”ë° ì‹œê°„ì´ ê±¸ë¦´ ìˆ˜ ìžˆê¸° ë•Œë¬¸ì— ë¹„ë™ê¸°ì ìœ¼ë¡œ ë™ìž‘í•˜ëŠ” apië¥¼ êµ¬í˜„í•´ì•¼ ëœë‹¤.  
 
-¸¸ÀÏ db¿¡¼­ µ¥ÀÌÅÍ¸¦ ¿äÃ»ÇÏ´Â µ¥ ½Ã°£ÀÌ °É¸®¸é¼­ ÇØ´ç ÁÙ¿¡¼­ ÄÚµå°¡ ¸ØÃç ÀÖ´Ù¸é ±× µÚ·Î ¿À´Â ¿äÃ»µµ ±×¸¸Å­ ½Ã°£ÀÌ °É¸®°Ô µÈ´Ù.
+ë§Œì¼ dbì—ì„œ ë°ì´í„°ë¥¼ ìš”ì²­í•˜ëŠ” ë° ì‹œê°„ì´ ê±¸ë¦¬ë©´ì„œ í•´ë‹¹ ì¤„ì—ì„œ ì½”ë“œê°€ ë©ˆì¶° ìžˆë‹¤ë©´ ê·¸ ë’¤ë¡œ ì˜¤ëŠ” ìš”ì²­ë„ ê·¸ë§Œí¼ ì‹œê°„ì´ ê±¸ë¦¬ê²Œ ëœë‹¤.
 
-µû¶ó¼­ db¿¡ µ¥ÀÌÅÍ ¿äÃ»À» ³¯·Á³õ°í µ¥ÀÌÅÍ°¡ ¿Ã µ¿¾È ´Ù¸¥ ¿äÃ»À» Ã³¸®ÇÒ ¼ö ÀÖµµ·Ï ÇÏ¸é ±×¸¸Å­ ½Ã°£À» Àý¾àÇÏ°Ô µÉ °ÍÀÌ´Ù. ÀÌ°ÍÀÌ ¹Ù·Î ºñµ¿±âÀû ÇÁ·Î±×·¡¹ÖÀÌ´Ù.
+ë”°ë¼ì„œ dbì— ë°ì´í„° ìš”ì²­ì„ ë‚ ë ¤ë†“ê³  ë°ì´í„°ê°€ ì˜¬ ë™ì•ˆ ë‹¤ë¥¸ ìš”ì²­ì„ ì²˜ë¦¬í•  ìˆ˜ ìžˆë„ë¡ í•˜ë©´ ê·¸ë§Œí¼ ì‹œê°„ì„ ì ˆì•½í•˜ê²Œ ë  ê²ƒì´ë‹¤. ì´ê²ƒì´ ë°”ë¡œ ë¹„ë™ê¸°ì  í”„ë¡œê·¸ëž˜ë°ì´ë‹¤.
 
-¹°·Ð ¿ì¸®°¡ ºñµ¿±âÀûÀ¸·Î µ¿ÀÛÇÏ´Â api¸¦ ±¸ÇöÇÏÁö ¾Ê´Â´Ù ÇÏ´õ¶óµµ µ¿½Ã¿¡ ¿©·¯ ¿äÃ»À» Ã³¸®ÇÏÁö ¸øÇÏ´Â °ÍÀº ¾Æ´Ï´Ù.  
-¿ì¸®µé ³ëÆ®ºÏµµ ±×·¸°í ¿äÁò µîÀåÇÏ´Â cpuµéÀº ±âº»ÀûÀ¸·Î ¿©·¯ °³ÀÇ ÄÚ¾î¿Í ¿©·¯ °³ÀÇ ¾²·¹µå¸¦ Å¾ÀçÇÏ°í ÀÖ±â ¶§¹®¿¡ ÇÏ³ªÀÇ ¾²·¹µå¿¡¼­ db ¿äÃ»À» ±â´Ù¸®°í ÀÖ´õ¶óµµ ´Ù¸¥ ¾²·¹µå¿¡¼­ Ã³¸®ÇÒ ¼ö ÀÖµµ·Ï .NET Core°¡ ±¸ÇöÀ» Àß ÇØ ³õ¾Ò±â ¶§¹®ÀÌ´Ù.
+ë¬¼ë¡  ìš°ë¦¬ê°€ ë¹„ë™ê¸°ì ìœ¼ë¡œ ë™ìž‘í•˜ëŠ” apië¥¼ êµ¬í˜„í•˜ì§€ ì•ŠëŠ”ë‹¤ í•˜ë”ë¼ë„ ë™ì‹œì— ì—¬ëŸ¬ ìš”ì²­ì„ ì²˜ë¦¬í•˜ì§€ ëª»í•˜ëŠ” ê²ƒì€ ì•„ë‹ˆë‹¤.  
+ìš°ë¦¬ë“¤ ë…¸íŠ¸ë¶ë„ ê·¸ë ‡ê³  ìš”ì¦˜ ë“±ìž¥í•˜ëŠ” cpuë“¤ì€ ê¸°ë³¸ì ìœ¼ë¡œ ì—¬ëŸ¬ ê°œì˜ ì½”ì–´ì™€ ì—¬ëŸ¬ ê°œì˜ ì“°ë ˆë“œë¥¼ íƒ‘ìž¬í•˜ê³  ìžˆê¸° ë•Œë¬¸ì— í•˜ë‚˜ì˜ ì“°ë ˆë“œì—ì„œ db ìš”ì²­ì„ ê¸°ë‹¤ë¦¬ê³  ìžˆë”ë¼ë„ ë‹¤ë¥¸ ì“°ë ˆë“œì—ì„œ ì²˜ë¦¬í•  ìˆ˜ ìžˆë„ë¡ .NET Coreê°€ êµ¬í˜„ì„ ìž˜ í•´ ë†“ì•˜ê¸° ë•Œë¬¸ì´ë‹¤.
 
-´Ù¸¸ ¸¹Àº Å¬¶óÀÌ¾ðÆ®°¡ ÀÌ¿ëÇÏ´Â ¼­¹ö·Î ´ë·®ÀÇ ¿äÃ»ÀÌ µé¾î¿À°Ô µÈ´Ù¸é ¼­¹ö¿¡ Á¸ÀçÇÏ´Â ÄÚ¾î¿Í ¾²·¹µå ¼ö·Î´Â ¾î¸²µµ ¾ø±â ¶§¹®¿¡ ÀÌ°ÍÀ» ´ëºñÇÏ¿© ºñµ¿±âÀûÀ¸·Î api¸¦ ±¸ÇöÇØ¾ß ÇÏ´Â °ÍÀÌ´Ù.
+ë‹¤ë§Œ ë§Žì€ í´ë¼ì´ì–¸íŠ¸ê°€ ì´ìš©í•˜ëŠ” ì„œë²„ë¡œ ëŒ€ëŸ‰ì˜ ìš”ì²­ì´ ë“¤ì–´ì˜¤ê²Œ ëœë‹¤ë©´ ì„œë²„ì— ì¡´ìž¬í•˜ëŠ” ì½”ì–´ì™€ ì“°ë ˆë“œ ìˆ˜ë¡œëŠ” ì–´ë¦¼ë„ ì—†ê¸° ë•Œë¬¸ì— ì´ê²ƒì„ ëŒ€ë¹„í•˜ì—¬ ë¹„ë™ê¸°ì ìœ¼ë¡œ apië¥¼ êµ¬í˜„í•´ì•¼ í•˜ëŠ” ê²ƒì´ë‹¤.
 
-## ºñµ¿±â ÇÁ·Î±×·¡¹Ö ¿¹Á¦
+## ë¹„ë™ê¸° í”„ë¡œê·¸ëž˜ë° ì˜ˆì œ
 
-ºñµ¿±â api¸¦ ±¸ÇöÇÏ´Â ¹æ¹ýÀº ½±´Ù. ±×³É ¶÷´Ù½Ä ¸Å°³º¯¼ö ¾Õ¿¡ async·Î ºñµ¿±â api¶ó´Â °ÍÀ» ¸í½ÃÇØ ÁÖ±â¸¸ ÇÏ¸é µÈ´Ù.  
-±×¸®°í async·Î ¼±¾ðµÈ(ÁÖ·Î Async()·Î ³¡³ª´Â) ¸Þ¼­µå·Î µ¥ÀÌÅÍ¸¦ Ã³¸®ÇÏµµ·Ï ÇÏ°í ±× ¾Õ¿¡ await¶ó°í ¸í½ÃÇØ ÁÖ±â¸¸ ÇÏ¸é µÈ´Ù.  
-ÀÌ´Â Async ¸Þ¼­µå¸¦ È£ÃâÇÏ°í ÇØ´ç ¸Þ¼­µåÀÇ ÀÛ¾÷ÀÌ ¿Ï·áµÉ ¶§±îÁö ÇØ´ç ¾²·¹µå¸¦ ºñ¿öµÎ°í Async ¸Þ¼­µå°¡ ¿Ï·áµÇ¸é ´Ù½Ã ¾²·¹µå·Î µ¹¾Æ¿Í await¿¡¼­ ÀÌ¾î¼­ ÀÛ¾÷À» ÁøÇàÇÏ°Ú´Ù´Â °ÍÀ» ÀÇ¹ÌÇÑ´Ù.
+ë¹„ë™ê¸° apië¥¼ êµ¬í˜„í•˜ëŠ” ë°©ë²•ì€ ì‰½ë‹¤. ê·¸ëƒ¥ ëžŒë‹¤ì‹ ë§¤ê°œë³€ìˆ˜ ì•žì— asyncë¡œ ë¹„ë™ê¸° apië¼ëŠ” ê²ƒì„ ëª…ì‹œí•´ ì£¼ê¸°ë§Œ í•˜ë©´ ëœë‹¤.  
+ê·¸ë¦¬ê³  asyncë¡œ ì„ ì–¸ëœ(ì£¼ë¡œ Async()ë¡œ ëë‚˜ëŠ”) ë©”ì„œë“œë¡œ ë°ì´í„°ë¥¼ ì²˜ë¦¬í•˜ë„ë¡ í•˜ê³  ê·¸ ì•žì— awaitë¼ê³  ëª…ì‹œí•´ ì£¼ê¸°ë§Œ í•˜ë©´ ëœë‹¤.  
+ì´ëŠ” Async ë©”ì„œë“œë¥¼ í˜¸ì¶œí•˜ê³  í•´ë‹¹ ë©”ì„œë“œì˜ ìž‘ì—…ì´ ì™„ë£Œë  ë•Œê¹Œì§€ í•´ë‹¹ ì“°ë ˆë“œë¥¼ ë¹„ì›Œë‘ê³  Async ë©”ì„œë“œê°€ ì™„ë£Œë˜ë©´ ë‹¤ì‹œ ì“°ë ˆë“œë¡œ ëŒì•„ì™€ awaitì—ì„œ ì´ì–´ì„œ ìž‘ì—…ì„ ì§„í–‰í•˜ê² ë‹¤ëŠ” ê²ƒì„ ì˜ë¯¸í•œë‹¤.
 
-´ÙÀ½°ú °°Àº ÄÚµå¸¦ º¸ÀÚ
+ë‹¤ìŒê³¼ ê°™ì€ ì½”ë“œë¥¼ ë³´ìž
 ```C#
 app.MapGet("/", () => "index page");
 
 app.MapGet("/sync", () =>
 {
-    Thread.Sleep(5000);         // ÇöÀç ¸Þ¼­µå°¡ ¾²·¹µå¸¦ Â÷ÁöÇÑ Ã¤·Î 5ÃÊ ´ë±â
+    Thread.Sleep(5000);         // í˜„ìž¬ ë©”ì„œë“œê°€ ì“°ë ˆë“œë¥¼ ì°¨ì§€í•œ ì±„ë¡œ 5ì´ˆ ëŒ€ê¸°
 
     return "sync";
 });
@@ -74,70 +74,70 @@ app.MapGet("/sync", () =>
 app.MapGet("/async", async () =>
 {
 
-    await Task.Delay(5000);     // ÇöÀç ¸Þ¼­µå¸¦ ¹é±×¶ó¿îµå¿¡ Àá½Ã º¸³»°í 5ÃÊ ÈÄ ºÒ·¯¿È
+    await Task.Delay(5000);     // í˜„ìž¬ ë©”ì„œë“œë¥¼ ë°±ê·¸ë¼ìš´ë“œì— ìž ì‹œ ë³´ë‚´ê³  5ì´ˆ í›„ ë¶ˆëŸ¬ì˜´
 
     return "async";
 });
 ```
 
-¸¸¾à /sync¶ó´Â url·Î Get ¿äÃ»À» 100¹ø º¸³»¸é ÇÏ³ªÀÇ ¾²·¹µå¸¦ ¾´´Ù°í °¡Á¤ÇÏ¸é 500ÃÊ°¡ °É¸± °ÍÀÌ´Ù.
-(¿äÃ» ÇÏ³ª¿¡ ÀÀ´äÀÌ ¿À±â±îÁö 5ÃÊ°¡ °É¸®´Âµ¥ ÀÀ´äÀÌ ¿À±â Àü¿¡´Â ´Ù¸¥ ÀÛ¾÷À» ¸ø ÇÏ±â ¶§¹®¿¡)
+ë§Œì•½ /syncë¼ëŠ” urlë¡œ Get ìš”ì²­ì„ 100ë²ˆ ë³´ë‚´ë©´ í•˜ë‚˜ì˜ ì“°ë ˆë“œë¥¼ ì“´ë‹¤ê³  ê°€ì •í•˜ë©´ 500ì´ˆê°€ ê±¸ë¦´ ê²ƒì´ë‹¤.
+(ìš”ì²­ í•˜ë‚˜ì— ì‘ë‹µì´ ì˜¤ê¸°ê¹Œì§€ 5ì´ˆê°€ ê±¸ë¦¬ëŠ”ë° ì‘ë‹µì´ ì˜¤ê¸° ì „ì—ëŠ” ë‹¤ë¥¸ ìž‘ì—…ì„ ëª» í•˜ê¸° ë•Œë¬¸ì—)
 
-±×·¯³ª /asyncÇÏ´Â url·Î Get ¿äÃ»À» 100¹ø º¸³»¸é ÀÏ´Ü ¿äÃ»À» ÇÑ ¹ø¿¡ 100¹ø º¸³»°í ÀÀ´äÀÌ µµÂøÇÑ ¸Þ¼­µå ¼ø¼­´ë·Î ÀÛ¾÷À» Ã³¸®ÇÒ °ÍÀÌ±â¿¡ 5ÃÊº¸´Ù Á¶±Ý ´õ °É¸°´Ù°í »ý°¢ÇÏ¸é µÈ´Ù.
+ê·¸ëŸ¬ë‚˜ /asyncí•˜ëŠ” urlë¡œ Get ìš”ì²­ì„ 100ë²ˆ ë³´ë‚´ë©´ ì¼ë‹¨ ìš”ì²­ì„ í•œ ë²ˆì— 100ë²ˆ ë³´ë‚´ê³  ì‘ë‹µì´ ë„ì°©í•œ ë©”ì„œë“œ ìˆœì„œëŒ€ë¡œ ìž‘ì—…ì„ ì²˜ë¦¬í•  ê²ƒì´ê¸°ì— 5ì´ˆë³´ë‹¤ ì¡°ê¸ˆ ë” ê±¸ë¦°ë‹¤ê³  ìƒê°í•˜ë©´ ëœë‹¤.
 
-±×·³ ÇÑ ¹ø ÀÌ ¼­¹ö¿¡ 100¹ø Get ¿äÃ»À» ÇÏ´Â DOS °ø°ÝÀ» ÇØº¸°Ú´Ù.
-
-```C#
-HttpClient client = new();
-
-string url = "http://localhost:5009/sync";      // µ¿±â url
-
-List<Task<HttpResponseMessage>> tasks = new();
-
-for (int i = 0; i < 100; i++)                   // 100¹ø µ¿½Ã ¿äÃ» Tasks »ý¼º
-    tasks.Add(client.GetAsync(url));
-
-Console.WriteLine("\nStart\n");
-
-await Task.WhenAll(tasks);                      // µ¿½Ã ¿äÃ» ½ÃÀÛ
-
-Console.WriteLine("\nEnd\n");
-```
-
-Dos °ø°Ý¿ë ÇÁ·ÎÁ§Æ®¸¦ ¸¸µé¾î¼­ À§¿Í °°ÀÌ ÄÚµå¸¦ ÀÛ¼ºÇß´Ù.
-
-¼­¹ö¸¦ ½ÇÇàÇÑ ´ÙÀ½ À§ ÄÚµå¸¦ ½ÇÇàÇÑ ´ÙÀ½¿¡ À¥ ºê¶ó¿ìÀú¿¡ index ÆäÀÌÁö °Ë»öÀ» ÇØº¸¸é ÀÎµ¦½º ÆäÀÌÁö ·ÎµùÀÌ ³¡¾øÀÌ ÀÌ¾îÁö´Â °ÍÀ» È®ÀÎÇÒ ¼ö ÀÖÀ» °ÍÀÌ´Ù.
+ê·¸ëŸ¼ í•œ ë²ˆ ì´ ì„œë²„ì— 100ë²ˆ Get ìš”ì²­ì„ í•˜ëŠ” DOS ê³µê²©ì„ í•´ë³´ê² ë‹¤.
 
 ```C#
 HttpClient client = new();
 
-//string url = "http://localhost:5009/sync";      // µ¿±â url
-string url = "http://localhost:5009/async";     // ºñµ¿±â url
+string url = "http://localhost:5009/sync";      // ë™ê¸° url
 
 List<Task<HttpResponseMessage>> tasks = new();
 
-for (int i = 0; i < 100; i++)                   // 100¹ø µ¿½Ã ¿äÃ» Tasks »ý¼º
+for (int i = 0; i < 100; i++)                   // 100ë²ˆ ë™ì‹œ ìš”ì²­ Tasks ìƒì„±
     tasks.Add(client.GetAsync(url));
 
 Console.WriteLine("\nStart\n");
 
-await Task.WhenAll(tasks);                      // µ¿½Ã ¿äÃ» ½ÃÀÛ
+await Task.WhenAll(tasks);                      // ë™ì‹œ ìš”ì²­ ì‹œìž‘
 
 Console.WriteLine("\nEnd\n");
 ```
 
-ÀÌÁ¦ ÀÌ ÄÚµå¸¦ ÀÌ·¸°Ô ¼öÁ¤ÇØ º¸ÀÚ.
+Dos ê³µê²©ìš© í”„ë¡œì íŠ¸ë¥¼ ë§Œë“¤ì–´ì„œ ìœ„ì™€ ê°™ì´ ì½”ë“œë¥¼ ìž‘ì„±í–ˆë‹¤.
 
-À§ ÄÚµå¸¦ ½ÇÇàÇÑ ´ÙÀ½¿¡ index page¸¦ ¿äÃ»ÇØ À¥ ºê¶ó¿ìÀú¿¡ ¶È°°ÀÌ °Ë»öÀ» ÇÏ¸é ÀÎµ¦½º ÆäÀÌÁö°¡ ¹Ù·Î ¹ÝÈ¯µÇ´Â °ÍÀ» È®ÀÎÇÒ ¼ö ÀÖÀ» °ÍÀÌ´Ù.
+ì„œë²„ë¥¼ ì‹¤í–‰í•œ ë‹¤ìŒ ìœ„ ì½”ë“œë¥¼ ì‹¤í–‰í•œ ë‹¤ìŒì— ì›¹ ë¸Œë¼ìš°ì €ì— index íŽ˜ì´ì§€ ê²€ìƒ‰ì„ í•´ë³´ë©´ ì¸ë±ìŠ¤ íŽ˜ì´ì§€ ë¡œë”©ì´ ëì—†ì´ ì´ì–´ì§€ëŠ” ê²ƒì„ í™•ì¸í•  ìˆ˜ ìžˆì„ ê²ƒì´ë‹¤.
 
-## Get ±¸Çö
+```C#
+HttpClient client = new();
 
-ÀÌÁ¦ Ã¹ ´Ü°è¿¡¼­ ±¸ÇöÇß´ø CRUD¸¦ ¾÷±×·¹ÀÌµåÇØ º¸°Ú´Ù.
+//string url = "http://localhost:5009/sync";      // ë™ê¸° url
+string url = "http://localhost:5009/async";     // ë¹„ë™ê¸° url
+
+List<Task<HttpResponseMessage>> tasks = new();
+
+for (int i = 0; i < 100; i++)                   // 100ë²ˆ ë™ì‹œ ìš”ì²­ Tasks ìƒì„±
+    tasks.Add(client.GetAsync(url));
+
+Console.WriteLine("\nStart\n");
+
+await Task.WhenAll(tasks);                      // ë™ì‹œ ìš”ì²­ ì‹œìž‘
+
+Console.WriteLine("\nEnd\n");
+```
+
+ì´ì œ ì´ ì½”ë“œë¥¼ ì´ë ‡ê²Œ ìˆ˜ì •í•´ ë³´ìž.
+
+ìœ„ ì½”ë“œë¥¼ ì‹¤í–‰í•œ ë‹¤ìŒì— index pageë¥¼ ìš”ì²­í•´ ì›¹ ë¸Œë¼ìš°ì €ì— ë˜‘ê°™ì´ ê²€ìƒ‰ì„ í•˜ë©´ ì¸ë±ìŠ¤ íŽ˜ì´ì§€ê°€ ë°”ë¡œ ë°˜í™˜ë˜ëŠ” ê²ƒì„ í™•ì¸í•  ìˆ˜ ìžˆì„ ê²ƒì´ë‹¤.
+
+## Get êµ¬í˜„
+
+ì´ì œ ì²« ë‹¨ê³„ì—ì„œ êµ¬í˜„í–ˆë˜ CRUDë¥¼ ì—…ê·¸ë ˆì´ë“œí•´ ë³´ê² ë‹¤.
 
 ```C#
 app.MapGet("/user/{id}", async (UserDbContext db, int id) =>
 {
-    User? user = await db.users.FindAsync(id);      // db¿¡¼­ id¿¡ ¸Â´Â User µ¥ÀÌÅÍ¸¦ Ã£¾Æ¿Ã µ¿¾È ´Ù¸¥ ÀÛ¾÷ Ã³¸® °¡´ÉÇÏµµ·Ï ÇÔ
+    User? user = await db.users.FindAsync(id);      // dbì—ì„œ idì— ë§žëŠ” User ë°ì´í„°ë¥¼ ì°¾ì•„ì˜¬ ë™ì•ˆ ë‹¤ë¥¸ ìž‘ì—… ì²˜ë¦¬ ê°€ëŠ¥í•˜ë„ë¡ í•¨
 
     if (user == null) return Results.NotFound();
 
@@ -146,39 +146,39 @@ app.MapGet("/user/{id}", async (UserDbContext db, int id) =>
 
 app.MapGet("/user/all", async (UserDbContext db) =>
 {
-    List<User> users = await db.users.ToListAsync();    // db¿¡¼­ User ¸®½ºÆ®¸¦ °¡Á®¿À´Â µ¿¾È ´Ù¸¥ ÀÛ¾÷ Ã³¸® °¡´ÉÇÏµµ·Ï ÇÔ
+    List<User> users = await db.users.ToListAsync();    // dbì—ì„œ User ë¦¬ìŠ¤íŠ¸ë¥¼ ê°€ì ¸ì˜¤ëŠ” ë™ì•ˆ ë‹¤ë¥¸ ìž‘ì—… ì²˜ë¦¬ ê°€ëŠ¥í•˜ë„ë¡ í•¨
 
     return Results.Ok(users);
 });
 ```
-À§¿Í °°ÀÌ ÄÚµå¸¦ ÀÛ¼ºÇÏ¸é Å¬¶óÀÌ¾ðÆ® Ãø¿¡¼­ '/user' url·Î Get ¿äÃ»À» º¸³ÂÀ» ¶§ ¼­¹ö´Â db ¿¡¼­ µ¥ÀÌÅÍ¸¦ ¹ÞÀ» ¶§±îÁö ±â´Ù¸®´Â °ÍÀÌ ¾Æ´Ñ db¿¡ µ¥ÀÌÅÍ¸¦ ¿äÃ»ÇÑ ´ÙÀ½¿¡ µ¥ÀÌÅÍ°¡ µµÂøÇÏ±â Àü¿¡ ´Ù¸¥ ¿äÃ»µµ Ã³¸®ÇÒ ¼ö ÀÖ°Ô µÈ´Ù.
-ÀÌÈÄ db¿¡¼­ µ¥ÀÌÅÍ°¡ µµÂøÇÏ¸é await ÀÌÈÄÀÇ ÄÚµå¸¦ ½ÇÇàÇÏ¿© µ¥ÀÌÅÍ¸¦ Àü¼ÛÇÏ°Ô µÉ °ÍÀÌ´Ù.
+ìœ„ì™€ ê°™ì´ ì½”ë“œë¥¼ ìž‘ì„±í•˜ë©´ í´ë¼ì´ì–¸íŠ¸ ì¸¡ì—ì„œ '/user' urlë¡œ Get ìš”ì²­ì„ ë³´ëƒˆì„ ë•Œ ì„œë²„ëŠ” db ì—ì„œ ë°ì´í„°ë¥¼ ë°›ì„ ë•Œê¹Œì§€ ê¸°ë‹¤ë¦¬ëŠ” ê²ƒì´ ì•„ë‹Œ dbì— ë°ì´í„°ë¥¼ ìš”ì²­í•œ ë‹¤ìŒì— ë°ì´í„°ê°€ ë„ì°©í•˜ê¸° ì „ì— ë‹¤ë¥¸ ìš”ì²­ë„ ì²˜ë¦¬í•  ìˆ˜ ìžˆê²Œ ëœë‹¤.
+ì´í›„ dbì—ì„œ ë°ì´í„°ê°€ ë„ì°©í•˜ë©´ await ì´í›„ì˜ ì½”ë“œë¥¼ ì‹¤í–‰í•˜ì—¬ ë°ì´í„°ë¥¼ ì „ì†¡í•˜ê²Œ ë  ê²ƒì´ë‹¤.
 
-ÀÌÈÄ ±¸ÇöÇÒ Post, Put, Patch, Deleteµµ ¸¶Âù°¡Áö·Î ÀÛ¼ºÇÏ¸é µÈ´Ù.
+ì´í›„ êµ¬í˜„í•  Post, Put, Patch, Deleteë„ ë§ˆì°¬ê°€ì§€ë¡œ ìž‘ì„±í•˜ë©´ ëœë‹¤.
 
-## Post api ±¸Çö
+## Post api êµ¬í˜„
 
 ```C#
 app.MapPatch("/user/{id}", async (UserDbContext db, User updateUser, int id) =>
 {
     User? user = await db.users.FindAsync(id);
 
-    if (user == null) return Results.NotFound(); // id°¡ ¾øÀ¸¸é 404 ¹ÝÈ¯
+    if (user == null) return Results.NotFound(); // idê°€ ì—†ìœ¼ë©´ 404 ë°˜í™˜
 
     return Results.NoContent();
 });
 ```
 
-## Put, Patch ±¸Çö
+## Put, Patch êµ¬í˜„
 
 ```C#
 app.MapPut("/user/{id}", async (UserDbContext db, User updateUser, int id) =>
 {
     User? user = await db.users.FindAsync(id);
 
-    if (user == null) return Results.NotFound();        // id°¡ Á¸ÀçÇÏÁö ¾ÊÀ¸¸é 404 ¹ÝÈ¯
+    if (user == null) return Results.NotFound();        // idê°€ ì¡´ìž¬í•˜ì§€ ì•Šìœ¼ë©´ 404 ë°˜í™˜
 
-    db.Entry(user).CurrentValues.SetValues(updateUser); // ÀüÃ¼ µ¥ÀÌÅÍ ¼öÁ¤
+    db.Entry(user).CurrentValues.SetValues(updateUser); // ì „ì²´ ë°ì´í„° ìˆ˜ì •
 
     await db.SaveChangesAsync();
 
@@ -189,9 +189,9 @@ app.MapPatch("/user/{id}", async (UserDbContext db, User updateUser, int id) =>
 {
     User? user = await db.users.FindAsync(id);
 
-    if (user == null) return Results.NotFound();        // id°¡ Á¸ÀçÇÏÁö ¾ÊÀ¸¸é 404 ¹ÝÈ¯
+    if (user == null) return Results.NotFound();        // idê°€ ì¡´ìž¬í•˜ì§€ ì•Šìœ¼ë©´ 404 ë°˜í™˜
 
-    if (updateUser.Username != null) user.Username = updateUser.Username;   // ¼öÁ¤ÇØ¾ß ÇÒ µ¥ÀÌÅÍ°¡ ÀÖÀ¸¸é ¼öÁ¤ ¾øÀ¸¸é ¹«½Ã
+    if (updateUser.Username != null) user.Username = updateUser.Username;   // ìˆ˜ì •í•´ì•¼ í•  ë°ì´í„°ê°€ ìžˆìœ¼ë©´ ìˆ˜ì • ì—†ìœ¼ë©´ ë¬´ì‹œ
     if (updateUser.Email != null) user.Email = updateUser.Email;
 
     await db.SaveChangesAsync();
@@ -200,14 +200,14 @@ app.MapPatch("/user/{id}", async (UserDbContext db, User updateUser, int id) =>
 });
 ```
 
-## Delete ±¸Çö
+## Delete êµ¬í˜„
 
 ```C#
 app.MapDelete("/user/{id}", async (UserDbContext db, int id) =>
 {
     User? user = await db.users.FindAsync(id);
 
-    if (user == null) return Results.NotFound();    // id°¡ Á¸ÀçÇÏÁö ¾ÊÀ¸¸é 404 ¹ÝÈ¯
+    if (user == null) return Results.NotFound();    // idê°€ ì¡´ìž¬í•˜ì§€ ì•Šìœ¼ë©´ 404 ë°˜í™˜
 
     db.users.Remove(user);
 
@@ -217,20 +217,20 @@ app.MapDelete("/user/{id}", async (UserDbContext db, int id) =>
 });
 ```
 
-## CRUD ¿äÃ»ÇØº¸±â
+## CRUD ìš”ì²­í•´ë³´ê¸°
 
-ÀÌÁ¦ ¼­¹ö·Î ½ÇÁ¦ ¿äÃ»À» º¸³»º¼ °ÍÀÌ´Ù.
+ì´ì œ ì„œë²„ë¡œ ì‹¤ì œ ìš”ì²­ì„ ë³´ë‚´ë³¼ ê²ƒì´ë‹¤.
 
-Get ¿äÃ»À» ºê¶ó¿ìÀú¿¡¼­ È®ÀÎÇØ º¸µµ·Ï ÇÏ°í ³ª¸ÓÁö´Â Request ÇÁ·ÎÁ§Æ®¸¦ ¸¸µé¾î¼­ ¿äÃ»À» ÇØº¸°Ú´Ù.
+Get ìš”ì²­ì„ ë¸Œë¼ìš°ì €ì—ì„œ í™•ì¸í•´ ë³´ë„ë¡ í•˜ê³  ë‚˜ë¨¸ì§€ëŠ” Request í”„ë¡œì íŠ¸ë¥¼ ë§Œë“¤ì–´ì„œ ìš”ì²­ì„ í•´ë³´ê² ë‹¤.
 
-## Post ¿äÃ»
+## Post ìš”ì²­
 
 ```C#
 HttpClient client = new();
 
-Write("id ÀÔ·Â>> ");
+Write("id ìž…ë ¥>> ");
 int id = int.Parse(ReadLine());
-Write("ÀÌ¸§ ÀÔ·Â>> ");
+Write("ì´ë¦„ ìž…ë ¥>> ");
 string username = ReadLine();
 string email = username + "@example.com";
 
@@ -246,12 +246,12 @@ var response = await client.PostAsJsonAsync($"http://localhost:5009/user/{user.I
 WriteLine(response.StatusCode);
 ```
 
-## Put ¿äÃ»
+## Put ìš”ì²­
 
 ```C#
-Write("id ÀÔ·Â>> ");
+Write("id ìž…ë ¥>> ");
 int id = int.Parse(ReadLine());
-Write("ÀÌ¸§ ÀÔ·Â>> ");
+Write("ì´ë¦„ ìž…ë ¥>> ");
 string username = ReadLine();
 string email = username + "@example.com";
 
@@ -267,12 +267,12 @@ var response = await client.PutAsJsonAsync($"http://localhost:5009/user/{user.Id
 WriteLine(response.StatusCode);
 ```
 
-## Patch ¿äÃ»
+## Patch ìš”ì²­
 
 ```C#
-Write("id ÀÔ·Â>> ");
+Write("id ìž…ë ¥>> ");
 int id = int.Parse(ReadLine());
-Write("ÀÌ¸§ º¯°æ 1/ ÀÌ¸ÞÀÏ º¯°æ 2");
+Write("ì´ë¦„ ë³€ê²½ 1/ ì´ë©”ì¼ ë³€ê²½ 2");
 string username = null;
 string email = null;
 
@@ -293,44 +293,44 @@ var response = await client.PatchAsJsonAsync($"http://localhost:5009/user/{user.
 WriteLine(response.StatusCode);
 ```
 
-## Delete ¿äÃ»
+## Delete ìš”ì²­
 
 ```C#
-Write("»èÁ¦ÇÒ id ÀÔ·Â>> ");
+Write("ì‚­ì œí•  id ìž…ë ¥>> ");
 int id = int.Parse(ReadLine());
 var response = await client.DeleteAsync($"http://localhost:5009/user/{id}");
 
 WriteLine(response.StatusCode);
 ```
 
-## ½Ç½À
+## ì‹¤ìŠµ
 
-°¢ ÄÚµå¸¦ ½ÇÇàÇØ º¸¸é¼­ µ¥ÀÌÅÍ°¡ Á¦´ë·Î ÀúÀåµÇ´ÂÁö È®ÀÎÇØ º»´Ù.
+ê° ì½”ë“œë¥¼ ì‹¤í–‰í•´ ë³´ë©´ì„œ ë°ì´í„°ê°€ ì œëŒ€ë¡œ ì €ìž¥ë˜ëŠ”ì§€ í™•ì¸í•´ ë³¸ë‹¤.
 
-ÇÑ ¹ø ¿¹½Ã¸¦ º¸¿©ÁÖ¸é 
+í•œ ë²ˆ ì˜ˆì‹œë¥¼ ë³´ì—¬ì£¼ë©´ 
 
-![3. Post ¿äÃ»](../../dummy/5%20DB%20api%20±¸Çö/3.%20Post%20¿äÃ».png)
+<img width="226" height="85" alt="3  Post ìš”ì²­" src="https://github.com/user-attachments/assets/8236c5ca-fe9f-432b-98b2-b208726ee74b" />
 
-Post ¿äÃ»À» º¸³»º¸¾Ò´Ù. 
+Post ìš”ì²­ì„ ë³´ë‚´ë³´ì•˜ë‹¤. 
 
-![4. Post ¿äÃ» È®ÀÎ](../../dummy/5%20DB%20api%20±¸Çö/4.%20Post%20¿äÃ»%20È®ÀÎ.png)
+<img width="433" height="136" alt="4  Post ìš”ì²­ í™•ì¸" src="https://github.com/user-attachments/assets/cc8205f6-03b9-42e3-a923-92c464b70af0" />
 
-db¿¡ ½ÇÁ¦·Î ÀúÀåµÇ¾ú´ÂÁö È®ÀÎÇØ º¼ ¼öµµ ÀÖ´Ù.
+dbì— ì‹¤ì œë¡œ ì €ìž¥ë˜ì—ˆëŠ”ì§€ í™•ì¸í•´ ë³¼ ìˆ˜ë„ ìžˆë‹¤.
 
-ÅÍ¹Ì³Î¿¡ ```psql -U postgres```·Î Á¢¼ÓÇÑ ´ÙÀ½¿¡
-```\c mydb```·Î db¸¦ ÀÌµ¿ÇÏ°í
-```select * from users;``` ¸í·É¾î¸¦ ÀÔ·ÂÇØ º¸¸é ´ÙÀ½°ú °°ÀÌ µ¥ÀÌÅÍ°¡ ÀúÀåµÈ °ÍÀ» È®ÀÎÇÒ ¼ö ÀÖÀ» °ÍÀÌ´Ù.
+í„°ë¯¸ë„ì— ```psql -U postgres```ë¡œ ì ‘ì†í•œ ë‹¤ìŒì—
+```\c mydb```ë¡œ dbë¥¼ ì´ë™í•˜ê³ 
+```select * from users;``` ëª…ë ¹ì–´ë¥¼ ìž…ë ¥í•´ ë³´ë©´ ë‹¤ìŒê³¼ ê°™ì´ ë°ì´í„°ê°€ ì €ìž¥ëœ ê²ƒì„ í™•ì¸í•  ìˆ˜ ìžˆì„ ê²ƒì´ë‹¤.
 
-![5. Db È®ÀÎ](../../dummy/5%20DB%20api%20±¸Çö/5.%20Db%20È®ÀÎ.png)
+<img width="604" height="181" alt="5  Db í™•ì¸" src="https://github.com/user-attachments/assets/138560bc-2a00-4c9a-bbbc-80e7125612f9" />
 
-db¿¡ ÀúÀåµÈ µ¥ÀÌÅÍ¸¦ »èÁ¦ÇÏ°í ½ÍÀ¸¸é Delete ¿äÃ»À» º¸³½ ´ÙÀ½¿¡
+dbì— ì €ìž¥ëœ ë°ì´í„°ë¥¼ ì‚­ì œí•˜ê³  ì‹¶ìœ¼ë©´ Delete ìš”ì²­ì„ ë³´ë‚¸ ë‹¤ìŒì—
 
-![6. Delete ¿äÃ»](../../dummy/5%20DB%20api%20±¸Çö/6.%20Delete%20¿äÃ».png)
+<img width="267" height="49" alt="6  Delete ìš”ì²­" src="https://github.com/user-attachments/assets/bf7db375-b025-43a4-8198-6b62279e7bcb" />
 
-¾Æ±î¿Í °°ÀÌ È®ÀÎÇØ º¸¸é µ¥ÀÌÅÍ°¡ »ç¶óÁø °ÍÀ» È®ÀÎÇÒ ¼ö ÀÖ´Ù.
+ì•„ê¹Œì™€ ê°™ì´ í™•ì¸í•´ ë³´ë©´ ë°ì´í„°ê°€ ì‚¬ë¼ì§„ ê²ƒì„ í™•ì¸í•  ìˆ˜ ìžˆë‹¤.
 
-![7. »èÁ¦ È®ÀÎ](../../dummy/5%20DB%20api%20±¸Çö/7.%20»èÁ¦%20È®ÀÎ.png)
+<img width="338" height="108" alt="7  ì‚­ì œ í™•ì¸" src="https://github.com/user-attachments/assets/45deadd5-eab2-4414-9d98-20d25f426e16" />
 
-## ¸¶¹«¸®
+## ë§ˆë¬´ë¦¬
 
-Db¿Í ¿¬°áµÈ ¼­¹ö¿¡¼­ Db¸¦ Á¶ÀÛÇÏ´Â api¸¦ ±¸ÇöÇÏ°í ºñµ¿±â ÇÁ·Î±×·¡¹ÖÀ» ½Ç½ÀÇØ º¸¾ÒÀ¸¸ç °¢ api¸¶´Ù ¿äÃ»À» ±¸ÇöÇØ º¸¾Ò´Ù.
+Dbì™€ ì—°ê²°ëœ ì„œë²„ì—ì„œ Dbë¥¼ ì¡°ìž‘í•˜ëŠ” apië¥¼ êµ¬í˜„í•˜ê³  ë¹„ë™ê¸° í”„ë¡œê·¸ëž˜ë°ì„ ì‹¤ìŠµí•´ ë³´ì•˜ìœ¼ë©° ê° apië§ˆë‹¤ ìš”ì²­ì„ êµ¬í˜„í•´ ë³´ì•˜ë‹¤.
