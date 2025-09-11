@@ -75,6 +75,46 @@ Put도 Post와 마찬가지로 유효성을 검사하는 코드를 db에 요청하기 전에 작성을 해 주
 
 DTO(Data Transfer Object)는 다음 단계에 할 것이므로 PatchValidator는 다음 단계에 구현해 보도록 하겠다.
 
+## 유효성 검사 확인
+
+실제로 validator가 잘 동작하는지 확인해보기 위해 잘못된 데이터를 전송해보겠다.
+
+```C#
+using System.Net.Http.Json;
+
+HttpClient client = new();
+
+User user1, user2, user3, user4;
+
+user1 = new("", "Password!12", "email@example.com");        // 비어 있는 이름
+user2 = new("username", "21312321", "email@example.com");   // 올바르지 않은 패스워드
+user3 = new("username", "Password!12", "emailexamplecom");  // 올바르지 않은 이메일 형식
+
+user4 = new("", "", "");                                    // 전부 오류
+
+var re1 = await client.PostAsJsonAsync($"http://localhost:5009/user/{1}", user1);
+var re2 = await client.PostAsJsonAsync($"http://localhost:5009/user/{1}", user2);
+var re3 = await client.PostAsJsonAsync($"http://localhost:5009/user/{1}", user3);
+
+var re4 = await client.PostAsJsonAsync($"http://localhost:5009/user/{1}", user4);
+
+Console.WriteLine(await re1.Content.ReadAsStringAsync());
+Console.WriteLine();
+Console.WriteLine(await re2.Content.ReadAsStringAsync());
+Console.WriteLine();
+Console.WriteLine(await re3.Content.ReadAsStringAsync());
+Console.WriteLine();
+Console.WriteLine(await re4.Content.ReadAsStringAsync());
+
+public record User(string Username, string Password, string Email);
+```
+
+위와 같이 총 4번의 Post 요청을 하는 코드르 작성하고 실행하면 다음과 같은 출력을 얻을 수 있다.
+
+![3. 에러 메세지](../dummy/6%20유효성%20검사/3.%20에러%20메세지.png)
+
+총 4번의 메세지가 출력되는데 errors 블록을 보면 어떤 값에서 문제가 있었는지 확인할 수 있다.
+
 # 마무리
 
 유효성 검사 기능을 하는 코드를 추가해보았다.
