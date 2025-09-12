@@ -1,17 +1,17 @@
-# DTO »ı¼º°ú AutoMapper
+# DTO ìƒì„±ê³¼ AutoMapper
 
-¿ì¸®°¡ Áö±İ±îÁö CRUD·Î ÁÖ°í ¹Ş¾Ò´ø µ¥ÀÌÅÍ´Â db¿¡ ÀúÀåµÇ¾î ÀÖ´Â µ¥ÀÌÅÍ ÀÚÃ¼¸¦ ÁÖ°í¹Ş¾Ò´Ù.  
-±×·¯³ª À¯Àú µ¥ÀÌÅÍ¿¡ ÆĞ½º¿öµå µî À¯ÃâµÇ¸é ¾È µÇ´Â µ¥ÀÌÅÍµµ Á¸ÀçÇÒ ¼ö ÀÖ´Ù.  
-±×·¸°Ô µÇ¸é User °´Ã¼¸¦ ±×´ë·Î Àü¼ÛÇÒ °æ¿ì º¸¾È»óÀÇ ¹®Á¦°¡ »ı±æ °ÍÀÌ´Ù.  
-µû¶ó¼­ DTO(Data Transfer Object : µ¥ÀÌÅÍ Àü´Ş¿ë °´Ã¼)¸¦ ¸¸µé¾î¼­ º¸³»¾ß ÇÒ µ¥ÀÌÅÍ¸¸ º¸³»µµ·Ï ÇÏ¿© µ¥ÀÌÅÍ¸¦ Àı¾àÇÔ°ú µ¿½Ã¿¡ ¹Î°¨ÇÑ µ¥ÀÌÅÍ¸¦ ¾ÈÀüÇÏ°Ô º¸È£ÇÒ ¼ö ÀÖ´Ù.  
+ìš°ë¦¬ê°€ ì§€ê¸ˆê¹Œì§€ CRUDë¡œ ì£¼ê³  ë°›ì•˜ë˜ ë°ì´í„°ëŠ” dbì— ì €ì¥ë˜ì–´ ìˆëŠ” ë°ì´í„° ìì²´ë¥¼ ì£¼ê³ ë°›ì•˜ë‹¤.  
+ê·¸ëŸ¬ë‚˜ ìœ ì € ë°ì´í„°ì— íŒ¨ìŠ¤ì›Œë“œ ë“± ìœ ì¶œë˜ë©´ ì•ˆ ë˜ëŠ” ë°ì´í„°ë„ ì¡´ì¬í•  ìˆ˜ ìˆë‹¤.  
+ê·¸ë ‡ê²Œ ë˜ë©´ User ê°ì²´ë¥¼ ê·¸ëŒ€ë¡œ ì „ì†¡í•  ê²½ìš° ë³´ì•ˆìƒì˜ ë¬¸ì œê°€ ìƒê¸¸ ê²ƒì´ë‹¤.  
+ë”°ë¼ì„œ DTO(Data Transfer Object : ë°ì´í„° ì „ë‹¬ìš© ê°ì²´)ë¥¼ ë§Œë“¤ì–´ì„œ ë³´ë‚´ì•¼ í•  ë°ì´í„°ë§Œ ë³´ë‚´ë„ë¡ í•˜ì—¬ ë°ì´í„°ë¥¼ ì ˆì•½í•¨ê³¼ ë™ì‹œì— ë¯¼ê°í•œ ë°ì´í„°ë¥¼ ì•ˆì „í•˜ê²Œ ë³´í˜¸í•  ìˆ˜ ìˆë‹¤.  
 
 ## UserDto
 
-±×·³ User µ¥ÀÌÅÍ¸¦ Àü´ŞÇÏ±â À§ÇÑ UserDto.cs ÆÄÀÏÀ» ¸¸µé¾îº¸°Ú´Ù.  
-ÇÁ·ÎÁ§Æ®¿¡ Dtos µğ·ºÅÍ¸®¸¦ »ı¼ºÇÏ°í ³»ºÎ¿¡ UserDto.cs ÆÄÀÏÀ» ¸¸µç´Ù.  
-¿ì¸®°¡ ±¸ÇöÇÑ User °´Ã¼ÀÇ ¼Ó¼º(Id, Username, Password, Email) Áß Àü¼ÛÇÒ µ¥ÀÌÅÍ·Î Username°ú Email·Î ¼³Á¤ÇØº¸¾Ò´Ù.
+ê·¸ëŸ¼ User ë°ì´í„°ë¥¼ ì „ë‹¬í•˜ê¸° ìœ„í•œ UserDto.cs íŒŒì¼ì„ ë§Œë“¤ì–´ë³´ê² ë‹¤.  
+í”„ë¡œì íŠ¸ì— Dtos ë””ë ‰í„°ë¦¬ë¥¼ ìƒì„±í•˜ê³  ë‚´ë¶€ì— UserDto.cs íŒŒì¼ì„ ë§Œë“ ë‹¤.  
+ìš°ë¦¬ê°€ êµ¬í˜„í•œ User ê°ì²´ì˜ ì†ì„±(Id, Username, Password, Email) ì¤‘ ì „ì†¡í•  ë°ì´í„°ë¡œ Usernameê³¼ Emailë¡œ ì„¤ì •í•´ë³´ì•˜ë‹¤.
 
-![1. µğ·ºÅÍ¸® ±¸Á¶](../dummy/7%20DTO/1.%20µğ·ºÅÍ¸®%20±¸Á¶.png)
+<img width="213" height="212" alt="1  ë””ë ‰í„°ë¦¬ êµ¬ì¡°" src="https://github.com/user-attachments/assets/84afa894-314a-4f57-bad6-9761c4b843ea" />
 
 ```C#
 namespace Dto.Dtos;
@@ -26,15 +26,15 @@ public class UserDto
 
 ## CreateUserDto
 
-Dto´Â µ¥ÀÌÅÍ¸¦ º¸³¾ ¶§¸¸ »ç¿ëµÇ´Â °ÍÀÌ ¾Æ´Ï´Ù.  
-¿ì¸®°¡ ±×µ¿¾È ½Ç½ÀÇÏ¸é¼­ »ç¿ëÇß´ø User °´Ã¼ÀÇ Id ¼Ó¼º °°Àº °æ¿ì´Â ±âº»Å°·Î¼­ db¿¡¼­ ÀÚµ¿À¸·Î »ı¼ºµÇ´Â °ªÀÎµ¥ ÀÌ °ªÀ» »ı¼ºµÉ ¶§ ÀÔ·Â¹ŞÀ» ÇÊ¿ä°¡ ¾ø´Ù.  
-ÀÌ·¸°Ô »ı¼ºµÉ ¶§ ÇÊ¿äÇÑ µ¥ÀÌÅÍµé¸¸ ¹Şµµ·Ï ÇÏ´Â À¯Àú »ı¼º¿ë dtoÀÎ CreateUserDtoµµ ¸¸µé¾î º¼ °ÍÀÌ´Ù.
+DtoëŠ” ë°ì´í„°ë¥¼ ë³´ë‚¼ ë•Œë§Œ ì‚¬ìš©ë˜ëŠ” ê²ƒì´ ì•„ë‹ˆë‹¤.  
+ìš°ë¦¬ê°€ ê·¸ë™ì•ˆ ì‹¤ìŠµí•˜ë©´ì„œ ì‚¬ìš©í–ˆë˜ User ê°ì²´ì˜ Id ì†ì„± ê°™ì€ ê²½ìš°ëŠ” ê¸°ë³¸í‚¤ë¡œì„œ dbì—ì„œ ìë™ìœ¼ë¡œ ìƒì„±ë˜ëŠ” ê°’ì¸ë° ì´ ê°’ì„ ìƒì„±ë  ë•Œ ì…ë ¥ë°›ì„ í•„ìš”ê°€ ì—†ë‹¤.  
+ì´ë ‡ê²Œ ìƒì„±ë  ë•Œ í•„ìš”í•œ ë°ì´í„°ë“¤ë§Œ ë°›ë„ë¡ í•˜ëŠ” ìœ ì € ìƒì„±ìš© dtoì¸ CreateUserDtoë„ ë§Œë“¤ì–´ ë³¼ ê²ƒì´ë‹¤.
 
-Dtos µğ·ºÅÍ¸®¿¡ CreateUserDto.cs ÆÄÀÏÀ» »ı¼ºÇÑ´Ù.
+Dtos ë””ë ‰í„°ë¦¬ì— CreateUserDto.cs íŒŒì¼ì„ ìƒì„±í•œë‹¤.
 
-![2. Createuserdto Ãß°¡](../dummy/7%20DTO/2.%20createuserdto%20Ãß°¡.png)
+<img width="276" height="265" alt="2  createuserdto ì¶”ê°€" src="https://github.com/user-attachments/assets/594f4405-707e-4256-917f-4719c5c55461" />
 
-CreaterUserDto´Â ¾ÆÀÌµğ¸¦ Á¦¿ÜÇÑ µ¥ÀÌÅÍ¸¦ ÀÔ·Â¹ŞÀ» °ÍÀÌ´Ù. ´ÙÀ½°ú °°ÀÌ ÀÛ¼ºÇÑ´Ù.
+CreaterUserDtoëŠ” ì•„ì´ë””ë¥¼ ì œì™¸í•œ ë°ì´í„°ë¥¼ ì…ë ¥ë°›ì„ ê²ƒì´ë‹¤. ë‹¤ìŒê³¼ ê°™ì´ ì‘ì„±í•œë‹¤.
 
 ```C#
 namespace Dto.Dtos;
@@ -49,8 +49,8 @@ public class CreateUserDto
 
 ## UpdateUserDto
 
-µ¥ÀÌÅÍ¿¡ ´ëÇÑ ¼öÁ¤À» ¿äÃ»ÇÒ ¶§¿¡µµ Dto¸¦ ÀÌ¿ëÇÏ¿© ÇÒ ¼ö ÀÖ´Ù.  
-CreateUserDto¿Í ´Ù¸£°Ô UpdateUserDto´Â null°ªÀÌ µé¾îÀÖ´Â ¼Ó¼ºÀº ¼öÁ¤À» ÇÏÁö ¾Êµµ·Ï ÇÒ °ÍÀÌ¹Ç·Î CreateUserDto¿Í »ı±ä °ÍÀº °°Áö¸¸ µû·Î »ı¼ºÇØ ÁÖ¾î¾ß ÇÑ´Ù.
+ë°ì´í„°ì— ëŒ€í•œ ìˆ˜ì •ì„ ìš”ì²­í•  ë•Œì—ë„ Dtoë¥¼ ì´ìš©í•˜ì—¬ í•  ìˆ˜ ìˆë‹¤.  
+CreateUserDtoì™€ ë‹¤ë¥´ê²Œ UpdateUserDtoëŠ” nullê°’ì´ ë“¤ì–´ìˆëŠ” ì†ì„±ì€ ìˆ˜ì •ì„ í•˜ì§€ ì•Šë„ë¡ í•  ê²ƒì´ë¯€ë¡œ CreateUserDtoì™€ ìƒê¸´ ê²ƒì€ ê°™ì§€ë§Œ ë”°ë¡œ ìƒì„±í•´ ì£¼ì–´ì•¼ í•œë‹¤.
 
 ```C#
 namespace Dto.Dtos;
@@ -66,40 +66,42 @@ public class UpdateUserDto
 
 ## AutoMapper
 
-ÀÌÁ¦ »ı¼ºÇÑ CreateUserDto¸¦ User·Î User¸¦ UserDto·Î º¯È¯½ÃÄÑ¼­ µ¥ÀÌÅÍ¸¦ ÁÖ°í¹Ş¾Æ¾ß ÇÑ´Ù.  
-Á÷Á¢ »ı¼ºÀÚ¸¦ ÅëÇØ º¯È¯µÇµµ·Ï ±¸ÇöÇÒ ¼öµµ ÀÖÀ¸³ª ÄÚµåÀÇ °£°áÇÔÀ» À§ÇØ ¶óÀÌºê·¯¸®¸¦ ¼³Ä¡ÇØº¸°Ú´Ù.
+ì´ì œ ìƒì„±í•œ CreateUserDtoë¥¼ Userë¡œ Userë¥¼ UserDtoë¡œ ë³€í™˜ì‹œì¼œì„œ ë°ì´í„°ë¥¼ ì£¼ê³ ë°›ì•„ì•¼ í•œë‹¤.  
+ì§ì ‘ ìƒì„±ìë¥¼ í†µí•´ ë³€í™˜ë˜ë„ë¡ êµ¬í˜„í•  ìˆ˜ë„ ìˆìœ¼ë‚˜ ì½”ë“œì˜ ê°„ê²°í•¨ì„ ìœ„í•´ ë¼ì´ë¸ŒëŸ¬ë¦¬ë¥¼ ì„¤ì¹˜í•´ë³´ê² ë‹¤.
 
-nuget »çÀÌÆ®¿¡ AutoMapper¸¦ °Ë»öÇÑ´Ù.
+nuget ì‚¬ì´íŠ¸ì— AutoMapperë¥¼ ê²€ìƒ‰í•œë‹¤.
 
-![101. Auto Mapper](../dummy/7%20DTO/101.%20AutoMapper.png)
+<img width="1164" height="421" alt="4  AutoMapper" src="https://github.com/user-attachments/assets/aa9bd22f-2b69-4a01-be65-5801f88ce261" />
 
-¶óÀÌºê·¯¸®¸¦ ¼³Ä¡ÇØ ÁÖ°í ÀÌ ¸ÅÇÎÀº µû·Î .cs ÆÄÀÏÀ» ¸¸µéÁö ¾Ê°í ºôµå ´Ü°è¿¡¼­ ¸ÅÇÎÇØÁÖ°Ú´Ù.
+ë¼ì´ë¸ŒëŸ¬ë¦¬ë¥¼ ì„¤ì¹˜í•´ ì£¼ê³  ì´ ë§¤í•‘ì€ ë”°ë¡œ .cs íŒŒì¼ì„ ë§Œë“¤ì§€ ì•Šê³  ë¹Œë“œ ë‹¨ê³„ì—ì„œ ë§¤í•‘í•´ì£¼ê² ë‹¤.
 
 ```C#
 var builder = WebApplication.CreateBuilder();
 
 // ...
-// ´Ù¸¥ ¼³Á¤ ÄÚµå
+// ë‹¤ë¥¸ ì„¤ì • ì½”ë“œ
 
 builder.Services.AddAutoMapper(confg =>
 {
-    confg.CreateMap<User, UserDto>();           // User¸¦ UserDto¿¡ ¸ÅÇÎ
-    confg.CreateMap<CreateUserDto, User>();     // CreateUserDto¸¦ User¿¡ ¸ÅÇÎ
-    confg.CreateMap<UpdateUserDto, User>()      // UpdateUserDto¸¦ User¿¡ ¸ÅÇÎ
+    confg.CreateMap<User, UserDto>();           // Userë¥¼ UserDtoì— ë§¤í•‘
+    confg.CreateMap<CreateUserDto, User>();     // CreateUserDtoë¥¼ Userì— ë§¤í•‘
+    confg.CreateMap<UpdateUserDto, User>()      // UpdateUserDtoë¥¼ Userì— ë§¤í•‘
     .ForAllMembers(option => option.Condition((src, dest, srcMember) => srcMember != null));
 });
 
 var app = builder.Build();
 ```
 
-## Validator ±¸Çö
+UpdateUserDtoëŠ” ì†ì„±ì´ nullì´ ì•„ë‹Œ ê²½ìš°ì—ë§Œ Userì— ë§¤í•‘í•˜ë„ë¡ êµ¬í˜„í•˜ì˜€ë‹¤.
 
-ÀÌÀü ½Ã°£¿¡ User °´Ã¼¿¡ Validator¸¦ ±¸ÇöÇß´Âµ¥ Dto¸¦ ±¸ÇöÇÏ¸é¼­ Post È¤Àº Update·Î ¹Ş´Â User¿¡ ´ëÇÑ À¯È¿¼ºÀ» °Ë»çÇØ ÁÙ ÇÊ¿ä°¡ ¾ø¾îÁ³´Ù.  
-µû¶ó¼­ Dtoº°·Î À¯È¿¼ºÀ» °Ë»çÇØÁÖ´Â Validator°¡ ÇÊ¿äÇÏ´Ù.
+## Validator êµ¬í˜„
 
-Validators µğ·ºÅÍ¸® ¹ØÀ¸·Î UserValidator.cs´Â »èÁ¦ÇÏ°í UpdateUserValidator.cs¿Í CreateUserValidator.cs¸¦ »ı¼ºÇØÁØ´Ù.
+ì´ì „ ì‹œê°„ì— User ê°ì²´ì— Validatorë¥¼ êµ¬í˜„í–ˆëŠ”ë° Dtoë¥¼ êµ¬í˜„í•˜ë©´ì„œ Post í˜¹ì€ Updateë¡œ ë°›ëŠ” Userì— ëŒ€í•œ ìœ íš¨ì„±ì„ ê²€ì‚¬í•´ ì¤„ í•„ìš”ê°€ ì—†ì–´ì¡Œë‹¤.  
+ë”°ë¼ì„œ Dtoë³„ë¡œ ìœ íš¨ì„±ì„ ê²€ì‚¬í•´ì£¼ëŠ” Validatorê°€ í•„ìš”í•˜ë‹¤.
 
-![3. µğ·ºÅÍ¸® ±¸Á¶ ](../dummy/7%20DTO/3.%20µğ·ºÅÍ¸®%20±¸Á¶%20.png)
+Validators ë””ë ‰í„°ë¦¬ ë°‘ìœ¼ë¡œ UserValidator.csëŠ” ì‚­ì œí•˜ê³  UpdateUserValidator.csì™€ CreateUserValidator.csë¥¼ ìƒì„±í•´ì¤€ë‹¤.
+
+<img width="281" height="286" alt="3  ë””ë ‰í„°ë¦¬ êµ¬ì¡° " src="https://github.com/user-attachments/assets/ee59d046-2f6d-4f60-9fa2-651258b86468" />
 
 ```C#
 using Dto.Dtos;
@@ -111,24 +113,24 @@ public class CreateUserValidator : AbstractValidator<CreateUserDto>
 {
     public CreateUserValidator()
     {
-        RuleFor(u => u.Username)                                        // null ºÒÇã
-            .NotNull().WithMessage("ÇÊ¼ö ÀÔ·Â");
+        RuleFor(u => u.Username)                                        // null ë¶ˆí—ˆ
+            .NotNull().WithMessage("í•„ìˆ˜ ì…ë ¥");
 
-        RuleFor(u => u.Password)                                        // null ºÒÇã
-            .NotNull().WithMessage("ÇÊ¼ö ÀÔ·Â")
-            .Length(8, 30).WithMessage("8±ÛÀÚ ÀÌ»ó")                    // ±ÛÀÚ ¼ö Á¦ÇÑ
-            .Matches(@"[a-z]").WithMessage("¼Ò¹®ÀÚ Æ÷ÇÔ")               // ¼Ò¹®ÀÚ, ´ë¹®ÀÚ, ¼ıÀÚ, Æ¯¼ö¹®ÀÚ °Ë»ç
-            .Matches(@"[A-Z]").WithMessage("´ë¹®ÀÚ Æ÷ÇÔ")
-            .Matches(@"[0-9]").WithMessage("¼ıÀÚ Æ÷ÇÔ")
-            .Matches(@"[!@#$.]").WithMessage("Æ¯Á¤ÇÑ Æ¯¼ö¹®ÀÚ Æ÷ÇÔ");
+        RuleFor(u => u.Password)                                        // null ë¶ˆí—ˆ
+            .NotNull().WithMessage("í•„ìˆ˜ ì…ë ¥")
+            .Length(8, 30).WithMessage("8ê¸€ì ì´ìƒ")                    // ê¸€ì ìˆ˜ ì œí•œ
+            .Matches(@"[a-z]").WithMessage("ì†Œë¬¸ì í¬í•¨")               // ì†Œë¬¸ì, ëŒ€ë¬¸ì, ìˆ«ì, íŠ¹ìˆ˜ë¬¸ì ê²€ì‚¬
+            .Matches(@"[A-Z]").WithMessage("ëŒ€ë¬¸ì í¬í•¨")
+            .Matches(@"[0-9]").WithMessage("ìˆ«ì í¬í•¨")
+            .Matches(@"[!@#$.]").WithMessage("íŠ¹ì •í•œ íŠ¹ìˆ˜ë¬¸ì í¬í•¨");
 
-        RuleFor(u => u.Email).EmailAddress().WithMessage("¿Ã¹Ù¸£Áö ¾ÊÀº ÀÌ¸ŞÀÏ Çü½Ä"); // nullÀÌ¸é °Ç³Ê¶Ü
+        RuleFor(u => u.Email).EmailAddress().WithMessage("ì˜¬ë°”ë¥´ì§€ ì•Šì€ ì´ë©”ì¼ í˜•ì‹"); // nullì´ë©´ ê±´ë„ˆëœ€
     }
 }
 ```
 
 
-CreateUserValidator´Â ¹İµå½Ã ÇÊ¿äÇÑ ¼Ó¼ºÀº NotNullÀ» ÅëÇØ °Ë»çÇÏµµ·Ï ÇÏ¿´°í Email ¼Ó¼ºÀº null°ªÀÏ ¶§ ¹«½ÃÇÏµµ·Ï ÇÏ¿´´Ù.
+CreateUserValidatorëŠ” ë°˜ë“œì‹œ í•„ìš”í•œ ì†ì„±ì€ NotNullì„ í†µí•´ ê²€ì‚¬í•˜ë„ë¡ í•˜ì˜€ê³  Email ì†ì„±ì€ nullê°’ì¼ ë•Œ ë¬´ì‹œí•˜ë„ë¡ í•˜ì˜€ë‹¤.
 
 
 ```C#
@@ -142,30 +144,30 @@ public class UpdateUserValidator : AbstractValidator<UpdateUserDto>
 {
     public UpdateUserValidator()
     {
-        RuleFor(u => u.Username)                                        // nullÀÌ ¾Æ´Ò ¶§¸¸ ºñ¾îÀÖ´ÂÁö °Ë»ç
-            .NotEmpty().WithMessage("ºñ¾î ÀÖÀ¸¸é ¾ÈµÊ")
+        RuleFor(u => u.Username)                                        // nullì´ ì•„ë‹ ë•Œë§Œ ë¹„ì–´ìˆëŠ”ì§€ ê²€ì‚¬
+            .NotEmpty().WithMessage("ë¹„ì–´ ìˆìœ¼ë©´ ì•ˆë¨")
             .When(u => u.Username != null);
 
-        RuleFor(u => u.Password)                                        // nullÀÌ¸é °Ç³Ê¶Ü
-            .Length(8, 30).WithMessage("8±ÛÀÚ ÀÌ»ó")
-            .Matches(@"[A-Z]").WithMessage("´ë¹®ÀÚ Æ÷ÇÔ")
-            .Matches(@"[a-z]").WithMessage("¼Ò¹®ÀÚ Æ÷ÇÔ")
-            .Matches(@"[0-9]").WithMessage("¼ıÀÚ Æ÷ÇÔ")
-            .Matches(@"[!@#$.,]").WithMessage("ÁöÁ¤µÈ Æ¯¼ö¹®ÀÚ Æ÷ÇÔ");
+        RuleFor(u => u.Password)                                        // nullì´ë©´ ê±´ë„ˆëœ€
+            .Length(8, 30).WithMessage("8ê¸€ì ì´ìƒ")
+            .Matches(@"[A-Z]").WithMessage("ëŒ€ë¬¸ì í¬í•¨")
+            .Matches(@"[a-z]").WithMessage("ì†Œë¬¸ì í¬í•¨")
+            .Matches(@"[0-9]").WithMessage("ìˆ«ì í¬í•¨")
+            .Matches(@"[!@#$.,]").WithMessage("ì§€ì •ëœ íŠ¹ìˆ˜ë¬¸ì í¬í•¨");
 
-        RuleFor(u => u.Email)                                           // nullÀÌ¸é °Ç³Ê¶Ü
-            .EmailAddress().WithMessage("¿Ã¹Ù¸£Áö ¾ÊÀº ÀÌ¸ŞÀÏ Çü½Ä");
+        RuleFor(u => u.Email)                                           // nullì´ë©´ ê±´ë„ˆëœ€
+            .EmailAddress().WithMessage("ì˜¬ë°”ë¥´ì§€ ì•Šì€ ì´ë©”ì¼ í˜•ì‹");
     }
 }
 ```
 
-UpdateUserValidator´Â nullÀÌ ¾Æ´Ñ °ª Áï ¼öÁ¤ÇÒ °ª¸¸ °Ë»çÇÏµµ·Ï ÇØÁÖ¾ú´Ù.
+UpdateUserValidatorëŠ” nullì´ ì•„ë‹Œ ê°’ ì¦‰ ìˆ˜ì •í•  ê°’ë§Œ ê²€ì‚¬í•˜ë„ë¡ í•´ì£¼ì—ˆë‹¤.
 
-## api ±¸Çö
+## api êµ¬í˜„
 
-ÀÌÁ¦ api¿¡¼­ µ¥ÀÌÅÍ¸¦ Dto·Î ÁÖ°í¹Şµµ·Ï ±¸ÇöÇØº¸°Ú´Ù.
+ì´ì œ apiì—ì„œ ë°ì´í„°ë¥¼ Dtoë¡œ ì£¼ê³ ë°›ë„ë¡ êµ¬í˜„í•´ë³´ê² ë‹¤.
 
-## Get ¿äÃ»
+## Get ìš”ì²­
 ```C#
 app.MapGet("/user/{id}", async (UserDbContext db, int id, IMapper mapper) =>
 {
@@ -179,9 +181,9 @@ app.MapGet("/user/{id}", async (UserDbContext db, int id, IMapper mapper) =>
 });
 ```
 
-db¿¡¼­ User¸¦ Ã£Àº µÚ¿¡ UserDto·Î ¸ÅÇÎ½ÃÄÑ¼­ returnÇÏµµ·Ï ±¸ÇöÇß´Ù.
+dbì—ì„œ Userë¥¼ ì°¾ì€ ë’¤ì— UserDtoë¡œ ë§¤í•‘ì‹œì¼œì„œ returní•˜ë„ë¡ êµ¬í˜„í–ˆë‹¤.
 
-## Post¿äÃ»
+## Postìš”ì²­
 
 ```C#
 app.MapPost("/user", async (UserDbContext db, IMapper mapper, IValidator<CreateUserDto> validator, CreateUserDto updateUser) =>
@@ -202,9 +204,9 @@ app.MapPost("/user", async (UserDbContext db, IMapper mapper, IValidator<CreateU
 });
 ```
 
-µ¥ÀÌÅÍ À¯Çü¿¡ ¸Â´Â Validator¸¦ ¼³Á¤ÇÑ µÚ¿¡ À¯È¿¼º °Ë»ç ÈÄ User °´Ã¼¿¡ ¸ÅÇÎÇÏ¿© db¿¡ ÀúÀåÇÏµµ·Ï ±¸ÇöÇØ º¸¾Ò´Ù.
+ë°ì´í„° ìœ í˜•ì— ë§ëŠ” Validatorë¥¼ ì„¤ì •í•œ ë’¤ì— ìœ íš¨ì„± ê²€ì‚¬ í›„ User ê°ì²´ì— ë§¤í•‘í•˜ì—¬ dbì— ì €ì¥í•˜ë„ë¡ êµ¬í˜„í•´ ë³´ì•˜ë‹¤.
 
-## Put ¿äÃ»
+## Put ìš”ì²­
 ```C#
 app.MapPut("/user/{id}", async (UserDbContext db, IMapper mapper, UpdateUserDto updateUser, IValidator<UpdateUserDto> validator, int id) =>
 {
@@ -228,10 +230,10 @@ app.MapPut("/user/{id}", async (UserDbContext db, IMapper mapper, UpdateUserDto 
 });
 ```
 
-¸¶Âù°¡Áö·Î À¯È¿¼º °Ë»ç ÈÄ ÀüÃ¼¸¦ º¹»çÇÏ¿© ÀúÀåÇÏµµ·Ï ±¸ÇöÇß´Ù.
+ë§ˆì°¬ê°€ì§€ë¡œ ìœ íš¨ì„± ê²€ì‚¬ í›„ ì „ì²´ë¥¼ ë³µì‚¬í•˜ì—¬ ì €ì¥í•˜ë„ë¡ êµ¬í˜„í–ˆë‹¤.
 
 
-## Patch ¿äÃ»
+## Patch ìš”ì²­
 ```C#
 app.MapPatch("/user/{id}", async (UserDbContext db, IMapper mapper, IValidator<UpdateUserDto> validator, UpdateUserDto updateUser, int id) =>
 {
@@ -249,9 +251,9 @@ app.MapPatch("/user/{id}", async (UserDbContext db, IMapper mapper, IValidator<U
     return Results.NoContent();
 });
 ```
-Patch ¿äÃ»Àº Put ¿äÃ»°ú Â÷ÀÌ°¡ ÀÖµµ·Ï ±¸ÇöÇß´Ù. Put ¿äÃ»Àº Email°°ÀÌ null °ªÀ¸·Î ÀÔ·ÂµÇ´Â Email ¼Ó¼º±îÁöµµ º¹»çÅä·Ï ÇÏ¿´°í Patch´Â null °ªÀº ¸ÅÇÎÇÏÁö ¾Êµµ·Ï AutoMapper¿¡ ±¸ÇöÇÏ¿´À¸¹Ç·Î Map() ¸Ş¼­µå·Î ±¸ÇöÇß´Ù.
+Patch ìš”ì²­ì€ Put ìš”ì²­ê³¼ ì°¨ì´ê°€ ìˆë„ë¡ êµ¬í˜„í–ˆë‹¤. Put ìš”ì²­ì€ Emailê°™ì´ null ê°’ìœ¼ë¡œ ì…ë ¥ë˜ëŠ” Email ì†ì„±ê¹Œì§€ë„ ë³µì‚¬í† ë¡ í•˜ì˜€ê³  PatchëŠ” null ê°’ì€ ë§¤í•‘í•˜ì§€ ì•Šë„ë¡ AutoMapperì— êµ¬í˜„í•˜ì˜€ìœ¼ë¯€ë¡œ Map() ë©”ì„œë“œë¡œ êµ¬í˜„í–ˆë‹¤.
 
-## Delete ¿äÃ»
+## Delete ìš”ì²­
 
 ```C#
 app.MapDelete("/user/{id}", async (UserDbContext db, int id) =>
@@ -267,11 +269,11 @@ app.MapDelete("/user/{id}", async (UserDbContext db, int id) =>
 });
 ```
 
-Delete ¿äÃ»Àº ´Ü¼øÈ÷ id¸¸ ¹Ş¾Æ¼­ »èÁ¦ÇÏµµ·Ï ±¸ÇöÇß´Ù.
+Delete ìš”ì²­ì€ ë‹¨ìˆœíˆ idë§Œ ë°›ì•„ì„œ ì‚­ì œí•˜ë„ë¡ êµ¬í˜„í–ˆë‹¤.
 
-## Request ÇÁ·ÎÁ§Æ®
+## Request í”„ë¡œì íŠ¸
 
-°¢ api°¡ Á¦´ë·Î µ¿ÀÛÇÏ´ÂÁö Request.cs ÆÄÀÏÀ» ´ÙÀ½°ú °°ÀÌ ÀÛ¼ºÇß´Ù.
+ê° apiê°€ ì œëŒ€ë¡œ ë™ì‘í•˜ëŠ”ì§€ Request.cs íŒŒì¼ì„ ë‹¤ìŒê³¼ ê°™ì´ ì‘ì„±í–ˆë‹¤.
 
 ```C#
 using System.Net.Http.Json;
@@ -330,7 +332,7 @@ while (true)
 
 
 
-string? input()     // null °ªÀ» ÀÔ·Â¹Ş±â À§ÇØ Á¤ÀÇÇÑ ¸Ş¼­µå
+string? input()     // null ê°’ì„ ì…ë ¥ë°›ê¸° ìœ„í•´ ì •ì˜í•œ ë©”ì„œë“œ
 {
     string? st = ReadLine();
     if (st == "null") return null;
@@ -342,25 +344,25 @@ record CreateDto(string? Username, string? Password, string? Email);
 record UpdateDto(string? Username, string? Password, string? Email);
 ```
 
-## Id È®ÀÎÇÏ´Â ¹æ¹ı
+## Id í™•ì¸í•˜ëŠ” ë°©ë²•
 
-CreateUserDto¸¦ Àü¼ÛÇÒ ¶§ id °ªÀ» Á¦¿ÜÇÏ°í Àü¼ÛÇÏÁö¸¸ Get ¿äÃ»À» º¸³¾ ¶§´Â id°¡ ÇÊ¿äÇÏ´Ù.  
-»ı¼ºÇÑ µ¥ÀÌÅÍÀÇ id¸¦ È®ÀÎÇÏ±â À§ÇØ¼­´Â db¿¡ Á÷Á¢ Á¢¼ÓÇÏ¿© ¾Ë¾Æ³¾ ¼ö ÀÖ´Ù.
+CreateUserDtoë¥¼ ì „ì†¡í•  ë•Œ id ê°’ì„ ì œì™¸í•˜ê³  ì „ì†¡í•˜ì§€ë§Œ Get ìš”ì²­ì„ ë³´ë‚¼ ë•ŒëŠ” idê°€ í•„ìš”í•˜ë‹¤.  
+ìƒì„±í•œ ë°ì´í„°ì˜ idë¥¼ í™•ì¸í•˜ê¸° ìœ„í•´ì„œëŠ” dbì— ì§ì ‘ ì ‘ì†í•˜ì—¬ ì•Œì•„ë‚¼ ìˆ˜ ìˆë‹¤.
 
-![5. »ı¼º](../dummy/7%20DTO/5.%20»ı¼º.png)
+<img width="262" height="157" alt="5  ìƒì„±" src="https://github.com/user-attachments/assets/759f2768-a5b7-4aa4-813c-fedabe164b87" />
 
-Request.cs ÆÄÀÏÀ» ½ÇÇàÇÏ¿© µ¥ÀÌÅÍ¸¦ ÀúÀåÇÑ´Ù.
+Request.cs íŒŒì¼ì„ ì‹¤í–‰í•˜ì—¬ ë°ì´í„°ë¥¼ ì €ì¥í•œë‹¤.
 
-ÅÍ¹Ì³Î¿¡ ```psql -U postgres``` ¸í·É¾î·Î DBMS¿¡ Á¢¼ÓÇÑ ´ÙÀ½¿¡  
-```\c dbÀÌ¸§``` ¸í·É¾î·Î db¿¡ Á¢¼ÓÇÏ°í  
-```select * from users;``` ¸í·É¾î¸¦ ½ÇÇàÇÏ¸é ÀÚµ¿À¸·Î »ı¼ºµÈ Id¸¦ È®ÀÎÇÒ ¼ö ÀÖ´Ù.
+í„°ë¯¸ë„ì— ```psql -U postgres``` ëª…ë ¹ì–´ë¡œ DBMSì— ì ‘ì†í•œ ë‹¤ìŒì—  
+```\c dbì´ë¦„``` ëª…ë ¹ì–´ë¡œ dbì— ì ‘ì†í•˜ê³   
+```select * from users;``` ëª…ë ¹ì–´ë¥¼ ì‹¤í–‰í•˜ë©´ ìë™ìœ¼ë¡œ ìƒì„±ëœ Idë¥¼ í™•ì¸í•  ìˆ˜ ìˆë‹¤.
 
-![6. Id È®ÀÎ](../dummy/7%20DTO/6.%20id%20È®ÀÎ.png)
+<img width="475" height="267" alt="6  id í™•ì¸" src="https://github.com/user-attachments/assets/01b6da32-6b55-4d06-9050-40902191eac9" />
 
-Ã£¾Æ³½ ¾ÆÀÌµğ·Î Get ¿äÃ»À» ÇØº¼ ¼ö ÀÖ´Ù.
+ì°¾ì•„ë‚¸ ì•„ì´ë””ë¡œ Get ìš”ì²­ì„ í•´ë³¼ ìˆ˜ ìˆë‹¤.
 
-![7. G Et ¿äÃ»](../dummy/7%20DTO/7.%20GEt%20¿äÃ».png)
+<img width="328" height="190" alt="7  GEt ìš”ì²­" src="https://github.com/user-attachments/assets/98d58bfd-0e28-4951-9aa7-0c6025bb593f" />
 
-# ¸¶¹«¸®
+# ë§ˆë¬´ë¦¬
 
-Dto¸¦ ¸¸µé°í Validator¸¦ »õ·Î ¸¸µé¾îº¸¾Ò´Ù.
+Dtoë¥¼ ë§Œë“¤ê³  Validatorë¥¼ ìƒˆë¡œ ë§Œë“¤ì–´ë³´ì•˜ë‹¤.
