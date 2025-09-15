@@ -1,19 +1,19 @@
-# ¿¹¿Ü Ã³¸® Middleware
+# ì˜ˆì™¸ ì²˜ë¦¬ Middleware
 
-api¿¡¼­ °¢ ¿äÃ»À» Ã³¸®ÇÒ ¶§ È¯°æ¿¡ µû¶ó ¿©·¯ ¿À·ù°¡ ¹ß»ıÇÒ ¼ö ÀÖ´Ù.  
-db¿Í ¿¬°áÀÌ ²÷¾îÁö´Â µîÀÇ ¿¹»óÄ¡ ¸øÇÑ ¿¹¿Ü»óÈ²À» Ã³¸®ÇØ ÁÖ´Â ÄÚµå°¡ ¾øÀ¸¸é ¾ÖÇÃ¸®ÄÉÀÌ¼ÇÀÌ Á¾·áµÇ´Â µîÀÇ ³ª»Û »ç¿ëÀÚ °æÇèÀ» Á¦°øÇÒ °ÍÀÌ´Ù.
+apiì—ì„œ ê° ìš”ì²­ì„ ì²˜ë¦¬í•  ë•Œ í™˜ê²½ì— ë”°ë¼ ì—¬ëŸ¬ ì˜¤ë¥˜ê°€ ë°œìƒí•  ìˆ˜ ìˆë‹¤.  
+dbì™€ ì—°ê²°ì´ ëŠì–´ì§€ëŠ” ë“±ì˜ ì˜ˆìƒì¹˜ ëª»í•œ ì˜ˆì™¸ìƒí™©ì„ ì²˜ë¦¬í•´ ì£¼ëŠ” ì½”ë“œê°€ ì—†ìœ¼ë©´ ì• í”Œë¦¬ì¼€ì´ì…˜ì´ ì¢…ë£Œë˜ëŠ” ë“±ì˜ ë‚˜ìœ ì‚¬ìš©ì ê²½í—˜ì„ ì œê³µí•  ê²ƒì´ë‹¤.
 
-µû¶ó¼­ ¿¹¿Ü°¡ ¹ß»ıÇÏ¸é ¼­¹ö Ãø¿¡¼­ ¿¹¿Ü¸¦ Ã³¸®ÇØÁÖ¾î¾ß ÇÑ´Ù.
+ë”°ë¼ì„œ ì˜ˆì™¸ê°€ ë°œìƒí•˜ë©´ ì„œë²„ ì¸¡ì—ì„œ ì˜ˆì™¸ë¥¼ ì²˜ë¦¬í•´ì£¼ì–´ì•¼ í•œë‹¤.
 
-°¢ api¿¡¼­ try catch¹®À¸·Î ¿¹¿Ü¸¦ Ã³¸®ÇÏµµ·Ï ±¸ÇöÇÏ±âº¸´Ù ¸ğµç api¸¦ ÇÏ³ªÀÇ Middleware À§¿¡¼­ ±¸µ¿ÇÏ¿© ¿¹¿Ü ¹ß»ı ½Ã Middleware¿¡¼­ Ã³¸®ÇÏµµ·Ï ±¸ÇöÇÏ¸é ÄÚµå°¡ ÈÎ¾À °£°áÇØÁö°í À¯Áöº¸¼ö°¡ ÆíÇØÁø´Ù.
+ê° apiì—ì„œ try catchë¬¸ìœ¼ë¡œ ì˜ˆì™¸ë¥¼ ì²˜ë¦¬í•˜ë„ë¡ êµ¬í˜„í•˜ê¸°ë³´ë‹¤ ëª¨ë“  apië¥¼ í•˜ë‚˜ì˜ Middleware ìœ„ì—ì„œ êµ¬ë™í•˜ì—¬ ì˜ˆì™¸ ë°œìƒ ì‹œ Middlewareì—ì„œ ì²˜ë¦¬í•˜ë„ë¡ êµ¬í˜„í•˜ë©´ ì½”ë“œê°€ í›¨ì”¬ ê°„ê²°í•´ì§€ê³  ìœ ì§€ë³´ìˆ˜ê°€ í¸í•´ì§„ë‹¤.
 
-ASP.NET Core´Â ÀÌ·¯ÇÑ ¹Ìµé¿ş¾î¸¦ ÁÖÀÔÇØÁÖ´Â ±â´É±îÁöµµ °âºñÇÏ°í ÀÖ´Ù. 
+ASP.NET CoreëŠ” ì´ëŸ¬í•œ ë¯¸ë“¤ì›¨ì–´ë¥¼ ì£¼ì…í•´ì£¼ëŠ” ê¸°ëŠ¥ê¹Œì§€ë„ ê²¸ë¹„í•˜ê³  ìˆë‹¤. 
 
-ÀÌ¹ø ´Ü°è¿¡¼­´Â ÀÌ Middleware¸¦ ±¸ÇöÇÏ¿© apiÀÇ ¿¹¿Ü»óÈ²À» Ã³¸®ÇØº¸µµ·Ï ÇÏ°Ú´Ù.
+ì´ë²ˆ ë‹¨ê³„ì—ì„œëŠ” ì´ Middlewareë¥¼ êµ¬í˜„í•˜ì—¬ apiì˜ ì˜ˆì™¸ìƒí™©ì„ ì²˜ë¦¬í•´ë³´ë„ë¡ í•˜ê² ë‹¤.
 
-## ¿¹¿Ü ¹ß»ı »óÈ² ¸¸µé±â
+## ì˜ˆì™¸ ë°œìƒ ìƒí™© ë§Œë“¤ê¸°
 
-°£´ÜÇÏ°Ô api¿¡¼­ ¿¹¿Ü¸¦ ¹ß»ı½ÃÄÑº¸°Ú´Ù.
+ê°„ë‹¨í•˜ê²Œ apiì—ì„œ ì˜ˆì™¸ë¥¼ ë°œìƒì‹œì¼œë³´ê² ë‹¤.
 
 ```C#
 app.MapGet("/error", () => 
@@ -22,21 +22,21 @@ app.MapGet("/error", () =>
 });
 ```
 
-dotnet run(°³¹ß ¸ğµå)À¸·Î ½ÇÇàÇÑ ÇÁ·ÎÁ§Æ®¿¡¼­ À§ url·Î get ¿äÃ»À» º¸³»¸é ´ÙÀ½°ú °°Àº ¿¹¿Ü ÆäÀÌÁö¸¦ È®ÀÎÇÒ ¼ö ÀÖ´Âµ¥ ÀÌ °æ¿ìµµ ASP.NET CoreÀÇ ¹Ìµé¿ş¾î°¡ µ¿ÀÛÇÑ °ÍÀÌ´Ù.
+dotnet run(ê°œë°œ ëª¨ë“œ)ìœ¼ë¡œ ì‹¤í–‰í•œ í”„ë¡œì íŠ¸ì—ì„œ ìœ„ urlë¡œ get ìš”ì²­ì„ ë³´ë‚´ë©´ ë‹¤ìŒê³¼ ê°™ì€ ì˜ˆì™¸ í˜ì´ì§€ë¥¼ í™•ì¸í•  ìˆ˜ ìˆëŠ”ë° ì´ ê²½ìš°ë„ ASP.NET Coreì˜ ë¯¸ë“¤ì›¨ì–´ê°€ ë™ì‘í•œ ê²ƒì´ë‹¤.
 
-![1. ¿¹¿Ü ¹ß»ı Detail](../dummy/8%20¿¹¿Ü%20Ã³¸®%20middleware/1.%20¿¹¿Ü%20¹ß»ı%20detail.png)
+<img width="939" height="586" alt="1  ì˜ˆì™¸ ë°œìƒ detail" src="https://github.com/user-attachments/assets/b10f3d65-fbcb-4450-af8a-d325d772c7dd" />
 
-°³¹ß ¸ğµå°¡ ¾Æ´Ñ ¿î¿µ ¸ğµå·Î ½ÇÇàÇÏ¸é(ºôµå ÈÄ Á÷Á¢ .exe ÆÄÀÏÀ» ½ÇÇàÇÑ °æ¿ì) ´ÙÀ½°ú °°Àº ÆäÀÌÁö°¡ ³ªÅ¸³ª¸ç ÀÌ´Â °ğ ³ª»Û »ç¿ëÀÚ °æÇèÀ¸·Î ÀÌ¾îÁø´Ù.
+ê°œë°œ ëª¨ë“œê°€ ì•„ë‹Œ ìš´ì˜ ëª¨ë“œë¡œ ì‹¤í–‰í•˜ë©´(ë¹Œë“œ í›„ ì§ì ‘ .exe íŒŒì¼ì„ ì‹¤í–‰í•œ ê²½ìš°) ë‹¤ìŒê³¼ ê°™ì€ í˜ì´ì§€ê°€ ë‚˜íƒ€ë‚˜ë©° ì´ëŠ” ê³§ ë‚˜ìœ ì‚¬ìš©ì ê²½í—˜ìœ¼ë¡œ ì´ì–´ì§„ë‹¤.
 
-![2. ¿¹¿Ü ¹ß»ı ¿î¿µ](../dummy/8%20¿¹¿Ü%20Ã³¸®%20middleware/2.%20¿¹¿Ü%20¹ß»ı%20¿î¿µ.png)
+<img width="996" height="640" alt="2  ì˜ˆì™¸ ë°œìƒ ìš´ì˜" src="https://github.com/user-attachments/assets/79a8ce81-cdb0-4c5d-bdb1-eeeb8d8731ca" />
 
-## 
+## GlobalExceptionHanderMiddleware.cs
 
-¿¹¿Ü°¡ ¹ß»ıÇÏ´õ¶óµµ ¾ç½Ä¿¡ ¸Â´Â µ¥ÀÌÅÍ¸¦ Àü¼ÛÇÏµµ·Ï ÇÏ¿© ³ª»Û »ç¿ëÀÚ °æÇèÀ» ÃÖ¼ÒÈ­ÇÏ´Â ÄÚµå¸¦ ÀÛ¼ºÇØº¼ °ÍÀÌ´Ù.
+ì˜ˆì™¸ê°€ ë°œìƒí•˜ë”ë¼ë„ ì–‘ì‹ì— ë§ëŠ” ë°ì´í„°ë¥¼ ì „ì†¡í•˜ë„ë¡ í•˜ì—¬ ë‚˜ìœ ì‚¬ìš©ì ê²½í—˜ì„ ìµœì†Œí™”í•˜ëŠ” ì½”ë“œë¥¼ ì‘ì„±í•´ë³¼ ê²ƒì´ë‹¤.
 
-ÇÁ·ÎÁ§Æ®¿¡ Middlewares µğ·ºÅÍ¸®¸¦ »ı¼ºÇÏ°í ±× ¾È¿¡ ¸ğµç ¿¹¿Ü¸¦ Ã³¸®ÇÏ´Â GlobalExceptionHandlerMiddleware.cs ÆÄÀÏÀ» »ı¼ºÇÑ´Ù.
+í”„ë¡œì íŠ¸ì— Middlewares ë””ë ‰í„°ë¦¬ë¥¼ ìƒì„±í•˜ê³  ê·¸ ì•ˆì— ëª¨ë“  ì˜ˆì™¸ë¥¼ ì²˜ë¦¬í•˜ëŠ” GlobalExceptionHandlerMiddleware.cs íŒŒì¼ì„ ìƒì„±í•œë‹¤.
 
-![3. µğ·ºÅÍ¸® ±¸Á¶](../dummy/8%20¿¹¿Ü%20Ã³¸®%20middleware/3.%20µğ·ºÅÍ¸®%20±¸Á¶.png)
+<img width="334" height="207" alt="3  ë””ë ‰í„°ë¦¬ êµ¬ì¡°" src="https://github.com/user-attachments/assets/6cc62e64-e15c-43f6-b1d4-45eb3d260893" />
 
 ```C#
 using System.Net;
@@ -46,55 +46,55 @@ namespace Middleware.Middlewares;
 
 public class GlobalExceptionHandlerMiddleware
 {
-    private readonly RequestDelegate _next; // ½ÇÇàÇÒ api Ã³¸® ´ë¸®ÀÚ
+    private readonly RequestDelegate _next; // ì‹¤í–‰í•  api ì²˜ë¦¬ ëŒ€ë¦¬ì
 
     public GlobalExceptionHandlerMiddleware(RequestDelegate next)
     {
-        _next = next;                       // ´ë¸®ÀÚ ÁöÁ¤
+        _next = next;                       // ëŒ€ë¦¬ì ì§€ì •
     }
 
     public async Task InvokeAsync(HttpContext context)
     {
         try
         {
-            await _next(context);               // api ¿äÃ» Ã³¸®
+            await _next(context);               // api ìš”ì²­ ì²˜ë¦¬
         }
         catch (Exception ex)
         {
-            await HandleException(context, ex); // ¿¹¿Ü ¹ß»ı½Ã
+            await HandleException(context, ex); // ì˜ˆì™¸ ë°œìƒì‹œ
         }
     }
 
     private static Task HandleException(HttpContext context, Exception ex)
     {
-        context.Response.StatusCode = (int)HttpStatusCode.InternalServerError;  // ¼­¹ö ¿¡·¯ »óÅÂ ÄÚµå
-        context.Response.ContentType = "application/json";                      // json ÇüÅÂ·Î Àü´Ş
+        context.Response.StatusCode = (int)HttpStatusCode.InternalServerError;  // ì„œë²„ ì—ëŸ¬ ìƒíƒœ ì½”ë“œ
+        context.Response.ContentType = "application/json";                      // json í˜•íƒœë¡œ ì „ë‹¬
 
-        var errorResponse = new                                                 // Àü´ŞÇÒ json ÇüÅÂ
+        var errorResponse = new                                                 // ì „ë‹¬í•  json í˜•íƒœ
         {
             context.Response.StatusCode,
-            Message = "¼­¹ö ¿¡·¯",
+            Message = "ì„œë²„ ì—ëŸ¬",
             Detail = ex.Message
         };
 
-        var jsonResponse = JsonSerializer.Serialize(errorResponse);             // µ¥ÀÌÅÍ Çü½Ä json ÇüÅÂ·Î º¯È¯
+        var jsonResponse = JsonSerializer.Serialize(errorResponse);             // ë°ì´í„° í˜•ì‹ json í˜•íƒœë¡œ ë³€í™˜
 
-        return context.Response.WriteAsync(jsonResponse);                       // ¿¹¿Ü Ã³¸®
+        return context.Response.WriteAsync(jsonResponse);                       // ì˜ˆì™¸ ì²˜ë¦¬
     }
 }
 ```
 
-À§¿Í °°ÀÌ ÄÚµå¸¦ ÀÛ¼ºÇÑ´Ù.
+ìœ„ì™€ ê°™ì´ ì½”ë“œë¥¼ ì‘ì„±í•œë‹¤.
 
-ÄÚµå¸¦ °£´ÜÈ÷ ¼³¸íÇÏÀÚ¸é ¿äÃ»ÀÌ µé¾î¿À¸é ½ÇÇàÇÒ ¸Ş¼­µå¸¦ _next ´ë¸®ÀÚ¿¡ ÀúÀåÇÏ°í InvokeAsync ¸Ş¼­µåÀÇ try catch¹®¿¡¼­ api¸¦ ½ÇÇàÇÏ°í ¿¹¿Ü°¡ ¹ß»ıÇÏ¸é HandlerException ¸Ş¼­µå·Î json ÇüÅÂ·Î ¿¹¿Ü ¹ß»ı »ç½ÇÀ» Àü´ŞÇÏµµ·Ï ÇÑ´Ù.
+ì½”ë“œë¥¼ ê°„ë‹¨íˆ ì„¤ëª…í•˜ìë©´ ìš”ì²­ì´ ë“¤ì–´ì˜¤ë©´ ì‹¤í–‰í•  ë©”ì„œë“œë¥¼ _next ëŒ€ë¦¬ìì— ì €ì¥í•˜ê³  InvokeAsync ë©”ì„œë“œì˜ try catchë¬¸ì—ì„œ apië¥¼ ì‹¤í–‰í•˜ê³  ì˜ˆì™¸ê°€ ë°œìƒí•˜ë©´ HandlerException ë©”ì„œë“œë¡œ json í˜•íƒœë¡œ ì˜ˆì™¸ ë°œìƒ ì‚¬ì‹¤ì„ ì „ë‹¬í•˜ë„ë¡ í•œë‹¤.
 
-ÀÌ ÄÚµå´Â ¸ğµç api ³»ºÎ¿¡ try catch¹®À» ¾º¿î °Í°ú µ¿ÀÏÇÏ°Ô ÀÛµ¿ÇÏ´Â °ÍÀÌ´Ù.
+ì´ ì½”ë“œëŠ” ëª¨ë“  api ë‚´ë¶€ì— try catchë¬¸ì„ ì”Œìš´ ê²ƒê³¼ ë™ì¼í•˜ê²Œ ì‘ë™í•˜ëŠ” ê²ƒì´ë‹¤.
 
-## Middleware ÁÖÀÔ
+## Middleware ì£¼ì…
 
-ÁÖÀÔµµ °£´ÜÈ÷ ÇÒ ¼ö ÀÖ´Ù.
+ì£¼ì…ë„ ê°„ë‹¨íˆ í•  ìˆ˜ ìˆë‹¤.
 
-Program.cs ÆÄÀÏ¿¡ WebApplication(app) ºôµå ¹Ù·Î ´ÙÀ½¿¡ »ı¼ºÇÑ Middleware¸¦ Ãß°¡ÇØ ÁØ´Ù.
+Program.cs íŒŒì¼ì— WebApplication(app) ë¹Œë“œ ë°”ë¡œ ë‹¤ìŒì— ìƒì„±í•œ Middlewareë¥¼ ì¶”ê°€í•´ ì¤€ë‹¤.
 
 ```C#
 var app = builder.Build();
@@ -102,16 +102,16 @@ var app = builder.Build();
 app.UseMiddleware<GlobalExceptionHandlerMiddleware>();
 ```
 
-ÀÌ ÄÚµå´Â api¿¡¼­ ¹ß»ıÇÏ´Â ¸ğµç ¿¹¿Ü »óÈ²À» °ü¸®ÇÏµµ·Ï ÇÒ °ÍÀÌ¹Ç·Î ÀÌÈÄ ¾î¶² Middleware°¡ WebApplication¿¡ Ãß°¡µÇ´õ¶óµµ ±× À§¿¡ ÀÛ¼ºµÇ¾î¾ß ÇÑ´Ù.
+ì´ ì½”ë“œëŠ” apiì—ì„œ ë°œìƒí•˜ëŠ” ëª¨ë“  ì˜ˆì™¸ ìƒí™©ì„ ê´€ë¦¬í•˜ë„ë¡ í•  ê²ƒì´ë¯€ë¡œ ì´í›„ ì–´ë–¤ Middlewareê°€ WebApplicationì— ì¶”ê°€ë˜ë”ë¼ë„ ê·¸ ìœ„ì— ì‘ì„±ë˜ì–´ì•¼ í•œë‹¤.
 
-## Å×½ºÆ®
+## í…ŒìŠ¤íŠ¸
 
-ÀÌÁ¦ ´Ù½Ã /error url·Î Get ¿äÃ»À» º¸³»º¸°Ú´Ù.
+ì´ì œ ë‹¤ì‹œ /error urlë¡œ Get ìš”ì²­ì„ ë³´ë‚´ë³´ê² ë‹¤.
 
-![4. ¿¹¿ÜÃ³¸® Å×½ºÆ®](../dummy/8%20¿¹¿Ü%20Ã³¸®%20middleware/4.%20¿¹¿ÜÃ³¸®%20Å×½ºÆ®.png)
+<img width="443" height="239" alt="4  ì˜ˆì™¸ì²˜ë¦¬ í…ŒìŠ¤íŠ¸" src="https://github.com/user-attachments/assets/539d23d2-3cc9-4d77-bc08-d2e77343c8ba" />
 
-json ÇüÅÂ·Î ¿¹»Ú°Ô Àü¼ÛµÈ °ÍÀ» È®ÀÎÇÒ ¼ö ÀÖÀ» °ÍÀÌ´Ù.
+json í˜•íƒœë¡œ ì˜ˆì˜ê²Œ ì „ì†¡ëœ ê²ƒì„ í™•ì¸í•  ìˆ˜ ìˆì„ ê²ƒì´ë‹¤.
 
-# ¸¶¹«¸®
+# ë§ˆë¬´ë¦¬
 
-Àü¿ª ¿¹¿Ü Ã³¸® Middleware¸¦ Ãß°¡ÇØº¸¾Ò´Ù.
+ì „ì—­ ì˜ˆì™¸ ì²˜ë¦¬ Middlewareë¥¼ ì¶”ê°€í•´ë³´ì•˜ë‹¤.
