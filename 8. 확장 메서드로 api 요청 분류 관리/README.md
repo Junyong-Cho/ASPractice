@@ -1,27 +1,28 @@
-# Endpoint ºÐ·ù °ü¸®
+# Endpoint ë¶„ë¥˜ ê´€ë¦¬
 
-Áö±Ý±îÁö ¿ì¸®°¡ ±¸ÇöÇÑ api ¿äÃ»À» Ã³¸®ÇÏ´Â CRUD ¸Þ¼­µåµéÀº ¿äÃ»À» ÃÖÁ¾ÀûÀ¸·Î Ã³¸®ÇÏ´Â ¸Þ¼­µå·Î Æ¯Á¤ url·Î µé¾î¿Â ¿äÃ»À» Ã³¸®ÇÏ´Âµ¥ ÀÌ urlÀ» ¿£µåÆ÷ÀÎÆ®(Endpoint)¶ó°í ÇÑ´Ù.
+ì§€ê¸ˆê¹Œì§€ ìš°ë¦¬ê°€ êµ¬í˜„í•œ api ìš”ì²­ì„ ì²˜ë¦¬í•˜ëŠ” CRUD ë©”ì„œë“œë“¤ì€ ìš”ì²­ì„ ìµœì¢…ì ìœ¼ë¡œ ì²˜ë¦¬í•˜ëŠ” ë©”ì„œë“œë¡œ íŠ¹ì • urlë¡œ ë“¤ì–´ì˜¨ ìš”ì²­ì„ ì²˜ë¦¬í•˜ëŠ”ë° ì´ urlì„ ì—”ë“œí¬ì¸íŠ¸(Endpoint)ë¼ê³  í•œë‹¤.
 
-±×¸®°í ASP.NET Core·Î api¸¦ ±¸ÇöÇÏ´Â ¹æ¹ýÀº ÄÁÆ®·Ñ·¯ ¹æ½Ä°ú ¹Ì´Ï¸Ö api ¹æ½ÄÀ¸·Î Å©°Ô 2°¡Áö°¡ ÀÖ´Âµ¥ ¿ì¸®°¡ »ç¿ëÇÏ°í ÀÖ´Â ¹æ¹ýÀº ÃÖ»óÀ§ ¹®À¸·Î ±¸ÇöÇÏ´Â ¹Ì´Ï¸Ö api ¹æ½ÄÀÌ´Ù.
+ê·¸ë¦¬ê³  ASP.NET Coreë¡œ apië¥¼ êµ¬í˜„í•˜ëŠ” ë°©ë²•ì€ ì»¨íŠ¸ë¡¤ëŸ¬ ë°©ì‹ê³¼ ë¯¸ë‹ˆë©€ api ë°©ì‹ìœ¼ë¡œ í¬ê²Œ 2ê°€ì§€ê°€ ìžˆëŠ”ë° ìš°ë¦¬ê°€ ì‚¬ìš©í•˜ê³  ìžˆëŠ” ë°©ë²•ì€ ìµœìƒìœ„ ë¬¸ìœ¼ë¡œ êµ¬í˜„í•˜ëŠ” ë¯¸ë‹ˆë©€ api ë°©ì‹ì´ë‹¤.
 
-¹Ì´Ï¸Ö apiÀÇ ÀåÁ¡À¸·Î´Â °£´ÜÇÑ api ±¸ÇöÀÌ ÀÖÁö¸¸ Ã³¸®ÇØ¾ß ÇÏ´Â ¿£µåÆ÷ÀÎÆ®°¡ ¸¹¾ÆÁú ¼ö·Ï ÇÏ³ªÀÇ ÃÖ»óÀ§ ¹®¿¡¼­ ¸ðµç ¿£µåÆ÷ÀÎÆ®¸¦ Ã³¸®ÇÏ´Â api¸¦ ±¸ÇöÇÏ°Ô µÇ¸é ÄÚµåÀÇ °ü¸®°¡ ¾î·Á¿öÁö´Â ¹®Á¦°¡ ÀÖ´Ù.
+ë¯¸ë‹ˆë©€ apiì˜ ìž¥ì ìœ¼ë¡œëŠ” ê°„ë‹¨í•œ api êµ¬í˜„ì´ ìžˆì§€ë§Œ ì²˜ë¦¬í•´ì•¼ í•˜ëŠ” ì—”ë“œí¬ì¸íŠ¸ê°€ ë§Žì•„ì§ˆ ìˆ˜ë¡ í•˜ë‚˜ì˜ ìµœìƒìœ„ ë¬¸ì—ì„œ ëª¨ë“  ì—”ë“œí¬ì¸íŠ¸ë¥¼ ì²˜ë¦¬í•˜ëŠ” apië¥¼ êµ¬í˜„í•˜ê²Œ ë˜ë©´ ì½”ë“œì˜ ê´€ë¦¬ê°€ ì–´ë ¤ì›Œì§€ëŠ” ë¬¸ì œê°€ ìžˆë‹¤.
 
-![1. User C R U D](../dummy/9%20api%20ºÐ·ù%20°ü¸®/1.%20user%20CRUD.png)
-<small><small>(°£´ÜÈ÷ ±¸ÇöÇÑ /user·Î ½ÃÀÛÇÏ´Â CRUD ¿äÃ»µé¸¸ ÇØµµ »ó´çÈ÷ ¸¹Àº ¾çÀ» Â÷ÁöÇÑ´Ù.)</small></small>  
+<img width="767" height="824" alt="1  user CRUD" src="https://github.com/user-attachments/assets/befd7d6d-b357-4dba-ab4a-004079098dc4" />
 
-µû¶ó¼­ °ü¸®°¡ ÆíÇÏµµ·Ï °øÅëµÇ´Â ºÎºÐÀÌ ÀÖ´Â À§ ±×¸²°ú °°Àº ¿£µåÆ÷ÀÎÆ®µéÀ»(/user/id, /user/list, /user) ÇÏ³ª·Î ¹­¾î¼­ °ü¸®ÇÏ¿© ÄÁÆ®·Ñ·¯ ±â¹Ý apiÃ³·³ api °ü¸®¸¦ ÆíÇÏ°Ô ÇÒ ¼ö ÀÖµµ·Ï ±¸ÇöÇØº¸°Ú´Ù.
+(ê°„ë‹¨ížˆ êµ¬í˜„í•œ /userë¡œ ì‹œìž‘í•˜ëŠ” CRUD ìš”ì²­ë“¤ë§Œ í•´ë„ ìƒë‹¹ížˆ ë§Žì€ ì–‘ì„ ì°¨ì§€í•œë‹¤.)
 
-## È®Àå ¸Þ¼­µå
+ë”°ë¼ì„œ ê´€ë¦¬ê°€ íŽ¸í•˜ë„ë¡ ê³µí†µë˜ëŠ” ë¶€ë¶„ì´ ìžˆëŠ” ìœ„ ê·¸ë¦¼ê³¼ ê°™ì€ ì—”ë“œí¬ì¸íŠ¸ë“¤ì„(/user/id, /user/list, /user) í•˜ë‚˜ë¡œ ë¬¶ì–´ì„œ ê´€ë¦¬í•˜ì—¬ ì»¨íŠ¸ë¡¤ëŸ¬ ê¸°ë°˜ apiì²˜ëŸ¼ api ê´€ë¦¬ë¥¼ íŽ¸í•˜ê²Œ í•  ìˆ˜ ìžˆë„ë¡ êµ¬í˜„í•´ë³´ê² ë‹¤.
 
-È®Àå ¸Þ¼­µå¶õ Æ¯Á¤ÇÑ Å¬·¡½º¿¡ Ãß°¡ÇÏ´Â ¸Þ¼­µå¸¦ ¸»ÇÑ´Ù.  
-¿¹¸¦ µé¸é int Å¬·¡½º¿¡ print()¶ó´Â ¸Þ¼­µå¸¦ Ãß°¡ÇØº¸°Ú´Ù.
+## í™•ìž¥ ë©”ì„œë“œ
+
+í™•ìž¥ ë©”ì„œë“œëž€ íŠ¹ì •í•œ í´ëž˜ìŠ¤ì— ì¶”ê°€í•˜ëŠ” ë©”ì„œë“œë¥¼ ë§í•œë‹¤.  
+ì˜ˆë¥¼ ë“¤ë©´ int í´ëž˜ìŠ¤ì— print()ë¼ëŠ” ë©”ì„œë“œë¥¼ ì¶”ê°€í•´ë³´ê² ë‹¤.
 
 ```C#
-1.Print();                      // 1 Ãâ·Â
+1.Print();                      // 1 ì¶œë ¥
 
-Console.WriteLine(1.Plus(3));   // 1+3ÀÇ °á°úÀÎ 4 Ãâ·Â
+Console.WriteLine(1.Plus(3));   // 1+3ì˜ ê²°ê³¼ì¸ 4 ì¶œë ¥
 
-1.Plus(3).Print();              // À§¿Í µ¿ÀÏÇÏ°Ô µ¿ÀÛ
+1.Plus(3).Print();              // ìœ„ì™€ ë™ì¼í•˜ê²Œ ë™ìž‘
 
 static class Extension
 {
@@ -37,27 +38,27 @@ static class Extension
 }
 ```
 
-À§ ÄÚµå´Â int Å¬·¡½º¿¡ Print() Plus() ¸Þ¼­µå¸¦ Ãß°¡ÇÏµµ·Ï ±¸ÇöµÈ È®Àå ¸Þ¼­µåÀÌ´Ù.  
+ìœ„ ì½”ë“œëŠ” int í´ëž˜ìŠ¤ì— Print() Plus() ë©”ì„œë“œë¥¼ ì¶”ê°€í•˜ë„ë¡ êµ¬í˜„ëœ í™•ìž¥ ë©”ì„œë“œì´ë‹¤.  
 
-Print() ¸Þ¼­µå´Â Á¤¼ö ÀÎ½ºÅÏ½º º»ÀÎÀ» Ãâ·ÂÇÏ´Â ¸Þ¼­µåÀÌ°í Plus() ¸Þ¼­µå´Â ¸Å°³º¯¼ö·Î ¹ÞÀº ¼ö¸¦ ÀÎ½ºÅÏ½º º»ÀÎ°ú ´õÇØ¼­ returnÇÏ´Â ¸Þ¼­µåÀÌ´Ù.
+Print() ë©”ì„œë“œëŠ” ì •ìˆ˜ ì¸ìŠ¤í„´ìŠ¤ ë³¸ì¸ì„ ì¶œë ¥í•˜ëŠ” ë©”ì„œë“œì´ê³  Plus() ë©”ì„œë“œëŠ” ë§¤ê°œë³€ìˆ˜ë¡œ ë°›ì€ ìˆ˜ë¥¼ ì¸ìŠ¤í„´ìŠ¤ ë³¸ì¸ê³¼ ë”í•´ì„œ returní•˜ëŠ” ë©”ì„œë“œì´ë‹¤.
 
-½ÇÁ¦ C#ÀÇ int Å¬·¡½º¿¡ ±¸ÇöµÇÁö ¾ÊÀº ¸Þ¼­µåµéÀÌÁö¸¸ È®Àå ¸Þ¼­µå¸¦ ±¸ÇöÇÔÀ¸·Î½á .Print() .Plus() ¸Þ¼­µå¸¦ Ãß°¡ÇØÁØ °ÍÀÌ´Ù.
+ì‹¤ì œ C#ì˜ int í´ëž˜ìŠ¤ì— êµ¬í˜„ë˜ì§€ ì•Šì€ ë©”ì„œë“œë“¤ì´ì§€ë§Œ í™•ìž¥ ë©”ì„œë“œë¥¼ êµ¬í˜„í•¨ìœ¼ë¡œì¨ .Print() .Plus() ë©”ì„œë“œë¥¼ ì¶”ê°€í•´ì¤€ ê²ƒì´ë‹¤.
 
-À§Ã³·³ ÄÚµå¸¦ ÀÛ¼ºÇÏ°í ½ÇÇàÇÏ¸é ÁÖ¼®¿¡ Ç¥½ÃÇØ ³õÀº °ªÀÌ Ãâ·ÂµÉ °ÍÀÌ´Ù.
+ìœ„ì²˜ëŸ¼ ì½”ë“œë¥¼ ìž‘ì„±í•˜ê³  ì‹¤í–‰í•˜ë©´ ì£¼ì„ì— í‘œì‹œí•´ ë†“ì€ ê°’ì´ ì¶œë ¥ë  ê²ƒì´ë‹¤.
 
-¿©±â¼­ ```this int a```¶ó°í ¼±¾ðµÈ ¸Å°³º¯¼ö°¡ ¹Ù·Î int Å¬·¡½º¿¡ Ãß°¡ÇÑ´Ù´Â ¶æÀÌ´Ù. ```this string st```¸é string Å¬·¡½º¿¡ Ãß°¡ÇÏ°í ¸¶Âù°¡Áö·Î ```this WebApplication app```ÀÌ¸é WebApplication Å¬·¡½º¿¡ Ãß°¡ÇÏ°Ú´Ù´Â ¶æÀÌ µÈ´Ù.
+ì—¬ê¸°ì„œ ```this int a```ë¼ê³  ì„ ì–¸ëœ ë§¤ê°œë³€ìˆ˜ê°€ ë°”ë¡œ int í´ëž˜ìŠ¤ì— ì¶”ê°€í•œë‹¤ëŠ” ëœ»ì´ë‹¤. ```this string st```ë©´ string í´ëž˜ìŠ¤ì— ì¶”ê°€í•˜ê³  ë§ˆì°¬ê°€ì§€ë¡œ ```this WebApplication app```ì´ë©´ WebApplication í´ëž˜ìŠ¤ì— ì¶”ê°€í•˜ê² ë‹¤ëŠ” ëœ»ì´ ëœë‹¤.
 
-Áß¿äÇÑ °ÍÀº Å¬·¡½º¿Í ¸Þ¼­µå ¸ðµÎ staticÀ¸·Î ¼±¾ðÇØ¾ß ÇÏ´Â °ÍÀÌ´Ù.
+ì¤‘ìš”í•œ ê²ƒì€ í´ëž˜ìŠ¤ì™€ ë©”ì„œë“œ ëª¨ë‘ staticìœ¼ë¡œ ì„ ì–¸í•´ì•¼ í•˜ëŠ” ê²ƒì´ë‹¤.
 
-¿ì¸®°¡ app.MapGet°ú °°ÀÌ api¸¦ ±¸ÇöÇÒ ¶§ ÀÌ appÀÌ ¹Ù·Î WebApplication Å¬·¡½ºÀÇ ÀÎ½ºÅÏ½º·Î WebApplication Å¬·¡½ºÀÇ È®Àå ¸Þ¼­µå¸¦ ±¸ÇöÇÏ¸é ApiµéÀ» ºÐ¸®ÇØ¼­ °ü¸®ÇÒ ¼ö ÀÖ´Ù.
+ìš°ë¦¬ê°€ app.MapGetê³¼ ê°™ì´ apië¥¼ êµ¬í˜„í•  ë•Œ ì´ appì´ ë°”ë¡œ WebApplication í´ëž˜ìŠ¤ì˜ ì¸ìŠ¤í„´ìŠ¤ë¡œ WebApplication í´ëž˜ìŠ¤ì˜ í™•ìž¥ ë©”ì„œë“œë¥¼ êµ¬í˜„í•˜ë©´ Apië“¤ì„ ë¶„ë¦¬í•´ì„œ ê´€ë¦¬í•  ìˆ˜ ìžˆë‹¤.
 
-## È®Àå ¸Þ¼­µå¸¦ ÀÌ¿ëÇÑ api ºÐ·ù
+## í™•ìž¥ ë©”ì„œë“œë¥¼ ì´ìš©í•œ api ë¶„ë¥˜
 
-¸ÕÀú ÇÁ·ÎÁ§Æ®¿¡ Apis¶ó´Â µð·ºÅÍ¸®¸¦ »ý¼ºÇÏ°í ¹ØÀ¸·Î UserEndpoint.cs ÆÄÀÏÀ» »ý¼ºÇØ ÁØ´Ù.
+ë¨¼ì € í”„ë¡œì íŠ¸ì— Apisë¼ëŠ” ë””ë ‰í„°ë¦¬ë¥¼ ìƒì„±í•˜ê³  ë°‘ìœ¼ë¡œ UserEndpoint.cs íŒŒì¼ì„ ìƒì„±í•´ ì¤€ë‹¤.
 
-![2. µð·ºÅÍ¸® ±¸Á¶](../dummy/9%20api%20ºÐ·ù%20°ü¸®/2.%20µð·ºÅÍ¸®%20±¸Á¶.png)
+<img width="315" height="320" alt="2  ë””ë ‰í„°ë¦¬ êµ¬ì¡°" src="https://github.com/user-attachments/assets/7d548bba-1160-4e20-802d-2e3542413365" />
 
-±×¸®°í UserEndpoint.cs ÆÄÀÏ¿¡ ´ÙÀ½°ú °°ÀÌ ÃÊ¾ÈÀ» ÀÛ¼ºÇÑ´Ù.
+ê·¸ë¦¬ê³  UserEndpoint.cs íŒŒì¼ì— ë‹¤ìŒê³¼ ê°™ì´ ì´ˆì•ˆì„ ìž‘ì„±í•œë‹¤.
 
 ```C#
 public static class UserEndpoint
@@ -69,9 +70,9 @@ public static class UserEndpoint
 }
 ```
 
-±× ´ÙÀ½ Program.cs¿¡ ±¸ÇöµÇ¾ú´ø app.MapGet app.MapPost µî /user·Î ½ÃÀÛµÇ´Â ¿£µåÆ÷ÀÎÆ®¸¦ Ã³¸®ÇÏ´Â ¸Þ¼­µåµéÀ» ÀüºÎ Àß¶ó³½´Ù.
+ê·¸ ë‹¤ìŒ Program.csì— êµ¬í˜„ë˜ì—ˆë˜ app.MapGet app.MapPost ë“± /userë¡œ ì‹œìž‘ë˜ëŠ” ì—”ë“œí¬ì¸íŠ¸ë¥¼ ì²˜ë¦¬í•˜ëŠ” ë©”ì„œë“œë“¤ì„ ì „ë¶€ ìž˜ë¼ë‚¸ë‹¤.
 
-±×¸®°í Àß¶ó³½ ÄÚµåµéÀ» RegisterUserApi ¸Þ¼­µå¿¡ ºÙ¿©³Ö´Â´Ù.
+ê·¸ë¦¬ê³  ìž˜ë¼ë‚¸ ì½”ë“œë“¤ì„ RegisterUserApi ë©”ì„œë“œì— ë¶™ì—¬ë„£ëŠ”ë‹¤.
 
 ```C#
 public static class UserEndpoint
@@ -83,7 +84,7 @@ public static class UserEndpoint
         {
             User? user = await db.Users.FindAsync(id);
 
-            if (user == null) return Results.NotFound("ÇØ´çÇÏ´Â idÀÇ À¯Àú°¡ ¾ø½À´Ï´Ù.");
+            if (user == null) return Results.NotFound("í•´ë‹¹í•˜ëŠ” idì˜ ìœ ì €ê°€ ì—†ìŠµë‹ˆë‹¤.");
 
             UserDto userDto = mapper.Map<UserDto>(user);
 
@@ -122,7 +123,7 @@ public static class UserEndpoint
 
             User? user = await db.Users.FindAsync(id);
 
-            if (user == null) return Results.NotFound("ÇØ´çÇÏ´Â idÀÇ À¯Àú°¡ ¾ø½À´Ï´Ù.");
+            if (user == null) return Results.NotFound("í•´ë‹¹í•˜ëŠ” idì˜ ìœ ì €ê°€ ì—†ìŠµë‹ˆë‹¤.");
 
             mapper.Map(updateUser, user);
 
@@ -135,7 +136,7 @@ public static class UserEndpoint
         {
             User? user = await db.Users.FindAsync(id);
 
-            if (user == null) return Results.NotFound("ÇØ´çÇÏ´Â idÀÇ À¯Àú°¡ ¾ø½À´Ï´Ù.");
+            if (user == null) return Results.NotFound("í•´ë‹¹í•˜ëŠ” idì˜ ìœ ì €ê°€ ì—†ìŠµë‹ˆë‹¤.");
 
             db.Users.Remove(user);
 
@@ -147,30 +148,32 @@ public static class UserEndpoint
 }
 ```
 
-ÀÌ·¸°Ô ³¡³»µµ Àß ÀÛµ¿ÇÏÁö¸¸ Á¶±Ý ´õ °ü¸®ÇÏ±â ÆíÇÏ°Ô ÄÚµå¸¦ ¼öÁ¤ÇØ ÁÙ °ÍÀÌ´Ù.
+ì´ë ‡ê²Œ ëë‚´ë„ ìž˜ ìž‘ë™í•˜ì§€ë§Œ ì¡°ê¸ˆ ë” ê´€ë¦¬í•˜ê¸° íŽ¸í•˜ê²Œ ì½”ë“œë¥¼ ìˆ˜ì •í•´ ì¤„ ê²ƒì´ë‹¤.
 
-MapGroupÀ» ÀÌ¿ëÇØ¼­ /user urlÀ» ¹­¾î¼­ °ü¸®ÇØº¸°Ú´Ù.
+MapGroupì„ ì´ìš©í•´ì„œ /user urlì„ ë¬¶ì–´ì„œ ê´€ë¦¬í•´ë³´ê² ë‹¤.
 
-¿ì¼± app º¯¼ö¿¡ Å°º¸µå Ä¿¼­¸¦ µÎ°í ºñÁÖ¾ó ½ºÆ©µð¿ÀÀÇ ctrl+r+r ´ÜÃàÅ°¸¦ ÀÌ¿ëÇÏ¿© app º¯¼ö¸¦ ÀüºÎ groupÀ¸·Î ¹Ù²ãÁØ´Ù.
+ìš°ì„  app ë³€ìˆ˜ì— í‚¤ë³´ë“œ ì»¤ì„œë¥¼ ë‘ê³  ë¹„ì£¼ì–¼ ìŠ¤íŠœë””ì˜¤ì˜ ctrl+r+r ë‹¨ì¶•í‚¤ë¥¼ ì´ìš©í•˜ì—¬ app ë³€ìˆ˜ë¥¼ ì „ë¶€ groupìœ¼ë¡œ ë°”ê¿”ì¤€ë‹¤.
 
-![3. º¯°æ Àü](../dummy/9%20api%20ºÐ·ù%20°ü¸®/3.%20º¯°æ%20Àü.png)
-<small><small>º¯°æ Àü</small></small>
+<img width="869" height="452" alt="3  ë³€ê²½ ì „" src="https://github.com/user-attachments/assets/7f351a8f-90aa-4c30-96fc-3880ce991f05" />  
 
-![4. º¯°æ ÈÄ](../dummy/9%20api%20ºÐ·ù%20°ü¸®/4.%20º¯°æ%20ÈÄ.png)
-<small><small>º¯°æ ÈÄ</small></small>
+ë³€ê²½ ì „
 
-±× ´ÙÀ½ ```this WebApplication group```ÀÇ º¯¼ö¸¸ appÀ¸·Î ¹Ù²ãÁØ´Ù. 
+<img width="995" height="431" alt="4  ë³€ê²½ í›„" src="https://github.com/user-attachments/assets/88130185-c30e-4edf-9d99-0fbd35a7aa6b" />  
 
-![5. This Webapp App](../dummy/9%20api%20ºÐ·ù%20°ü¸®/5.%20this%20webapp%20app.png)
+ë³€ê²½ í›„
 
-±× ´ÙÀ½ ```var group = app.MapGroup("/user");``` ÄÚµå¸¦ ¸Ç Ã¹ ÁÙ¿¡ ÀÔ·ÂÇÑ´Ù.
+ê·¸ ë‹¤ìŒ ```this WebApplication group```ì˜ ë³€ìˆ˜ë§Œ appìœ¼ë¡œ ë°”ê¿”ì¤€ë‹¤. 
 
-![6. Map Group](../dummy/9%20api%20ºÐ·ù%20°ü¸®/6.%20MapGroup.png)
+<img width="1083" height="483" alt="5  this webapp app" src="https://github.com/user-attachments/assets/690904c8-84b5-4c06-baba-318d738bedbf" />
 
-±×¸®°í ¸ðµç ¿£µåÆ÷ÀÎÆ® url¿¡¼­ /user¸¦ »èÁ¦ÇÑ´Ù.
+ê·¸ ë‹¤ìŒ ```var group = app.MapGroup("/user");``` ì½”ë“œë¥¼ ë§¨ ì²« ì¤„ì— ìž…ë ¥í•œë‹¤.
 
-±×·¸°Ô ÇÏ¸é ÃÖÁ¾ÀûÀ¸·Î ´ÙÀ½°ú °°Àº ÄÚµå°¡ ¿Ï¼ºµÈ´Ù.  
-¿£µåÆ÷ÀÎÆ® °ü¸®°¡ Á¶±ÝÀº ¼ö¿ùÇØÁú °ÍÀÌ´Ù.
+<img width="1026" height="372" alt="6  MapGroup" src="https://github.com/user-attachments/assets/9edee2dd-ce03-45e7-88e3-da31405ad72a" />
+
+ê·¸ë¦¬ê³  ëª¨ë“  ì—”ë“œí¬ì¸íŠ¸ urlì—ì„œ /userë¥¼ ì‚­ì œí•œë‹¤.
+
+ê·¸ë ‡ê²Œ í•˜ë©´ ìµœì¢…ì ìœ¼ë¡œ ë‹¤ìŒê³¼ ê°™ì€ ì½”ë“œê°€ ì™„ì„±ëœë‹¤.  
+ì—”ë“œí¬ì¸íŠ¸ ê´€ë¦¬ê°€ ì¡°ê¸ˆì€ ìˆ˜ì›”í•´ì§ˆ ê²ƒì´ë‹¤.
 
 ```C#
 public static class UserEndpoint
@@ -184,7 +187,7 @@ public static class UserEndpoint
         {
             User? user = await db.Users.FindAsync(id);
 
-            if (user == null) return Results.NotFound("ÇØ´çÇÏ´Â idÀÇ À¯Àú°¡ ¾ø½À´Ï´Ù.");
+            if (user == null) return Results.NotFound("í•´ë‹¹í•˜ëŠ” idì˜ ìœ ì €ê°€ ì—†ìŠµë‹ˆë‹¤.");
 
             UserDto userDto = mapper.Map<UserDto>(user);
 
@@ -223,7 +226,7 @@ public static class UserEndpoint
 
             User? user = await db.Users.FindAsync(id);
 
-            if (user == null) return Results.NotFound("ÇØ´çÇÏ´Â idÀÇ À¯Àú°¡ ¾ø½À´Ï´Ù.");
+            if (user == null) return Results.NotFound("í•´ë‹¹í•˜ëŠ” idì˜ ìœ ì €ê°€ ì—†ìŠµë‹ˆë‹¤.");
 
             mapper.Map(updateUser, user);
 
@@ -236,7 +239,7 @@ public static class UserEndpoint
         {
             User? user = await db.Users.FindAsync(id);
 
-            if (user == null) return Results.NotFound("ÇØ´çÇÏ´Â idÀÇ À¯Àú°¡ ¾ø½À´Ï´Ù.");
+            if (user == null) return Results.NotFound("í•´ë‹¹í•˜ëŠ” idì˜ ìœ ì €ê°€ ì—†ìŠµë‹ˆë‹¤.");
 
             db.Users.Remove(user);
 
@@ -248,9 +251,9 @@ public static class UserEndpoint
 }
 ```
 
-## Program.cs¿¡ µî·Ï
+## Program.csì— ë“±ë¡
 
-¸¶Áö¸·À¸·Î ±¸ÇöÇÑ apiµéÀ» ¸ÅÇÎÇÏ´Â ¸Þ¼­µå°¡ ±¸ÇöµÈ RegisterUserApi() ¸Þ¼­µå¸¦ ÃÖ»óÀ§ ¹®¿¡ Ãß°¡ÇØÁÖ±â¸¸ ÇÏ¸é µÈ´Ù.
+ë§ˆì§€ë§‰ìœ¼ë¡œ êµ¬í˜„í•œ apië“¤ì„ ë§¤í•‘í•˜ëŠ” ë©”ì„œë“œê°€ êµ¬í˜„ëœ RegisterUserApi() ë©”ì„œë“œë¥¼ ìµœìƒìœ„ ë¬¸ì— ì¶”ê°€í•´ì£¼ê¸°ë§Œ í•˜ë©´ ëœë‹¤.
 
 ```C#
 var app = builder.Build();
@@ -260,7 +263,7 @@ app.RegisterUserApi();
 app.Run();
 ```
 
-ÃÖÁ¾ÀûÀ¸·Î ÃÖ»óÀ§¹®¿¡´Â ´ÙÀ½°ú °°ÀÌ ¼³Á¤ ÄÚµå¸¸ ±ò²ûÇÏ°Ô ³²°Ô µÉ °ÍÀÌ´Ù.
+ìµœì¢…ì ìœ¼ë¡œ ìµœìƒìœ„ë¬¸ì—ëŠ” ë‹¤ìŒê³¼ ê°™ì´ ì„¤ì • ì½”ë“œë§Œ ê¹”ë”í•˜ê²Œ ë‚¨ê²Œ ë  ê²ƒì´ë‹¤.
 
 ```C#
 using Microsoft.EntityFrameworkCore;
@@ -297,8 +300,8 @@ app.RegisterUserApi();
 app.Run();
 ```
 
-ÀÌ·¸°Ô ÇÏ¸é ¹Ì´Ï¸Ö apiÀÇ °£´ÜÇÑ api ±¸ÇöÀÌ¶ó´Â ÀåÁ¡À» À¯ÁöÇÏ¸é¼­ ÃÖ»óÀ§¹®ÀÌ º¹ÀâÇØÁö´Â ¹®Á¦¸¦ ÇØ°áÇÒ ¼ö ÀÖ´Ù.
+ì´ë ‡ê²Œ í•˜ë©´ ë¯¸ë‹ˆë©€ apiì˜ ê°„ë‹¨í•œ api êµ¬í˜„ì´ë¼ëŠ” ìž¥ì ì„ ìœ ì§€í•˜ë©´ì„œ ìµœìƒìœ„ë¬¸ì´ ë³µìž¡í•´ì§€ëŠ” ë¬¸ì œë¥¼ í•´ê²°í•  ìˆ˜ ìžˆë‹¤.
 
-# ¸¶¹«¸®
+# ë§ˆë¬´ë¦¬
 
-api ¿äÃ»À» Ã³¸®ÇÏ´Â ¸Þ¼­µåµéÀ» ¿£µåÆ÷ÀÎÆ®º°·Î ºÐ·ùÇØº¸¾Ò´Ù.
+api ìš”ì²­ì„ ì²˜ë¦¬í•˜ëŠ” ë©”ì„œë“œë“¤ì„ ì—”ë“œí¬ì¸íŠ¸ë³„ë¡œ ë¶„ë¥˜í•´ë³´ì•˜ë‹¤.
