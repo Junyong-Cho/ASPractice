@@ -14,11 +14,50 @@ app.MapGet("/file", async () =>
 ```C#
 app.MapGet("/image", async () =>
 {
-    byte[] content = await File.ReadAllBytesAsync("image.jpg");
+    byte[] content = await File.ReadAllBytesAsync("image.jpg");     // 이미지 파일을 바이트 값으로 저장
 
     return Results.File(content, "image/jpg");
 });
 ```
+
+또는
+```C#
+app.MapGet("/image", () =>
+{
+    string path = "image.jpg";                                          // 상대 경로를
+    string file = Path.Combine(Directory.GetCurrentDirectory(), path);  // 절대 경로로 전환
+
+    return Results.File(file, "image/jpg");
+});
+```
+
+## 비디오 스트리밍 방법
+
+```C#
+app.MapGet("/video", async () =>
+{
+    byte[] files = await File.ReadAllBytesAsync("video.mp4");               // 비디오 파일을 바이트 값으로 저장
+
+    return Results.File(files, "video/mp4", enableRangeProcessing: true);
+                                            // enableRangeProcessing이 참이면 비디오 진행 바 조절 가능
+                                            // 거짓이면 스트리밍은 되지만 비디오 진행 바 조절 불가능
+});
+```
+
+또는
+
+```C#
+app.MapGet("/video", () =>
+{
+    string path = "video.mp4";                              // 상대 경로를
+    byte[] files = await File.ReadAllBytesAsync(path);      // 절대 경로로 전환
+
+    return Results.File(files, "video/mp4", enableRangeProcessing: true);
+                                            // enableRangeProcessing이 참이면 비디오 진행 바 조절 가능
+                                            // 거짓이면 스트리밍은 되지만 비디오 진행 바 조절 불가능
+});
+```
+
 
 ## Url:포트번호 설정법
 appsettings.json 파일에 다음과 같은 ```키:값```을 추가한다.
@@ -43,3 +82,8 @@ appsettings.json 파일에 다음과 같은 ```키:값```을 추가한다.
 ```dotnet ef database update <마이그레이션 이름>```
 
 ```dotnet ef migrations remove``` 명령어로 가장 최근에 생성된 마이그레이션부터 제거
+
+## 마이그레이션 전체 초기화
+
+```dotnet database update 0```으로 db 초기화  
+그리고 InitialCreate 단계가 삭제될 때까지 ```dotnet ef migrations remove``` 명령어 실행
