@@ -44,6 +44,8 @@ DBMS 접속을 위한 패스워드를 설정한다.
 
 <img width="673" height="527" alt="install complete" src="https://github.com/user-attachments/assets/5cc56a94-9035-4f2c-b7a7-1044cd7d2ebf" />
 
+## 환경 변수
+
 설치가 완료되면 추가적인 설정이 필요하다.  
 installer가 자동으로 환경 변수를 추가해주지 않기 때문에 환경 변수를 추가해 줘야 한다. (윈도우 기준으로 정리한다.)  
 설치 과정에서 기억해 두었던 설치 경로를 찾아간다. (기본 경로: C:\Program Files\PostgreSQL)  
