@@ -65,7 +65,7 @@ MongoDB Compass는 몽고디비를 GUI로 이용할 수 있는 도구인데 필�
 윈도우 기준 기본 경로가 ```C:\Program Files\MongoDB\Server\버전\bin```일 것이다.  
 
 mongod.cfg 파일을 메모장, vs코드, 노트패드 등 텍스트 편집기로 실행한다.  
-![15. 몽고디컨피그](../.dummy/100%20몽고/15.%20몽고디컨피그.png)
+<img width="210" height="208" alt="15  몽고디컨피그" src="https://github.com/user-attachments/assets/f4afd053-d0b0-438d-9524-8965355e56cd" />
 
 Program Files 경로 밑에 있는 데이터들을 수정할 때 관리자 권한이 필요한데 메모장으로 수정하려면 mongod.cfg 파일을 다른 곳으로 옮긴 다음 수정하고 원래대로 돌려놓는 방법으로 수정해야 한다.  
 
@@ -78,12 +78,12 @@ security:
 
 그리고 윈도우 검색에 서비스를 입력하거나 ```윈도우+r``` 단축키로 실행된 창에 ```services.msc```를 입력해서 서비스 옵션을 실행한 다음에
 
-![16. 서비스](../.dummy/100%20몽고/16.%20서비스.png)  
-![17. 서비스](../.dummy/100%20몽고/17.%20서비스.png)
+<img width="764" height="343" alt="16  서비스" src="https://github.com/user-attachments/assets/f2c49ed9-bca0-47e3-8484-a915b9ee7177" />  
+<img width="395" height="198" alt="17  서비스" src="https://github.com/user-attachments/assets/3e37f3b6-3d71-4d62-9b03-608abe955090" />
 
 MongoDB Server를 찾아 다시 시작을 누른다.
 
-![18. 서비스 다시시작](../.dummy/100%20몽고/18.%20서비스%20다시시작.png)
+<img width="804" height="589" alt="18  서비스 다시시작" src="https://github.com/user-attachments/assets/3a1b7a38-d877-4a2f-bc89-25fcbace0a47" />
 
 ## admin 유저 등록
 
@@ -111,7 +111,7 @@ db.createUser({
 
 단순히 ```mongosh```로 몽고디비에 접속은 가능하나 db나 컬렉션을 조회하는 것이 거부된다.
 
-![19. 조회 실패](../.dummy/100%20몽고/19.%20조회%20실패.png)
+<img width="751" height="360" alt="19  조회 실패" src="https://github.com/user-attachments/assets/91751d0a-4aaa-4607-888c-1f2a6d21e340" />
 
 
 # 마무리
