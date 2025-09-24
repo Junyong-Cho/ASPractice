@@ -1,53 +1,56 @@
-# ¸ù°íµðºñ ¼³Ä¡
+# ëª½ê³ ë””ë¹„ ì„¤ì¹˜
 
-[¸ù°íµðºñ Installer](https://www.mongodb.com/try/download/community)
+[ëª½ê³ ë””ë¹„ Installer](https://www.mongodb.com/try/download/community)
 
-À§ url·Î Á¢¼ÓÇÑ´Ù.
+ìœ„ urlë¡œ ì ‘ì†í•œë‹¤.
 
-![1. ´Ù¿î·Îµå »çÀÌÆ®](../../.dummy/100%20¸ù°í/1.%20´Ù¿î·Îµå%20»çÀÌÆ®.png)
+<img width="369" height="589" alt="1  ë‹¤ìš´ë¡œë“œ ì‚¬ì´íŠ¸" src="https://github.com/user-attachments/assets/15c25a22-0f6b-45c9-9cd6-c0efce0331d7" />
 
-¿î¿µÃ¼Á¦¸¦ ¼³Á¤ÇÑ ´ÙÀ½¿¡ .msi ÆÐÅ°Áö·Î ´Ù¿î·ÎµåÇÑ´Ù.  
-(.zipÀ¸·Î ¹ÞÀ¸¸é ¼³Á¤ÀÌ ±ÍÂú¾ÆÁø´Ù.)
+ìš´ì˜ì²´ì œë¥¼ ì„¤ì •í•œ ë‹¤ìŒì— .msi íŒ¨í‚¤ì§€ë¡œ ë‹¤ìš´ë¡œë“œí•œë‹¤.  
+(.zipìœ¼ë¡œ ë°›ìœ¼ë©´ ì„¤ì •ì´ ê·€ì°®ì•„ì§„ë‹¤.)
 
-![2. ÀÎ½ºÅç·¯ ½ÃÀÛ](../../.dummy/100%20¸ù°í/2.%20ÀÎ½ºÅç·¯%20½ÃÀÛ.png)
-![3. Complete ¼±ÅÃ](../../.dummy/100%20¸ù°í/3.%20complete%20¼±ÅÃ.png)
+<img width="617" height="477" alt="2  ì¸ìŠ¤í†¨ëŸ¬ ì‹œìž‘" src="https://github.com/user-attachments/assets/9b979662-7551-43f6-8fe7-84af62e9c07b" />  
+<img width="611" height="475" alt="3  complete ì„ íƒ" src="https://github.com/user-attachments/assets/20b67fd5-cb9d-472c-ace9-3a37c20edad1" />
 
-Complete¸¦ ¼±ÅÃÇÏ°í ¸ðµç ¼³Á¤À» ±âº»°ªÀ¸·Î À¯ÁöÇÏ¸ç ÁøÇàÇÑ´Ù.
+Completeë¥¼ ì„ íƒí•˜ê³  ëª¨ë“  ì„¤ì •ì„ ê¸°ë³¸ê°’ìœ¼ë¡œ ìœ ì§€í•˜ë©° ì§„í–‰í•œë‹¤.
 
-![4. ³×Æ®¿öÅ© ¼­ºñ½º À¯Àú](../../.dummy/100%20¸ù°í/4.%20³×Æ®¿öÅ©%20¼­ºñ½º%20À¯Àú.png)  
-![5. ¸ù°íµðºñ ÄÄÆÐ½º](../../.dummy/100%20¸ù°í/5.%20¸ù°íµðºñ%20ÄÄÆÐ½º.png)  
-MongoDB Compass´Â ¸ù°íµðºñ¸¦ GUI·Î ÀÌ¿ëÇÒ ¼ö ÀÖ´Â µµ±¸ÀÎµ¥ ÇÊ¿äÇÑ »ç¶÷Àº ¼³Ä¡ÇÏÀÚ.  
-![6. ¼³Ä¡](../../.dummy/100%20¸ù°í/6.%20¼³Ä¡.png)  
-![7. ¼³Ä¡Áß](../../.dummy/100%20¸ù°í/7.%20¼³Ä¡Áß.png)  
-![8. ¼³Ä¡ ¿Ï·á](../../.dummy/100%20¸ù°í/8.%20¼³Ä¡%20¿Ï·á.png)  
+<img width="610" height="475" alt="4  ë„¤íŠ¸ì›Œí¬ ì„œë¹„ìŠ¤ ìœ ì €" src="https://github.com/user-attachments/assets/062d3f55-0cc7-4dba-99dd-b90f4f3f7f99" />  
+<img width="606" height="470" alt="5  ëª½ê³ ë””ë¹„ ì»´íŒ¨ìŠ¤" src="https://github.com/user-attachments/assets/db81f085-7806-4517-9411-5a5e6783bafb" />  
 
-ÀÌÁ¦ ¸ù°íµðºñ¸¦ ¼³Ä¡ÇßÀ¸´Ï ¸ù°íµðºñ¸¦ »ç¿ëÇÒ CLI µµ±¸ÀÎ ¸ù°íµðºñ shellÀ» ¼³Ä¡ÇØ¾ß ÇÑ´Ù.
+MongoDB CompassëŠ” ëª½ê³ ë””ë¹„ë¥¼ GUIë¡œ ì´ìš©í•  ìˆ˜ ìžˆëŠ” ë„êµ¬ì¸ë° í•„ìš”í•œ ì‚¬ëžŒì€ ì„¤ì¹˜í•˜ìž.  
 
-[¸ù°íµðºñ shell](https://www.mongodb.com/try/download/shell)
+<img width="607" height="472" alt="6  ì„¤ì¹˜" src="https://github.com/user-attachments/assets/65339688-4ac3-4796-b306-bb7173e0c085" />  
+<img width="606" height="477" alt="7  ì„¤ì¹˜ì¤‘" src="https://github.com/user-attachments/assets/679d8ca7-1e3d-4f8b-8fa8-83318cd208f5" />  
+<img width="606" height="471" alt="8  ì„¤ì¹˜ ì™„ë£Œ" src="https://github.com/user-attachments/assets/e03e989c-23a8-4c8f-9f48-d01ac0c022ca" />  
 
-À§ url·Î Á¢¼ÓÇÑ´Ù.
+ì´ì œ ëª½ê³ ë””ë¹„ë¥¼ ì„¤ì¹˜í–ˆìœ¼ë‹ˆ ëª½ê³ ë””ë¹„ë¥¼ ì‚¬ìš©í•  CLI ë„êµ¬ì¸ ëª½ê³ ë””ë¹„ shellì„ ì„¤ì¹˜í•´ì•¼ í•œë‹¤.
 
-![9. Mongosh ´Ù¿î·Îµå »çÀÌÆ®](../../.dummy/100%20¸ù°í/9.%20mongosh%20´Ù¿î·Îµå%20»çÀÌÆ®.png)
+[ëª½ê³ ë””ë¹„ shell](https://www.mongodb.com/try/download/shell)
 
-¸¶Âù°¡Áö·Î ¿î¿µÃ¼Á¦¸¦ ¼±ÅÃÇÏ°í .msi ÆÐÅ°Áö·Î ´Ù¿î¹Þ´Â´Ù.
+ìœ„ urlë¡œ ì ‘ì†í•œë‹¤.
 
-![10. ¸ù°íµðºñ ½© ÀÎ½ºÅç·¯ ½ÃÀÛ](../../.dummy/100%20¸ù°í/10.%20¸ù°íµðºñ%20½©%20ÀÎ½ºÅç·¯%20½ÃÀÛ.png)  
+<img width="610" height="832" alt="9  mongosh ë‹¤ìš´ë¡œë“œ ì‚¬ì´íŠ¸" src="https://github.com/user-attachments/assets/b54e720d-ab50-4e64-b154-7b2f0bb6cd79" />
 
-![11. ¼³Ä¡ °æ·Î](../../.dummy/100%20¸ù°í/11.%20¼³Ä¡%20°æ·Î.png)
-¼³Ä¡ °æ·Î´Â °æ·Î °ü¸®¸¦ ÆíÇÏ°Ô ÇÏ±â À§ÇØ¼­ ¸ù°íµðºñ°¡ ¼³Ä¡µÈ °æ·ÎÀÎ Program FilesÀÇ MongoDB µð·ºÅÍ¸® ¹ØÀ¸·Î ¼³Á¤ÇØÁÖ°Ú´Ù.
+ë§ˆì°¬ê°€ì§€ë¡œ ìš´ì˜ì²´ì œë¥¼ ì„ íƒí•˜ê³  .msi íŒ¨í‚¤ì§€ë¡œ ë‹¤ìš´ë°›ëŠ”ë‹¤.
 
-![12. ¼³Ä¡Áß](../../.dummy/100%20¸ù°í/12.%20¼³Ä¡Áß.png)  
-![13. ¼³Ä¡ ¿Ï·á](../../.dummy/100%20¸ù°í/13.%20¼³Ä¡%20¿Ï·á.png)  
+<img width="606" height="470" alt="10  ëª½ê³ ë””ë¹„ ì‰˜ ì¸ìŠ¤í†¨ëŸ¬ ì‹œìž‘" src="https://github.com/user-attachments/assets/25f9c949-0843-4aab-8649-901117b92c35" />
 
-¼³Ä¡°¡ ¿Ï·áµÇ¸é ÅÍ¹Ì³Î¿¡ mongosh¸¦ ÀÔ·ÂÇØº¸°í ¸ù°íµðºñ¿¡ Á¢¼ÓÀÌ µÇ´ÂÁö È®ÀÎÇÑ´Ù.
+<img width="605" height="470" alt="11  ì„¤ì¹˜ ê²½ë¡œ" src="https://github.com/user-attachments/assets/afe1fc10-6e6c-4a8a-828c-2503e4f508c2" />
 
-![14. ¼³Ä¡ È®ÀÎ](../../.dummy/100%20¸ù°í/14.%20¼³Ä¡%20È®ÀÎ.png)
+ì„¤ì¹˜ ê²½ë¡œëŠ” ê²½ë¡œ ê´€ë¦¬ë¥¼ íŽ¸í•˜ê²Œ í•˜ê¸° ìœ„í•´ì„œ ëª½ê³ ë””ë¹„ê°€ ì„¤ì¹˜ëœ ê²½ë¡œì¸ Program Filesì˜ MongoDB ë””ë ‰í„°ë¦¬ ë°‘ìœ¼ë¡œ ì„¤ì •í•´ì£¼ê² ë‹¤.
 
-´ëºÎºÐ ÀÚµ¿À¸·Î ¼³Á¤µÇ°ÚÁö¸¸ ¸¸¾à Á¢¼ÓÀÌ ¾È µÇ¸é È¯°æ º¯¼ö°¡ ¼³Á¤À» ÇØ Áà¾ß ÇÑ´Ù.
+<img width="606" height="467" alt="12  ì„¤ì¹˜ì¤‘" src="https://github.com/user-attachments/assets/b7ec6f27-e6b6-4920-98d1-475bce2a47c0" />
+<img width="602" height="471" alt="13  ì„¤ì¹˜ ì™„ë£Œ" src="https://github.com/user-attachments/assets/605793df-5fe6-4231-a2fc-05e0f4952f17" />
 
-¹æ±Ý ¼³Ä¡Çß´ø Mongosh °æ·Î¸¦ º¹»çÇØ¼­ PostgreSQL ¶§ ¼³Á¤Çß´ø ¹æ¹ý´ë·Î ```½Ã½ºÅÛ È¯°æ º¯¼ö ÆíÁý -> È¯°æ º¯¼ö(N) -> ½Ã½ºÅÛ º¯¼öÀÇ PATH```¿¡ ºÙ¿©³Ö±âÇÏ¸é µÈ´Ù.  
-[È¯°æ º¯¼ö ´Ü°è ÂüÁ¶](https://github.com/Junyong-Cho/ASPractice/tree/master/2.%20PostgreSQL%20%EC%84%A4%EC%B9%98%20%EB%B0%8F%20DB%20%EC%83%9D%EC%84%B1)
+ì„¤ì¹˜ê°€ ì™„ë£Œë˜ë©´ í„°ë¯¸ë„ì— mongoshë¥¼ ìž…ë ¥í•´ë³´ê³  ëª½ê³ ë””ë¹„ì— ì ‘ì†ì´ ë˜ëŠ”ì§€ í™•ì¸í•œë‹¤.
+
+<img width="1462" height="622" alt="14  ì„¤ì¹˜ í™•ì¸" src="https://github.com/user-attachments/assets/aabd7a6c-e7bd-4b9a-9521-e27d23a3e0bf" />
+
+ëŒ€ë¶€ë¶„ ìžë™ìœ¼ë¡œ ì„¤ì •ë˜ê² ì§€ë§Œ ë§Œì•½ ì ‘ì†ì´ ì•ˆ ë˜ë©´ í™˜ê²½ ë³€ìˆ˜ê°€ ì„¤ì •ì„ í•´ ì¤˜ì•¼ í•œë‹¤.
+
+ë°©ê¸ˆ ì„¤ì¹˜í–ˆë˜ Mongosh ê²½ë¡œë¥¼ ë³µì‚¬í•´ì„œ PostgreSQL ë•Œ ì„¤ì •í–ˆë˜ ë°©ë²•ëŒ€ë¡œ ```ì‹œìŠ¤í…œ í™˜ê²½ ë³€ìˆ˜ íŽ¸ì§‘ -> í™˜ê²½ ë³€ìˆ˜(N) -> ì‹œìŠ¤í…œ ë³€ìˆ˜ì˜ PATH```ì— ë¶™ì—¬ë„£ê¸°í•˜ë©´ ëœë‹¤.  
+[í™˜ê²½ ë³€ìˆ˜ ë‹¨ê³„ ì°¸ì¡°](https://github.com/Junyong-Cho/ASPractice/tree/master/2.%20PostgreSQL%20%EC%84%A4%EC%B9%98%20%EB%B0%8F%20DB%20%EC%83%9D%EC%84%B1)
 
 
-# ¸¶¹«¸®
-¸ù°íµðºñ ¼³Ä¡¸¦ ¿Ï·áÇß´Ù.
+# ë§ˆë¬´ë¦¬
+ëª½ê³ ë””ë¹„ ì„¤ì¹˜ë¥¼ ì™„ë£Œí–ˆë‹¤.
