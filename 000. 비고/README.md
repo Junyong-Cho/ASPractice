@@ -21,7 +21,7 @@ app.MapGet("/file", async (HttpContext context) =>
 });
 ```
 
-위와 같은 방법이 정적 파일을 전송할 때 더 효율적이다.
+위와 같은 방법이 html 파일에서 참조하는 .css .js .mp4 등 정적 파일을 전송할 때 더 효율적이다.
 
 ## 이미지 파일 전송법
 
