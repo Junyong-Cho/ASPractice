@@ -1,4 +1,4 @@
-## html ÆÄÀÏ Àü¼Û¹ı
+## html íŒŒì¼ ì „ì†¡ë²•
 
 ```C#
 app.MapGet("/file", async () =>
@@ -9,9 +9,9 @@ app.MapGet("/file", async () =>
 });
 ```
 
-¶Ç´Â
+ë˜ëŠ”
 ```C#
-app.UseStaticFiles();   // Á¤Àû ÆÄÀÏ »ç¿ë ¹Ìµé¿ş¾î
+app.UseStaticFiles();   // ì •ì  íŒŒì¼ ì‚¬ìš© ë¯¸ë“¤ì›¨ì–´
 
 app.MapGet("/file", async (HttpContext context) =>
 {
@@ -21,83 +21,83 @@ app.MapGet("/file", async (HttpContext context) =>
 });
 ```
 
-À§¿Í °°Àº ¹æ¹ıÀÌ html ÆÄÀÏ¿¡¼­ ÂüÁ¶ÇÏ´Â .css .js .mp4 µî Á¤Àû ÆÄÀÏÀ» Àü¼ÛÇÒ ¶§ ´õ È¿À²ÀûÀÌ´Ù.
+ìœ„ì™€ ê°™ì€ ë°©ë²•ì´ html íŒŒì¼ì—ì„œ ì°¸ì¡°í•˜ëŠ” .css .js .mp4 ë“± ì •ì  íŒŒì¼ì„ ì „ì†¡í•  ë•Œ ë” íš¨ìœ¨ì ì´ë‹¤.
 
-## ÀÌ¹ÌÁö ÆÄÀÏ Àü¼Û¹ı
+## ì´ë¯¸ì§€ íŒŒì¼ ì „ì†¡ë²•
 
 ```C#
 app.MapGet("/image", async () =>
 {
-    byte[] content = await File.ReadAllBytesAsync("image.jpg");     // ÀÌ¹ÌÁö ÆÄÀÏÀ» ¹ÙÀÌÆ® °ªÀ¸·Î ÀúÀå
+    byte[] content = await File.ReadAllBytesAsync("image.jpg");     // ì´ë¯¸ì§€ íŒŒì¼ì„ ë°”ì´íŠ¸ ê°’ìœ¼ë¡œ ì €ì¥
 
     return Results.File(content, "image/jpg");
 });
 ```
 
-¶Ç´Â
+ë˜ëŠ”
 ```C#
 app.MapGet("/image", () =>
 {
-    string path = "image.jpg";                                          // »ó´ë °æ·Î¸¦
-    string file = Path.Combine(Directory.GetCurrentDirectory(), path);  // Àı´ë °æ·Î·Î ÀüÈ¯
+    string path = "image.jpg";                                          // ìƒëŒ€ ê²½ë¡œë¥¼
+    string file = Path.Combine(Directory.GetCurrentDirectory(), path);  // ì ˆëŒ€ ê²½ë¡œë¡œ ì „í™˜
 
     return Results.File(file, "image/jpg");
 });
 ```
 
-## ºñµğ¿À ½ºÆ®¸®¹Ö ¹æ¹ı
+## ë¹„ë””ì˜¤ ìŠ¤íŠ¸ë¦¬ë° ë°©ë²•
 
 ```C#
 app.MapGet("/video", async () =>
 {
-    byte[] files = await File.ReadAllBytesAsync("video.mp4");               // ºñµğ¿À ÆÄÀÏÀ» ¹ÙÀÌÆ® °ªÀ¸·Î ÀúÀå
+    byte[] files = await File.ReadAllBytesAsync("video.mp4");               // ë¹„ë””ì˜¤ íŒŒì¼ì„ ë°”ì´íŠ¸ ê°’ìœ¼ë¡œ ì €ì¥
 
     return Results.File(files, "video/mp4", enableRangeProcessing: true);
-                                            // enableRangeProcessingÀÌ ÂüÀÌ¸é ºñµğ¿À ÁøÇà ¹Ù Á¶Àı °¡´É
-                                            // °ÅÁşÀÌ¸é ½ºÆ®¸®¹ÖÀº µÇÁö¸¸ ºñµğ¿À ÁøÇà ¹Ù Á¶Àı ºÒ°¡´É
+                                            // enableRangeProcessingì´ ì°¸ì´ë©´ ë¹„ë””ì˜¤ ì§„í–‰ ë°” ì¡°ì ˆ ê°€ëŠ¥
+                                            // ê±°ì§“ì´ë©´ ìŠ¤íŠ¸ë¦¬ë°ì€ ë˜ì§€ë§Œ ë¹„ë””ì˜¤ ì§„í–‰ ë°” ì¡°ì ˆ ë¶ˆê°€ëŠ¥
 });
 ```
 
-¶Ç´Â
+ë˜ëŠ”
 
 ```C#
 app.MapGet("/video", () =>
 {
-    string path = "video.mp4";                              // »ó´ë °æ·Î¸¦
-    byte[] files = await File.ReadAllBytesAsync(path);      // Àı´ë °æ·Î·Î ÀüÈ¯
+    string path = "video.mp4";                              // ìƒëŒ€ ê²½ë¡œë¥¼
+    byte[] files = await File.ReadAllBytesAsync(path);      // ì ˆëŒ€ ê²½ë¡œë¡œ ì „í™˜
 
     return Results.File(files, "video/mp4", enableRangeProcessing: true);
-                                            // enableRangeProcessingÀÌ ÂüÀÌ¸é ºñµğ¿À ÁøÇà ¹Ù Á¶Àı °¡´É
-                                            // °ÅÁşÀÌ¸é ½ºÆ®¸®¹ÖÀº µÇÁö¸¸ ºñµğ¿À ÁøÇà ¹Ù Á¶Àı ºÒ°¡´É
+                                            // enableRangeProcessingì´ ì°¸ì´ë©´ ë¹„ë””ì˜¤ ì§„í–‰ ë°” ì¡°ì ˆ ê°€ëŠ¥
+                                            // ê±°ì§“ì´ë©´ ìŠ¤íŠ¸ë¦¬ë°ì€ ë˜ì§€ë§Œ ë¹„ë””ì˜¤ ì§„í–‰ ë°” ì¡°ì ˆ ë¶ˆê°€ëŠ¥
 });
 ```
 
 
-## Url:Æ÷Æ®¹øÈ£ ¼³Á¤¹ı
-appsettings.json ÆÄÀÏ¿¡ ´ÙÀ½°ú °°Àº ```Å°:°ª```À» Ãß°¡ÇÑ´Ù.
+## Url:í¬íŠ¸ë²ˆí˜¸ ì„¤ì •ë²•
+appsettings.json íŒŒì¼ì— ë‹¤ìŒê³¼ ê°™ì€ ```í‚¤:ê°’```ì„ ì¶”ê°€í•œë‹¤.
 ```json
 "Urls": "https://localhost:8080",
 ```
 
 
-## DB ÀÚµ¿»ı¼º Å° °ª ÃÊ±âÈ­ ¹æ¹ı
+## DB ìë™ìƒì„± í‚¤ ê°’ ì´ˆê¸°í™” ë°©ë²•
 
-```ALTER SEQUENCE "Å×ÀÌºíÀÌ¸§_Å°¼Ó¼ºÀÌ¸§_seq" with restart 1;``` => Å° °©À» 1·Î ÃÊ±âÈ­(´ë¹®ÀÚ°¡ ÀÖÀ¸¸é µû¿ÈÇ¥ Ç¥½Ã ÇÊ¼ö)  
-```SELECT nextval('"Å×ÀÌºíÀÌ¸§_Å°¼Ó¼ºÀÌ¸§_seq"');``` => ´ÙÀ½À¸·Î ÁöÁ¤µÉ Å° °ª È®ÀÎ('¿Í "¿¡ ÁÖ¸ñ)
+```ALTER SEQUENCE "í…Œì´ë¸”ì´ë¦„_í‚¤ì†ì„±ì´ë¦„_seq" restart with 1;``` => í‚¤ ê°‘ì„ 1ë¡œ ì´ˆê¸°í™”(ëŒ€ë¬¸ìê°€ ìˆìœ¼ë©´ ë”°ì˜´í‘œ í‘œì‹œ í•„ìˆ˜)  
+```SELECT nextval('"í…Œì´ë¸”ì´ë¦„_í‚¤ì†ì„±ì´ë¦„_seq"');``` => ë‹¤ìŒìœ¼ë¡œ ì§€ì •ë  í‚¤ ê°’ í™•ì¸('ì™€ "ì— ì£¼ëª©)
 
-## ¸¶ÀÌ±×·¹ÀÌ¼Ç ÀÌ·Â Á¶È¸
+## ë§ˆì´ê·¸ë ˆì´ì…˜ ì´ë ¥ ì¡°íšŒ
 
-```dotnet ef migrations list``` ¸í·É¾î·Î Á¶È¸
+```dotnet ef migrations list``` ëª…ë ¹ì–´ë¡œ ì¡°íšŒ
 
-## ¸¶ÀÌ±×·¹ÀÌ¼Ç ¾÷µ¥ÀÌÆ® µÇµ¹¸®±â
+## ë§ˆì´ê·¸ë ˆì´ì…˜ ì—…ë°ì´íŠ¸ ë˜ëŒë¦¬ê¸°
 
-Á¶È¸ÇÑ ¸¶ÀÌ±×·¹ÀÌ¼Ç ÀÌ·Â¿¡¼­ Áö¿ì°í ½ÍÀº ÀÌ·Â À§¿¡ ¸¶ÀÌ±×·¹ÀÌ¼ÇÀ¸·Î db ¾÷µ¥ÀÌÆ®ÇÏ±â
+ì¡°íšŒí•œ ë§ˆì´ê·¸ë ˆì´ì…˜ ì´ë ¥ì—ì„œ ì§€ìš°ê³  ì‹¶ì€ ì´ë ¥ ìœ„ì— ë§ˆì´ê·¸ë ˆì´ì…˜ìœ¼ë¡œ db ì—…ë°ì´íŠ¸í•˜ê¸°
 
-```dotnet ef database update <¸¶ÀÌ±×·¹ÀÌ¼Ç ÀÌ¸§>```
+```dotnet ef database update <ë§ˆì´ê·¸ë ˆì´ì…˜ ì´ë¦„>```
 
-```dotnet ef migrations remove``` ¸í·É¾î·Î °¡Àå ÃÖ±Ù¿¡ »ı¼ºµÈ ¸¶ÀÌ±×·¹ÀÌ¼ÇºÎÅÍ Á¦°Å
+```dotnet ef migrations remove``` ëª…ë ¹ì–´ë¡œ ê°€ì¥ ìµœê·¼ì— ìƒì„±ëœ ë§ˆì´ê·¸ë ˆì´ì…˜ë¶€í„° ì œê±°
 
-## ¸¶ÀÌ±×·¹ÀÌ¼Ç ÀüÃ¼ ÃÊ±âÈ­
+## ë§ˆì´ê·¸ë ˆì´ì…˜ ì „ì²´ ì´ˆê¸°í™”
 
-```dotnet database update 0```À¸·Î db ÃÊ±âÈ­  
-±×¸®°í InitialCreate ´Ü°è°¡ »èÁ¦µÉ ¶§±îÁö ```dotnet ef migrations remove``` ¸í·É¾î ½ÇÇà
+```dotnet database update 0```ìœ¼ë¡œ db ì´ˆê¸°í™”  
+ê·¸ë¦¬ê³  InitialCreate ë‹¨ê³„ê°€ ì‚­ì œë  ë•Œê¹Œì§€ ```dotnet ef migrations remove``` ëª…ë ¹ì–´ ì‹¤í–‰
