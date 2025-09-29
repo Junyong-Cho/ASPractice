@@ -1,21 +1,21 @@
-# ÀÎÁõ
+# ì¸ì¦
 
-¿ì¸®´Â Áö±Ý±îÁö User »ý¼º ¿äÃ»ÀÌ µé¾î¿À¸é µî·ÏÇØÁÖ°í id¿¡ µû¶ó Á¶È¸ÇØÁÖ´Â ±â´É±îÁö¸¸ ±¸ÇöÇß´Ù.  
+ìš°ë¦¬ëŠ” ì§€ê¸ˆê¹Œì§€ User ìƒì„± ìš”ì²­ì´ ë“¤ì–´ì˜¤ë©´ ë“±ë¡í•´ì£¼ê³  idì— ë”°ë¼ ì¡°íšŒí•´ì£¼ëŠ” ê¸°ëŠ¥ê¹Œì§€ë§Œ êµ¬í˜„í–ˆë‹¤.  
 
-ÀÌÁ¦ µî·ÏÇÑ À¯ÀúÀÇ ·Î±×ÀÎ ±â´ÉÀ» ¸¸µé¾îº¸°Ú´Ù.
+ì´ì œ ë“±ë¡í•œ ìœ ì €ì˜ ë¡œê·¸ì¸ ê¸°ëŠ¥ì„ ë§Œë“¤ì–´ë³´ê² ë‹¤.
 
-¾î¶°ÇÑ À¯Àú°¡ Id¿Í ÆÐ½º¿öµå¸¦ ÀÔ·ÂÇÏ¸é db¿¡¼­ ÇØ´ç IDÀÇ À¯Àú°¡ Á¸ÀçÇÏ´ÂÁö È®ÀÎÇÏ°í Á¸ÀçÇÏ¸é ÆÐ½º¿öµå°¡ °°ÀºÁö È®ÀÎÇÑ ´ÙÀ½¿¡ ·Î±×ÀÎ ¼º°ø ¿©ºÎ¸¦ ¹ÝÈ¯ÇÏµµ·Ï ÇØº¸°Ú´Ù.
+ì–´ë– í•œ ìœ ì €ê°€ Idì™€ íŒ¨ìŠ¤ì›Œë“œë¥¼ ìž…ë ¥í•˜ë©´ dbì—ì„œ í•´ë‹¹ IDì˜ ìœ ì €ê°€ ì¡´ìž¬í•˜ëŠ”ì§€ í™•ì¸í•˜ê³  ì¡´ìž¬í•˜ë©´ íŒ¨ìŠ¤ì›Œë“œê°€ ê°™ì€ì§€ í™•ì¸í•œ ë‹¤ìŒì— ë¡œê·¸ì¸ ì„±ê³µ ì—¬ë¶€ë¥¼ ë°˜í™˜í•˜ë„ë¡ í•´ë³´ê² ë‹¤.
 
-## SignupUserDto, SigninUserDto »ý¼º
+## SignupUserDto, SigninUserDto ìƒì„±
 
-¸ÕÀú ÀÎÁõ µ¥ÀÌÅÍ¸¦ ÁÖ°í¹ÞÀ» Dto¸¦ ¸¸µé¾îÁÖ°Ú´Ù. SignupUserDto´Â CreateUser¿Í µ¿ÀÛÀº ºñ½ÁÇÏÁö¸¸ È¸¿ø°¡ÀÔÀº ÀÎÁõÀ» °ü¸®ÇÏ´Â ±â´ÉÀÌ¹Ç·Î Createº¸´Ü Sign upÀ¸·Î ¸í½ÃÇÏ´Â °ÍÀÌ ´õ ÁÁÀ» °Í °°¾Æ¼­ CreateUserDto µ¥ÀÌÅÍ Çü½ÄÀ» Á¦°ÅÇÑ ´ÙÀ½¿¡ »õ·Î¿î SignupUserDto¸¦ ¸¸µé¾îº¸°Ú´Ù.
+ë¨¼ì € ì¸ì¦ ë°ì´í„°ë¥¼ ì£¼ê³ ë°›ì„ Dtoë¥¼ ë§Œë“¤ì–´ì£¼ê² ë‹¤. SignupUserDtoëŠ” CreateUserì™€ ë™ìž‘ì€ ë¹„ìŠ·í•˜ì§€ë§Œ íšŒì›ê°€ìž…ì€ ì¸ì¦ì„ ê´€ë¦¬í•˜ëŠ” ê¸°ëŠ¥ì´ë¯€ë¡œ Createë³´ë‹¨ Sign upìœ¼ë¡œ ëª…ì‹œí•˜ëŠ” ê²ƒì´ ë” ì¢‹ì„ ê²ƒ ê°™ì•„ì„œ CreateUserDto ë°ì´í„° í˜•ì‹ì„ ì œê±°í•œ ë‹¤ìŒì— ìƒˆë¡œìš´ SignupUserDtoë¥¼ ë§Œë“¤ì–´ë³´ê² ë‹¤.
 
-ÀÎÁõÀ» À§ÇÑ DtoµéÀ» µû·Î °ü¸®ÇÏµµ·Ï Dtos µð·ºÅä¸® ¹ØÀ¸·Î AuthDtos µð·ºÅä¸®¸¦ »õ·Î ¸¸µç ´ÙÀ½¿¡ SigninUserDto.cs¿Í SingupUserDto.cs ÆÄÀÏÀ» ¸¸µç´Ù.
+ì¸ì¦ì„ ìœ„í•œ Dtoë“¤ì„ ë”°ë¡œ ê´€ë¦¬í•˜ë„ë¡ Dtos ë””ë ‰í† ë¦¬ ë°‘ìœ¼ë¡œ AuthDtos ë””ë ‰í† ë¦¬ë¥¼ ìƒˆë¡œ ë§Œë“  ë‹¤ìŒì— SigninUserDto.csì™€ SingupUserDto.cs íŒŒì¼ì„ ë§Œë“ ë‹¤.
 
-![1. Auth µð·ºÅÍ¸®](../.dummy/10%20ÀÎÁõ/1.%20Auth%20µð·ºÅÍ¸®.png)
+<img width="320" height="222" alt="1  Auth ë””ë ‰í„°ë¦¬" src="https://github.com/user-attachments/assets/b7306f98-c574-445f-b2b6-64ff3123c708" />
 
-±× ´ÙÀ½ SignupUserDto Å¬·¡½º¸¦ ´ÙÀ½°ú °°ÀÌ ÀÛ¼ºÇÑ´Ù.  
-ÀÌÀü¿¡ ÀÛ¼ºÇß´ø CreateUserDto¿Í °°´Ù.  
+ê·¸ ë‹¤ìŒ SignupUserDto í´ëž˜ìŠ¤ë¥¼ ë‹¤ìŒê³¼ ê°™ì´ ìž‘ì„±í•œë‹¤.  
+ì´ì „ì— ìž‘ì„±í–ˆë˜ CreateUserDtoì™€ ê°™ë‹¤.  
 
 ```C#
 namespace Authentication.Dtos.AuthDtos;
@@ -29,8 +29,8 @@ public class SignupUserDto
 }
 ```
 
-±×¸®°í ·Î±×ÀÎÇÒ ¶§ »ç¿ëµÇ´Â SigninUserDto´Â ´ÙÀ½°ú °°ÀÌ ÀÛ¼ºÇÑ´Ù.  
-·Î±×ÀÎ¿¡´Â UserId¿Í ÆÐ½º¿öµå¸¸ »ç¿ëµÉ °ÍÀÌ´Ù.
+ê·¸ë¦¬ê³  ë¡œê·¸ì¸í•  ë•Œ ì‚¬ìš©ë˜ëŠ” SigninUserDtoëŠ” ë‹¤ìŒê³¼ ê°™ì´ ìž‘ì„±í•œë‹¤.  
+ë¡œê·¸ì¸ì—ëŠ” UserIdì™€ íŒ¨ìŠ¤ì›Œë“œë§Œ ì‚¬ìš©ë  ê²ƒì´ë‹¤.
 
 ```C#
 namespace Authentication.Dtos.AuthDtos;
@@ -42,35 +42,35 @@ public class SigninUserDto
 }
 ```
 
-## UserId ÀÎµ¦½º ¼³Á¤
+## UserId ì¸ë±ìŠ¤ ì„¤ì •
 
-SigninUserDto¿¡ Æ÷ÇÔµÈ µ¥ÀÌÅÍ´Â À¯Àú id¿Í ÆÐ½º¿öµå »ÓÀÌ´Ù.  
-Áö±Ý±îÁö db¿¡¼­ ¿£Æ¼Æ¼¸¦ Ã£À» ¶§ ¿£Æ¼Æ¼ÀÇ ±âº»Å°·Î Á¶È¸ÇØ¼­ Ã£¾Ò´Âµ¥ ±âº»Å°´Â db¿¡¼­ ÀÚµ¿À¸·Î »ý¼ºÇÏ´Â ¹øÈ£ÀÌ¹Ç·Î ·Î±×ÀÎÇÒ ¶§´Â UserId·Î Á¶È¸ÇÏµµ·Ï ÇÒ °ÍÀÌ´Ù.  
+SigninUserDtoì— í¬í•¨ëœ ë°ì´í„°ëŠ” ìœ ì € idì™€ íŒ¨ìŠ¤ì›Œë“œ ë¿ì´ë‹¤.  
+ì§€ê¸ˆê¹Œì§€ dbì—ì„œ ì—”í‹°í‹°ë¥¼ ì°¾ì„ ë•Œ ì—”í‹°í‹°ì˜ ê¸°ë³¸í‚¤ë¡œ ì¡°íšŒí•´ì„œ ì°¾ì•˜ëŠ”ë° ê¸°ë³¸í‚¤ëŠ” dbì—ì„œ ìžë™ìœ¼ë¡œ ìƒì„±í•˜ëŠ” ë²ˆí˜¸ì´ë¯€ë¡œ ë¡œê·¸ì¸í•  ë•ŒëŠ” UserIdë¡œ ì¡°íšŒí•˜ë„ë¡ í•  ê²ƒì´ë‹¤.  
 
-À¯Àú id·Î ¿£Æ¼Æ¼¸¦ Á¶È¸ÇÏ´Â ¹æ¹ýÀº ´ÙÀ½°ú °°´Ù.
+ìœ ì € idë¡œ ì—”í‹°í‹°ë¥¼ ì¡°íšŒí•˜ëŠ” ë°©ë²•ì€ ë‹¤ìŒê³¼ ê°™ë‹¤.
 
 ```C#
 app.MapGet("/{id}", async (UserDbContext db, int id) =>
 {
     User? user = await db.Users.FindAsync(id);
-    /*±âº»Å°·Î Á¶È¸*/
+    /*ê¸°ë³¸í‚¤ë¡œ ì¡°íšŒ*/
 });
 
 app.MapGet("/{userId}", async (UserDbContext db, string userId) =>
 {
     User? user = await db.Users.FirstOrDefaultAsync(u => u.UserId == userId);
 
-    /*±âº»Å°°¡ ¾Æ´Ñ ¼Ó¼ºÀ¸·Î Á¶È¸*/
+    /*ê¸°ë³¸í‚¤ê°€ ì•„ë‹Œ ì†ì„±ìœ¼ë¡œ ì¡°íšŒ*/
 });
 ```
 
-±×·¯³ª ±âº»Å°°¡ ¾Æ´Ñ ¼Ó¼ºÀ¸·Î Á¶È¸ÇÏ°Ô µÇ¸é ¸±·¹ÀÌ¼ÇÀÇ ¸ðµç UserId °ªÀ» Á¶È¸ÇØ¼­ ¸ÅÄªµÇ´Â °ªÀÌ ÀÖ´ÂÁö È®ÀÎÇØºÁ¾ß ÇÏ¹Ç·Î ¸¸¾à Á¸ÀçÇÏÁö ¾Ê´Â UserId¶ó¸é(Áï ÃÖ¾ÇÀÇ °æ¿ì¶ó¸é) ¿£Æ¼Æ¼ Å½»öÀÇ ½Ã°£º¹Àâµµ°¡ O(n)ÀÌ µÈ´Ù.
+ê·¸ëŸ¬ë‚˜ ê¸°ë³¸í‚¤ê°€ ì•„ë‹Œ ì†ì„±ìœ¼ë¡œ ì¡°íšŒí•˜ê²Œ ë˜ë©´ ë¦´ë ˆì´ì…˜ì˜ ëª¨ë“  UserId ê°’ì„ ì¡°íšŒí•´ì„œ ë§¤ì¹­ë˜ëŠ” ê°’ì´ ìžˆëŠ”ì§€ í™•ì¸í•´ë´ì•¼ í•˜ë¯€ë¡œ ë§Œì•½ ì¡´ìž¬í•˜ì§€ ì•ŠëŠ” UserIdë¼ë©´(ì¦‰ ìµœì•…ì˜ ê²½ìš°ë¼ë©´) ì—”í‹°í‹° íƒìƒ‰ì˜ ì‹œê°„ë³µìž¡ë„ê°€ O(n)ì´ ëœë‹¤.
 
-µû¶ó¼­ È¿À²ÀûÀ¸·Î UserId¸¦ Á¶È¸ÇÏ±â À§ÇØ User ¸±·¹ÀÌ¼ÇÀÇ UserId ¼Ó¼ºÀ» ÀÎµ¦½º·Î ¼³Á¤ÇØ¼­ Á¶È¸¿¡ ÃÖ¾ÇÀÇ °æ¿ì¿¡µµ O(log n)ÀÌ °É¸®µµ·Ï ¼³Á¤ÇÏ°Ú´Ù.
+ë”°ë¼ì„œ íš¨ìœ¨ì ìœ¼ë¡œ UserIdë¥¼ ì¡°íšŒí•˜ê¸° ìœ„í•´ User ë¦´ë ˆì´ì…˜ì˜ UserId ì†ì„±ì„ ì¸ë±ìŠ¤ë¡œ ì„¤ì •í•´ì„œ ì¡°íšŒì— ìµœì•…ì˜ ê²½ìš°ì—ë„ O(log n)ì´ ê±¸ë¦¬ë„ë¡ ì„¤ì •í•˜ê² ë‹¤.
 
-### UserDbContext ¿À¹ö¶óÀÌµå
+### UserDbContext ì˜¤ë²„ë¼ì´ë“œ
 
-UserDbContext.cs ÆÄÀÏÀ» ´ÙÀ½°ú °°ÀÌ ¼öÁ¤Çß´Ù.
+UserDbContext.cs íŒŒì¼ì„ ë‹¤ìŒê³¼ ê°™ì´ ìˆ˜ì •í–ˆë‹¤.
 ```C#
 public class UserDbContext : DbContext
 {
@@ -78,49 +78,49 @@ public class UserDbContext : DbContext
 
     public DbSet<User> Users { get; set; }
 
-    //¿À¹ö¶óÀÌµå Ãß°¡
+    //ì˜¤ë²„ë¼ì´ë“œ ì¶”ê°€
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {
         base.OnModelCreating(modelBuilder);
 
-        modelBuilder.Entity<User>().ToTable("users")    // ¸±·¹ÀÌ¼Ç ÀÌ¸§ ¼³Á¤
-            .HasIndex(u => u.UserId).IsUnique();        // UserId ÀÎµ¦½º ¹× Unique ¼³Á¤
+        modelBuilder.Entity<User>().ToTable("users")    // ë¦´ë ˆì´ì…˜ ì´ë¦„ ì„¤ì •
+            .HasIndex(u => u.UserId).IsUnique();        // UserId ì¸ë±ìŠ¤ ë° Unique ì„¤ì •
     }
 }
 ```
 
-ÀÎµ¦½º¸¦ ¼³Á¤ÇÏ´Â ±è¿¡ ¸±·¹ÀÌ¼Ç ÀÌ¸§À» users·Î ¼³Á¤ÇØÁá´Ù.  
-UserDbContextÀÇ DbSetÀÇ ÀÌ¸§À» C# ¸í¸í ¾à¼Ó¿¡ ¸Â°Ô Users·Î ¼³Á¤ÇØÁÖ¾ú±â ¶§¹®¿¡ ÀÌ ¼³Á¤ÀÌ ¾øÀ¸¸é db¿¡ Users¶ó´Â ÀÌ¸§ÀÇ ¸±·¹ÀÌ¼ÇÀÌ »ý¼ºµÇ´Âµ¥ ÀÌ´Â SQL¹®À¸·Î Á¶È¸ÇÒ ¶§ select * from "Users"¶ó°í µû¿ÈÇ¥ Ç¥½Ã¸¦ ÇØ ÁÖ¾î¾ß ÇÏ´Â ±ÍÂúÀ½ÀÌ ÀÖ±â¿¡ ¼Ò¹®ÀÚ·Î ¼³Á¤ÇØÁØ°ÍÀÌ´Ù.
+ì¸ë±ìŠ¤ë¥¼ ì„¤ì •í•˜ëŠ” ê¹€ì— ë¦´ë ˆì´ì…˜ ì´ë¦„ì„ usersë¡œ ì„¤ì •í•´ì¤¬ë‹¤.  
+UserDbContextì˜ DbSetì˜ ì´ë¦„ì„ C# ëª…ëª… ì•½ì†ì— ë§žê²Œ Usersë¡œ ì„¤ì •í•´ì£¼ì—ˆê¸° ë•Œë¬¸ì— ì´ ì„¤ì •ì´ ì—†ìœ¼ë©´ dbì— Usersë¼ëŠ” ì´ë¦„ì˜ ë¦´ë ˆì´ì…˜ì´ ìƒì„±ë˜ëŠ”ë° ì´ëŠ” SQLë¬¸ìœ¼ë¡œ ì¡°íšŒí•  ë•Œ select * from "Users"ë¼ê³  ë”°ì˜´í‘œ í‘œì‹œë¥¼ í•´ ì£¼ì–´ì•¼ í•˜ëŠ” ê·€ì°®ìŒì´ ìžˆê¸°ì— ì†Œë¬¸ìžë¡œ ì„¤ì •í•´ì¤€ê²ƒì´ë‹¤.
 
-±×¸®°í HasIndex()·Î UserId¸¦ ÀÎµ¦½º·Î ¼³Á¤ÇØÁØ´Ù.  
-ÀÌ·¸°Ô UserId ¼Ó¼ºÀÌ db¿¡¼­ Á¤·ÄµÇ¸é¼­ ÀÌÁøÅ½»öÀ¸·Î O(log n)ÀÇ Å½»öÀÌ °¡´ÉÇØÁø´Ù.  
-´õÇÏ¿© UserId´Â Áßº¹µÇ¸é ¾È µÇ¹Ç·Î IsUnique()·Î Áßº¹ ºÒ°¡ ¼³Á¤µµ ÇØÁÖ¾ú´Ù.
+ê·¸ë¦¬ê³  HasIndex()ë¡œ UserIdë¥¼ ì¸ë±ìŠ¤ë¡œ ì„¤ì •í•´ì¤€ë‹¤.  
+ì´ë ‡ê²Œ UserId ì†ì„±ì´ dbì—ì„œ ì •ë ¬ë˜ë©´ì„œ ì´ì§„íƒìƒ‰ìœ¼ë¡œ O(log n)ì˜ íƒìƒ‰ì´ ê°€ëŠ¥í•´ì§„ë‹¤.  
+ë”í•˜ì—¬ UserIdëŠ” ì¤‘ë³µë˜ë©´ ì•ˆ ë˜ë¯€ë¡œ IsUnique()ë¡œ ì¤‘ë³µ ë¶ˆê°€ ì„¤ì •ë„ í•´ì£¼ì—ˆë‹¤.
 
-db ±¸Á¶¸¦ º¯°æÇÏ¿´À¸¹Ç·Î ```dotnet ef migrations add (º¯°æ ³»¿ë)``` ```dotnet ef database update``` ¸í·É¾î·Î db¸¦ ¾÷µ¥ÀÌÆ®ÇØÁØ´Ù.
+db êµ¬ì¡°ë¥¼ ë³€ê²½í•˜ì˜€ìœ¼ë¯€ë¡œ ```dotnet ef migrations add (ë³€ê²½ ë‚´ìš©)``` ```dotnet ef database update``` ëª…ë ¹ì–´ë¡œ dbë¥¼ ì—…ë°ì´íŠ¸í•´ì¤€ë‹¤.
 
-## ÆÐ½º¿öµå ÇØ½Ì
+## íŒ¨ìŠ¤ì›Œë“œ í•´ì‹±
 
-ÀÏ¹ÝÀûÀ¸·Î À¯Àú µ¥ÀÌÅÍ¸¦ ÀúÀåÇÒ ¶§ ÆÐ½º¿öµå´Â ÇØ½ÌÇØ¼­ ÀúÀåÇÑ´Ù.  
-ÀÌ¹ø ´Ü°è¿¡¼­´Â ±×·¸°Ô ÇØ º¼ °ÍÀÌ´Ù.
+ì¼ë°˜ì ìœ¼ë¡œ ìœ ì € ë°ì´í„°ë¥¼ ì €ìž¥í•  ë•Œ íŒ¨ìŠ¤ì›Œë“œëŠ” í•´ì‹±í•´ì„œ ì €ìž¥í•œë‹¤.  
+ì´ë²ˆ ë‹¨ê³„ì—ì„œëŠ” ê·¸ë ‡ê²Œ í•´ ë³¼ ê²ƒì´ë‹¤.
 
-¸ÕÀú nuget »çÀÌÆ®¿¡¼­ BCrypt¸¦ °Ë»öÇØ¼­ BCrypt.Net-Next¸¦ ¼³Ä¡ÇÑ´Ù.
+ë¨¼ì € nuget ì‚¬ì´íŠ¸ì—ì„œ BCryptë¥¼ ê²€ìƒ‰í•´ì„œ BCrypt.Net-Nextë¥¼ ì„¤ì¹˜í•œë‹¤.
 
-![2. B Crypt Net Next](../.dummy/10%20ÀÎÁõ/2.%20BCrypt%20Net%20Next.png)
+<img width="1188" height="429" alt="2  BCrypt Net Next" src="https://github.com/user-attachments/assets/463a62db-9c99-4f9c-8ee4-9b61e289433c" />
 
-±×¸®°í signup ¿äÃ»ÀÌ µé¾î¿À¸é µ¿ÀÛÇÒ ¸Þ¼­µå¸¦ ´ÙÀ½°ú °°ÀÌ Á¤ÀÇÇØÁØ´Ù.
+ê·¸ë¦¬ê³  signup ìš”ì²­ì´ ë“¤ì–´ì˜¤ë©´ ë™ìž‘í•  ë©”ì„œë“œë¥¼ ë‹¤ìŒê³¼ ê°™ì´ ì •ì˜í•´ì¤€ë‹¤.
 
 ```C#
 app.MapPost("/signup", async (UserDbContext db, SignupUserDto signupUser, IValidator<SignupUserDto> validator, IMapper mapper) =>
 {
-    var results = validator.Validate(signupUser);       // À¯È¿¼º °Ë»ç
+    var results = validator.Validate(signupUser);       // ìœ íš¨ì„± ê²€ì‚¬
 
     if (!results.IsValid) return Results.ValidationProblem(results.ToDictionary());
 
-    if (await db.Users.AnyAsync(u => u.UserId == signupUser.UserId)) return Results.Conflict();     // id Áßº¹ °Ë»ç
+    if (await db.Users.AnyAsync(u => u.UserId == signupUser.UserId)) return Results.Conflict();     // id ì¤‘ë³µ ê²€ì‚¬
 
     User user = mapper.Map<User>(signupUser);
 
-    user.HashPassword = BCrypt.Net.BCrypt.HashPassword(signupUser.Password);        // ÆÐ½º¿öµå ÇØ½Ì
+    user.HashPassword = BCrypt.Net.BCrypt.HashPassword(signupUser.Password);        // íŒ¨ìŠ¤ì›Œë“œ í•´ì‹±
 
     db.Users.Add(user);
 
@@ -132,20 +132,20 @@ app.MapPost("/signup", async (UserDbContext db, SignupUserDto signupUser, IValid
 
 ## JWT(Json Web Token)
 
-·Î±×ÀÎ¿¡ ¼º°øÇÑ À¯Àú´Â ¿øÇÏ´Â ¼­ºñ½º¸¦ ¿äÃ»ÇÒ ¼ö ÀÖ´Ù.  
-±×¸®°í ¼­¹ö´Â À¯Àú°¡ ¼­ºñ½º¸¦ ¿äÃ»ÇÒ ¶§ Á¢±Ù ±ÇÇÑÀÌ ÀÖ´ÂÁö(·Î±×ÀÎ¿¡ ¼º°øÇÑ À¯ÀúÀÎÁö) È®ÀÎÇØ¾ß ÇÑ´Ù.  
-¼­¹ö°¡ À¯ÀúÀÇ ±ÇÇÑÀ» È®ÀÎÇÏ´Â ¹æ¹ýÀº ¿©·¯ °¡Áö°¡ ÀÖ´Âµ¥ ¿©±â¼­´Â ÅäÅ«À» »ç¿ëÇÏ¿© ±ÇÇÑÀ» È®ÀÎÇÏµµ·Ï ÇØº¸°Ú´Ù.
+ë¡œê·¸ì¸ì— ì„±ê³µí•œ ìœ ì €ëŠ” ì›í•˜ëŠ” ì„œë¹„ìŠ¤ë¥¼ ìš”ì²­í•  ìˆ˜ ìžˆë‹¤.  
+ê·¸ë¦¬ê³  ì„œë²„ëŠ” ìœ ì €ê°€ ì„œë¹„ìŠ¤ë¥¼ ìš”ì²­í•  ë•Œ ì ‘ê·¼ ê¶Œí•œì´ ìžˆëŠ”ì§€(ë¡œê·¸ì¸ì— ì„±ê³µí•œ ìœ ì €ì¸ì§€) í™•ì¸í•´ì•¼ í•œë‹¤.  
+ì„œë²„ê°€ ìœ ì €ì˜ ê¶Œí•œì„ í™•ì¸í•˜ëŠ” ë°©ë²•ì€ ì—¬ëŸ¬ ê°€ì§€ê°€ ìžˆëŠ”ë° ì—¬ê¸°ì„œëŠ” í† í°ì„ ì‚¬ìš©í•˜ì—¬ ê¶Œí•œì„ í™•ì¸í•˜ë„ë¡ í•´ë³´ê² ë‹¤.
 
-ÅäÅ«ÀÇ ¿ø¸®´Â °£´ÜÈ÷ ¼­¹ö°¡ À¯Àú¿¡°Ô ºÎ¿©ÇÏ´Â È®ÀÎÁõ °°Àº °Å¶ó°í ÇÒ ¼ö ÀÖ´Ù.  
-·Î±×ÀÎ¿¡ ¼º°øÇÑ À¯Àú¿¡°Ô ¼­¹ö°¡ ÅäÅ«À» º¸³»ÁÖ°í À¯Àú°¡ ¾î¶² ¼­ºñ½º¸¦ ÀÌ¿ëÇÏ°íÀÚ ÇÒ ¶§ ÅäÅ«°ú ÇÔ²² ¿äÃ»À» º¸³»¸é ¼­¹ö´Â ±× ÅäÅ«ÀÌ ÀÚ½ÅÀÌ ºÎ¿©ÇÑ °ÍÀÌ ¸Â´ÂÁö ±×¸®°í À¯È¿ÇÑ ÅäÅ«ÀÎÁö È®ÀÎÇÑ ´ÙÀ½¿¡ ¼­ºñ½º¸¦ Á¦°øÇÏ°Ô µÈ´Ù.
+í† í°ì˜ ì›ë¦¬ëŠ” ê°„ë‹¨ížˆ ì„œë²„ê°€ ìœ ì €ì—ê²Œ ë¶€ì—¬í•˜ëŠ” í™•ì¸ì¦ ê°™ì€ ê±°ë¼ê³  í•  ìˆ˜ ìžˆë‹¤.  
+ë¡œê·¸ì¸ì— ì„±ê³µí•œ ìœ ì €ì—ê²Œ ì„œë²„ê°€ í† í°ì„ ë³´ë‚´ì£¼ê³  ìœ ì €ê°€ ì–´ë–¤ ì„œë¹„ìŠ¤ë¥¼ ì´ìš©í•˜ê³ ìž í•  ë•Œ í† í°ê³¼ í•¨ê»˜ ìš”ì²­ì„ ë³´ë‚´ë©´ ì„œë²„ëŠ” ê·¸ í† í°ì´ ìžì‹ ì´ ë¶€ì—¬í•œ ê²ƒì´ ë§žëŠ”ì§€ ê·¸ë¦¬ê³  ìœ íš¨í•œ í† í°ì¸ì§€ í™•ì¸í•œ ë‹¤ìŒì— ì„œë¹„ìŠ¤ë¥¼ ì œê³µí•˜ê²Œ ëœë‹¤.
 
-¸ÕÀú nuget »çÀÌÆ®¿¡ Á¢¼ÓÇØ¼­ Microsoft.AspNetCore.Authentication.JwtBearer¸¦ ¼³Ä¡ÇÑ´Ù.
+ë¨¼ì € nuget ì‚¬ì´íŠ¸ì— ì ‘ì†í•´ì„œ Microsoft.AspNetCore.Authentication.JwtBearerë¥¼ ì„¤ì¹˜í•œë‹¤.
 
-![3. Jwt Bearer](../.dummy/10%20ÀÎÁõ/3.%20JwtBearer.png)
+<img width="1251" height="799" alt="3  JwtBearer" src="https://github.com/user-attachments/assets/4c98102c-4569-41ec-a739-38f30a4d5ec3" />
 
-±×¸®°í À¯Àú ÀÎÁõÀ» À§ÇÑ ´ëÄª Å°¸¦ »ý¼ºÇØÁÖ°Ú´Ù.  
-opensslÀ» ÀÌ¿ëÇÏ¿© »ý¼ºÇØ ÁÖ¾îµµ µÇ°í C# ÄÚµå·Î °£´ÜÇÏ°Ô »ý¼ºÇØÁÖ¾îµµ µÈ´Ù.  
-À©µµ¿ì ±âÁØ opensslÀº ¼³Ä¡¸¦ ÇØ¾ß ÇÏ¹Ç·Î C# ÄÚµå·Î 128¹ÙÀÌÆ® ±æÀÌ·Î »ý¼ºÇØ º¸°Ú´Ù.
+ê·¸ë¦¬ê³  ìœ ì € ì¸ì¦ì„ ìœ„í•œ ëŒ€ì¹­ í‚¤ë¥¼ ìƒì„±í•´ì£¼ê² ë‹¤.  
+opensslì„ ì´ìš©í•˜ì—¬ ìƒì„±í•´ ì£¼ì–´ë„ ë˜ê³  C# ì½”ë“œë¡œ ê°„ë‹¨í•˜ê²Œ ìƒì„±í•´ì£¼ì–´ë„ ëœë‹¤.  
+ìœˆë„ìš° ê¸°ì¤€ opensslì€ ì„¤ì¹˜ë¥¼ í•´ì•¼ í•˜ë¯€ë¡œ C# ì½”ë“œë¡œ 128ë°”ì´íŠ¸ ê¸¸ì´ë¡œ ìƒì„±í•´ ë³´ê² ë‹¤.
 
 ```C#
 using System.Security.Cryptography;
@@ -158,15 +158,15 @@ RandomNumberGenerator.Fill(key);
 Write(Convert.ToBase64String(key));
 ```
 
-´ÙÀ½ ÄÚµå¸¦ ½ÇÇàÇÏ¸é ·£´ýÀ¸·Î »ý¼ºµÈ Å°¸¦ base64·Î ÀÎÄÚµùÇÑ °á°ú¸¦ ¾òÀ» ¼ö ÀÖ´Ù.  
-ÀÌ Å°¸¦ secrets.json ÆÄÀÏ¿¡ ´ÙÀ½°ú °°Àº ¾ç½ÄÀ¸·Î Ãß°¡ÇÑ´Ù.
+ë‹¤ìŒ ì½”ë“œë¥¼ ì‹¤í–‰í•˜ë©´ ëžœë¤ìœ¼ë¡œ ìƒì„±ëœ í‚¤ë¥¼ base64ë¡œ ì¸ì½”ë”©í•œ ê²°ê³¼ë¥¼ ì–»ì„ ìˆ˜ ìžˆë‹¤.  
+ì´ í‚¤ë¥¼ secrets.json íŒŒì¼ì— ë‹¤ìŒê³¼ ê°™ì€ ì–‘ì‹ìœ¼ë¡œ ì¶”ê°€í•œë‹¤.
 
 ```json
 "Jwt" : {"Key" :"G+bRj/IJg5K9/lvnrnyQEBxo1sJ3jbdU67ojyNggUxtjuqR202WzmByA8qxoZWj6CocDM1QU5Io0WJHi7IekCyVCQCuSLK/gBJ/cmGK1VfxZxtTOlPUN49mzuwNzbffekon/hk7MZhmRC2yFeZaAHtynvLXVg4z3y2brqwYx7D4="}
-            // ·£´ýÀ¸·Î »ý¼ºÇÑ Å°
+            // ëžœë¤ìœ¼ë¡œ ìƒì„±í•œ í‚¤
 ```
 
-ÀÌÁ¦ ·Î±×ÀÎ ¿äÃ»ÀÌ µé¾î¿À¸é ÀÎÁõ ÈÄ ÅäÅ«À» ¹ß±ÞÇÏ´Â ÄÚµå¸¦ ÀÛ¼ºÇØº¸°Ú´Ù.
+ì´ì œ ë¡œê·¸ì¸ ìš”ì²­ì´ ë“¤ì–´ì˜¤ë©´ ì¸ì¦ í›„ í† í°ì„ ë°œê¸‰í•˜ëŠ” ì½”ë“œë¥¼ ìž‘ì„±í•´ë³´ê² ë‹¤.
 
 ```C#
 app.MapPost("/signin", async (HttpContext context, UserDbContext db, IValidator<SigninUserDto> validator, IConfiguration config, SigninUserDto signinUser) =>
@@ -191,39 +191,39 @@ app.MapPost("/signin", async (HttpContext context, UserDbContext db, IValidator<
         new Claim(JwtRegisteredClaimNames.Email, user.Email)
     };
 
-    JwtSecurityToken token = new(               // ÅäÅ« »ý¼º
-        issuer: config["Issuer"],               // ÅäÅ« ¹ß±ÞÀÚ (ÇöÀç null)
-        audience: config["Audience"],           // ÅäÅ«À» ¹Þ´Â Å¬¶óÀÌ¾ðÆ® (ÇöÀç null)
-        claims: claims_,                        // »ç¿ëÀÚ Á¤º¸
-        signingCredentials: credential,         // ÀÎÁõ¼­
-        expires: DateTime.Now.AddMinutes(60));  // ÅäÅ« À¯È¿½Ã°£ 60ºÐ
+    JwtSecurityToken token = new(               // í† í° ìƒì„±
+        issuer: config["Issuer"],               // í† í° ë°œê¸‰ìž (í˜„ìž¬ null)
+        audience: config["Audience"],           // í† í°ì„ ë°›ëŠ” í´ë¼ì´ì–¸íŠ¸ (í˜„ìž¬ null)
+        claims: claims_,                        // ì‚¬ìš©ìž ì •ë³´
+        signingCredentials: credential,         // ì¸ì¦ì„œ
+        expires: DateTime.Now.AddMinutes(60));  // í† í° ìœ íš¨ì‹œê°„ 60ë¶„
 
     string stringToken = new JwtSecurityTokenHandler().WriteToken(token);
 
     CookieOptions cookieOptions = new()
     {
-        HttpOnly = true,                        // À¥ºê¶ó¿ìÀú¿¡¼­ ÀÚµ¿À¸·Î ÄíÅ° Ã³¸®ÇÏ±â
-        Secure = true,                          // https ÇÁ·ÎÅäÄÝ¸¸ Çã¿ë
-        Expires = DateTime.Now.AddMinutes(60)   // ÅäÅ« À¯È¿ ±â°£ 60ºÐ
+        HttpOnly = true,                        // ì›¹ë¸Œë¼ìš°ì €ì—ì„œ ìžë™ìœ¼ë¡œ ì¿ í‚¤ ì²˜ë¦¬í•˜ê¸°
+        Secure = true,                          // https í”„ë¡œí† ì½œë§Œ í—ˆìš©
+        Expires = DateTime.Now.AddMinutes(60)   // í† í° ìœ íš¨ ê¸°ê°„ 60ë¶„
     };
 
     context.Response.Cookies.Append("jwt-token", stringToken, cookieOptions);
-    // HttpContext ÄíÅ°¿¡ ÅäÅ« Ãß°¡
+    // HttpContext ì¿ í‚¤ì— í† í° ì¶”ê°€
 
     return Results.Ok(new { Message = "SUCCESS!" });
 });
 ```
-·Î±×ÀÎÀ» ½ÃµµÇßÀ» ¶§ ¾îµð°¡ ¹®Á¦ÀÎÁö Ä£ÀýÈ÷ ¾Ë·ÁÁÖ´Â °ÍÀº º¸¾È»ó ¹®Á¦°¡ ÀÖÀ» °Å¶ó°í »ý°¢ÇØ À¯È¿¼º ¹®Á¦°¡ ¹ß»ýÇßÀ» ¶§¿¡µµ Unathorized¸¦ ¹ÝÈ¯ÇÏµµ·Ï ÇÏ¿´´Ù.
+ë¡œê·¸ì¸ì„ ì‹œë„í–ˆì„ ë•Œ ì–´ë””ê°€ ë¬¸ì œì¸ì§€ ì¹œì ˆížˆ ì•Œë ¤ì£¼ëŠ” ê²ƒì€ ë³´ì•ˆìƒ ë¬¸ì œê°€ ìžˆì„ ê±°ë¼ê³  ìƒê°í•´ ìœ íš¨ì„± ë¬¸ì œê°€ ë°œìƒí–ˆì„ ë•Œì—ë„ Unathorizedë¥¼ ë°˜í™˜í•˜ë„ë¡ í•˜ì˜€ë‹¤.
 
-±×¸®°í ÅäÅ«À» Àü¼ÛÇÒ ¶§ Å¬¶óÀÌ¾ðÆ®Ãø¿¡¼­ ÅäÅ«À» Ã³¸®ÇÏ±âº¸´Ù À¥ºê¶ó¿ìÀú°¡ ÀÚµ¿À¸·Î Ã³¸®ÇÏµµ·Ï(Áï À¥ÆäÀÌÁöÀÇ javascript°¡ Ã³¸®ÇÏÁö ¾Êµµ·Ï) ÄíÅ° ¿É¼ÇÀ» ¼³Á¤ÇÏ°í HttpContext¿¡ ÀúÀåÇÏ¿© Àü¼ÛÇÏµµ·Ï ÀÛ¼º¿´´Ù.
+ê·¸ë¦¬ê³  í† í°ì„ ì „ì†¡í•  ë•Œ í´ë¼ì´ì–¸íŠ¸ì¸¡ì—ì„œ í† í°ì„ ì²˜ë¦¬í•˜ê¸°ë³´ë‹¤ ì›¹ë¸Œë¼ìš°ì €ê°€ ìžë™ìœ¼ë¡œ ì²˜ë¦¬í•˜ë„ë¡(ì¦‰ ì›¹íŽ˜ì´ì§€ì˜ javascriptê°€ ì²˜ë¦¬í•˜ì§€ ì•Šë„ë¡) ì¿ í‚¤ ì˜µì…˜ì„ ì„¤ì •í•˜ê³  HttpContextì— ì €ìž¥í•˜ì—¬ ì „ì†¡í•˜ë„ë¡ ìž‘ì„±ì˜€ë‹¤.
 
-¶Ç ÄíÅ° ¿É¼Ç¿¡ ```Secure = true``` ºÎºÐÀº https ÇÁ·ÎÅäÄÝ¸¸ Ã³¸®ÇÏµµ·Ï ÇÏ´Â ¿É¼ÇÀÌ¹Ç·Î appsettings.json ÆÄÀÏ¿¡ ´ÙÀ½ ÄÚµå¸¦ Ãß°¡ÇÑ´Ù.
+ë˜ ì¿ í‚¤ ì˜µì…˜ì— ```Secure = true``` ë¶€ë¶„ì€ https í”„ë¡œí† ì½œë§Œ ì²˜ë¦¬í•˜ë„ë¡ í•˜ëŠ” ì˜µì…˜ì´ë¯€ë¡œ appsettings.json íŒŒì¼ì— ë‹¤ìŒ ì½”ë“œë¥¼ ì¶”ê°€í•œë‹¤.
 
 ```json
-"Urls" : "https://localhost:5009" // Æ÷Æ® ¹øÈ£ ÀÚÀ¯
+"Urls" : "https://localhost:5009" // í¬íŠ¸ ë²ˆí˜¸ ìžìœ 
 ```
 
-¸¶Áö¸·À¸·Î ·Î±×¾Æ¿ô ÄÚµå´Â ´ÙÀ½°ú °°´Ù.
+ë§ˆì§€ë§‰ìœ¼ë¡œ ë¡œê·¸ì•„ì›ƒ ì½”ë“œëŠ” ë‹¤ìŒê³¼ ê°™ë‹¤.
 
 ```C#
 app.MapPost("/signout", (HttpContext context) =>
@@ -233,9 +233,9 @@ app.MapPost("/signout", (HttpContext context) =>
 }).RequireAuthorization();
 ```
 
-## ÅäÅ« ÀÎÁõ ¿äÃ» Ã³¸®
+## í† í° ì¸ì¦ ìš”ì²­ ì²˜ë¦¬
 
-ÀÌÁ¦ ¼­¹ö¿¡¼­ ÅäÅ«À» È®ÀÎÇÏµµ·Ï ¼³Á¤À» ÇØÁÖ°Ú´Ù.
+ì´ì œ ì„œë²„ì—ì„œ í† í°ì„ í™•ì¸í•˜ë„ë¡ ì„¤ì •ì„ í•´ì£¼ê² ë‹¤.
 
 ```C#
 builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
@@ -243,18 +243,18 @@ builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
     {
         options.TokenValidationParameters = new()
         {
-            ValidateIssuerSigningKey = true,    // ÀÎÁõ¼­ °ËÁõ
-            IssuerSigningKey = new SymmetricSecurityKey(Convert.FromBase64String(builder.Configuration["Jwt:Key"]!)), // ÀÎÁõ¼­ Å°
-            ValidateIssuer = false,             // Issuer °ËÁõ ¾ÈÇÔ
-            ValidateAudience = false            // Audience °ËÁõ ¾ÈÇÔ
+            ValidateIssuerSigningKey = true,    // ì¸ì¦ì„œ ê²€ì¦
+            IssuerSigningKey = new SymmetricSecurityKey(Convert.FromBase64String(builder.Configuration["Jwt:Key"]!)), // ì¸ì¦ì„œ í‚¤
+            ValidateIssuer = false,             // Issuer ê²€ì¦ ì•ˆí•¨
+            ValidateAudience = false            // Audience ê²€ì¦ ì•ˆí•¨
         };
 
-        options.Events = new()                  // À¥ºê¶ó¿ìÀú°¡ ÀÚµ¿À¸·Î Ã³¸®ÇÑ ÅäÅ«À» ÁöÁ¤
+        options.Events = new()                  // ì›¹ë¸Œë¼ìš°ì €ê°€ ìžë™ìœ¼ë¡œ ì²˜ë¦¬í•œ í† í°ì„ ì§€ì •
         {
             OnMessageReceived = context =>
             {
-                if (context.Request.Cookies.ContainsKey("jwt-token"))       // ¼­¹ö¿¡¼­ º¸³½ ÅäÅ«ÀÌ Á¸ÀçÇÏ¸é
-                    context.Token = context.Request.Cookies["jwt-token"];   // ¼­¹ö°¡ È®ÀÎÇØ¾ß ÇÏ´Â ÅäÅ« ÁöÁ¤
+                if (context.Request.Cookies.ContainsKey("jwt-token"))       // ì„œë²„ì—ì„œ ë³´ë‚¸ í† í°ì´ ì¡´ìž¬í•˜ë©´
+                    context.Token = context.Request.Cookies["jwt-token"];   // ì„œë²„ê°€ í™•ì¸í•´ì•¼ í•˜ëŠ” í† í° ì§€ì •
                 return Task.CompletedTask;
             }
         };
@@ -263,7 +263,7 @@ builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
 builder.Services.AddAuthorization();
 ```
 
-ÀÌÁ¦ ÅäÅ«ÀÌ Á¸ÀçÇÏ´Â ºê¶ó¿ìÀú¿¡¼­ ¿äÃ»ÀÌ µé¾î¿Ã °æ¿ì¿¡¸¸ ¿äÃ»À» Ã³¸®ÇØÁÖ´Â ¿£µåÆ÷ÀÎÆ®¸¦ °£´ÜÇÏ°Ô ¸¸µé¾îº¸°Ú´Ù.
+ì´ì œ í† í°ì´ ì¡´ìž¬í•˜ëŠ” ë¸Œë¼ìš°ì €ì—ì„œ ìš”ì²­ì´ ë“¤ì–´ì˜¬ ê²½ìš°ì—ë§Œ ìš”ì²­ì„ ì²˜ë¦¬í•´ì£¼ëŠ” ì—”ë“œí¬ì¸íŠ¸ë¥¼ ê°„ë‹¨í•˜ê²Œ ë§Œë“¤ì–´ë³´ê² ë‹¤.
 
 ```C#
 app.UseAuthentication();
@@ -272,14 +272,14 @@ app.UseAuthorization();
 app.MapGet("/hello", () => "Hello user").RequireAuthorization();
 ```
 
-À§¿Í °°ÀÌ ºô´õ¿¡¼­ ¼³Á¤ÇØ ÁØ Authentication°ú AuthorizationÀ» Ãß°¡ÇØÁÖ°í ¿äÃ» ¸ÅÇÎ ¼³Á¤ ¸Þ¼­µå µÚ¿¡ RequireAuthorization() ¸Þ¼­µå¸¦ Ãß°¡ÇØÁÖ¸é ¿äÃ»À» Ã³¸®ÇÏ±â Àü¿¡ ÀÎÁõ ¿©ºÎ¸ÕÀú È®ÀÎÇÒ °ÍÀÌ´Ù.
+ìœ„ì™€ ê°™ì´ ë¹Œë”ì—ì„œ ì„¤ì •í•´ ì¤€ Authenticationê³¼ Authorizationì„ ì¶”ê°€í•´ì£¼ê³  ìš”ì²­ ë§¤í•‘ ì„¤ì • ë©”ì„œë“œ ë’¤ì— RequireAuthorization() ë©”ì„œë“œë¥¼ ì¶”ê°€í•´ì£¼ë©´ ìš”ì²­ì„ ì²˜ë¦¬í•˜ê¸° ì „ì— ì¸ì¦ ì—¬ë¶€ë¨¼ì € í™•ì¸í•  ê²ƒì´ë‹¤.
 
-±×¸®°í È¸¿ø°¡ÀÔ°ú ·Î±×ÀÎ ÆûÀ» gemini¿¡°Ô ÀÛ¼º½ÃÄ×´Ù.  
-·Î±×ÀÎ¿¡ ÇÊ¿äÇÑ µ¥ÀÌÅÍ´Â UserId¿Í PasswordÀÌ°í /auth/signinÀ¸·Î º¸³»µµ·Ï ÇÏ¿´°í  
-È¸¿ø°¡ÀÔ¿¡ ÇÊ¿äÇÑ µ¥ÀÌÅÍ´Â UserId, Password, Email, UsernameÀÌ°í /auth/signupÀ¸·Î º¸³»µµ·Ï ÀÛ¼ºÇÏ¶ó Çß´Ù.  
-¸¶Áö¸·À¸·Î ·Î±×ÀÎ¿¡ ¼º°øÇÑ À¯Àú°¡ Å¬¸¯ÇÏ¸é È¯¿µÇÕ´Ï´Ù¸¦ Ãâ·ÂÇÏµµ·Ï ÇÏ´Â ¹öÆ°°ú ·Î±×¾Æ¿ô ¹öÆ°µµ Ãß°¡Çß´Ù.
+ê·¸ë¦¬ê³  íšŒì›ê°€ìž…ê³¼ ë¡œê·¸ì¸ í¼ì„ geminiì—ê²Œ ìž‘ì„±ì‹œì¼°ë‹¤.  
+ë¡œê·¸ì¸ì— í•„ìš”í•œ ë°ì´í„°ëŠ” UserIdì™€ Passwordì´ê³  /auth/signinìœ¼ë¡œ ë³´ë‚´ë„ë¡ í•˜ì˜€ê³   
+íšŒì›ê°€ìž…ì— í•„ìš”í•œ ë°ì´í„°ëŠ” UserId, Password, Email, Usernameì´ê³  /auth/signupìœ¼ë¡œ ë³´ë‚´ë„ë¡ ìž‘ì„±í•˜ë¼ í–ˆë‹¤.  
+ë§ˆì§€ë§‰ìœ¼ë¡œ ë¡œê·¸ì¸ì— ì„±ê³µí•œ ìœ ì €ê°€ í´ë¦­í•˜ë©´ í™˜ì˜í•©ë‹ˆë‹¤ë¥¼ ì¶œë ¥í•˜ë„ë¡ í•˜ëŠ” ë²„íŠ¼ê³¼ ë¡œê·¸ì•„ì›ƒ ë²„íŠ¼ë„ ì¶”ê°€í–ˆë‹¤.
 
-gemini°¡ ÀÛ¼ºÇØÁØ ÄÚµåµéÀº ´ÙÀ½°ú °°´Ù.
+geminiê°€ ìž‘ì„±í•´ì¤€ ì½”ë“œë“¤ì€ ë‹¤ìŒê³¼ ê°™ë‹¤.
 
 index.html
 ```html
@@ -288,61 +288,61 @@ index.html
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>·Î±×ÀÎ / È¸¿ø°¡ÀÔ</title>
+    <title>ë¡œê·¸ì¸ / íšŒì›ê°€ìž…</title>
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
     <div class="container">
-        <!-- È¸¿ø°¡ÀÔ Æû -->
+        <!-- íšŒì›ê°€ìž… í¼ -->
         <div id="signup-section">
-            <h2>È¸¿ø°¡ÀÔ</h2>
+            <h2>íšŒì›ê°€ìž…</h2>
             <form id="signup-form">
                 <div class="form-group">
-                    <label for="reg-userid">»ç¿ëÀÚ ID</label>
+                    <label for="reg-userid">ì‚¬ìš©ìž ID</label>
                     <input type="text" id="reg-userid" required>
                 </div>
                 <div class="form-group">
-                    <label for="reg-username">ÀÌ¸§</label>
+                    <label for="reg-username">ì´ë¦„</label>
                     <input type="text" id="reg-username" required>
                 </div>
                 <div class="form-group">
-                    <label for="reg-email">ÀÌ¸ÞÀÏ</label>
+                    <label for="reg-email">ì´ë©”ì¼</label>
                     <input type="email" id="reg-email" required>
                 </div>
                 <div class="form-group">
-                    <label for="reg-password">ºñ¹Ð¹øÈ£</label>
+                    <label for="reg-password">ë¹„ë°€ë²ˆí˜¸</label>
                     <input type="password" id="reg-password" required>
                 </div>
-                <button type="submit">°¡ÀÔÇÏ±â</button>
+                <button type="submit">ê°€ìž…í•˜ê¸°</button>
             </form>
         </div>
 
         <hr>
 
-        <!-- ·Î±×ÀÎ Æû -->
+        <!-- ë¡œê·¸ì¸ í¼ -->
         <div id="signin-section">
-            <h2>·Î±×ÀÎ</h2>
+            <h2>ë¡œê·¸ì¸</h2>
             <form id="signin-form">
                 <div class="form-group">
-                    <label for="login-userid">»ç¿ëÀÚ ID</label>
+                    <label for="login-userid">ì‚¬ìš©ìž ID</label>
                     <input type="text" id="login-userid" required>
                 </div>
                 <div class="form-group">
-                    <label for="login-password">ºñ¹Ð¹øÈ£</label>
+                    <label for="login-password">ë¹„ë°€ë²ˆí˜¸</label>
                     <input type="password" id="login-password" required>
                 </div>
-                <button type="submit">·Î±×ÀÎ</button>
+                <button type="submit">ë¡œê·¸ì¸</button>
             </form>
         </div>
 
         <hr>
 
-        <!-- ÀÎÁõ Å×½ºÆ® ¼½¼Ç -->
+        <!-- ì¸ì¦ í…ŒìŠ¤íŠ¸ ì„¹ì…˜ -->
         <div id="test-section">
-            <h2>ÀÎÁõ Å×½ºÆ®</h2>
-            <button id="myname-button">³» ÀÌ¸§ È®ÀÎÇÏ±â</button>
-            <button id="signout-button" class="secondary">·Î±×¾Æ¿ô</button>
+            <h2>ì¸ì¦ í…ŒìŠ¤íŠ¸</h2>
+            <button id="myname-button">ë‚´ ì´ë¦„ í™•ì¸í•˜ê¸°</button>
+            <button id="signout-button" class="secondary">ë¡œê·¸ì•„ì›ƒ</button>
         </div>
 
         <div id="message"></div>
@@ -467,13 +467,13 @@ document.addEventListener('DOMContentLoaded', () => {
     const signoutButton = document.getElementById('signout-button');
     const messageDiv = document.getElementById('message');
 
-    // ¸Þ½ÃÁö Ç¥½Ã ÇÔ¼ö
+    // ë©”ì‹œì§€ í‘œì‹œ í•¨ìˆ˜
     const showMessage = (text, type) => {
         messageDiv.textContent = text;
-        messageDiv.className = type; // 'success' ¶Ç´Â 'error'
+        messageDiv.className = type; // 'success' ë˜ëŠ” 'error'
     };
 
-    // È¸¿ø°¡ÀÔ Æû Á¦Ãâ ÀÌº¥Æ®
+    // íšŒì›ê°€ìž… í¼ ì œì¶œ ì´ë²¤íŠ¸
     if (signupForm) {
         signupForm.addEventListener('submit', async (e) => {
             e.preventDefault();
@@ -490,20 +490,20 @@ document.addEventListener('DOMContentLoaded', () => {
                 });
 
                 if (response.ok) {
-                    showMessage('È¸¿ø°¡ÀÔ ¼º°ø!', 'success');
+                    showMessage('íšŒì›ê°€ìž… ì„±ê³µ!', 'success');
                     signupForm.reset();
                 } else {
                     const errorData = await response.json();
                     const firstError = errorData.errors ? Object.values(errorData.errors)[0][0] : (errorData.message || response.statusText);
-                    showMessage(`È¸¿ø°¡ÀÔ ½ÇÆÐ: ${firstError}`, 'error');
+                    showMessage(`íšŒì›ê°€ìž… ì‹¤íŒ¨: ${firstError}`, 'error');
                 }
             } catch (error) {
-                showMessage('³×Æ®¿öÅ© ¿À·ù°¡ ¹ß»ýÇß½À´Ï´Ù.', 'error');
+                showMessage('ë„¤íŠ¸ì›Œí¬ ì˜¤ë¥˜ê°€ ë°œìƒí–ˆìŠµë‹ˆë‹¤.', 'error');
             }
         });
     }
 
-    // ·Î±×ÀÎ Æû Á¦Ãâ ÀÌº¥Æ®
+    // ë¡œê·¸ì¸ í¼ ì œì¶œ ì´ë²¤íŠ¸
     if (signinForm) {
         signinForm.addEventListener('submit', async (e) => {
             e.preventDefault();
@@ -518,17 +518,17 @@ document.addEventListener('DOMContentLoaded', () => {
                 });
 
                 if (response.ok) {
-                    showMessage('·Î±×ÀÎ ¼º°ø! ÀÌÁ¦ ¹öÆ°À» Å×½ºÆ®ÇØº¸¼¼¿ä.', 'success');
+                    showMessage('ë¡œê·¸ì¸ ì„±ê³µ! ì´ì œ ë²„íŠ¼ì„ í…ŒìŠ¤íŠ¸í•´ë³´ì„¸ìš”.', 'success');
                 } else {
-                    showMessage('·Î±×ÀÎ ½ÇÆÐ: ID ¶Ç´Â ºñ¹Ð¹øÈ£¸¦ È®ÀÎÇÏ¼¼¿ä.', 'error');
+                    showMessage('ë¡œê·¸ì¸ ì‹¤íŒ¨: ID ë˜ëŠ” ë¹„ë°€ë²ˆí˜¸ë¥¼ í™•ì¸í•˜ì„¸ìš”.', 'error');
                 }
             } catch (error) {
-                showMessage('³×Æ®¿öÅ© ¿À·ù°¡ ¹ß»ýÇß½À´Ï´Ù.', 'error');
+                showMessage('ë„¤íŠ¸ì›Œí¬ ì˜¤ë¥˜ê°€ ë°œìƒí–ˆìŠµë‹ˆë‹¤.', 'error');
             }
         });
     }
 
-    // ÀÎÁõ Å×½ºÆ® ¹öÆ° Å¬¸¯ ÀÌº¥Æ®
+    // ì¸ì¦ í…ŒìŠ¤íŠ¸ ë²„íŠ¼ í´ë¦­ ì´ë²¤íŠ¸
     if (myNameButton) {
         myNameButton.addEventListener('click', async () => {
             try {
@@ -540,15 +540,15 @@ document.addEventListener('DOMContentLoaded', () => {
                     const data = await response.text();
                     showMessage(data, 'success');
                 } else {
-                    showMessage(`ÀÎÁõ ½ÇÆÐ: ${response.status} (·Î±×ÀÎÀÌ ÇÊ¿äÇÕ´Ï´Ù)`, 'error');
+                    showMessage(`ì¸ì¦ ì‹¤íŒ¨: ${response.status} (ë¡œê·¸ì¸ì´ í•„ìš”í•©ë‹ˆë‹¤)`, 'error');
                 }
             } catch (error) {
-                showMessage('³×Æ®¿öÅ© ¿À·ù°¡ ¹ß»ýÇß½À´Ï´Ù.', 'error');
+                showMessage('ë„¤íŠ¸ì›Œí¬ ì˜¤ë¥˜ê°€ ë°œìƒí–ˆìŠµë‹ˆë‹¤.', 'error');
             }
         });
     }
 
-    // ·Î±×¾Æ¿ô ¹öÆ° Å¬¸¯ ÀÌº¥Æ®
+    // ë¡œê·¸ì•„ì›ƒ ë²„íŠ¼ í´ë¦­ ì´ë²¤íŠ¸
     if (signoutButton) {
         signoutButton.addEventListener('click', async () => {
             try {
@@ -557,19 +557,19 @@ document.addEventListener('DOMContentLoaded', () => {
                 });
 
                 if (response.ok) {
-                    showMessage('·Î±×¾Æ¿ô µÇ¾ú½À´Ï´Ù.', 'success');
+                    showMessage('ë¡œê·¸ì•„ì›ƒ ë˜ì—ˆìŠµë‹ˆë‹¤.', 'success');
                 } else {
-                    showMessage('·Î±×¾Æ¿ô ½ÇÆÐ. (·Î±×ÀÎ »óÅÂ°¡ ¾Æ´Ò ¼ö ÀÖ½À´Ï´Ù)', 'error');
+                    showMessage('ë¡œê·¸ì•„ì›ƒ ì‹¤íŒ¨. (ë¡œê·¸ì¸ ìƒíƒœê°€ ì•„ë‹ ìˆ˜ ìžˆìŠµë‹ˆë‹¤)', 'error');
                 }
             } catch (error) {
-                showMessage('³×Æ®¿öÅ© ¿À·ù°¡ ¹ß»ýÇß½À´Ï´Ù.', 'error');
+                showMessage('ë„¤íŠ¸ì›Œí¬ ì˜¤ë¥˜ê°€ ë°œìƒí–ˆìŠµë‹ˆë‹¤.', 'error');
             }
         });
     }
 });
 ```
 
-°¢°¢ wwwroot, wwwroot/css, wwwroot/js¿¡ Áý¾î³Ö°í ´ÙÀ½ ÄÚµå¸¦ ÅëÇØ Àü¼ÛÇÏµµ·Ï Çß´Ù.
+ê°ê° wwwroot, wwwroot/css, wwwroot/jsì— ì§‘ì–´ë„£ê³  ë‹¤ìŒ ì½”ë“œë¥¼ í†µí•´ ì „ì†¡í•˜ë„ë¡ í–ˆë‹¤.
 
 ```C#
 app.UseStaticFiles();
@@ -581,7 +581,7 @@ app.MapGet("/", async (HttpContext context) =>
 });
 ```
 
-¸¶Áö¸·À¸·Î ·Î±×ÀÎ¿¡ ¼º°øÇÑ À¯Àú°¡ ¹öÆ°À» ´©¸£¸é µ¿ÀÛÇÏ´Â ¸Þ¼­µå¸¦ ÀÛ¼ºÇß´Ù.
+ë§ˆì§€ë§‰ìœ¼ë¡œ ë¡œê·¸ì¸ì— ì„±ê³µí•œ ìœ ì €ê°€ ë²„íŠ¼ì„ ëˆ„ë¥´ë©´ ë™ìž‘í•˜ëŠ” ë©”ì„œë“œë¥¼ ìž‘ì„±í–ˆë‹¤.
 
 ```C#
 app.MapGet("/myname", async (HttpContext context, UserDbContext db) =>
@@ -590,45 +590,46 @@ app.MapGet("/myname", async (HttpContext context, UserDbContext db) =>
 
     User? user = await db.Users.FindAsync(int.Parse(id!));
 
-    return $"È¯¿µÇÕ´Ï´Ù. {user.Username}´Ô";
+    return $"í™˜ì˜í•©ë‹ˆë‹¤. {user.Username}ë‹˜";
 }).RequireAuthorization();
 ```
 
-## Å×½ºÆ®
+## í…ŒìŠ¤íŠ¸
 
-ÀÌÁ¦ ÇÁ·ÎÁ§Æ®¸¦ ½ÇÇàÇÏ°í ```https://localhost:5009```·Î Á¢¼ÓÇÑ´Ù. (https¸¦ ¸í½ÃÇØ ÁÖ¾î¾ß ÇÑ´Ù.)
+ì´ì œ í”„ë¡œì íŠ¸ë¥¼ ì‹¤í–‰í•˜ê³  ```https://localhost:5009```ë¡œ ì ‘ì†í•œë‹¤. (httpsë¥¼ ëª…ì‹œí•´ ì£¼ì–´ì•¼ í•œë‹¤.)
 
-![4. ¸ÞÀÎÆäÀÌÁö](../.dummy/10%20ÀÎÁõ/4.%20¸ÞÀÎÆäÀÌÁö.png)
+<img width="343" height="842" alt="4  ë©”ì¸íŽ˜ì´ì§€" src="https://github.com/user-attachments/assets/05f659a7-f43a-4908-ba01-038457df5b96" />
 
-·Î±×ÀÎÀ» ¾È ÇÏ¸é ´ÙÀ½Ã³·³ ÀÎÁõ¿¡ ½ÇÆÐÇÑ´Ù.  
+ë¡œê·¸ì¸ì„ ì•ˆ í•˜ë©´ ë‹¤ìŒì²˜ëŸ¼ ì¸ì¦ì— ì‹¤íŒ¨í•œë‹¤.  
 
-![5. ÀÌ¸§ ½ÇÆÐ](../.dummy/10%20ÀÎÁõ/5.%20ÀÌ¸§%20½ÇÆÐ.png)  
-![6. ·Î±×¾Æ¿ô ½ÇÆÐ](../.dummy/10%20ÀÎÁõ/6.%20·Î±×¾Æ¿ô%20½ÇÆÐ.png)
+<img width="320" height="170" alt="5  ì´ë¦„ ì‹¤íŒ¨" src="https://github.com/user-attachments/assets/db6c3aba-7a77-411a-9d62-223559165317" />  
+<img width="332" height="176" alt="6  ë¡œê·¸ì•„ì›ƒ ì‹¤íŒ¨" src="https://github.com/user-attachments/assets/b686f54a-6994-4cc5-b6da-71c46246d919" />  
 
-¾ç½Ä¿¡ ¸Â°Ô Á¤º¸¸¦ ÀÔ·ÂÇÏ¸é È¸¿ø°¡ÀÔ¿¡ ¼º°øÇÑ´Ù.
 
-![7. È¸¿ø°¡ÀÔ ¼º°ø](../.dummy/10%20ÀÎÁõ/7.%20È¸¿ø°¡ÀÔ%20¼º°ø.png)
+ì–‘ì‹ì— ë§žê²Œ ì •ë³´ë¥¼ ìž…ë ¥í•˜ë©´ íšŒì›ê°€ìž…ì— ì„±ê³µí•œë‹¤.
 
-½ÇÁ¦ db¿¡ Á¢¼ÓÇØº¸¸é ÆÐ½º¿öµå ÇØ½Ì±îÁö Àß µÈ °ÍÀ» È®ÀÎÇÒ ¼ö ÀÖ´Ù.
+<img width="316" height="841" alt="7  íšŒì›ê°€ìž… ì„±ê³µ" src="https://github.com/user-attachments/assets/04e7206c-7a6e-4287-bead-56cd1f24b22e" />
 
-![8. °¡ÀÔÈ®ÀÎ](../.dummy/10%20ÀÎÁõ/8.%20°¡ÀÔÈ®ÀÎ.png)
+ì‹¤ì œ dbì— ì ‘ì†í•´ë³´ë©´ íŒ¨ìŠ¤ì›Œë“œ í•´ì‹±ê¹Œì§€ ìž˜ ëœ ê²ƒì„ í™•ì¸í•  ìˆ˜ ìžˆë‹¤.
 
-È¸¿ø°¡ÀÔÇÑ Á¤º¸´ë·Î ·Î±×ÀÎÇÏ¸é ·Î±×ÀÎ¿¡ ¼º°øÇÑ´Ù.
+<img width="1009" height="107" alt="8  ê°€ìž…í™•ì¸" src="https://github.com/user-attachments/assets/7b6f7f35-3d2a-4e08-96d4-dfc1032060e9" />
 
-![9. ·Î±×ÀÎ ¼º°ø](../.dummy/10%20ÀÎÁõ/9.%20·Î±×ÀÎ%20¼º°ø.png)
+íšŒì›ê°€ìž…í•œ ì •ë³´ëŒ€ë¡œ ë¡œê·¸ì¸í•˜ë©´ ë¡œê·¸ì¸ì— ì„±ê³µí•œë‹¤.
 
-·Î±×ÀÎ¿¡ ¼º°øÇß±â ¶§¹®¿¡ ´ÙÀ½°ú °°ÀÌ ÀÌ¸§ È®ÀÎÀÌ °¡´ÉÇÏ´Ù.
+<img width="329" height="437" alt="9  ë¡œê·¸ì¸ ì„±ê³µ" src="https://github.com/user-attachments/assets/68b8e037-8cfc-4fe2-8eb8-da78dea7da37" />
 
-![10. ÀÌ¸§ È®ÀÎ](../.dummy/10%20ÀÎÁõ/10.%20ÀÌ¸§%20È®ÀÎ.png)
+ë¡œê·¸ì¸ì— ì„±ê³µí–ˆê¸° ë•Œë¬¸ì— ë‹¤ìŒê³¼ ê°™ì´ ì´ë¦„ í™•ì¸ì´ ê°€ëŠ¥í•˜ë‹¤.
 
-·Î±×¾Æ¿ôµµ Á¤»óÀûÀ¸·Î ¿Ï·áµÇ¾ú´Ù.
+<img width="337" height="192" alt="10  ì´ë¦„ í™•ì¸" src="https://github.com/user-attachments/assets/17d3628f-a55c-4e29-b860-b5bec9bed0e4" />
 
-![11. ·Î±×¾Æ¿ô ¼º°ø](../.dummy/10%20ÀÎÁõ/11.%20·Î±×¾Æ¿ô%20¼º°ø.png)
+ë¡œê·¸ì•„ì›ƒë„ ì •ìƒì ìœ¼ë¡œ ì™„ë£Œë˜ì—ˆë‹¤.
 
-·Î±×¾Æ¿ô ÀÌÈÄ ÀÌ¸§ È®ÀÎÀ» ½ÃµµÇÏ¸é ½ÇÆÐÇÑ´Ù.
+<img width="341" height="181" alt="11  ë¡œê·¸ì•„ì›ƒ ì„±ê³µ" src="https://github.com/user-attachments/assets/45e804b8-3af3-4c37-9e12-c49cc8361d4d" />
 
-![12. ·Î±×¾Æ¿ô ÀÌÈÄ](../.dummy/10%20ÀÎÁõ/12.%20·Î±×¾Æ¿ô%20ÀÌÈÄ.png)
+ë¡œê·¸ì•„ì›ƒ ì´í›„ ì´ë¦„ í™•ì¸ì„ ì‹œë„í•˜ë©´ ì‹¤íŒ¨í•œë‹¤.
 
-# ¸¶¹«¸®
+<img width="339" height="199" alt="12  ë¡œê·¸ì•„ì›ƒ ì´í›„" src="https://github.com/user-attachments/assets/670c2b92-8c94-4686-ad0d-9d38e56b71fe" />
 
-ÆÐ½º¿öµå ÇØ½ÌºÎÅÍ ½ÃÀÛÇØ¼­ jwt ¹ß±Þ, ÀÎÁõ ¹æ½Ä±îÁö ±¸ÇöÇØº¸¾Ò´Ù.
+# ë§ˆë¬´ë¦¬
+
+íŒ¨ìŠ¤ì›Œë“œ í•´ì‹±ë¶€í„° ì‹œìž‘í•´ì„œ jwt ë°œê¸‰, ì¸ì¦ ë°©ì‹ê¹Œì§€ êµ¬í˜„í•´ë³´ì•˜ë‹¤.
