@@ -3,12 +3,17 @@ using Microsoft.EntityFrameworkCore;
 
 var builder = WebApplication.CreateBuilder();
 
-var config = new ConfigurationBuilder()
-    .AddUserSecrets<Program>().Build();
+//var config = new ConfigurationBuilder()
+//    .AddUserSecrets<Program>().Build();
 
-string? connectionString = config["ConnectionStrings:Default"];
-connectionString ??= builder.Configuration.GetConnectionString("Default");
+//string? connectionString = config["ConnectionStrings:Default"];
+//connectionString ??= builder.Configuration.GetConnectionString("Default");
+
 // connectionString이 null이면 ??= 오른쪽 값 대입
+
+builder.Configuration.AddUserSecrets<Program>();
+
+string connectionString = builder.Configuration.GetConnectionString("Default");
 
 //Console.WriteLine(connectionString);
 //int t = 1;

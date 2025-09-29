@@ -229,6 +229,14 @@ connectionString ??= builder.Configuration.GetConnectionString("Default");
 // connectionString이 null이면 ??= 오른쪽 값 대입
 ```
 
+아니면 다음과 같이 builder.Configuration에 직접 UserSecret을 추가해주어도 된다.
+
+```C#
+builder.Configuration.AddUserSecrets<Program>();
+
+string connectionString = builder.Configuration.GetConnectionString("Default");
+```
+
 이렇게 secrets.json 파일에 저장된 ConnectionString을 읽어올 수 있다.
 
 # 마무리
