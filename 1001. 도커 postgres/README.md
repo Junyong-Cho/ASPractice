@@ -1,0 +1,27 @@
+# docker 컨테이너에서 postgres 실행하기
+
+```docker pull postgres:latest``` 명령어로 postgres 이미지를 받는다.
+
+![1. Pull Postgres](../.dummy/1001%20도커%20postgres/1.%20pull%20postgres.png)
+
+```docker volume create postgres-data``` 명령어로 postgres-data라는 이름의 볼륨을 생성한다.
+
+![2. 볼륨 생성](../.dummy/1001%20도커%20postgres/2.%20볼륨%20생성.png)
+
+```docker run -d --name postgres-db -e POSTGRES_PASSWORD=password -p 5555:5432 -v postgres-data:/var/lib/postgresql postgres:latest``` 명령어로 컨테이너를 생성한다.
+
+```-d``` 컨테이너를 백그라운드에서 실행  
+```-e``` 환경 변수 설정 ```POSTGRES_PASSWORD=password``` 패스워드를 password로 설정  
+```-p``` 포트 연결 설정 로컬의 5555포트를 컨테이너의 5432 포트에 연결(로컬에 5432포트는 윈도우에 설치된 postgres가 사용중이므로 5555로 설정)  
+```-v``` 볼륨 생성한 볼륨을 컨테이너에 연결 ```/var/lib/postgresql``` 경로에 연결
+
+![3. 컨테이너 생성](../.dummy/1001%20도커%20postgres/3.%20컨테이너%20생성.png)
+
+생성하고 ```docker ps```명령어를 실행했을 때 컨테이너가 실행되는 중이면 성공  
+```docker ps```로 안 나오고 ```docker ps -a```로 실행해야만 나오면 실패
+
+## DBMS 접속
+
+터미널에 ```psql -h localhost -p 5555 -U postgres```명령어를 실행하고 패스워드를 입력하여 접속
+
+![4. 접속](../.dummy/1001%20도커%20postgres/4.%20접속.png)
