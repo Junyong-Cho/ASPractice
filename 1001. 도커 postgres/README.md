@@ -26,3 +26,19 @@
 터미널에 ```psql -h localhost -p 5555 -U postgres```명령어를 실행하고 패스워드를 입력하여 접속
 
 <img width="840" height="262" alt="4  접속" src="https://github.com/user-attachments/assets/66feab08-5020-4d09-ad55-480b2abd0aed" />
+
+## ConnectionString 수정
+
+로컬에 연결하기 위해 사용중이던 ConnectionString의 Port부분만 컨테이너의 5555로 변경한다.
+
+```dotnet ef database update``` 명령어로 구조를 초기화한다.
+
+## 데이터 복사
+
+로컬 db에서 사용중이던 데이터를 컨테이너로 복사해 보겠다.
+
+파워셀에서는 기능하지 않는 명령어이므로 명령 프롬프트로 실행해 주어야 한다.
+
+```pg_dump -h localhost -p 5432 -U postgres --data_only [db이름] > out.sql``` 명령어를 사용하여 백업 파일을 생성한다. 이때 포트 번호는 로컬 db의 포트 번호이다.
+
+```psql -h localhost -p 5555 -U postgres -d [db이름] < out.sql```명령어로 컨테이너에 데이터를 복사한다.
