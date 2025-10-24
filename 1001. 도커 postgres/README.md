@@ -1,27 +1,28 @@
-# docker ÄÁÅ×ÀÌ³Ê¿¡¼­ postgres ½ÇÇàÇÏ±â
+# docker ì»¨í…Œì´ë„ˆì—ì„œ postgres ì‹¤í–‰í•˜ê¸°
 
-```docker pull postgres:latest``` ¸í·É¾î·Î postgres ÀÌ¹ÌÁö¸¦ ¹Ş´Â´Ù.
+```docker pull postgres:latest``` ëª…ë ¹ì–´ë¡œ postgres ì´ë¯¸ì§€ë¥¼ ë°›ëŠ”ë‹¤.
 
-![1. Pull Postgres](../.dummy/1001%20µµÄ¿%20postgres/1.%20pull%20postgres.png)
+<img width="1031" height="593" alt="1  pull postgres" src="https://github.com/user-attachments/assets/26cb8a53-0364-4201-af75-672bc47bf6c5" />
 
-```docker volume create postgres-data``` ¸í·É¾î·Î postgres-data¶ó´Â ÀÌ¸§ÀÇ º¼·ıÀ» »ı¼ºÇÑ´Ù.
+```docker volume create postgres-data``` ëª…ë ¹ì–´ë¡œ postgres-dataë¼ëŠ” ì´ë¦„ì˜ ë³¼ë¥¨ì„ ìƒì„±í•œë‹¤.
 
-![2. º¼·ı »ı¼º](../.dummy/1001%20µµÄ¿%20postgres/2.%20º¼·ı%20»ı¼º.png)
+<img width="625" height="172" alt="2  ë³¼ë¥¨ ìƒì„±" src="https://github.com/user-attachments/assets/40d3a629-90a0-41c3-a7ae-436ce7202506" />
 
-```docker run -d --name postgres-db -e POSTGRES_PASSWORD=password -p 5555:5432 -v postgres-data:/var/lib/postgresql postgres:latest``` ¸í·É¾î·Î ÄÁÅ×ÀÌ³Ê¸¦ »ı¼ºÇÑ´Ù.
+```docker run -d --name postgres-db -e POSTGRES_PASSWORD=password -p 5555:5432 -v postgres-data:/var/lib/postgresql postgres:latest``` ëª…ë ¹ì–´ë¡œ ì»¨í…Œì´ë„ˆë¥¼ ìƒì„±í•œë‹¤.
 
-```-d``` ÄÁÅ×ÀÌ³Ê¸¦ ¹é±×¶ó¿îµå¿¡¼­ ½ÇÇà  
-```-e``` È¯°æ º¯¼ö ¼³Á¤ ```POSTGRES_PASSWORD=password``` ÆĞ½º¿öµå¸¦ password·Î ¼³Á¤  
-```-p``` Æ÷Æ® ¿¬°á ¼³Á¤ ·ÎÄÃÀÇ 5555Æ÷Æ®¸¦ ÄÁÅ×ÀÌ³ÊÀÇ 5432 Æ÷Æ®¿¡ ¿¬°á(·ÎÄÃ¿¡ 5432Æ÷Æ®´Â À©µµ¿ì¿¡ ¼³Ä¡µÈ postgres°¡ »ç¿ëÁßÀÌ¹Ç·Î 5555·Î ¼³Á¤)  
-```-v``` º¼·ı »ı¼ºÇÑ º¼·ıÀ» ÄÁÅ×ÀÌ³Ê¿¡ ¿¬°á ```/var/lib/postgresql``` °æ·Î¿¡ ¿¬°á
+```-d``` ì»¨í…Œì´ë„ˆë¥¼ ë°±ê·¸ë¼ìš´ë“œì—ì„œ ì‹¤í–‰  
+```-e``` í™˜ê²½ ë³€ìˆ˜ ì„¤ì • ```POSTGRES_PASSWORD=password``` íŒ¨ìŠ¤ì›Œë“œë¥¼ passwordë¡œ ì„¤ì •  
+```-p``` í¬íŠ¸ ì—°ê²° ì„¤ì • ë¡œì»¬ì˜ 5555í¬íŠ¸ë¥¼ ì»¨í…Œì´ë„ˆì˜ 5432 í¬íŠ¸ì— ì—°ê²°(ë¡œì»¬ì— 5432í¬íŠ¸ëŠ” ìœˆë„ìš°ì— ì„¤ì¹˜ëœ postgresê°€ ì‚¬ìš©ì¤‘ì´ë¯€ë¡œ 5555ë¡œ ì„¤ì •)  
+```-v``` ë³¼ë¥¨ ìƒì„±í•œ ë³¼ë¥¨ì„ ì»¨í…Œì´ë„ˆì— ì—°ê²° ```/var/lib/postgresql``` ê²½ë¡œì— ì—°ê²°
 
-![3. ÄÁÅ×ÀÌ³Ê »ı¼º](../.dummy/1001%20µµÄ¿%20postgres/3.%20ÄÁÅ×ÀÌ³Ê%20»ı¼º.png)
 
-»ı¼ºÇÏ°í ```docker ps```¸í·É¾î¸¦ ½ÇÇàÇßÀ» ¶§ ÄÁÅ×ÀÌ³Ê°¡ ½ÇÇàµÇ´Â ÁßÀÌ¸é ¼º°ø  
-```docker ps```·Î ¾È ³ª¿À°í ```docker ps -a```·Î ½ÇÇàÇØ¾ß¸¸ ³ª¿À¸é ½ÇÆĞ
+<img width="1630" height="176" alt="3  ì»¨í…Œì´ë„ˆ ìƒì„±" src="https://github.com/user-attachments/assets/14361fe9-7a7c-4905-94f7-3eb928e35b49" />
 
-## DBMS Á¢¼Ó
+ìƒì„±í•˜ê³  ```docker ps```ëª…ë ¹ì–´ë¥¼ ì‹¤í–‰í–ˆì„ ë•Œ ì»¨í…Œì´ë„ˆê°€ ì‹¤í–‰ë˜ëŠ” ì¤‘ì´ë©´ ì„±ê³µ  
+```docker ps```ë¡œ ì•ˆ ë‚˜ì˜¤ê³  ```docker ps -a```ë¡œ ì‹¤í–‰í•´ì•¼ë§Œ ë‚˜ì˜¤ë©´ ì‹¤íŒ¨
 
-ÅÍ¹Ì³Î¿¡ ```psql -h localhost -p 5555 -U postgres```¸í·É¾î¸¦ ½ÇÇàÇÏ°í ÆĞ½º¿öµå¸¦ ÀÔ·ÂÇÏ¿© Á¢¼Ó
+## DBMS ì ‘ì†
 
-![4. Á¢¼Ó](../.dummy/1001%20µµÄ¿%20postgres/4.%20Á¢¼Ó.png)
+í„°ë¯¸ë„ì— ```psql -h localhost -p 5555 -U postgres```ëª…ë ¹ì–´ë¥¼ ì‹¤í–‰í•˜ê³  íŒ¨ìŠ¤ì›Œë“œë¥¼ ì…ë ¥í•˜ì—¬ ì ‘ì†
+
+<img width="840" height="262" alt="4  ì ‘ì†" src="https://github.com/user-attachments/assets/66feab08-5020-4d09-ad55-480b2abd0aed" />
