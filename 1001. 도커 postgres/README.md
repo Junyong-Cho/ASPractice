@@ -27,6 +27,18 @@
 
 <img width="840" height="262" alt="4  접속" src="https://github.com/user-attachments/assets/66feab08-5020-4d09-ad55-480b2abd0aed" />
 
+## docker 네트워크 연결
+
+docker 컨테이너별로 배포 컨테이너와 db 컨테이너를 따로 만들었기 때문에 그 두 컨테이너의 소통을 위해서는 docker network로 연결해 주어야 한다.
+
+```docker network create [네트워크 이름]``` 명령어로 도커 네트워크를 생성한다.
+
+```docker network ls``` 명령어로 네트워크가 정상적으로 생성되었는지 확인할 수 있다.
+
+```docker network connection [네트워크 이름] [컨테이너 이름]```으로 두 컨테이너를 같은 네트워크에 속하도록 한다.
+
+```docker network inspect [네트워크 이름]```로 두 컨테이너가 네트워크에 제대로 속했는지 확인할 수 있다.
+
 ## ConnectionString 수정
 
 로컬에 연결하기 위해 사용중이던 ConnectionString의 Port부분만 컨테이너의 5555로 변경한다.
