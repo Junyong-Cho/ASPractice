@@ -51,27 +51,43 @@
 
 docker desktop이 설치되어 있어야 하고 ubuntu 이미지를 설치해야 한다.
 
-도커를 설치하고 ```docker pull ubuntu:latest``` 명령어로 ubuntu의 이미지를 다운받은 다음에 ```docker run -dit --name myServer -p 8080:80 ubuntu:latest``` 명령어로 컨테이너를 생성한다.
+도커를 설치하고 ```docker pull ubuntu:latest``` 명령어로 ubuntu의 이미지를 다운받는다.
+
+<img width="1064" height="240" alt="우분투 이미지" src="https://github.com/user-attachments/assets/cdcd47d7-1cfe-4b20-9ba1-adf8d796c38f" />
+
+```docker images``` 명령어로 다운받은 이미지를 확인할 수 있다.
+<img width="762" height="109" alt="이미지 다운 확인" src="https://github.com/user-attachments/assets/c8a8d97c-04dd-4c19-a377-9ea0449ecff6" />
+
+그 다음 ```docker run -dit --name [컨테이너 이름] -p 8080:80 ubuntu:latest``` 명령어로 컨테이너를 생성한다.
+<img width="863" height="83" alt="컨테이너 생성" src="https://github.com/user-attachments/assets/c1cc5708-1bac-4f33-84f0-24d2550784e0" />
+
+```docker ps``` 명령어로 생성한 컨테이너를 확인할 수 있다.
+<img width="1311" height="92" alt="컨테이너 확인" src="https://github.com/user-attachments/assets/97e0a0eb-6d96-432c-a134-dc15db4b070a" />
+
+생성할 때 사용한 명령어는 다음과 같은 의미를 가진다.  
 
 ```run``` 컨테이너 생성  
 ```-d``` 백그라운드에서 컨테이너 실행  
 ```-i``` 키보드 입력 활성화  
 ```-t``` 리눅스 터미널 실행  
 ```--name``` 컨테이너 이름 설정  
-```-p 포트1:포트2``` 로컬의 포트1을 컨테이너의 포트2와 연결
+```-p 포트1:포트2``` 로컬의 포트1을 컨테이너의 포트2와 연결  
 ```ubuntu:latest``` 우분투 이미지로 우분투 컨테이너 생성
 
+```docker exec -it [컨테이너 이름] bash``` 명령어를 입력하여 컨테이너에 들어간다.  
+<img width="508" height="84" alt="컨테이너 진입" src="https://github.com/user-attachments/assets/f5b2c9dc-cf1a-4f65-a764-c67e92a26b58" />  
+```root@d49bc13fd8e4:/#```와 같이 터미널에 나타나면 컨테이너 안의 리눅스에 접속하는 데 성공한 것이다.
 
-
-도커에 dotnet runtime을 설치해주어야 한다.
+우분투에 dotnet runtime을 설치해주어야 한다.
 본 프로젝트는 .net 9.0 버전을 사용하고 있어서 9.0 버전의 runtime을 설치해주어야 하는데 ```apt install aspnetcore-runtime-9.0``` 명령어로 설치해 주면 된다.  
 
-그러나 .net 9.0 버전은 우분투 최신 버전 이후에 출시되었으므로 추가적인 작업이 필요하다.
+그러나 .net 9.0 버전은 우분투 최신 버전 이후에 출시되었으므로 추가적인 작업이 필요하다.  
+다음 명령어들을 순서대로 실행한다.
 
-```apt install software-properties-common -y```  
-```add-apt-repository ppa:dotnet/backports```  
-```apt update```  
-```apt install aspnetcore-runtime-9.0 -y```  
+```apt install software-properties-common -y``` 이 명령어는 우분투 공식 프로그램 외 외부 프로그램을 설치할 수 있도록 설정하는 명령어다.  
+```add-apt-repository ppa:dotnet/backports``` 이 명령어는 추가하려는 외부 프로그램이 존재하는 리포지토리를 지정해주는 명령어다.  
+```apt update``` 이 명령어는 위에서 설정한 사항들을 apt에 적용하는 명령어다.   
+```apt install aspnetcore-runtime-9.0 -y``` 마지막으로 .net core 서버를 실행하기 위한 런타임을 다운받는 명령어다.  
 
 
 
