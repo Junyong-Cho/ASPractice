@@ -274,6 +274,8 @@ Put 이후 Get 요청을 하면 이름이 변경된 것을 확인할 수 있다.
 
 브라우저에 /put 요청을 보내고 ```mongosh -u [유저이름] -p [패스워드] --authenticationDatabase [db이름]``` 으로 접속해본다.
 
+```db.[컬렉션이름].getIndexes()``` 명령어로 인덱스를 확인할 수 있다.
+
 <img width="777" height="143" alt="12  인덱스 설정 확인" src="https://github.com/user-attachments/assets/1140330a-ba43-4c8a-849d-82de896acb9b" />
 
 user_id 속성이 인덱스로 설정된 것을 확인할 수 있다.
