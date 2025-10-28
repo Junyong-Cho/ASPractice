@@ -126,6 +126,46 @@ public class MongoDbService
 
 이렇게 설정하면 MongoDbSetting에서 설정해 둔 Db와 그곳의 컬렉션에서 작업을 해줄 수 있다.
 
+그리고 User가 저장되는 컬렉션에 UserId를 인덱스로 설정해보겠다.  
+이는 DB와 소통하는 메서드임으로 비동기적으로 처리하는 것이 권장된다.
+
+이는 MongoDbService 인스턴스 생성 과정에서 설정해주어야 하는데 생성자는 비동기 메서드로 설정이 불가능하므로 따로 만들어주어야 한다.
+
+```C#
+public class MongoDbService
+{
+//..... 생성자
+    public static async Task<MongoDbService> CreateAsync(IOptions<MongoDbSettings> options)
+    {
+        MongoDbService db = new(options);
+
+        // UserId 오름차순 설정
+        var index = Builders<User>.IndexKeys.Ascending(u => u.UserId);
+        // UserId 고유값 설정
+        CreateIndexOptions<User> idxOption = new() { Unique = true };
+        // 인덱스 설정
+        await db._service.Indexes.CreateOneAsync(new CreateIndexModel<User>(index, idxOption));
+
+        return db;
+    }
+//..... 다른 메서드들
+}
+```
+
+이렇게 설정하면 특정 속성의 인덱스를 설정할 수 있으나 웹서비스 빌드 단계에서 ```AddSingleton<MongoDbService>()```으로 간단하게 서비스를 등록할 수 없다.
+
+따라서 직접 인스턴스를 생성하여 등록해주어야 한다.  
+Program.cs 파일에 다음과 같은 코드를 추가해준다.
+```C#
+MongoDbSettings mongoDbSetting = new();
+
+builder.Configuration.GetSection("MongoDbSettings").Bind(mongoDbSetting);
+
+builder.Services.AddSingleton(await MongoDbService.CreateAsync(Options.Create(mongoDbSetting)));
+```
+
+## CRUD 구현
+
 그리고 컬렉션에서 작업을 하기 위한 생성, 삭제, 조회 기능을 하는 메서드를 다음과 같이 추가한다.
 
 ```C#
@@ -143,13 +183,96 @@ public class MongoDbService
         IMongoDatabase db = client.GetDatabase(options.Value.Database);
         _service = db.GetCollection<User>(options.Value.Collection);
     }
-    // 추가
+    
     public async Task<List<User>> GetAllAsync() => await _service.Find(_ => true).ToListAsync();
 
     public async Task<User> GetAsync(string userId) => await _service.Find(u => u.UserId == userId).FirstAsync();
 
     public async Task PostAsync(User user) => await _service.InsertOneAsync(user);
 
+    public async Task PutAsync(User user) => await _service.ReplaceOneAsync(u => u.UserId == user.UserId, user);
+
     public async Task DeleteAsync(User user) => await _service.DeleteOneAsync(u => u.Id==user.Id);
 }
 ```
+
+## 테스트
+
+의도한대로 설정이 되었는지 확인하는 코드를 작성해보겠다.
+
+Program.cs 파일에 다음과 같이 구현한다. (브라우저상에서 간단하게 확인해보기 위해 전부 Get 요청으로 구현하였다.)
+
+```C#
+var app = builder.Build();
+
+app.MapGet("/get", async (MongoDbService db) =>
+{
+    List<User> users = await db.GetAllAsync();
+    return Results.Ok(users);
+});
+
+app.MapGet("/post", async (MongoDbService db) =>
+{
+    User user = new()
+    {
+        Username = "홍길동",
+        UserId = "honggildong",
+        Password = "패스워드",
+        Email = "hong@example.com"
+    };
+
+    await db.PostAsync(user);
+
+    return Results.Ok("post success");
+});
+
+app.MapGet("/put", async (MongoDbService db) =>
+{
+    User user = await db.GetAsync("honggildong");
+    user.Username = "고길동";
+    await db.PutAsync(user);
+
+    return Results.Ok("put success");
+});
+
+app.MapGet("/del", async (MongoDbService db) =>
+{
+    User user = await db.GetAsync("honggildong");
+
+    await db.DeleteAsync(user);
+
+    return Results.Ok("delete success");
+});
+
+app.Run();
+```
+
+![5. Get요청 테스트](../.dummy/101%20몽고/5.%20Get요청%20테스트.png)
+
+Get 요청을 처음 하면 위처럼 빈 데이터가 반환된다.
+
+![6. Post요청 테스트](../.dummy/101%20몽고/6.%20Post요청%20테스트.png)    
+![7. Post 이후 Get](../.dummy/101%20몽고/7.%20Post%20이후%20Get.png)
+
+Post 이후 Get 요청을 하면 제대로 데이터가 들어간 것을 확인할 수 있다.
+
+![8. Put 요청 테스트](../.dummy/101 몽고/8. Put 요청 테스트.png)    
+![9. Put 이후 Get](../.dummy/101%20몽고/9.%20Put%20이후%20Get.png)
+
+Put 이후 Get 요청을 하면 이름이 변경된 것을 확인할 수 있다.
+
+![10. Delete 요청 테스트](../.dummy/101 몽고/10. Delete 요청 테스트.png)    
+![11. Delete 이후 Get](../.dummy/101%20몽고/11.%20Delete%20이후%20Get.png)
+
+마지막으로 Delete 요청 이후 데이터가 사라진 것까지 확인되면 완료된다.
+
+## index 설정 확인
+
+브라우저에 /put 요청을 보내고 ```mongosh -u [유저이름] -p [패스워드] --authenticationDatabase [db이름]``` 으로 접속해본다.
+
+![12. 인덱스 설정 확인](../.dummy/101 몽고/12. 인덱스 설정 확인.png)
+
+user_id 속성이 인덱스로 설정된 것을 확인할 수 있다.
+
+## 마무리
+몽고디비를 서버와 연결하고 인덱스 설정 이후 CRUD까지 구현해보았다.
