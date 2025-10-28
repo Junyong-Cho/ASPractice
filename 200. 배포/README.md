@@ -1,72 +1,72 @@
-# Internet Information Service(IIS)¸¦ ÀÌ¿ëÇÏ¿© ¹èÆ÷ÇÏ´Â ¹ý
+# Internet Information Service(IIS)ë¥¼ ì´ìš©í•˜ì—¬ ë°°í¬í•˜ëŠ” ë²•
 
-```À©µµ¿ì ±â´É ÄÑ±â/²ô±â``` À©µµ¿ì °Ë»öÃ¢¿¡¼­ °Ë»ö
+```ìœˆë„ìš° ê¸°ëŠ¥ ì¼œê¸°/ë„ê¸°``` ìœˆë„ìš° ê²€ìƒ‰ì°½ì—ì„œ ê²€ìƒ‰
 
-![1. À©µµ¿ì ±â´É ÄÑ±â ²ô±â](../.dummy/1000%20¹èÆ÷/1.%20À©µµ¿ì%20±â´É%20ÄÑ±â%20²ô±â.png)
+<img width="785" height="449" alt="1  ìœˆë„ìš° ê¸°ëŠ¥ ì¼œê¸° ë„ê¸°" src="https://github.com/user-attachments/assets/70b7cde9-4220-402f-81e1-fc2a3c96b865" />
 
-ÀÎÅÍ³Ý Á¤º¸ ¼­ºñ½º¸¦ Ã£¾Æ¼­ ```World Wide Web ¼­ºñ½º``` ```À¥ °ü¸® µµ±¸```¸¦ Ã¼Å©ÇÑ ´ÙÀ½¿¡ ```World Wide Web ¼­ºñ½º```/```ÀÀ¿ë ÇÁ·Î±×·¥ °³¹ß ±â´É```/ ¾Æ·¡ °æ·Î¿¡ Á¸ÀçÇÏ´Â .NET ÃÖ»óÀ§ ¹öÀüÀ» Ã¼Å©ÇÑ ´ÙÀ½¿¡ È®ÀÎ ¹öÆ°À» ´­·¯¼­ ¼³Ä¡¸¦ ¿Ï·áÇÑ´Ù.
+ì¸í„°ë„· ì •ë³´ ì„œë¹„ìŠ¤ë¥¼ ì°¾ì•„ì„œ ```World Wide Web ì„œë¹„ìŠ¤``` ```ì›¹ ê´€ë¦¬ ë„êµ¬```ë¥¼ ì²´í¬í•œ ë‹¤ìŒì— ```World Wide Web ì„œë¹„ìŠ¤```/```ì‘ìš© í”„ë¡œê·¸ëž¨ ê°œë°œ ê¸°ëŠ¥```/ ì•„ëž˜ ê²½ë¡œì— ì¡´ìž¬í•˜ëŠ” .NET ìµœìƒìœ„ ë²„ì „ì„ ì²´í¬í•œ ë‹¤ìŒì— í™•ì¸ ë²„íŠ¼ì„ ëˆŒëŸ¬ì„œ ì„¤ì¹˜ë¥¼ ì™„ë£Œí•œë‹¤.
 
-![2. ÀÎÅÍ³Ý Á¤º¸ ¼­ºñ½º](../.dummy/1000%20¹èÆ÷/2.%20ÀÎÅÍ³Ý%20Á¤º¸%20¼­ºñ½º.png)  
-![3. .Net ¹öÀü ¼±ÅÃ](../.dummy/1000%20¹èÆ÷/3.%20.net%20¹öÀü%20¼±ÅÃ.png)
+<img width="310" height="75" alt="2  ì¸í„°ë„· ì •ë³´ ì„œë¹„ìŠ¤" src="https://github.com/user-attachments/assets/f56da3b6-b8a8-4694-8811-dd576693d2e2" />
+<br>
+<img width="263" height="283" alt="3   net ë²„ì „ ì„ íƒ" src="https://github.com/user-attachments/assets/d0c6a433-3ff5-45d2-98b9-962bbb597321" />
 
-[.NET È£½ºÆÃ ¹øµé ´Ù¿î·Îµå ÆäÀÌÁö](https://dotnet.microsoft.com/ko-kr/download/dotnet/9.0)·Î ÀÌµ¿ÇÏ¿© ASP.NET ÄÚ¾î ·±Å¸ÀÓ ºÎºÐÀÇ Window ¼³Ä¡ °ü¸®ÀÚ¿¡ Hosting BundleÀ» ´Ù¿î·ÎµåÇÑ´Ù.
+[.NET í˜¸ìŠ¤íŒ… ë²ˆë“¤ ë‹¤ìš´ë¡œë“œ íŽ˜ì´ì§€](https://dotnet.microsoft.com/ko-kr/download/dotnet/9.0)ë¡œ ì´ë™í•˜ì—¬ ASP.NET ì½”ì–´ ëŸ°íƒ€ìž„ ë¶€ë¶„ì˜ Window ì„¤ì¹˜ ê´€ë¦¬ìžì— Hosting Bundleì„ ë‹¤ìš´ë¡œë“œí•œë‹¤.
 
-![4. È£½ºÆÃ ¹øµé ´Ù¿î·Îµå](../.dummy/1000%20¹èÆ÷/4.%20È£½ºÆÃ%20¹øµé%20´Ù¿î·Îµå.png)
+<img width="339" height="627" alt="4  í˜¸ìŠ¤íŒ… ë²ˆë“¤ ë‹¤ìš´ë¡œë“œ" src="https://github.com/user-attachments/assets/9c227be2-6442-4e87-aee4-8dc0fd043cef" />
 
-´Ù¿î·ÎµåÇÑ ```dotnet-hosting-[¹öÀü]-win.exe``` ÇÁ·Î±×·¥À» ½ÇÇàÇÏ¿© Window Server HostingÀ» ¼³Ä¡ÇÑ´Ù.
+ë‹¤ìš´ë¡œë“œí•œ ```dotnet-hosting-[ë²„ì „]-win.exe``` í”„ë¡œê·¸ëž¨ì„ ì‹¤í–‰í•˜ì—¬ Window Server Hostingì„ ì„¤ì¹˜í•œë‹¤.
 
-![5. È£½ºÆÃ ¹øµé ¼³Ä¡](../.dummy/1000%20¹èÆ÷/5.%20È£½ºÆÃ%20¹øµé%20¼³Ä¡.png)
+<img width="497" height="356" alt="5  í˜¸ìŠ¤íŒ… ë²ˆë“¤ ì„¤ì¹˜" src="https://github.com/user-attachments/assets/426a0f82-7c98-46ee-b621-471fdd334677" />
 
-°ü¸®ÀÚ·Î cmd¸¦ ½ÇÇàÇÑ ´ÙÀ½¿¡ ```net stop was /y``` ¸í·É¾î·Î IIS¸¦ Á¾·áÇÏ°í ```net start w3svc``` ¸í·É¾î·Î IIS¸¦ Àç½ÃÀÛÇÑ´Ù.
+ê´€ë¦¬ìžë¡œ cmdë¥¼ ì‹¤í–‰í•œ ë‹¤ìŒì— ```net stop was /y``` ëª…ë ¹ì–´ë¡œ IISë¥¼ ì¢…ë£Œí•˜ê³  ```net start w3svc``` ëª…ë ¹ì–´ë¡œ IISë¥¼ ìž¬ì‹œìž‘í•œë‹¤.
 
-ÇÁ·ÎÁ§Æ® °æ·Î¿¡¼­ ```dotnet publish -c Release``` ¸í·É¾î¸¦ ½ÇÇàÇÏ¿© ¹èÆ÷ µð·ºÅÍ¸®¸¦ »ý¼ºÇÑ´Ù.  
-µð·ºÅÍ¸® »ý¼º °æ·Î´Â ```bin/Release/net[¹öÀü]/publish```ÀÌ´Ù.
+í”„ë¡œì íŠ¸ ê²½ë¡œì—ì„œ ```dotnet publish -c Release``` ëª…ë ¹ì–´ë¥¼ ì‹¤í–‰í•˜ì—¬ ë°°í¬ ë””ë ‰í„°ë¦¬ë¥¼ ìƒì„±í•œë‹¤.  
+ë””ë ‰í„°ë¦¬ ìƒì„± ê²½ë¡œëŠ” ```bin/Release/net[ë²„ì „]/publish```ì´ë‹¤.
 
-±× ´ÙÀ½ À©µµ¿ì °Ë»öÃ¢¿¡ iis °ü¸®ÀÚ¸¦ °Ë»öÇÏ¿© ½ÇÇàÇÑ´Ù.
+ê·¸ ë‹¤ìŒ ìœˆë„ìš° ê²€ìƒ‰ì°½ì— iis ê´€ë¦¬ìžë¥¼ ê²€ìƒ‰í•˜ì—¬ ì‹¤í–‰í•œë‹¤.
 
-![6. Iis °ü¸®ÀÚ](../.dummy/1000%20¹èÆ÷/6.%20iis%20°ü¸®ÀÚ.png)
+<img width="765" height="397" alt="6  iis ê´€ë¦¬ìž" src="https://github.com/user-attachments/assets/27f00f25-fc75-45ad-9f34-702aa2e23636" />
 
-¿ÞÂÊÀÇ ¿¬°á ºÎºÐÀÇ º»ÀÎÀÇ ÄÄÇ»ÅÍ ÀÌ¸§ ¹ØÀ¸·Î »çÀÌÆ® ºÎºÐ¿¡ À¥ »çÀÌÆ® Ãß°¡¸¦ ¼±ÅÃÇÑ´Ù.
+ì™¼ìª½ì˜ ì—°ê²° ë¶€ë¶„ì˜ ë³¸ì¸ì˜ ì»´í“¨í„° ì´ë¦„ ë°‘ìœ¼ë¡œ ì‚¬ì´íŠ¸ ë¶€ë¶„ì— ì›¹ ì‚¬ì´íŠ¸ ì¶”ê°€ë¥¼ ì„ íƒí•œë‹¤.
 
-![7. À¥»çÀÌÆ® Ãß°¡](../.dummy/1000%20¹èÆ÷/7.%20À¥»çÀÌÆ®%20Ãß°¡.png)
+<img width="235" height="137" alt="7  ì›¹ì‚¬ì´íŠ¸ ì¶”ê°€" src="https://github.com/user-attachments/assets/5ec6e9aa-f5ee-4e07-b3b8-da0a6188cfe5" />
 
-»çÀÌÆ® ÀÌ¸§°ú publish °æ·Î, Æ÷Æ® ¹øÈ£¸¦ ¼³Á¤ÇÑ ´ÙÀ½¿¡ È®ÀÎÀ» ´­·¯¼­ »ý¼ºÀ» ¿Ï·áÇÑ´Ù.
+ì‚¬ì´íŠ¸ ì´ë¦„ê³¼ publish ê²½ë¡œ, í¬íŠ¸ ë²ˆí˜¸ë¥¼ ì„¤ì •í•œ ë‹¤ìŒì— í™•ì¸ì„ ëˆŒëŸ¬ì„œ ìƒì„±ì„ ì™„ë£Œí•œë‹¤.
 
-![8. À¥ »çÀÌÆ® ¼³Á¤](../.dummy/1000%20¹èÆ÷/8.%20À¥%20»çÀÌÆ®%20¼³Á¤.png)
+<img width="560" height="361" alt="8  ì›¹ ì‚¬ì´íŠ¸ ì„¤ì •" src="https://github.com/user-attachments/assets/39ee0945-eaf6-428a-a6c7-34f40573d400" />
 
-¾ÖÇÃ¸®ÄÉÀÌ¼Ç Ç®¿¡ µé¾î°¡¼­ »ý¼ºÇÑ »çÀÌÆ®ÀÇ ±âº» ¼³Á¤ ¸Þ´º¿¡ µé¾î°£´Ù.
+ì• í”Œë¦¬ì¼€ì´ì…˜ í’€ì— ë“¤ì–´ê°€ì„œ ìƒì„±í•œ ì‚¬ì´íŠ¸ì˜ ê¸°ë³¸ ì„¤ì • ë©”ë‰´ì— ë“¤ì–´ê°„ë‹¤.
 
-![9. ¾ÖÇÃ¸®ÄÉÀÌ¼Ç Ç®](../.dummy/1000%20¹èÆ÷/9.%20¾ÖÇÃ¸®ÄÉÀÌ¼Ç%20Ç®.png)
+<img width="831" height="321" alt="9  ì• í”Œë¦¬ì¼€ì´ì…˜ í’€" src="https://github.com/user-attachments/assets/49c0540e-eafe-4673-a85c-58d0e055e3b3" />
 
-![10. ±âº» ¼³Á¤](../.dummy/1000%20¹èÆ÷/10.%20±âº»%20¼³Á¤.png)
+<img width="573" height="345" alt="10  ê¸°ë³¸ ì„¤ì •" src="https://github.com/user-attachments/assets/5e18b0ab-582c-4cfe-a0ee-5b339e54a749" />
 
-.NET CLR ¹öÀüÀ» °ü¸® ÄÚµå ¾øÀ½À¸·Î ¼³Á¤ÇØ ÁØ´Ù.
+.NET CLR ë²„ì „ì„ ê´€ë¦¬ ì½”ë“œ ì—†ìŒìœ¼ë¡œ ì„¤ì •í•´ ì¤€ë‹¤.
 
-![11. °ü¸® ÄÚµå ¾øÀ½](../.dummy/1000%20¹èÆ÷/11.%20°ü¸®%20ÄÚµå%20¾øÀ½.png)
+<img width="313" height="279" alt="11  ê´€ë¦¬ ì½”ë“œ ì—†ìŒ" src="https://github.com/user-attachments/assets/c83c1211-16b7-405c-9c28-6c1ec165cf83" />
 
+```localhost:[í¬íŠ¸ë²ˆí˜¸]```ë¥¼ ë¸Œë¼ìš°ì €ì— ê²€ìƒ‰í•˜ì—¬ ì •ìƒì ìœ¼ë¡œ ì„œë²„ê°€ ì‹¤í–‰ë˜ì—ˆëŠ”ì§€ í™•ì¸í•œë‹¤.
 
-```localhost:[Æ÷Æ®¹øÈ£]```¸¦ ºê¶ó¿ìÀú¿¡ °Ë»öÇÏ¿© Á¤»óÀûÀ¸·Î ¼­¹ö°¡ ½ÇÇàµÇ¾ú´ÂÁö È®ÀÎÇÑ´Ù.
+# dockerì™€ nginxë¥¼ ì´ìš©í•˜ì—¬ ë°°í¬í•˜ëŠ” ë²•
 
-# docker¿Í nginx¸¦ ÀÌ¿ëÇÏ¿© ¹èÆ÷ÇÏ´Â ¹ý
+docker desktopì´ ì„¤ì¹˜ë˜ì–´ ìžˆì–´ì•¼ í•˜ê³  ubuntu ì´ë¯¸ì§€ë¥¼ ì„¤ì¹˜í•´ì•¼ í•œë‹¤.
 
-docker desktopÀÌ ¼³Ä¡µÇ¾î ÀÖ¾î¾ß ÇÏ°í ubuntu ÀÌ¹ÌÁö¸¦ ¼³Ä¡ÇØ¾ß ÇÑ´Ù.
+ë„ì»¤ë¥¼ ì„¤ì¹˜í•˜ê³  ```docker pull ubuntu:latest``` ëª…ë ¹ì–´ë¡œ ubuntuì˜ ì´ë¯¸ì§€ë¥¼ ë‹¤ìš´ë°›ì€ ë‹¤ìŒì— ```docker run -dit --name myServer -p 8080:80 ubuntu:latest``` ëª…ë ¹ì–´ë¡œ ì»¨í…Œì´ë„ˆë¥¼ ìƒì„±í•œë‹¤.
 
-µµÄ¿¸¦ ¼³Ä¡ÇÏ°í ```docker pull ubuntu:latest``` ¸í·É¾î·Î ubuntuÀÇ ÀÌ¹ÌÁö¸¦ ´Ù¿î¹ÞÀº ´ÙÀ½¿¡ ```docker run -dit --name myServer -p 8080:80 ubuntu:latest``` ¸í·É¾î·Î ÄÁÅ×ÀÌ³Ê¸¦ »ý¼ºÇÑ´Ù.
-
-```run``` ÄÁÅ×ÀÌ³Ê »ý¼º  
-```-d``` ¹é±×¶ó¿îµå¿¡¼­ ÄÁÅ×ÀÌ³Ê ½ÇÇà  
-```-i``` Å°º¸µå ÀÔ·Â È°¼ºÈ­  
-```-t``` ¸®´ª½º ÅÍ¹Ì³Î ½ÇÇà  
-```--name``` ÄÁÅ×ÀÌ³Ê ÀÌ¸§ ¼³Á¤  
-```-p Æ÷Æ®1:Æ÷Æ®2``` ·ÎÄÃÀÇ Æ÷Æ®1À» ÄÁÅ×ÀÌ³ÊÀÇ Æ÷Æ®2¿Í ¿¬°á
-```ubuntu:latest``` ¿ìºÐÅõ ÀÌ¹ÌÁö·Î ¿ìºÐÅõ ÄÁÅ×ÀÌ³Ê »ý¼º
-
+```run``` ì»¨í…Œì´ë„ˆ ìƒì„±  
+```-d``` ë°±ê·¸ë¼ìš´ë“œì—ì„œ ì»¨í…Œì´ë„ˆ ì‹¤í–‰  
+```-i``` í‚¤ë³´ë“œ ìž…ë ¥ í™œì„±í™”  
+```-t``` ë¦¬ëˆ…ìŠ¤ í„°ë¯¸ë„ ì‹¤í–‰  
+```--name``` ì»¨í…Œì´ë„ˆ ì´ë¦„ ì„¤ì •  
+```-p í¬íŠ¸1:í¬íŠ¸2``` ë¡œì»¬ì˜ í¬íŠ¸1ì„ ì»¨í…Œì´ë„ˆì˜ í¬íŠ¸2ì™€ ì—°ê²°
+```ubuntu:latest``` ìš°ë¶„íˆ¬ ì´ë¯¸ì§€ë¡œ ìš°ë¶„íˆ¬ ì»¨í…Œì´ë„ˆ ìƒì„±
 
 
-µµÄ¿¿¡ dotnet runtimeÀ» ¼³Ä¡ÇØÁÖ¾î¾ß ÇÑ´Ù.
-º» ÇÁ·ÎÁ§Æ®´Â .net 9.0 ¹öÀüÀ» »ç¿ëÇÏ°í ÀÖ¾î¼­ 9.0 ¹öÀüÀÇ runtimeÀ» ¼³Ä¡ÇØÁÖ¾î¾ß ÇÏ´Âµ¥ ```apt install aspnetcore-runtime-9.0``` ¸í·É¾î·Î ¼³Ä¡ÇØ ÁÖ¸é µÈ´Ù.  
 
-±×·¯³ª .net 9.0 ¹öÀüÀº ¿ìºÐÅõ ÃÖ½Å ¹öÀü ÀÌÈÄ¿¡ Ãâ½ÃµÇ¾úÀ¸¹Ç·Î Ãß°¡ÀûÀÎ ÀÛ¾÷ÀÌ ÇÊ¿äÇÏ´Ù.
+ë„ì»¤ì— dotnet runtimeì„ ì„¤ì¹˜í•´ì£¼ì–´ì•¼ í•œë‹¤.
+ë³¸ í”„ë¡œì íŠ¸ëŠ” .net 9.0 ë²„ì „ì„ ì‚¬ìš©í•˜ê³  ìžˆì–´ì„œ 9.0 ë²„ì „ì˜ runtimeì„ ì„¤ì¹˜í•´ì£¼ì–´ì•¼ í•˜ëŠ”ë° ```apt install aspnetcore-runtime-9.0``` ëª…ë ¹ì–´ë¡œ ì„¤ì¹˜í•´ ì£¼ë©´ ëœë‹¤.  
+
+ê·¸ëŸ¬ë‚˜ .net 9.0 ë²„ì „ì€ ìš°ë¶„íˆ¬ ìµœì‹  ë²„ì „ ì´í›„ì— ì¶œì‹œë˜ì—ˆìœ¼ë¯€ë¡œ ì¶”ê°€ì ì¸ ìž‘ì—…ì´ í•„ìš”í•˜ë‹¤.
 
 ```apt install software-properties-common -y```  
 ```add-apt-repository ppa:dotnet/backports```  
@@ -75,32 +75,37 @@ docker desktopÀÌ ¼³Ä¡µÇ¾î ÀÖ¾î¾ß ÇÏ°í ubuntu ÀÌ¹ÌÁö¸¦ ¼³Ä¡ÇØ¾ß ÇÑ´Ù.
 
 
 
-# ¿ÜºÎ Á¢¼Ó ÇÏ´Â ¹ý
+# ì™¸ë¶€ ì ‘ì† í•˜ëŠ” ë²•
 
-## ¹æÈ­º® ¼³Á¤
+## ë°©í™”ë²½ ì„¤ì •
 
-¿ÜºÎ¿¡¼­ ³» ¼­¹ö¿¡ Á¢¼ÓÇÏ·Á¸é ¹æÈ­º®À» ¿­¾î¾ß ÇÑ´Ù.
+ì™¸ë¶€ì—ì„œ ë‚´ ì„œë²„ì— ì ‘ì†í•˜ë ¤ë©´ ë°©í™”ë²½ì„ ì—´ì–´ì•¼ í•œë‹¤.
 
-![12. ¹æÈ­º® ¼³Á¤](../.dummy/1000%20¹èÆ÷/12.%20¹æÈ­º®%20¼³Á¤.png)
+<img width="759" height="395" alt="12  ë°©í™”ë²½ ì„¤ì •" src="https://github.com/user-attachments/assets/4814be30-618a-4829-8c2b-848d4f397111" />
 
-°í±Þ ¼³Á¤¿¡ µé¾î°£´Ù.
+ê³ ê¸‰ ì„¤ì •ì— ë“¤ì–´ê°„ë‹¤.
 
-![13. °í±Þ ¼³Á¤](../.dummy/1000%20¹èÆ÷/13.%20°í±Þ%20¼³Á¤.png)
+<img width="494" height="625" alt="13  ê³ ê¸‰ ì„¤ì •" src="https://github.com/user-attachments/assets/3e837e34-4690-429d-8be4-be096be3931e" />
 
-ÀÎ¹Ù¿îµå ±ÔÄ¢À¸·Î µé¾î°£´Ù.
+ì¸ë°”ìš´ë“œ ê·œì¹™ìœ¼ë¡œ ë“¤ì–´ê°„ë‹¤.
 
-![14. ÀÎ¹Ù¿îµå ±ÔÄ¢](../.dummy/1000%20¹èÆ÷/14.%20ÀÎ¹Ù¿îµå%20±ÔÄ¢.png)
+<img width="192" height="106" alt="14  ì¸ë°”ìš´ë“œ ê·œì¹™" src="https://github.com/user-attachments/assets/6e9159ea-d38d-4216-a9d3-b56b7a8b709d" />
 
-»õ ±ÔÄ¢À¸·Î µé¾î°£´Ù.
+ìƒˆ ê·œì¹™ìœ¼ë¡œ ë“¤ì–´ê°„ë‹¤.
 
-![15. »õ ±ÔÄ¢](../.dummy/1000%20¹èÆ÷/15.%20»õ%20±ÔÄ¢.png)
+<img width="1033" height="307" alt="15  ìƒˆ ê·œì¹™" src="https://github.com/user-attachments/assets/2f62e6cd-12e5-4d37-ba69-0f2f45fda1ce" />
 
-Æ÷Æ® -> Æ¯Á¤ ·ÎÄÃ Æ÷Æ®¿¡ ¼³Á¤ÇÑ Æ÷Æ® ¹øÈ£ ÀÔ·Â -> ¿¬°á Çã¿ë(¾ÆÁ÷ https·Î Á¢¼ÓÀÌ ºÒ°¡ÇÏ¹Ç·Î) -> ±ÔÄ¢ Àû¿ë -> ÀÌ¸§ ¼³Á¤À¸·Î Æ÷Æ® ¹øÈ£ °³¹æÀ» ¿Ï·áÇÑ´Ù.
+í¬íŠ¸ -> íŠ¹ì • ë¡œì»¬ í¬íŠ¸ì— ì„¤ì •í•œ í¬íŠ¸ ë²ˆí˜¸ ìž…ë ¥ -> ì—°ê²° í—ˆìš©(ì•„ì§ httpsë¡œ ì ‘ì†ì´ ë¶ˆê°€í•˜ë¯€ë¡œ) -> ê·œì¹™ ì ìš© -> ì´ë¦„ ì„¤ì •ìœ¼ë¡œ í¬íŠ¸ ë²ˆí˜¸ ê°œë°©ì„ ì™„ë£Œí•œë‹¤.
 
-![16. Æ÷Æ®](../.dummy/1000%20¹èÆ÷/16.%20Æ÷Æ®.png)![17. Æ¯Á¤ ·ÎÄÃ Æ÷Æ®](../.dummy/1000%20¹èÆ÷/17.%20Æ¯Á¤%20·ÎÄÃ%20Æ÷Æ®.png)
-![18. ¿¬°á Çã¿ë](../.dummy/1000%20¹èÆ÷/18.%20¿¬°á%20Çã¿ë.png)![19. ±ÔÄ¢ Àû¿ë](../.dummy/1000%20¹èÆ÷/19.%20±ÔÄ¢%20Àû¿ë.png)
-![20. ÀÌ¸§ ¼³Á¤](../.dummy/1000%20¹èÆ÷/20.%20ÀÌ¸§%20¼³Á¤.png)
+<img width="356" height="267" alt="16  í¬íŠ¸" src="https://github.com/user-attachments/assets/2729a971-baea-4125-8769-fbfa79d0793a" />
+<br>
+<img width="589" height="247" alt="18  ì—°ê²° í—ˆìš©" src="https://github.com/user-attachments/assets/95982f68-9548-437e-a169-ba11622db9ec" />
+<br>
+<img width="454" height="268" alt="19  ê·œì¹™ ì ìš©" src="https://github.com/user-attachments/assets/3917fbd0-ef36-41b8-b7d8-7aeefd6197a5" />
+<br>
+<img width="600" height="253" alt="20  ì´ë¦„ ì„¤ì •" src="https://github.com/user-attachments/assets/f3eaecb1-1a1a-49ca-9e6e-1b95b83e874a" />
+<br>
 
-## Æ÷Æ® Æ÷¿öµù
+## í¬íŠ¸ í¬ì›Œë”©
 
-±× ´ÙÀ½ ³×ÀÌ¹ö µî¿¡ ³» ¾ÆÀÌÇÇ¸¦ °Ë»öÇÏ¸é ÇöÀç ³ªÀÇ °øÀÎ ip ÁÖ¼Ò¸¦ ¾Ë ¼ö ÀÖ´Ù.
+ê·¸ ë‹¤ìŒ ë„¤ì´ë²„ ë“±ì— ë‚´ ì•„ì´í”¼ë¥¼ ê²€ìƒ‰í•˜ë©´ í˜„ìž¬ ë‚˜ì˜ ê³µì¸ ip ì£¼ì†Œë¥¼ ì•Œ ìˆ˜ ìžˆë‹¤.
