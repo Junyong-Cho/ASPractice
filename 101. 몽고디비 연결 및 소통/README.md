@@ -1,36 +1,36 @@
-# ¸ù°íµðºñ ¿¬°á
+# ëª½ê³ ë””ë¹„ ì—°ê²°
 
-ÀÌÀü ´Ü°è¿¡¼­ ºñÁ¤Çü DBMS ¸ù°íµðºñ¸¦ ¼³Ä¡ÇÏ°í admin À¯Àú »ý¼º±îÁö ÇØÁÖ¾ú´Ù.
+ì´ì „ ë‹¨ê³„ì—ì„œ ë¹„ì •í˜• DBMS ëª½ê³ ë””ë¹„ë¥¼ ì„¤ì¹˜í•˜ê³  admin ìœ ì € ìƒì„±ê¹Œì§€ í•´ì£¼ì—ˆë‹¤.
 
-ÀÌÁ¦ ¸ù°íµðºñ¿Í ¼­¹ö¸¦ ¿¬°áÇØº¸°Ú´Ù.
+ì´ì œ ëª½ê³ ë””ë¹„ì™€ ì„œë²„ë¥¼ ì—°ê²°í•´ë³´ê² ë‹¤.
 
 ## secrets.json
 
-PostgreSQLÀ» ¿¬°áÇØ ÁÖ¾úÀ» ¶§Ã³·³ secrets.json¿¡ ¸ù°íµðºñ¿¡ »ç¿ëµÇ´Â ConnectionString µîÀ» ¼³Á¤ÇØ ÁÙ °ÍÀÌ´Ù.
+PostgreSQLì„ ì—°ê²°í•´ ì£¼ì—ˆì„ ë•Œì²˜ëŸ¼ secrets.jsonì— ëª½ê³ ë””ë¹„ì— ì‚¬ìš©ë˜ëŠ” ConnectionString ë“±ì„ ì„¤ì •í•´ ì¤„ ê²ƒì´ë‹¤.
 
 ```json
 "MongoDbSettings" :{
-	"ConnectionString": "mongodb://[À¯Àú³×ÀÓ]:[ÆÐ½º¿öµå]@localhost:27017/[ÀÎÁõ db]",
+	"ConnectionString": "mongodb://[ìœ ì €ë„¤ìž„]:[íŒ¨ìŠ¤ì›Œë“œ]@localhost:27017/[ì¸ì¦ db]",
 				   //ex) mongodb://admin:adminpassword@localhost:27017/admin
-	"Database": "test",		// »ç¿ëÇÒ db
-	"Collection": "data"	// »ç¿ëÇÒ ÄÃ·º¼Ç (Á¤Çü DBÀÇ ¸±·¹ÀÌ¼Ç, Å×ÀÌºí°ú °°Àº °³³ä)
+	"Database": "test",		// ì‚¬ìš©í•  db
+	"Collection": "data"	// ì‚¬ìš©í•  ì»¬ë ‰ì…˜ (ì •í˜• DBì˜ ë¦´ë ˆì´ì…˜, í…Œì´ë¸”ê³¼ ê°™ì€ ê°œë…)
 }
 ```
 
-±×¸®°í nuget¿¡¼­ Mongodb¸¦ °Ë»öÇÏ¿© MongoDB.Driver¸¦ ¼³Ä¡ÇÑ´Ù.
+ê·¸ë¦¬ê³  nugetì—ì„œ Mongodbë¥¼ ê²€ìƒ‰í•˜ì—¬ MongoDB.Driverë¥¼ ì„¤ì¹˜í•œë‹¤.
 
-![1. ¸ù°íµðºñµå¶óÀÌ¹ö](../.dummy/101%20¸ù°í/1.%20¸ù°íµðºñµå¶óÀÌ¹ö.png)
+<img width="1160" height="739" alt="1  ëª½ê³ ë””ë¹„ë“œë¼ì´ë²„" src="https://github.com/user-attachments/assets/09f420b2-1e13-4d0b-b64a-08260db2c2d1" />
 
-## µ¥ÀÌÅÍ ±¸Á¶ Á¤ÀÇ
+## ë°ì´í„° êµ¬ì¡° ì •ì˜
 
-¸ù°íµðºñ¿¡ µ¥ÀÌÅÍ¸¦ ÀúÀåÇÏ±â À§ÇØ¼­´Â PostgreSQL°ú ¸¶Âù°¡Áö·Î µ¥ÀÌÅÍ ±¸Á¶¸¦ Á¤ÀÇÇØ¾ß ÇÑ´Ù.  
-ºñÁ¤Çü dbÀÎ ¸ù°íµðºñ¿Í ¼ÒÅëÇÏ±â À§ÇØ¼­ µ¥ÀÌÅÍ ±¸Á¶¸¦ Á¤ÀÇÇØ¾ß ÇÏ¸é Á¤Çü db¸¦ »ç¿ëÇÏ´Â °Í°ú Â÷ÀÌ°¡ ¾øÀ» °Í °°Áö¸¸ Á¤Çü db´Â µ¥ÀÌÅÍ ±¸Á¶°¡ º¯°æµÉ ¶§¸¶´Ù ¸¶ÀÌ±×·¹ÀÌ¼ÇÀ» ÀÌ¿ëÇÏ¿© ¸±·¹ÀÌ¼Ç ±¸Á¶¸¦ º¯°æÇØ ÁÖ¾î¾ß ÇÏ´Âµ¥ ¸ù°íµðºñ´Â ÄÚµå¸¸ º¯°æÇØÁÖ¸é µÇ´Â Â÷ÀÌ°¡ ÀÖ´Ù.
+ëª½ê³ ë””ë¹„ì— ë°ì´í„°ë¥¼ ì €ìž¥í•˜ê¸° ìœ„í•´ì„œëŠ” PostgreSQLê³¼ ë§ˆì°¬ê°€ì§€ë¡œ ë°ì´í„° êµ¬ì¡°ë¥¼ ì •ì˜í•´ì•¼ í•œë‹¤.  
+ë¹„ì •í˜• dbì¸ ëª½ê³ ë””ë¹„ì™€ ì†Œí†µí•˜ê¸° ìœ„í•´ì„œ ë°ì´í„° êµ¬ì¡°ë¥¼ ì •ì˜í•´ì•¼ í•˜ë©´ ì •í˜• dbë¥¼ ì‚¬ìš©í•˜ëŠ” ê²ƒê³¼ ì°¨ì´ê°€ ì—†ì„ ê²ƒ ê°™ì§€ë§Œ ì •í˜• dbëŠ” ë°ì´í„° êµ¬ì¡°ê°€ ë³€ê²½ë  ë•Œë§ˆë‹¤ ë§ˆì´ê·¸ë ˆì´ì…˜ì„ ì´ìš©í•˜ì—¬ ë¦´ë ˆì´ì…˜ êµ¬ì¡°ë¥¼ ë³€ê²½í•´ ì£¼ì–´ì•¼ í•˜ëŠ”ë° ëª½ê³ ë””ë¹„ëŠ” ì½”ë“œë§Œ ë³€ê²½í•´ì£¼ë©´ ë˜ëŠ” ì°¨ì´ê°€ ìžˆë‹¤.
 
-¸ÕÀú ÇÁ·ÎÁ§Æ®¿¡ Models/User.cs °æ·Î·Î ÆÄÀÏÀ» »ý¼ºÇÑ´Ù.
+ë¨¼ì € í”„ë¡œì íŠ¸ì— Models/User.cs ê²½ë¡œë¡œ íŒŒì¼ì„ ìƒì„±í•œë‹¤.
 
-![2. ±¸Á¶](../.dummy/101%20¸ù°í/2.%20±¸Á¶.png)
+<img width="269" height="137" alt="2  êµ¬ì¡°" src="https://github.com/user-attachments/assets/2660bcf3-8d88-4011-b106-fa535fbc2e34" />
 
-User.cs ÆÄÀÏÀº ±âÁ¸ PostgreSQL¿¡¼­ ¸¸µé¾ú´ø ±¸Á¶¿Í ¶È°°ÀÌ ÀÛ¼ºÇØº¸°Ú´Ù.
+User.cs íŒŒì¼ì€ ê¸°ì¡´ PostgreSQLì—ì„œ ë§Œë“¤ì—ˆë˜ êµ¬ì¡°ì™€ ë˜‘ê°™ì´ ìž‘ì„±í•´ë³´ê² ë‹¤.
 
 ```C#
 public class User
@@ -43,7 +43,7 @@ public class User
 }
 ```
 
-±×¸®°í ¸ù°íµðºñ¿¡ ¸Â°Ô °¢ ºÎºÐ¿¡ ¼Ó¼ºÀ» »ý¼ºÇØÁÖ°Ú´Ù.
+ê·¸ë¦¬ê³  ëª½ê³ ë””ë¹„ì— ë§žê²Œ ê° ë¶€ë¶„ì— ì†ì„±ì„ ìƒì„±í•´ì£¼ê² ë‹¤.
 
 ```C#
 using MongoDB.Bson.Serialization.Attributes;
@@ -70,17 +70,17 @@ public class User
 }
 ```
 
-[BsonId]´Â µ¥ÀÌÅÍÀÇ ±âº»Å°¶ó´Â ¶æÀÌ°í ¸ù°íµðºñÀÇ ±âº»Å°ÀÇ Å¸ÀÔÀº ObjectId Å¸ÀÔÀÎµ¥ ÀÌ¸¦ ¼­¹ö¿¡¼­ stringÀ¸·Î ´Ù·ç°í ½Í±â¿¡ Id´Â stringÀ¸·Î ¼±¾ðÇØÁÖ¾ú°í [BsonRepresentation(BsonType.ObjectId)] ¼Ó¼ºÀ» Ãß°¡ÇØÁÖ¾ú´Ù.  
-±×¸®°í [BsonElement] ¼Ó¼ºÀº ÆÄ½ºÄ® ÄÉÀÌ½ºÀÎ ÇÊµå ÀÌ¸§À» ½º³×ÀÌÅ© ÄÉÀÌ½º·Î ¸ù°íµðºñ¿¡ ÀúÀåµÇµµ·Ï ¼³Á¤ÇÏ´Â ¼Ó¼ºÀÌ´Ù.
+[BsonId]ëŠ” ë°ì´í„°ì˜ ê¸°ë³¸í‚¤ë¼ëŠ” ëœ»ì´ê³  ëª½ê³ ë””ë¹„ì˜ ê¸°ë³¸í‚¤ì˜ íƒ€ìž…ì€ ObjectId íƒ€ìž…ì¸ë° ì´ë¥¼ ì„œë²„ì—ì„œ stringìœ¼ë¡œ ë‹¤ë£¨ê³  ì‹¶ê¸°ì— IdëŠ” stringìœ¼ë¡œ ì„ ì–¸í•´ì£¼ì—ˆê³  [BsonRepresentation(BsonType.ObjectId)] ì†ì„±ì„ ì¶”ê°€í•´ì£¼ì—ˆë‹¤.  
+ê·¸ë¦¬ê³  [BsonElement] ì†ì„±ì€ íŒŒìŠ¤ì¹¼ ì¼€ì´ìŠ¤ì¸ í•„ë“œ ì´ë¦„ì„ ìŠ¤ë„¤ì´í¬ ì¼€ì´ìŠ¤ë¡œ ëª½ê³ ë””ë¹„ì— ì €ìž¥ë˜ë„ë¡ ì„¤ì •í•˜ëŠ” ì†ì„±ì´ë‹¤.
 
 ## MongoDbSetting.cs
 
-µ¥ÀÌÅÍ ±¸Á¶¸¦ ¸¸µé¾úÀ¸´Ï ¸ù°íµðºñ¸¦ ¼³Á¤ÇÏ±â À§ÇÑ Å¬·¡½º¸¦ ¸¸µé¾îÁÖ°Ú´Ù.  
-ÇÁ·ÎÁ§Æ®¿¡ DbSettings/MongoDbSettings.cs °æ·Î·Î ÆÄÀÏÀ» ¸¸µé¾îÁØ´Ù.
+ë°ì´í„° êµ¬ì¡°ë¥¼ ë§Œë“¤ì—ˆìœ¼ë‹ˆ ëª½ê³ ë””ë¹„ë¥¼ ì„¤ì •í•˜ê¸° ìœ„í•œ í´ëž˜ìŠ¤ë¥¼ ë§Œë“¤ì–´ì£¼ê² ë‹¤.  
+í”„ë¡œì íŠ¸ì— DbSettings/MongoDbSettings.cs ê²½ë¡œë¡œ íŒŒì¼ì„ ë§Œë“¤ì–´ì¤€ë‹¤.
 
-![3. ¸ù°íµðºñ¼¼ÆÃ±¸Á¶](../.dummy/101%20¸ù°í/3.%20¸ù°íµðºñ¼¼ÆÃ±¸Á¶.png)
+<img width="226" height="133" alt="3  ëª½ê³ ë””ë¹„ì„¸íŒ…êµ¬ì¡°" src="https://github.com/user-attachments/assets/101aeed0-98f8-4b80-8a63-3f84cae47fbd" />
 
-±×¸®°í MondoDbSettings.cs ÆÄÀÏÀÇ ³»¿ëÀº ´ÙÀ½°ú °°ÀÌ ÀÛ¼ºÇØÁØ´Ù.
+ê·¸ë¦¬ê³  MondoDbSettings.cs íŒŒì¼ì˜ ë‚´ìš©ì€ ë‹¤ìŒê³¼ ê°™ì´ ìž‘ì„±í•´ì¤€ë‹¤.
 
 ```C#
 public class MongoDbSettings
@@ -91,15 +91,15 @@ public class MongoDbSettings
 }
 ```
 
-Ã³À½¿¡ secrets.json ÆÄÀÏ¿¡ Ãß°¡ÇØÁØ MongoDbSettingsÀÇ Å° °ª°ú À§ ÄÚµåÀÇ ÇÊµå ÀÌ¸§À» µ¿ÀÏÇÏ°Ô ¼³Á¤ÇØÁÖ¾î¾ß ÇÑ´Ù.
-(ConnectionString, Database, Collection µî)
+ì²˜ìŒì— secrets.json íŒŒì¼ì— ì¶”ê°€í•´ì¤€ MongoDbSettingsì˜ í‚¤ ê°’ê³¼ ìœ„ ì½”ë“œì˜ í•„ë“œ ì´ë¦„ì„ ë™ì¼í•˜ê²Œ ì„¤ì •í•´ì£¼ì–´ì•¼ í•œë‹¤.
+(ConnectionString, Database, Collection ë“±)
 
 ## MongoDbService.cs
 
-±×¸®°í MongoDbSettingsÀ» ÀÌ¿ëÇÏ¿© ¸ù°íµðºñ¸¦ ÀÌ¿ëÇÏ´Â ¼­ºñ½º Å¬·¡½º¸¦ »ý¼ºÇØ ÁÙ °ÍÀÌ´Ù.  
-ÇÁ·ÎÁ§Æ®¿¡ Services/MongoDbService.cs ÆÄÀÏÀ» ¸¸µé¾îÁØ´Ù.
+ê·¸ë¦¬ê³  MongoDbSettingsì„ ì´ìš©í•˜ì—¬ ëª½ê³ ë””ë¹„ë¥¼ ì´ìš©í•˜ëŠ” ì„œë¹„ìŠ¤ í´ëž˜ìŠ¤ë¥¼ ìƒì„±í•´ ì¤„ ê²ƒì´ë‹¤.  
+í”„ë¡œì íŠ¸ì— Services/MongoDbService.cs íŒŒì¼ì„ ë§Œë“¤ì–´ì¤€ë‹¤.
 
-![4. ¸ù°íµðºñ¼­ºñ½º](../.dummy/101%20¸ù°í/4.%20¸ù°íµðºñ¼­ºñ½º.png)
+<img width="270" height="170" alt="4  ëª½ê³ ë””ë¹„ì„œë¹„ìŠ¤" src="https://github.com/user-attachments/assets/a045068d-3606-4586-a570-8a255b83e4a0" />
 
 ```C#
 using Microsoft.Extensions.Options;
@@ -116,7 +116,7 @@ public class MongoDbService
         _service = new MongoClient(options.Value.ConnectionString)
             .GetDatabase(options.Value.Database)
             .GetCollection<User>(options.Value.Collection);
-        // À§¿Í ¾Æ·¡¿Í °°Àº ÄÚµå
+        // ìœ„ì™€ ì•„ëž˜ì™€ ê°™ì€ ì½”ë“œ
         MongoClient client = new MongoClient(options.Value.ConnectionString);
         IMongoDatabase db = client.GetDatabase(options.Value.Database);
         _service = db.GetCollection<User>(options.Value.Collection);
@@ -124,38 +124,38 @@ public class MongoDbService
 }
 ```
 
-ÀÌ·¸°Ô ¼³Á¤ÇÏ¸é MongoDbSetting¿¡¼­ ¼³Á¤ÇØ µÐ Db¿Í ±×°÷ÀÇ ÄÃ·º¼Ç¿¡¼­ ÀÛ¾÷À» ÇØÁÙ ¼ö ÀÖ´Ù.
+ì´ë ‡ê²Œ ì„¤ì •í•˜ë©´ MongoDbSettingì—ì„œ ì„¤ì •í•´ ë‘” Dbì™€ ê·¸ê³³ì˜ ì»¬ë ‰ì…˜ì—ì„œ ìž‘ì—…ì„ í•´ì¤„ ìˆ˜ ìžˆë‹¤.
 
-±×¸®°í User°¡ ÀúÀåµÇ´Â ÄÃ·º¼Ç¿¡ UserId¸¦ ÀÎµ¦½º·Î ¼³Á¤ÇØº¸°Ú´Ù.  
-ÀÌ´Â DB¿Í ¼ÒÅëÇÏ´Â ¸Þ¼­µåÀÓÀ¸·Î ºñµ¿±âÀûÀ¸·Î Ã³¸®ÇÏ´Â °ÍÀÌ ±ÇÀåµÈ´Ù.
+ê·¸ë¦¬ê³  Userê°€ ì €ìž¥ë˜ëŠ” ì»¬ë ‰ì…˜ì— UserIdë¥¼ ì¸ë±ìŠ¤ë¡œ ì„¤ì •í•´ë³´ê² ë‹¤.  
+ì´ëŠ” DBì™€ ì†Œí†µí•˜ëŠ” ë©”ì„œë“œìž„ìœ¼ë¡œ ë¹„ë™ê¸°ì ìœ¼ë¡œ ì²˜ë¦¬í•˜ëŠ” ê²ƒì´ ê¶Œìž¥ëœë‹¤.
 
-ÀÌ´Â MongoDbService ÀÎ½ºÅÏ½º »ý¼º °úÁ¤¿¡¼­ ¼³Á¤ÇØÁÖ¾î¾ß ÇÏ´Âµ¥ »ý¼ºÀÚ´Â ºñµ¿±â ¸Þ¼­µå·Î ¼³Á¤ÀÌ ºÒ°¡´ÉÇÏ¹Ç·Î µû·Î ¸¸µé¾îÁÖ¾î¾ß ÇÑ´Ù.
+ì´ëŠ” MongoDbService ì¸ìŠ¤í„´ìŠ¤ ìƒì„± ê³¼ì •ì—ì„œ ì„¤ì •í•´ì£¼ì–´ì•¼ í•˜ëŠ”ë° ìƒì„±ìžëŠ” ë¹„ë™ê¸° ë©”ì„œë“œë¡œ ì„¤ì •ì´ ë¶ˆê°€ëŠ¥í•˜ë¯€ë¡œ ë”°ë¡œ ë§Œë“¤ì–´ì£¼ì–´ì•¼ í•œë‹¤.
 
 ```C#
 public class MongoDbService
 {
-//..... »ý¼ºÀÚ
+//..... ìƒì„±ìž
     public static async Task<MongoDbService> CreateAsync(IOptions<MongoDbSettings> options)
     {
         MongoDbService db = new(options);
 
-        // UserId ¿À¸§Â÷¼ø ¼³Á¤
+        // UserId ì˜¤ë¦„ì°¨ìˆœ ì„¤ì •
         var index = Builders<User>.IndexKeys.Ascending(u => u.UserId);
-        // UserId °íÀ¯°ª ¼³Á¤
+        // UserId ê³ ìœ ê°’ ì„¤ì •
         CreateIndexOptions<User> idxOption = new() { Unique = true };
-        // ÀÎµ¦½º ¼³Á¤
+        // ì¸ë±ìŠ¤ ì„¤ì •
         await db._service.Indexes.CreateOneAsync(new CreateIndexModel<User>(index, idxOption));
 
         return db;
     }
-//..... ´Ù¸¥ ¸Þ¼­µåµé
+//..... ë‹¤ë¥¸ ë©”ì„œë“œë“¤
 }
 ```
 
-ÀÌ·¸°Ô ¼³Á¤ÇÏ¸é Æ¯Á¤ ¼Ó¼ºÀÇ ÀÎµ¦½º¸¦ ¼³Á¤ÇÒ ¼ö ÀÖÀ¸³ª À¥¼­ºñ½º ºôµå ´Ü°è¿¡¼­ ```AddSingleton<MongoDbService>()```À¸·Î °£´ÜÇÏ°Ô ¼­ºñ½º¸¦ µî·ÏÇÒ ¼ö ¾ø´Ù.
+ì´ë ‡ê²Œ ì„¤ì •í•˜ë©´ íŠ¹ì • ì†ì„±ì˜ ì¸ë±ìŠ¤ë¥¼ ì„¤ì •í•  ìˆ˜ ìžˆìœ¼ë‚˜ ì›¹ì„œë¹„ìŠ¤ ë¹Œë“œ ë‹¨ê³„ì—ì„œ ```AddSingleton<MongoDbService>()```ìœ¼ë¡œ ê°„ë‹¨í•˜ê²Œ ì„œë¹„ìŠ¤ë¥¼ ë“±ë¡í•  ìˆ˜ ì—†ë‹¤.
 
-µû¶ó¼­ Á÷Á¢ ÀÎ½ºÅÏ½º¸¦ »ý¼ºÇÏ¿© µî·ÏÇØÁÖ¾î¾ß ÇÑ´Ù.  
-Program.cs ÆÄÀÏ¿¡ ´ÙÀ½°ú °°Àº ÄÚµå¸¦ Ãß°¡ÇØÁØ´Ù.
+ë”°ë¼ì„œ ì§ì ‘ ì¸ìŠ¤í„´ìŠ¤ë¥¼ ìƒì„±í•˜ì—¬ ë“±ë¡í•´ì£¼ì–´ì•¼ í•œë‹¤.  
+Program.cs íŒŒì¼ì— ë‹¤ìŒê³¼ ê°™ì€ ì½”ë“œë¥¼ ì¶”ê°€í•´ì¤€ë‹¤.
 ```C#
 MongoDbSettings mongoDbSetting = new();
 
@@ -164,9 +164,9 @@ builder.Configuration.GetSection("MongoDbSettings").Bind(mongoDbSetting);
 builder.Services.AddSingleton(await MongoDbService.CreateAsync(Options.Create(mongoDbSetting)));
 ```
 
-## CRUD ±¸Çö
+## CRUD êµ¬í˜„
 
-±×¸®°í ÄÃ·º¼Ç¿¡¼­ ÀÛ¾÷À» ÇÏ±â À§ÇÑ »ý¼º, »èÁ¦, Á¶È¸ ±â´ÉÀ» ÇÏ´Â ¸Þ¼­µå¸¦ ´ÙÀ½°ú °°ÀÌ Ãß°¡ÇÑ´Ù.
+ê·¸ë¦¬ê³  ì»¬ë ‰ì…˜ì—ì„œ ìž‘ì—…ì„ í•˜ê¸° ìœ„í•œ ìƒì„±, ì‚­ì œ, ì¡°íšŒ ê¸°ëŠ¥ì„ í•˜ëŠ” ë©”ì„œë“œë¥¼ ë‹¤ìŒê³¼ ê°™ì´ ì¶”ê°€í•œë‹¤.
 
 ```C#
 public class MongoDbService
@@ -178,7 +178,7 @@ public class MongoDbService
         _service = new MongoClient(options.Value.ConnectionString)
             .GetDatabase(options.Value.Database)
             .GetCollection<User>(options.Value.Collection);
-        // À§¿Í ¾Æ·¡¿Í °°Àº ÄÚµå
+        // ìœ„ì™€ ì•„ëž˜ì™€ ê°™ì€ ì½”ë“œ
         MongoClient client = new MongoClient(options.Value.ConnectionString);
         IMongoDatabase db = client.GetDatabase(options.Value.Database);
         _service = db.GetCollection<User>(options.Value.Collection);
@@ -196,11 +196,11 @@ public class MongoDbService
 }
 ```
 
-## Å×½ºÆ®
+## í…ŒìŠ¤íŠ¸
 
-ÀÇµµÇÑ´ë·Î ¼³Á¤ÀÌ µÇ¾ú´ÂÁö È®ÀÎÇÏ´Â ÄÚµå¸¦ ÀÛ¼ºÇØº¸°Ú´Ù.
+ì˜ë„í•œëŒ€ë¡œ ì„¤ì •ì´ ë˜ì—ˆëŠ”ì§€ í™•ì¸í•˜ëŠ” ì½”ë“œë¥¼ ìž‘ì„±í•´ë³´ê² ë‹¤.
 
-Program.cs ÆÄÀÏ¿¡ ´ÙÀ½°ú °°ÀÌ ±¸ÇöÇÑ´Ù. (ºê¶ó¿ìÀú»ó¿¡¼­ °£´ÜÇÏ°Ô È®ÀÎÇØº¸±â À§ÇØ ÀüºÎ Get ¿äÃ»À¸·Î ±¸ÇöÇÏ¿´´Ù.)
+Program.cs íŒŒì¼ì— ë‹¤ìŒê³¼ ê°™ì´ êµ¬í˜„í•œë‹¤. (ë¸Œë¼ìš°ì €ìƒì—ì„œ ê°„ë‹¨í•˜ê²Œ í™•ì¸í•´ë³´ê¸° ìœ„í•´ ì „ë¶€ Get ìš”ì²­ìœ¼ë¡œ êµ¬í˜„í•˜ì˜€ë‹¤.)
 
 ```C#
 var app = builder.Build();
@@ -215,9 +215,9 @@ app.MapGet("/post", async (MongoDbService db) =>
 {
     User user = new()
     {
-        Username = "È«±æµ¿",
+        Username = "í™ê¸¸ë™",
         UserId = "honggildong",
-        Password = "ÆÐ½º¿öµå",
+        Password = "íŒ¨ìŠ¤ì›Œë“œ",
         Email = "hong@example.com"
     };
 
@@ -229,7 +229,7 @@ app.MapGet("/post", async (MongoDbService db) =>
 app.MapGet("/put", async (MongoDbService db) =>
 {
     User user = await db.GetAsync("honggildong");
-    user.Username = "°í±æµ¿";
+    user.Username = "ê³ ê¸¸ë™";
     await db.PutAsync(user);
 
     return Results.Ok("put success");
@@ -247,32 +247,36 @@ app.MapGet("/del", async (MongoDbService db) =>
 app.Run();
 ```
 
-![5. Get¿äÃ» Å×½ºÆ®](../.dummy/101%20¸ù°í/5.%20Get¿äÃ»%20Å×½ºÆ®.png)
+<img width="376" height="164" alt="5  Getìš”ì²­ í…ŒìŠ¤íŠ¸" src="https://github.com/user-attachments/assets/fb776cdc-961f-45b0-b93a-30b28d7b5a38" />
 
-Get ¿äÃ»À» Ã³À½ ÇÏ¸é À§Ã³·³ ºó µ¥ÀÌÅÍ°¡ ¹ÝÈ¯µÈ´Ù.
+Get ìš”ì²­ì„ ì²˜ìŒ í•˜ë©´ ìœ„ì²˜ëŸ¼ ë¹ˆ ë°ì´í„°ê°€ ë°˜í™˜ëœë‹¤.
 
-![6. Post¿äÃ» Å×½ºÆ®](../.dummy/101%20¸ù°í/6.%20Post¿äÃ»%20Å×½ºÆ®.png)    
-![7. Post ÀÌÈÄ Get](../.dummy/101%20¸ù°í/7.%20Post%20ÀÌÈÄ%20Get.png)
+<img width="323" height="154" alt="6  Postìš”ì²­ í…ŒìŠ¤íŠ¸" src="https://github.com/user-attachments/assets/d41bd68f-3f14-43fd-a90d-4c70e2e94807" />
+<br>
+<img width="334" height="260" alt="7  Post ì´í›„ Get" src="https://github.com/user-attachments/assets/f126a769-977b-4bdc-a99e-c56e81030a2c" />
 
-Post ÀÌÈÄ Get ¿äÃ»À» ÇÏ¸é Á¦´ë·Î µ¥ÀÌÅÍ°¡ µé¾î°£ °ÍÀ» È®ÀÎÇÒ ¼ö ÀÖ´Ù.
+Post ì´í›„ Get ìš”ì²­ì„ í•˜ë©´ ì œëŒ€ë¡œ ë°ì´í„°ê°€ ë“¤ì–´ê°„ ê²ƒì„ í™•ì¸í•  ìˆ˜ ìžˆë‹¤.
 
-![8. Put ¿äÃ» Å×½ºÆ®](../.dummy/101 ¸ù°í/8. Put ¿äÃ» Å×½ºÆ®.png)    
-![9. Put ÀÌÈÄ Get](../.dummy/101%20¸ù°í/9.%20Put%20ÀÌÈÄ%20Get.png)
+<img width="313" height="175" alt="8  Put ìš”ì²­ í…ŒìŠ¤íŠ¸" src="https://github.com/user-attachments/assets/57cd4fa7-29db-475f-bf66-05c689a9fbf6" />
+<br>
+<img width="312" height="233" alt="9  Put ì´í›„ Get" src="https://github.com/user-attachments/assets/385dec7a-5c2a-4f5a-b63c-b99f3705bf4d" />
 
-Put ÀÌÈÄ Get ¿äÃ»À» ÇÏ¸é ÀÌ¸§ÀÌ º¯°æµÈ °ÍÀ» È®ÀÎÇÒ ¼ö ÀÖ´Ù.
 
-![10. Delete ¿äÃ» Å×½ºÆ®](../.dummy/101 ¸ù°í/10. Delete ¿äÃ» Å×½ºÆ®.png)    
-![11. Delete ÀÌÈÄ Get](../.dummy/101%20¸ù°í/11.%20Delete%20ÀÌÈÄ%20Get.png)
+Put ì´í›„ Get ìš”ì²­ì„ í•˜ë©´ ì´ë¦„ì´ ë³€ê²½ëœ ê²ƒì„ í™•ì¸í•  ìˆ˜ ìžˆë‹¤.
 
-¸¶Áö¸·À¸·Î Delete ¿äÃ» ÀÌÈÄ µ¥ÀÌÅÍ°¡ »ç¶óÁø °Í±îÁö È®ÀÎµÇ¸é ¿Ï·áµÈ´Ù.
+<img width="326" height="171" alt="10  Delete ìš”ì²­ í…ŒìŠ¤íŠ¸" src="https://github.com/user-attachments/assets/5221ce5d-57bf-4d9c-b305-b7ab1c033a79" />
+<br>
+<img width="344" height="171" alt="11  Delete ì´í›„ Get" src="https://github.com/user-attachments/assets/920a2cd5-8ec5-4e5f-9043-27e0ba9a1bce" />
 
-## index ¼³Á¤ È®ÀÎ
+ë§ˆì§€ë§‰ìœ¼ë¡œ Delete ìš”ì²­ ì´í›„ ë°ì´í„°ê°€ ì‚¬ë¼ì§„ ê²ƒê¹Œì§€ í™•ì¸ë˜ë©´ ì™„ë£Œëœë‹¤.
 
-ºê¶ó¿ìÀú¿¡ /put ¿äÃ»À» º¸³»°í ```mongosh -u [À¯ÀúÀÌ¸§] -p [ÆÐ½º¿öµå] --authenticationDatabase [dbÀÌ¸§]``` À¸·Î Á¢¼ÓÇØº»´Ù.
+## index ì„¤ì • í™•ì¸
 
-![12. ÀÎµ¦½º ¼³Á¤ È®ÀÎ](../.dummy/101 ¸ù°í/12. ÀÎµ¦½º ¼³Á¤ È®ÀÎ.png)
+ë¸Œë¼ìš°ì €ì— /put ìš”ì²­ì„ ë³´ë‚´ê³  ```mongosh -u [ìœ ì €ì´ë¦„] -p [íŒ¨ìŠ¤ì›Œë“œ] --authenticationDatabase [dbì´ë¦„]``` ìœ¼ë¡œ ì ‘ì†í•´ë³¸ë‹¤.
 
-user_id ¼Ó¼ºÀÌ ÀÎµ¦½º·Î ¼³Á¤µÈ °ÍÀ» È®ÀÎÇÒ ¼ö ÀÖ´Ù.
+<img width="777" height="143" alt="12  ì¸ë±ìŠ¤ ì„¤ì • í™•ì¸" src="https://github.com/user-attachments/assets/1140330a-ba43-4c8a-849d-82de896acb9b" />
 
-## ¸¶¹«¸®
-¸ù°íµðºñ¸¦ ¼­¹ö¿Í ¿¬°áÇÏ°í ÀÎµ¦½º ¼³Á¤ ÀÌÈÄ CRUD±îÁö ±¸ÇöÇØº¸¾Ò´Ù.
+user_id ì†ì„±ì´ ì¸ë±ìŠ¤ë¡œ ì„¤ì •ëœ ê²ƒì„ í™•ì¸í•  ìˆ˜ ìžˆë‹¤.
+
+## ë§ˆë¬´ë¦¬
+ëª½ê³ ë””ë¹„ë¥¼ ì„œë²„ì™€ ì—°ê²°í•˜ê³  ì¸ë±ìŠ¤ ì„¤ì • ì´í›„ CRUDê¹Œì§€ êµ¬í˜„í•´ë³´ì•˜ë‹¤.
