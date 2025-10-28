@@ -84,10 +84,19 @@ docker desktop이 설치되어 있어야 하고 ubuntu 이미지를 설치해야
 그러나 .net 9.0 버전은 우분투 최신 버전 이후에 출시되었으므로 추가적인 작업이 필요하다.  
 다음 명령어들을 순서대로 실행한다.
 
+```apt update``` 이 명령어는 리눅스를 처음 시작할 때 필요한 apt 설치 설정을 적용하는 명령어다.  
 ```apt install software-properties-common -y``` 이 명령어는 우분투 공식 프로그램 외 외부 프로그램을 설치할 수 있도록 설정하는 명령어다.  
 ```add-apt-repository ppa:dotnet/backports``` 이 명령어는 추가하려는 외부 프로그램이 존재하는 리포지토리를 지정해주는 명령어다.  
 ```apt update``` 이 명령어는 위에서 설정한 사항들을 apt에 적용하는 명령어다.   
 ```apt install aspnetcore-runtime-9.0 -y``` 마지막으로 .net core 서버를 실행하기 위한 런타임을 다운받는 명령어다.  
+
+명령어의 -y 옵션은 설치 도중 계속할 것인지 물어보는 과정을 스킵하는 옵션이다.(자동으로 y를 입력한다.)
+<img width="961" height="383" alt="-y 옵션" src="https://github.com/user-attachments/assets/8d873f74-8119-4ff7-a291-324b14553403" />
+
+```apt install software-properties-common``` 명령어를 실행하면 중간에 지역을 선택하라는 옵션이 나온다.  
+아시아는 5, 서울은 68이다.
+
+<img width="1399" height="610" alt="software-properties-common" src="https://github.com/user-attachments/assets/50c67339-bb1d-45cb-9a98-849aeb300e6c" />
 
 
 
