@@ -1,3 +1,7 @@
+# 배포용 디렉터리 생성
+
+```dotnet publish -c Release``` 명령어를 실행하면 프로젝트의 bin/Release/net9.0/ 경로가 생성되고 그 밑으로 publish 디렉터리가 있는 것을 확인할 수 있는데 이것이 배포용 디렉터리이다.
+
 # Internet Information Service(IIS)를 이용하여 배포하는 법
 
 ```윈도우 기능 켜기/끄기``` 윈도우 검색창에서 검색
