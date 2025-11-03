@@ -239,6 +239,29 @@ string connectionString = builder.Configuration.GetConnectionString("Default");
 
 이렇게 secrets.json 파일에 저장된 ConnectionString을 읽어올 수 있다.
 
+## 코드 실행마다 마이그레이션 업데이트 하기
+
+```C#
+//... 이전
+var app = builder.Build();
+
+using (var scope = app.Services.CreateScope())
+{
+    var db = scope.ServiceProvider.GetRequiredService<UserDbContext>();
+    try
+    {
+        await db.Database.MigrateAsync();
+    }
+    catch(Exception e)
+    {
+        Console.WriteLine(e.Message);
+    }
+}
+//... 이후
+```
+
+위와 같이 작성하면 dotnet ef database update 명령어가 필요 없이 실행할 때마다 데이터베이스를 업데이트할 것이다.
+
 # 마무리
 
 이것으로 Db와 프로젝트를 연결해 보았다.
