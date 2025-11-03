@@ -1,27 +1,27 @@
-# Àú¹ø ½Ã°£ º¹½À
+# ì €ë²ˆ ì‹œê°„ ë³µìŠµ
 
-## ÇÁ·ÎÁ§Æ® »ý¼º
-[ÇÁ·ÎÁ§Æ® »ý¼º](https://github.com/junyong-cho/aspractice?tab=readme-ov-file#%EC%83%88-%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8-%EC%83%9D%EC%84%B1)ÇÏ´Â ¹æ¹ýÀº ÇØ´ç urlÀ» Âü°íÇÏÀÚ
+## í”„ë¡œì íŠ¸ ìƒì„±
+[í”„ë¡œì íŠ¸ ìƒì„±](https://github.com/junyong-cho/aspractice?tab=readme-ov-file#%EC%83%88-%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8-%EC%83%9D%EC%84%B1)í•˜ëŠ” ë°©ë²•ì€ í•´ë‹¹ urlì„ ì°¸ê³ í•˜ìž
 
-## C# ÄÚµå ±âº» ¾ç½Ä
+## C# ì½”ë“œ ê¸°ë³¸ ì–‘ì‹
 
-C#Àº ¾ö°ÝÇÑ °´Ã¼ÁöÇâ ¾ð¾îÀÌ¹Ç·Î ÇÁ·Î±×·¥À» ½ÇÇàÇÏ´Â °´Ã¼µµ Á¸ÀçÇØ¾ß ÇÑ´Ù.
+C#ì€ ì—„ê²©í•œ ê°ì²´ì§€í–¥ ì–¸ì–´ì´ë¯€ë¡œ í”„ë¡œê·¸ëž¨ì„ ì‹¤í–‰í•˜ëŠ” ê°ì²´ë„ ì¡´ìž¬í•´ì•¼ í•œë‹¤.
 
-µû¶ó¼­ ¿ì¸®°¡ µ¿ÀÛÇÏ±â ¿øÇÏ´Â ÄÚµå¸¦ °´Ã¼ ¾È¿¡ ÀÛ¼ºÇØ¾ß ÇÑ´Ù.
+ë”°ë¼ì„œ ìš°ë¦¬ê°€ ë™ìž‘í•˜ê¸° ì›í•˜ëŠ” ì½”ë“œë¥¼ ê°ì²´ ì•ˆì— ìž‘ì„±í•´ì•¼ í•œë‹¤.
 
-¾Æ·¡ ÄÚµå¿¡¼­ ³ª¿À´Ù½ÃÇÇ ProgramÀÌ ¹Ù·Î °´Ã¼´Ù.
+ì•„ëž˜ ì½”ë“œì—ì„œ ë‚˜ì˜¤ë‹¤ì‹œí”¼ Programì´ ë°”ë¡œ ê°ì²´ë‹¤.
 
 ```C#
-public class Program    // ÄÚµå ½ÇÇà¿ë °´Ã¼
+public class Program    // ì½”ë“œ ì‹¤í–‰ìš© ê°ì²´
 {
-    static public void Main(string[] args)  // Main ¸Þ¼­µå
+    static public void Main(string[] args)  // Main ë©”ì„œë“œ
     {
-        /* ¿©±â¿¡ ÄÚµå¸¦ ÀÛ¼º */
+        /* ì—¬ê¸°ì— ì½”ë“œë¥¼ ìž‘ì„± */
     }
 }
 ```
 
-´ÙÀ½°ú °°ÀÌ ÄÚµå¸¦ ÀÛ¼ºÇÏ°í ½ÇÇàÇÏ¸é ```Hello world```°¡ Ãâ·ÂµÈ´Ù.
+ë‹¤ìŒê³¼ ê°™ì´ ì½”ë“œë¥¼ ìž‘ì„±í•˜ê³  ì‹¤í–‰í•˜ë©´ ```Hello world```ê°€ ì¶œë ¥ëœë‹¤.
 
 ```C#
 public class Program
@@ -33,52 +33,52 @@ public class Program
 }
 ```
 
-ÇÁ·Î±×·¥À» ½ÇÇàÇÒ ¶§ Program °´Ã¼¸¦ ¸¸µç ´ÙÀ½ ±× °´Ã¼ÀÇ Main ¸Þ¼­µå¸¦ ½ÇÇàÇÏ´Â °ÍÀÌ´Ù.
+í”„ë¡œê·¸ëž¨ì„ ì‹¤í–‰í•  ë•Œ Program ê°ì²´ë¥¼ ë§Œë“  ë‹¤ìŒ ê·¸ ê°ì²´ì˜ Main ë©”ì„œë“œë¥¼ ì‹¤í–‰í•˜ëŠ” ê²ƒì´ë‹¤.
 
-## ÄÚµå ½ÇÇà ¹æ¹ý
+## ì½”ë“œ ì‹¤í–‰ ë°©ë²•
 
-ºñÁê¾ó ½ºÆ©µð¿À¿¡¼­ ````Ctrl + ` ```` ´ÜÃàÅ°·Î ÅÍ¹Ì³ÎÀ» ¿¬´Ù.
+ë¹„ì¥¬ì–¼ ìŠ¤íŠœë””ì˜¤ì—ì„œ ````Ctrl + ` ```` ë‹¨ì¶•í‚¤ë¡œ í„°ë¯¸ë„ì„ ì—°ë‹¤.
 
-```dir``` ¸í·É¾î·Î ÇöÀç °æ·Î¿¡ .csproj ÆÄÀÏÀÌ Á¸ÀçÇÏ´ÂÁö È®ÀÎÇÏ°í Á¸ÀçÇÏÁö ¾ÊÀ¸¸é ```cd [ÇÁ·ÎÁ§Æ® ÀÌ¸§]``` ¸í·É¾î·Î µð·ºÅÍ¸®¸¦ ÀÌµ¿ÇÑ ´ÙÀ½¿¡ ´Ù½Ã ```dir``` ¸í·É¾î·Î .csproj ÆÄÀÏÀÌ Á¸ÀçÇÏ´ÂÁö È®ÀÎÇÑ´Ù.
+```dir``` ëª…ë ¹ì–´ë¡œ í˜„ìž¬ ê²½ë¡œì— .csproj íŒŒì¼ì´ ì¡´ìž¬í•˜ëŠ”ì§€ í™•ì¸í•˜ê³  ì¡´ìž¬í•˜ì§€ ì•Šìœ¼ë©´ ```cd [í”„ë¡œì íŠ¸ ì´ë¦„]``` ëª…ë ¹ì–´ë¡œ ë””ë ‰í„°ë¦¬ë¥¼ ì´ë™í•œ ë‹¤ìŒì— ë‹¤ì‹œ ```dir``` ëª…ë ¹ì–´ë¡œ .csproj íŒŒì¼ì´ ì¡´ìž¬í•˜ëŠ”ì§€ í™•ì¸í•œë‹¤.
 
-![1. °æ·Î](../1.%20°æ·Î.png)
+<img width="958" height="778" alt="1  ê²½ë¡œ" src="https://github.com/user-attachments/assets/c3602c52-7d3c-497f-9990-c5996393d890" />
 
-```dotnet run``` ¸í·É¾î·Î ÇÁ·Î±×·¥À» ½ÇÇàÇÑ´Ù.
+```dotnet run``` ëª…ë ¹ì–´ë¡œ í”„ë¡œê·¸ëž¨ì„ ì‹¤í–‰í•œë‹¤.
 
-![2. ½ÇÇà](../2.%20½ÇÇà.png)
+<img width="383" height="63" alt="2  ì‹¤í–‰" src="https://github.com/user-attachments/assets/b92145fd-19cf-4019-83b6-3bf44459cf57" />
 
-Á¤»óÀûÀ¸·Î Hello world°¡ Ãâ·ÂµÇ¸é ¼º°øÀÌ´Ù.
+ì •ìƒì ìœ¼ë¡œ Hello worldê°€ ì¶œë ¥ë˜ë©´ ì„±ê³µì´ë‹¤.
 
 
-# °´Ã¼ ÁöÇâ ÇÁ·Î±×·¡¹Ö
+# ê°ì²´ ì§€í–¥ í”„ë¡œê·¸ëž˜ë°
 
-## °´Ã¼ ÁöÇâ µîÀå ¹è°æ - ÄÚµåÀÇ À¯Áöº¸¼ö¸¦ À§ÇØ¼­
+## ê°ì²´ ì§€í–¥ ë“±ìž¥ ë°°ê²½ - ì½”ë“œì˜ ìœ ì§€ë³´ìˆ˜ë¥¼ ìœ„í•´ì„œ
 
-## Á¤Àû Å¸ÀÔ ¾ð¾î¿Í µ¿Àû Å¸ÀÔ ¾ð¾î
+## ì •ì  íƒ€ìž… ì–¸ì–´ì™€ ë™ì  íƒ€ìž… ì–¸ì–´
 
-ÆÄÀÌ½ã °°Àº °æ¿ì ´ÙÀ½°ú °°Àº ÄÚµå°¡ ÇÏ³ªÀÇ ÄÚµå ºí·° ¾È¿¡ ÀÖ¾îµµ ÀüÇô ¹®Á¦°¡ µÇÁö ¾Ê´Â´Ù.  
-ÆÄÀÌ½ãÀÌ µ¿Àû Å¸ÀÔ ¾ð¾îÀÌ±â ¶§¹®  
-µ¿Àû Å¸ÀÔ ¾ð¾î¶õ º¯¼öÀÇ Å¸ÀÔÀÌ º¯È­ÇÒ ¼ö ÀÖ´Ù´Â °ÍÀ» ¸»ÇÑ´Ù.
+íŒŒì´ì¬ ê°™ì€ ê²½ìš° ë‹¤ìŒê³¼ ê°™ì€ ì½”ë“œê°€ í•˜ë‚˜ì˜ ì½”ë“œ ë¸”ëŸ­ ì•ˆì— ìžˆì–´ë„ ì „í˜€ ë¬¸ì œê°€ ë˜ì§€ ì•ŠëŠ”ë‹¤.  
+íŒŒì´ì¬ì´ ë™ì  íƒ€ìž… ì–¸ì–´ì´ê¸° ë•Œë¬¸  
+ë™ì  íƒ€ìž… ì–¸ì–´ëž€ ë³€ìˆ˜ì˜ íƒ€ìž…ì´ ë³€í™”í•  ìˆ˜ ìžˆë‹¤ëŠ” ê²ƒì„ ë§í•œë‹¤.
 
 ```python
-a = 5       # Á¤¼ö
-a = 'Hello' # ¹®ÀÚ¿­
+a = 5       # ì •ìˆ˜
+a = 'Hello' # ë¬¸ìžì—´
 ```
 
-±×·¯³ª C#Àº º¯¼öÀÇ Å¸ÀÔÀÌ ¼±¾ð°ú µ¿½Ã¿¡ °íÁ¤µÇ´Â Á¤Àû Å¸ÀÔ ¾ð¾î´Ù.
+ê·¸ëŸ¬ë‚˜ C#ì€ ë³€ìˆ˜ì˜ íƒ€ìž…ì´ ì„ ì–¸ê³¼ ë™ì‹œì— ê³ ì •ë˜ëŠ” ì •ì  íƒ€ìž… ì–¸ì–´ë‹¤.
 
-µû¶ó¼­ À§¿Í °°Àº ÄÚµå´Â Å¸ÀÔ ¿¡·¯¸¦ ¹ß»ý½ÃÅ°¸ç ¿¡µðÅÍ »ó¿¡¼­ »¡°£ ÁÙÀÌ Ç¥½ÃµÉ °ÍÀÌ´Ù.
-(¾ö¹ÐÈ÷ ¸»ÇÏ¸é C#¿¡¼­µµ À§¿Í °°Àº ÄÚµå¸¦ Â© ¼ö´Â ÀÖ´Ù.)
+ë”°ë¼ì„œ ìœ„ì™€ ê°™ì€ ì½”ë“œëŠ” íƒ€ìž… ì—ëŸ¬ë¥¼ ë°œìƒì‹œí‚¤ë©° ì—ë””í„° ìƒì—ì„œ ë¹¨ê°„ ì¤„ì´ í‘œì‹œë  ê²ƒì´ë‹¤.
+(ì—„ë°€ížˆ ë§í•˜ë©´ C#ì—ì„œë„ ìœ„ì™€ ê°™ì€ ì½”ë“œë¥¼ ì§¤ ìˆ˜ëŠ” ìžˆë‹¤.)
 
-![3. Type Error](../3.%20TypeError.png)
+<img width="584" height="186" alt="3  TypeError" src="https://github.com/user-attachments/assets/0af9fafb-38c7-4706-a6a6-0bcb0fe297e1" />
 
-±×·¸´Ù¸é º¯¼ö°¡ Á¤¼öÀÎÁö ¹®ÀÚ¿­ÀÎÁö ±× ¿Ü¿¡ ´Ù¸¥ Å¸ÀÔÀÎÁö ÄÄÇ»ÅÍ°¡ ¾Ë ¼ö ÀÖµµ·Ï ÇØ¾ß ÇÏ´Âµ¥ ÀÌ°ÍÀÌ ¹Ù·Î º¯¼ö ¼±¾ðÀÌ´Ù.
+ê·¸ë ‡ë‹¤ë©´ ë³€ìˆ˜ê°€ ì •ìˆ˜ì¸ì§€ ë¬¸ìžì—´ì¸ì§€ ê·¸ ì™¸ì— ë‹¤ë¥¸ íƒ€ìž…ì¸ì§€ ì»´í“¨í„°ê°€ ì•Œ ìˆ˜ ìžˆë„ë¡ í•´ì•¼ í•˜ëŠ”ë° ì´ê²ƒì´ ë°”ë¡œ ë³€ìˆ˜ ì„ ì–¸ì´ë‹¤.
 
-C#¿¡¼­´Â º¯¼ö ¼±¾ðÀ» ´ÙÀ½°ú °°ÀÌ ÇÑ´Ù.
+C#ì—ì„œëŠ” ë³€ìˆ˜ ì„ ì–¸ì„ ë‹¤ìŒê³¼ ê°™ì´ í•œë‹¤.
 
-```[Å¸ÀÔ] [º¯¼öÀÌ¸§]```  
-```int a;``` ÀÌ°ÍÀº a¶ó´Â ÀÌ¸§ÀÇ º¯¼ö¸¦ Á¤¼ö·Î »ç¿ëÇÒ °ÍÀÌ¶ó°í ÄÄÆÄÀÏ·¯¿¡°Ô ¼±¾ðÇÏ´Â °ÍÀÌ´Ù.  
-```string st;```µµ ¸¶Âù°¡Áö·Î st¶ó´Â ÀÌ¸§ÀÇ º¯¼ö¸¦ ¹®ÀÚ¿­·Î »ç¿ëÇÒ °ÍÀÌ¶ó°í ¼±¾ðÇÏ´Â °ÍÀÌ´Ù.
+```[íƒ€ìž…] [ë³€ìˆ˜ì´ë¦„]```  
+```int a;``` ì´ê²ƒì€ aë¼ëŠ” ì´ë¦„ì˜ ë³€ìˆ˜ë¥¼ ì •ìˆ˜ë¡œ ì‚¬ìš©í•  ê²ƒì´ë¼ê³  ì»´íŒŒì¼ëŸ¬ì—ê²Œ ì„ ì–¸í•˜ëŠ” ê²ƒì´ë‹¤.  
+```string st;```ë„ ë§ˆì°¬ê°€ì§€ë¡œ stë¼ëŠ” ì´ë¦„ì˜ ë³€ìˆ˜ë¥¼ ë¬¸ìžì—´ë¡œ ì‚¬ìš©í•  ê²ƒì´ë¼ê³  ì„ ì–¸í•˜ëŠ” ê²ƒì´ë‹¤.
 
 ```C#
 class Program
@@ -91,15 +91,15 @@ class Program
 }
 ```
 
-## Å¬·¡½º
+## í´ëž˜ìŠ¤
 
-Å¬·¡½º´Â ÀÏÁ¾ÀÇ µ¥ÀÌÅÍ Å¸ÀÔÀ¸·Î »ý°¢ÇÏ¸é ½±´Ù. int, string°ú °°Àº µ¥ÀÌÅÍ Å¸ÀÔÀ» »ý¼ºÇÏ´Â Å°¿öµå°¡ classÀÎ °ÍÀÌ´Ù.
+í´ëž˜ìŠ¤ëŠ” ì¼ì¢…ì˜ ë°ì´í„° íƒ€ìž…ìœ¼ë¡œ ìƒê°í•˜ë©´ ì‰½ë‹¤. int, stringê³¼ ê°™ì€ ë°ì´í„° íƒ€ìž…ì„ ìƒì„±í•˜ëŠ” í‚¤ì›Œë“œê°€ classì¸ ê²ƒì´ë‹¤.
 
-ÀÌ Å¬·¡½º¸¦ ¼±¾ðÇÏ´Â ¹æ¹ýµµ º¯¼ö ¼±¾ð ¹æ¹ý°ú µ¿ÀÏÇÏ´Ù.
+ì´ í´ëž˜ìŠ¤ë¥¼ ì„ ì–¸í•˜ëŠ” ë°©ë²•ë„ ë³€ìˆ˜ ì„ ì–¸ ë°©ë²•ê³¼ ë™ì¼í•˜ë‹¤.
 
-```class [Å¬·¡½ºÀÌ¸§]```
+```class [í´ëž˜ìŠ¤ì´ë¦„]```
 
-¾Õ¼­ ¼³¸íÇß´ø °ÍÃ³·³ ```class Robot``` ÀÌ°ÍÀº RobotÀÌ¶ó´Â ÀÌ¸§ÀÇ µ¥ÀÌÅÍ Å¸ÀÔÀ» ¸¸µé¾ú´Ù°í ÄÄÆÄÀÏ·¯¿¡°Ô ¾Ë¸®´Â °ÍÀÌ´Ù.
+ì•žì„œ ì„¤ëª…í–ˆë˜ ê²ƒì²˜ëŸ¼ ```class Robot``` ì´ê²ƒì€ Robotì´ë¼ëŠ” ì´ë¦„ì˜ ë°ì´í„° íƒ€ìž…ì„ ë§Œë“¤ì—ˆë‹¤ê³  ì»´íŒŒì¼ëŸ¬ì—ê²Œ ì•Œë¦¬ëŠ” ê²ƒì´ë‹¤.
 
 ```C#
 public class Program
@@ -116,24 +116,24 @@ class Robot
 }
 ```
 
-À§ ÄÚµåÃ³·³ Å¬·¡½º¸¦ ¼±¾ðÇÒ ¼ö ÀÖ´Ù.
+ìœ„ ì½”ë“œì²˜ëŸ¼ í´ëž˜ìŠ¤ë¥¼ ì„ ì–¸í•  ìˆ˜ ìžˆë‹¤.
 
-## °´Ã¼ - ÀÎ½ºÅÏ½º
+## ê°ì²´ - ì¸ìŠ¤í„´ìŠ¤
 
-¼±¾ðÇÑ Å¬·¡½º´Â ÀÏÁ¾ÀÇ µ¥ÀÌÅÍ Å¸ÀÔÀÌ¶ó°í ¼³¸íÇß´Ù.  
-µû¶ó¼­ Á¤¼ö Å¸ÀÔ, ¹®ÀÚ¿­ Å¸ÀÔ°ú ¸¶Âù°¡Áö·Î Robot Å¸ÀÔÀÇ º¯¼ö¸¦ »ý¼ºÇÒ ¼ö ÀÖ´Ù.  
-ÀÌ·¸°Ô »ý¼ºÇÑ º¯¼ö¸¦ ¹Ù·Î °´Ã¼(ÀÎ½ºÅÏ½º)¶ó°í ÇÑ´Ù.
+ì„ ì–¸í•œ í´ëž˜ìŠ¤ëŠ” ì¼ì¢…ì˜ ë°ì´í„° íƒ€ìž…ì´ë¼ê³  ì„¤ëª…í–ˆë‹¤.  
+ë”°ë¼ì„œ ì •ìˆ˜ íƒ€ìž…, ë¬¸ìžì—´ íƒ€ìž…ê³¼ ë§ˆì°¬ê°€ì§€ë¡œ Robot íƒ€ìž…ì˜ ë³€ìˆ˜ë¥¼ ìƒì„±í•  ìˆ˜ ìžˆë‹¤.  
+ì´ë ‡ê²Œ ìƒì„±í•œ ë³€ìˆ˜ë¥¼ ë°”ë¡œ ê°ì²´(ì¸ìŠ¤í„´ìŠ¤)ë¼ê³  í•œë‹¤.
 
-¾ÕÀ¸·Î °´Ã¼´Â ÀÎ½ºÅÏ½º¶ó°í Ç¥ÇöÇÏ°Ú´Ù.
+ì•žìœ¼ë¡œ ê°ì²´ëŠ” ì¸ìŠ¤í„´ìŠ¤ë¼ê³  í‘œí˜„í•˜ê² ë‹¤.
 
 ```C#
 public class Program
 {
     static public void Main(string[] args)
     {
-        int a;          // Á¤¼ö ÀÎ½ºÅÏ½º
-        string st;      // ¹®ÀÚ¿­ ÀÎ½ºÅÏ½º
-        Robot robot;    // Robot ÀÎ½ºÅÏ½º
+        int a;          // ì •ìˆ˜ ì¸ìŠ¤í„´ìŠ¤
+        string st;      // ë¬¸ìžì—´ ì¸ìŠ¤í„´ìŠ¤
+        Robot robot;    // Robot ì¸ìŠ¤í„´ìŠ¤
     }
 }
 
@@ -143,22 +143,22 @@ class Robot
 }
 ```
 
-C#Àº ¾îÂ¼¸é ÀÚ¹Ùº¸´Ùµµ ´õ ¾ö°ÝÇÑ °´Ã¼ÁöÇâ ¾ð¾îÀÌ¹Ç·Î Á¤¼ö¿Í °°Àº ÀÚ¹Ù¿¡¼­´Â ±âº»Çü µ¥ÀÌÅÍ Å¸ÀÔÀ¸·Î Ãë±ÞÇÏ´Â Å¸ÀÔµéµµ ÀüºÎ ÀÎ½ºÅÏ½º¿¡ ¼ÓÇÑ´Ù.
+C#ì€ ì–´ì©Œë©´ ìžë°”ë³´ë‹¤ë„ ë” ì—„ê²©í•œ ê°ì²´ì§€í–¥ ì–¸ì–´ì´ë¯€ë¡œ ì •ìˆ˜ì™€ ê°™ì€ ìžë°”ì—ì„œëŠ” ê¸°ë³¸í˜• ë°ì´í„° íƒ€ìž…ìœ¼ë¡œ ì·¨ê¸‰í•˜ëŠ” íƒ€ìž…ë“¤ë„ ì „ë¶€ ì¸ìŠ¤í„´ìŠ¤ì— ì†í•œë‹¤.
 
-Áï À§ ÄÚµåÀÇ a, st, robotÀº ¸ðµÎ ÀÎ½ºÅÏ½º¶ó°í ÇÒ ¼ö ÀÖ´Ù.
+ì¦‰ ìœ„ ì½”ë“œì˜ a, st, robotì€ ëª¨ë‘ ì¸ìŠ¤í„´ìŠ¤ë¼ê³  í•  ìˆ˜ ìžˆë‹¤.
 
-´Ù¸¸ int, string °°Àº Å¬·¡½ºµéÀº C#¿¡¼­ Æ¯º°ÇÏ°Ô Ãë±ÞµÇ´Â Å¸ÀÔÀÌ¶ó Robot Å¸ÀÔÀÇ º¯¼ö¿¡ µ¥ÀÌÅÍ¸¦ ÇÒ´çÇÏ±â À§ÇØ¼­´Â Á¶±Ý ´Ù¸¥ ¹æ¹ýÀÌ ÇÊ¿äÇÏ´Ù.
+ë‹¤ë§Œ int, string ê°™ì€ í´ëž˜ìŠ¤ë“¤ì€ C#ì—ì„œ íŠ¹ë³„í•˜ê²Œ ì·¨ê¸‰ë˜ëŠ” íƒ€ìž…ì´ë¼ Robot íƒ€ìž…ì˜ ë³€ìˆ˜ì— ë°ì´í„°ë¥¼ í• ë‹¹í•˜ê¸° ìœ„í•´ì„œëŠ” ì¡°ê¸ˆ ë‹¤ë¥¸ ë°©ë²•ì´ í•„ìš”í•˜ë‹¤.
 
-```Robot robot = new Robot();``` ÀÌ°ÍÀº Robot Å¸ÀÔÀÇ º¯¼ö robot¿¡ »õ·Î¿î(new) Robot ÀÎ½ºÅÏ½º¸¦ ÇÒ´çÇÏ°Ú´Ù´Â ¶æÀÌ¸ç ÀÌ°ÍÀÌ ¹Ù·Î ÀÎ½ºÅÏ½º »ý¼º ¹æ¹ýÀÌ´Ù.
+```Robot robot = new Robot();``` ì´ê²ƒì€ Robot íƒ€ìž…ì˜ ë³€ìˆ˜ robotì— ìƒˆë¡œìš´(new) Robot ì¸ìŠ¤í„´ìŠ¤ë¥¼ í• ë‹¹í•˜ê² ë‹¤ëŠ” ëœ»ì´ë©° ì´ê²ƒì´ ë°”ë¡œ ì¸ìŠ¤í„´ìŠ¤ ìƒì„± ë°©ë²•ì´ë‹¤.
 
 ```C#
 public class Program
 {
     static public void Main(string[] args)
     {
-        int a = 1;          // Á¤¼ö ÀÎ½ºÅÏ½º
-        string st = "";      // ¹®ÀÚ¿­ ÀÎ½ºÅÏ½º
-        Robot robot = new Robot();    // Robot ÀÎ½ºÅÏ½º
+        int a = 1;          // ì •ìˆ˜ ì¸ìŠ¤í„´ìŠ¤
+        string st = "";      // ë¬¸ìžì—´ ì¸ìŠ¤í„´ìŠ¤
+        Robot robot = new Robot();    // Robot ì¸ìŠ¤í„´ìŠ¤
 
         Console.WriteLine(a.GetType());
         Console.WriteLine(st.GetType());
@@ -172,19 +172,19 @@ class Robot
 }
 ```
 
-À§ ÄÚµå¸¦ º¸¸é int¿Í string ÀÎ½ºÅÏ½º¸¦ »ý¼ºÇÏ´Â ¹æ¹ý°ú Robot ÀÎ½ºÅÏ½º¸¦ »ý¼ºÇÏ´Â ¹æ¹ýÀÇ Â÷ÀÌ¸¦ º¼ ¼ö ÀÖ´Ù.  
-±×¸®°í ```GetType()```ÀÌ¶ó´Â ¸Þ¼­µå¸¦ »ç¿ëÇÏ¿© °¢ ÀÎ½ºÅÏ½ºÀÇ µ¥ÀÌÅÍ Å¸ÀÔÀ» Ãâ·ÂÇØº¼ ¼ö ÀÖ´Ù.
+ìœ„ ì½”ë“œë¥¼ ë³´ë©´ intì™€ string ì¸ìŠ¤í„´ìŠ¤ë¥¼ ìƒì„±í•˜ëŠ” ë°©ë²•ê³¼ Robot ì¸ìŠ¤í„´ìŠ¤ë¥¼ ìƒì„±í•˜ëŠ” ë°©ë²•ì˜ ì°¨ì´ë¥¼ ë³¼ ìˆ˜ ìžˆë‹¤.  
+ê·¸ë¦¬ê³  ```GetType()```ì´ë¼ëŠ” ë©”ì„œë“œë¥¼ ì‚¬ìš©í•˜ì—¬ ê° ì¸ìŠ¤í„´ìŠ¤ì˜ ë°ì´í„° íƒ€ìž…ì„ ì¶œë ¥í•´ë³¼ ìˆ˜ ìžˆë‹¤.
 
-![4. Å¸ÀÔ](../4.%20Å¸ÀÔ.png)
+<img width="384" height="99" alt="4  íƒ€ìž…" src="https://github.com/user-attachments/assets/fc98d379-70af-45b2-a2ef-5dadf933540a" />
 
-aÀÇ Å¸ÀÔÀº Int32(32ºñÆ®(4¹ÙÀÌÆ®) Á¤¼ö) stÀÇ Å¸ÀÔÀº String, robotoÀÇ Å¸ÀÔÀº RobotÀÌ¶ó°í Àß Ãâ·ÂµÇ¾ú´Ù.
+aì˜ íƒ€ìž…ì€ Int32(32ë¹„íŠ¸(4ë°”ì´íŠ¸) ì •ìˆ˜) stì˜ íƒ€ìž…ì€ String, robotoì˜ íƒ€ìž…ì€ Robotì´ë¼ê³  ìž˜ ì¶œë ¥ë˜ì—ˆë‹¤.
 
-## Å¬·¡½º ³»ºÎ ±¸Á¶
+## í´ëž˜ìŠ¤ ë‚´ë¶€ êµ¬ì¡°
 
-¿ì¸®°¡ ¸¸µç RobotÀÌ¶ó´Â Å¬·¡½º´Â ³»ºÎ¿¡ ¾Æ¹«°Íµµ Á¤ÀÇÇØ ³õÁö ¾Ê¾Ò´Ù.  
-¿ì¸®°¡ ¸¸µç ·Îº¿Àº ÀÌ¸§ÀÌ ÀÖ¾î¾ß ÇÒ °Å °°´Ù.
+ìš°ë¦¬ê°€ ë§Œë“  Robotì´ë¼ëŠ” í´ëž˜ìŠ¤ëŠ” ë‚´ë¶€ì— ì•„ë¬´ê²ƒë„ ì •ì˜í•´ ë†“ì§€ ì•Šì•˜ë‹¤.  
+ìš°ë¦¬ê°€ ë§Œë“  ë¡œë´‡ì€ ì´ë¦„ì´ ìžˆì–´ì•¼ í•  ê±° ê°™ë‹¤.
 
-·Îº¿ÀÌ ÀÌ¸§À» °¡Áö±â À§ÇØ¼­´Â Å¬·¡½º ³»ºÎ¿¡ ÀÌ¸§À» ¸¸µé¾î ÁÖ¾î¾ß ÇÑ´Ù.
+ë¡œë´‡ì´ ì´ë¦„ì„ ê°€ì§€ê¸° ìœ„í•´ì„œëŠ” í´ëž˜ìŠ¤ ë‚´ë¶€ì— ì´ë¦„ì„ ë§Œë“¤ì–´ ì£¼ì–´ì•¼ í•œë‹¤.
 
 ```C#
 class Robot
@@ -193,11 +193,11 @@ class Robot
 }
 ```
 
-¹®ÀÚ¿­ Å¸ÀÔÀÇ NameÀÌ¶ó´Â º¯¼ö¸¦ Robot Å¬·¡½º ³»ºÎ¿¡ ¼±¾ðÇØ ÁÖ¾ú´Ù.  
-```{ get; set;}```Àº ÀÎ½ºÅÏ½ºÀÇ Name¿¡ Á¢±ÙÇÏ±â À§ÇÑ ÀåÄ¡¶ó°í »ý°¢ÇÏ¸é µÈ´Ù. getÀ¸·Î °ªÀ» ÀÐÀ» ¼ö ÀÖ°í setÀ¸·Î °ªÀ» ¼³Á¤ÇÒ ¼ö ÀÖ´Ù.
+ë¬¸ìžì—´ íƒ€ìž…ì˜ Nameì´ë¼ëŠ” ë³€ìˆ˜ë¥¼ Robot í´ëž˜ìŠ¤ ë‚´ë¶€ì— ì„ ì–¸í•´ ì£¼ì—ˆë‹¤.  
+```{ get; set;}```ì€ ì¸ìŠ¤í„´ìŠ¤ì˜ Nameì— ì ‘ê·¼í•˜ê¸° ìœ„í•œ ìž¥ì¹˜ë¼ê³  ìƒê°í•˜ë©´ ëœë‹¤. getìœ¼ë¡œ ê°’ì„ ì½ì„ ìˆ˜ ìžˆê³  setìœ¼ë¡œ ê°’ì„ ì„¤ì •í•  ìˆ˜ ìžˆë‹¤.
 
-¶Ç ·Îº¿ÀÌ ¸»À» ÇÒ ¼ö ÀÖÀ¸¸é ÁÁ°Ú´Ù.  
-±×·¡¼­ ¸»À» ÇÏ´Â ±â´ÉÀ» °£´ÜÇÏ°Ô ±¸ÇöÇØº¸ÀÚ.
+ë˜ ë¡œë´‡ì´ ë§ì„ í•  ìˆ˜ ìžˆìœ¼ë©´ ì¢‹ê² ë‹¤.  
+ê·¸ëž˜ì„œ ë§ì„ í•˜ëŠ” ê¸°ëŠ¥ì„ ê°„ë‹¨í•˜ê²Œ êµ¬í˜„í•´ë³´ìž.
 
 ```C#
 class Robot
@@ -206,25 +206,25 @@ class Robot
 
     public void Say()
     {
-        Console.WriteLine("³» ÀÌ¸§Àº " + Name);
+        Console.WriteLine("ë‚´ ì´ë¦„ì€ " + Name);
     }
 }
 ```
 
-ÀÌÁ¦ »ý¼ºÇÑ ·Îº¿ ÀÎ½ºÅÏ½º´Â ÀÌ¸§À» °¡Áö°í ÀÖ°í ÀÚ±â ÀÌ¸§À» ¸»ÇÒ ¼ö ÀÖ´Ù.
+ì´ì œ ìƒì„±í•œ ë¡œë´‡ ì¸ìŠ¤í„´ìŠ¤ëŠ” ì´ë¦„ì„ ê°€ì§€ê³  ìžˆê³  ìžê¸° ì´ë¦„ì„ ë§í•  ìˆ˜ ìžˆë‹¤.
 
-ÀÌÁ¦ ÀÌ ±â´ÉÀ» Å×½ºÆ®ÇØ º¸°Ú´Ù.
+ì´ì œ ì´ ê¸°ëŠ¥ì„ í…ŒìŠ¤íŠ¸í•´ ë³´ê² ë‹¤.
 
 ```C#
 public class Program
 {
     static public void Main(string[] args)
     {
-        Robot robot = new Robot();          // Robot ÀÎ½ºÅÏ½º »ý¼º
+        Robot robot = new Robot();          // Robot ì¸ìŠ¤í„´ìŠ¤ ìƒì„±
 
-        robot.Name = "±èÃ¶¼ö";              // ÀÎ½ºÅÏ½ºÀÇ ÀÌ¸§ ¼³Á¤
+        robot.Name = "ê¹€ì² ìˆ˜";              // ì¸ìŠ¤í„´ìŠ¤ì˜ ì´ë¦„ ì„¤ì •
 
-        robot.Say();                        // ÀÎ½ºÅÏ½º°¡ ¸»ÇÏµµ·Ï ÇÔ
+        robot.Say();                        // ì¸ìŠ¤í„´ìŠ¤ê°€ ë§í•˜ë„ë¡ í•¨
     }
 }
 
@@ -234,40 +234,40 @@ class Robot
 
     public void Say()
     {
-        Console.WriteLine("³» ÀÌ¸§Àº " + Name);
+        Console.WriteLine("ë‚´ ì´ë¦„ì€ " + Name);
     }
 }
 ```
 
-![5. Å×½ºÆ®](../5.%20Å×½ºÆ®.png)
+<img width="1648" height="100" alt="5  í…ŒìŠ¤íŠ¸" src="https://github.com/user-attachments/assets/4142d3bf-56c6-4279-9df8-c97410d08ce8" />
 
-¸¶Áö¸· ÁÙ¿¡ ³» ÀÌ¸§Àº ±èÃ¶¼ö¶ó°í ¼³Á¤ÇØ ³õÀº ÀÌ¸§ÀÌ Àß Ãâ·ÂµÇ´Â °ÍÀ» È®ÀÎÇÒ ¼ö ÀÖ´Ù.  
-ÄÚµå¸¦ ½ÇÇàÇÏ´Ï °æ°í°¡ ³ª¿Ô´Âµ¥ ÀÌ´Â string Å¸ÀÔÀÌ null°ªÀ» Çã¿ëÇÏÁö ¾Ê´Âµ¥ Ã³À½ Robot ÀÎ½ºÅÏ½º¸¦ »ý¼ºÇÒ ¶§ NameÀÌ null°ªÀÌ µÇ±â ¶§¹®¿¡ ÄÄÆÄÀÏ·¯¿¡¼­ °æ°í¸¦ º¸³»´Â °ÍÀÌ´Ù.
+ë§ˆì§€ë§‰ ì¤„ì— ë‚´ ì´ë¦„ì€ ê¹€ì² ìˆ˜ë¼ê³  ì„¤ì •í•´ ë†“ì€ ì´ë¦„ì´ ìž˜ ì¶œë ¥ë˜ëŠ” ê²ƒì„ í™•ì¸í•  ìˆ˜ ìžˆë‹¤.  
+ì½”ë“œë¥¼ ì‹¤í–‰í•˜ë‹ˆ ê²½ê³ ê°€ ë‚˜ì™”ëŠ”ë° ì´ëŠ” string íƒ€ìž…ì´ nullê°’ì„ í—ˆìš©í•˜ì§€ ì•ŠëŠ”ë° ì²˜ìŒ Robot ì¸ìŠ¤í„´ìŠ¤ë¥¼ ìƒì„±í•  ë•Œ Nameì´ nullê°’ì´ ë˜ê¸° ë•Œë¬¸ì— ì»´íŒŒì¼ëŸ¬ì—ì„œ ê²½ê³ ë¥¼ ë³´ë‚´ëŠ” ê²ƒì´ë‹¤.
 
-ÀÌ °æ°í°¡ Ãâ·ÂµÇÁö ¾Êµµ·Ï ÇÏ´Â ¹æ¹ýµéÀº ´ÙÀ½°ú °°´Ù. (Áß¿ä X)
-- »ý¼ºÀÚ¸¦ ±¸ÇöÇØ¼­ »ý¼ºÀÚ·Î¸¸ ÀÎ½ºÅÏ½º¸¦ »ý¼ºÇÒ ¼ö ÀÖµµ·Ï ÇÑ´Ù.
-- string? Ã³·³ ?¸¦ µÚ¿¡ ºÙ¿© ¼±¾ðÇÔÀ¸·Î½á null°ªÀ» Çã¿ëÇÑ´Ù.
-- ±âº»°ªÀ» ¼³Á¤ÇÑ´Ù.
-- null!À» ÇÒ´çÇÏ¿© ÄÄÆÄÀÏ·¯¿¡°Ô "Àý´ë null°ªÀ» Çã¿ëÇÏÁö ¾ÊÀ» Å×´Ï ¾È½ÉÇÏ°í °æ°íÇÏÁö ¸¶"¶ó°í ¾È½É½ÃÅ²´Ù.
+ì´ ê²½ê³ ê°€ ì¶œë ¥ë˜ì§€ ì•Šë„ë¡ í•˜ëŠ” ë°©ë²•ë“¤ì€ ë‹¤ìŒê³¼ ê°™ë‹¤. (ì¤‘ìš” X)
+- ìƒì„±ìžë¥¼ êµ¬í˜„í•´ì„œ ìƒì„±ìžë¡œë§Œ ì¸ìŠ¤í„´ìŠ¤ë¥¼ ìƒì„±í•  ìˆ˜ ìžˆë„ë¡ í•œë‹¤.
+- string? ì²˜ëŸ¼ ?ë¥¼ ë’¤ì— ë¶™ì—¬ ì„ ì–¸í•¨ìœ¼ë¡œì¨ nullê°’ì„ í—ˆìš©í•œë‹¤.
+- ê¸°ë³¸ê°’ì„ ì„¤ì •í•œë‹¤.
+- null!ì„ í• ë‹¹í•˜ì—¬ ì»´íŒŒì¼ëŸ¬ì—ê²Œ "ì ˆëŒ€ nullê°’ì„ í—ˆìš©í•˜ì§€ ì•Šì„ í…Œë‹ˆ ì•ˆì‹¬í•˜ê³  ê²½ê³ í•˜ì§€ ë§ˆ"ë¼ê³  ì•ˆì‹¬ì‹œí‚¨ë‹¤.
 
-ÀÌ·¸°Ô ·Îº¿ÀÇ ÀÌ¸§°ú ±â´ÉÀ» °£´ÜÇÏ°Ô ±¸ÇöÇØº¸¾Ò´Ù.  
-¿©±â¼­ ÀÌ¸§Àº ÇÊµå¶ó°í ÇÏ°í ±â´ÉÀº ¸Þ¼­µå¶ó°í ÇÑ´Ù.  
-±×¸®°í ÀÌ¸§À» ÀÐ°í ¾²±â À§ÇØ ```{ get; set; }```À¸·Î ¼³Á¤ÇÑ º¯¼ö¸¦ ÇÁ·ÎÆÛÆ¼¶ó°í ÇÑ´Ù.
+ì´ë ‡ê²Œ ë¡œë´‡ì˜ ì´ë¦„ê³¼ ê¸°ëŠ¥ì„ ê°„ë‹¨í•˜ê²Œ êµ¬í˜„í•´ë³´ì•˜ë‹¤.  
+ì—¬ê¸°ì„œ ì´ë¦„ì€ í•„ë“œë¼ê³  í•˜ê³  ê¸°ëŠ¥ì€ ë©”ì„œë“œë¼ê³  í•œë‹¤.  
+ê·¸ë¦¬ê³  ì´ë¦„ì„ ì½ê³  ì“°ê¸° ìœ„í•´ ```{ get; set; }```ìœ¼ë¡œ ì„¤ì •í•œ ë³€ìˆ˜ë¥¼ í”„ë¡œí¼í‹°ë¼ê³  í•œë‹¤.
 
 ```
-ÇÊµå - °´Ã¼°¡ °¡Áö°í ÀÖ´Â µ¥ÀÌÅÍ
-¸Þ¼­µå - °´Ã¼°¡ ÇÏ´Â µ¿ÀÛ
+í•„ë“œ - ê°ì²´ê°€ ê°€ì§€ê³  ìžˆëŠ” ë°ì´í„°
+ë©”ì„œë“œ - ê°ì²´ê°€ í•˜ëŠ” ë™ìž‘
 ```
 
-## »ó¼Ó
+## ìƒì†
 
-ÀÌÀü ½Ã°£¿¡ ¼³¸íÇß´ø °ÍÃ³·³ ·Îº¿ ÄÚµå¸¦ ¸¸µé°í ³­ ÈÄ ¾ß±¸¼±¼ö ·Îº¿ È¤Àº °¡¼ö ·Îº¿Ã³·³ ±â´ÉÀÌ È®ÀåµÈ ·Îº¿À» ¸¸µé°í ½ÍÀ» ¶§ °´Ã¼ ÁöÇâ ÀÌÀü ½Ã±â¿¡´Â ÄÚµå¸¦ º¹ºÙÇÏ´Â ¹æ¹ýÀÌ ÀÏ¹ÝÀûÀÌ¾ú´Ù.  
+ì´ì „ ì‹œê°„ì— ì„¤ëª…í–ˆë˜ ê²ƒì²˜ëŸ¼ ë¡œë´‡ ì½”ë“œë¥¼ ë§Œë“¤ê³  ë‚œ í›„ ì•¼êµ¬ì„ ìˆ˜ ë¡œë´‡ í˜¹ì€ ê°€ìˆ˜ ë¡œë´‡ì²˜ëŸ¼ ê¸°ëŠ¥ì´ í™•ìž¥ëœ ë¡œë´‡ì„ ë§Œë“¤ê³  ì‹¶ì„ ë•Œ ê°ì²´ ì§€í–¥ ì´ì „ ì‹œê¸°ì—ëŠ” ì½”ë“œë¥¼ ë³µë¶™í•˜ëŠ” ë°©ë²•ì´ ì¼ë°˜ì ì´ì—ˆë‹¤.  
 
-ÀÌ´Â ±âÁ¸ ·Îº¿ ÄÚµå¿¡ ¼öÁ¤ »çÇ×ÀÌ »ý±â¸é ±â²¯ º¹ºÙÇØ ³õÀº ´Ù¸¥ ÄÚµåµéµµ °°ÀÌ ¼öÁ¤ÇØ Áà¾ß ÇÏ´Â µî À¯Áöº¸¼ö¿¡ ¾Ö·Î»çÇ×ÀÌ ÀÖ´Ù°í Çß´Ù.
+ì´ëŠ” ê¸°ì¡´ ë¡œë´‡ ì½”ë“œì— ìˆ˜ì • ì‚¬í•­ì´ ìƒê¸°ë©´ ê¸°ê» ë³µë¶™í•´ ë†“ì€ ë‹¤ë¥¸ ì½”ë“œë“¤ë„ ê°™ì´ ìˆ˜ì •í•´ ì¤˜ì•¼ í•˜ëŠ” ë“± ìœ ì§€ë³´ìˆ˜ì— ì• ë¡œì‚¬í•­ì´ ìžˆë‹¤ê³  í–ˆë‹¤.
 
-°´Ã¼ ÁöÇâ¿¡¼­´Â ±×Àú ·Îº¿ ÄÚµå¸¦ ÂüÁ¶ÇÏµµ·Ï ÇÏ¿© ±âÁ¸ ÄÚµå°¡ ¼öÁ¤µÇ¸é ÂüÁ¶ÇÏ°í ÀÖ´Â ÄÚµåµé¿¡ ÀÚµ¿À¸·Î ¹Ý¿µµÇµµ·Ï ÇÒ ¼ö ÀÖ´Ù. ÀÌ¸¦ <b>»ó¼Ó</b>ÀÌ¶ó ÇÑ´Ù.
+ê°ì²´ ì§€í–¥ì—ì„œëŠ” ê·¸ì € ë¡œë´‡ ì½”ë“œë¥¼ ì°¸ì¡°í•˜ë„ë¡ í•˜ì—¬ ê¸°ì¡´ ì½”ë“œê°€ ìˆ˜ì •ë˜ë©´ ì°¸ì¡°í•˜ê³  ìžˆëŠ” ì½”ë“œë“¤ì— ìžë™ìœ¼ë¡œ ë°˜ì˜ë˜ë„ë¡ í•  ìˆ˜ ìžˆë‹¤. ì´ë¥¼ <b>ìƒì†</b>ì´ë¼ í•œë‹¤.
 
-±×·³ °¡¼ö ·Îº¿À» »õ·Î ¸¸µé¾îº¸°Ú´Ù.
+ê·¸ëŸ¼ ê°€ìˆ˜ ë¡œë´‡ì„ ìƒˆë¡œ ë§Œë“¤ì–´ë³´ê² ë‹¤.
 
 ```C#
 class Robot
@@ -277,7 +277,7 @@ class Robot
     public Robot() { }
     public void Say()
     {
-        Console.WriteLine("³» ÀÌ¸§Àº " + Name);
+        Console.WriteLine("ë‚´ ì´ë¦„ì€ " + Name);
     }
 }
 
@@ -287,7 +287,7 @@ class Singer : Robot
 }
 ```
 
-ÀÌ·¸°Ô ÇÏ¸é ·Îº¿ÀÇ Name°ú Say()¸¦ ÀüºÎ Singer ÀÎ½ºÅÏ½º°¡ »ç¿ëÇÒ ¼ö ÀÖ°Ô µÈ´Ù.
+ì´ë ‡ê²Œ í•˜ë©´ ë¡œë´‡ì˜ Nameê³¼ Say()ë¥¼ ì „ë¶€ Singer ì¸ìŠ¤í„´ìŠ¤ê°€ ì‚¬ìš©í•  ìˆ˜ ìžˆê²Œ ëœë‹¤.
 
 ```C#
 public class Program
@@ -295,7 +295,7 @@ public class Program
     static public void Main(string[] args)
     {
         Singer singer = new Singer();
-        singer.Name = "±èÃ¶¼ö";
+        singer.Name = "ê¹€ì² ìˆ˜";
 
         singer.Say();
     }
@@ -303,12 +303,12 @@ public class Program
 
 class Robot
 {
-    public string Name { get; set; } = null!; // ÄÄÆÄÀÏ·¯ ¾È½É½ÃÅ°±â
+    public string Name { get; set; } = null!; // ì»´íŒŒì¼ëŸ¬ ì•ˆì‹¬ì‹œí‚¤ê¸°
 
     public Robot() { }
     public void Say()
     {
-        Console.WriteLine("³» ÀÌ¸§Àº " + Name);
+        Console.WriteLine("ë‚´ ì´ë¦„ì€ " + Name);
     }
 }
 
@@ -318,9 +318,9 @@ class Singer : Robot
 }
 ```
 
-À§ ÄÚµå¸¦ ½ÇÇàÇÏ¸é Singer Å¬·¡½º¿¡ ¾Æ¹«°Íµµ ±¸ÇöÇÑ °ÍÀÌ ¾øÀ½¿¡µµ NameÀÌ ¼³Á¤µÇ°í Say ¸Þ¼­µå·Î ÀÚ½ÅÀÇ ÀÌ¸§À» ¸»ÇÏ´Â °ÍÀ» È®ÀÎÇÒ ¼ö ÀÖÀ» °ÍÀÌ´Ù.
+ìœ„ ì½”ë“œë¥¼ ì‹¤í–‰í•˜ë©´ Singer í´ëž˜ìŠ¤ì— ì•„ë¬´ê²ƒë„ êµ¬í˜„í•œ ê²ƒì´ ì—†ìŒì—ë„ Nameì´ ì„¤ì •ë˜ê³  Say ë©”ì„œë“œë¡œ ìžì‹ ì˜ ì´ë¦„ì„ ë§í•˜ëŠ” ê²ƒì„ í™•ì¸í•  ìˆ˜ ìžˆì„ ê²ƒì´ë‹¤.
 
-¿©±â¼­ RobotÀÇ Say ¸Þ¼­µå¸¦ ¼öÁ¤ÇÏ¿©µµ singer°¡ ¼öÁ¤º»À¸·Î µ¿ÀÛÇÏ´Â °Íµµ È®ÀÎÇÒ ¼ö ÀÖ´Ù.
+ì—¬ê¸°ì„œ Robotì˜ Say ë©”ì„œë“œë¥¼ ìˆ˜ì •í•˜ì—¬ë„ singerê°€ ìˆ˜ì •ë³¸ìœ¼ë¡œ ë™ìž‘í•˜ëŠ” ê²ƒë„ í™•ì¸í•  ìˆ˜ ìžˆë‹¤.
 
 ```C#
 public class Program
@@ -328,7 +328,7 @@ public class Program
     static public void Main(string[] args)
     {
         Singer singer = new Singer();
-        singer.Name = "±èÃ¶¼ö";
+        singer.Name = "ê¹€ì² ìˆ˜";
 
         singer.Say();
     }
@@ -336,12 +336,12 @@ public class Program
 
 class Robot
 {
-    public string Name { get; set; } = null!; // ÄÄÆÄÀÏ·¯ ¾È½É½ÃÅ°±â(°æ°í Ãâ·Â ¹æÁö)
+    public string Name { get; set; } = null!; // ì»´íŒŒì¼ëŸ¬ ì•ˆì‹¬ì‹œí‚¤ê¸°(ê²½ê³  ì¶œë ¥ ë°©ì§€)
 
     public Robot() { }
     public void Say()
     {
-        Console.WriteLine("³» ÀÌ¸§Àº " + Name + "\n³ª´Â ·Îº¿ÀÌ´Ù."); // ³ª´Â ·Îº¿ÀÌ´Ù Ãß°¡
+        Console.WriteLine("ë‚´ ì´ë¦„ì€ " + Name + "\në‚˜ëŠ” ë¡œë´‡ì´ë‹¤."); // ë‚˜ëŠ” ë¡œë´‡ì´ë‹¤ ì¶”ê°€
     }
 }
 
@@ -351,15 +351,15 @@ class Singer : Robot
 }
 ```
 
-![6. Å×½ºÆ®](../6.%20Å×½ºÆ®.png)
+<img width="617" height="84" alt="6  í…ŒìŠ¤íŠ¸" src="https://github.com/user-attachments/assets/e79ea64e-e474-4d07-808f-2cde7ae68fd3" />
 
-## ¿À¹ö¶óÀÌµå
+## ì˜¤ë²„ë¼ì´ë“œ
 
-±×·±µ¥ Singer´Â ·Îº¿ÀÌ¸é¼­ °¡¼öÀÌ±â ¶§¹®¿¡ ±âÁ¸ ·Îº¿¿¡ "³ª´Â °¡¼ö´Ù" ¶ó°í ºÎ¿¬¼³¸íÇÏ°í ½Í´Ù.  
-Singer¿¡ "³ª´Â °¡¼ö´Ù"¸¦ Ãâ·ÂÇÏ´Â ¸Þ¼­µå¸¦ »õ·Î ¸¸µé¾îµµ µÇ´Âµ¥ »ó¼Ó¹ÞÀº Say ¸Þ¼­µå¸¦ Á¶±Ý Æ©´×ÇÏ¿©µµ µÈ´Ù. ÀÌ¸¦ <b>¿À¹ö¶óÀÌµå(override)</b>¶ó°í ÇÑ´Ù.
+ê·¸ëŸ°ë° SingerëŠ” ë¡œë´‡ì´ë©´ì„œ ê°€ìˆ˜ì´ê¸° ë•Œë¬¸ì— ê¸°ì¡´ ë¡œë´‡ì— "ë‚˜ëŠ” ê°€ìˆ˜ë‹¤" ë¼ê³  ë¶€ì—°ì„¤ëª…í•˜ê³  ì‹¶ë‹¤.  
+Singerì— "ë‚˜ëŠ” ê°€ìˆ˜ë‹¤"ë¥¼ ì¶œë ¥í•˜ëŠ” ë©”ì„œë“œë¥¼ ìƒˆë¡œ ë§Œë“¤ì–´ë„ ë˜ëŠ”ë° ìƒì†ë°›ì€ Say ë©”ì„œë“œë¥¼ ì¡°ê¸ˆ íŠœë‹í•˜ì—¬ë„ ëœë‹¤. ì´ë¥¼ <b>ì˜¤ë²„ë¼ì´ë“œ(override)</b>ë¼ê³  í•œë‹¤.
 
-¿À¹ö¶óÀÌµå¸¦ ÇÏ±â À§ÇØ¼­´Â ±âÁ¸ ÄÚµå¸¦ Æ©´×ÇÒ ¼ö ÀÖµµ·Ï ÇÏ´Â Å°¿öµå°¡ ÇÊ¿äÇÏ´Ù.  
-Robot Å¬·¡½ºÀÇ Say ¸Þ¼­µå¿¡ ```virtual```¶ó´Â Å°¿öµå¸¦ Ãß°¡ÇÑ´Ù.
+ì˜¤ë²„ë¼ì´ë“œë¥¼ í•˜ê¸° ìœ„í•´ì„œëŠ” ê¸°ì¡´ ì½”ë“œë¥¼ íŠœë‹í•  ìˆ˜ ìžˆë„ë¡ í•˜ëŠ” í‚¤ì›Œë“œê°€ í•„ìš”í•˜ë‹¤.  
+Robot í´ëž˜ìŠ¤ì˜ Say ë©”ì„œë“œì— ```virtual```ë¼ëŠ” í‚¤ì›Œë“œë¥¼ ì¶”ê°€í•œë‹¤.
 
 
 ```C#
@@ -368,7 +368,7 @@ public class Program
     static public void Main(string[] args)
     {
         Singer singer = new Singer();
-        singer.Name = "±èÃ¶¼ö";
+        singer.Name = "ê¹€ì² ìˆ˜";
 
         singer.Say();
     }
@@ -379,9 +379,9 @@ class Robot
     public string Name { get; set; } = null!;
 
     public Robot() { }
-    public virtual void Say()       // virtual Å°¿öµå Ãß°¡
+    public virtual void Say()       // virtual í‚¤ì›Œë“œ ì¶”ê°€
     {
-        Console.WriteLine("³» ÀÌ¸§Àº " + Name + "\n³ª´Â ·Îº¿ÀÌ´Ù.");
+        Console.WriteLine("ë‚´ ì´ë¦„ì€ " + Name + "\në‚˜ëŠ” ë¡œë´‡ì´ë‹¤.");
     }
 }
 
@@ -389,17 +389,17 @@ class Singer : Robot
 {
     public override void Say()      // override
     {
-        base.Say();                 // ºÎ¸ð Å¬·¡½ºÀÇ Say ¸Þ¼­µå ½ÇÇà
-        Console.WriteLine("±×¸®°í ³ª´Â °¡¼ö´Ù.");
+        base.Say();                 // ë¶€ëª¨ í´ëž˜ìŠ¤ì˜ Say ë©”ì„œë“œ ì‹¤í–‰
+        Console.WriteLine("ê·¸ë¦¬ê³  ë‚˜ëŠ” ê°€ìˆ˜ë‹¤.");
     }
 }
 ```
 
-À§ ÄÚµåÃ³·³ ¼öÁ¤ÇÏ°í ½ÇÇàÇÏ°í °á°ú¸¦ È®ÀÎÇØº¸ÀÚ.
+ìœ„ ì½”ë“œì²˜ëŸ¼ ìˆ˜ì •í•˜ê³  ì‹¤í–‰í•˜ê³  ê²°ê³¼ë¥¼ í™•ì¸í•´ë³´ìž.
 
-![7. ³ª´Â °¡¼ö´Ù](../7.%20³ª´Â%20°¡¼ö´Ù.png)
+<img width="433" height="100" alt="7  ë‚˜ëŠ” ê°€ìˆ˜ë‹¤" src="https://github.com/user-attachments/assets/e52cb707-8038-4c76-a98e-ac7bb239a0a6" />
 
-## ¸Å°³º¯¼ö
+## ë§¤ê°œë³€ìˆ˜
 
 ```C#
 public class Program
@@ -408,18 +408,18 @@ public class Program
     {
         Robot robot = new Robot();
 
-        robot.Name = "±èÃ¶¼ö";
+        robot.Name = "ê¹€ì² ìˆ˜";
 
         Singer singer = new Singer();
 
-        singer.Name = "¹Ú°¡¼ö";
+        singer.Name = "ë°•ê°€ìˆ˜";
 
         Say(robot);
         Console.WriteLine();
         Say(singer);
     }
 
-    static void Say(Robot robot)        // Robot Å¸ÀÔÀ» ¸Å°³º¯¼ö·Î ¹Þ´Â ¸Þ¼­µå
+    static void Say(Robot robot)        // Robot íƒ€ìž…ì„ ë§¤ê°œë³€ìˆ˜ë¡œ ë°›ëŠ” ë©”ì„œë“œ
     {
         robot.Say();
     }
@@ -433,7 +433,7 @@ class Robot
     public Robot() { }
     public virtual void Say()
     {
-        Console.WriteLine("³» ÀÌ¸§Àº " + Name + "\n³ª´Â ·Îº¿ÀÌ´Ù.");
+        Console.WriteLine("ë‚´ ì´ë¦„ì€ " + Name + "\në‚˜ëŠ” ë¡œë´‡ì´ë‹¤.");
     }
 }
 
@@ -442,49 +442,49 @@ class Singer : Robot
     public override void Say()      // override
     {
         base.Say();
-        Console.WriteLine("±×¸®°í ³ª´Â °¡¼ö´Ù.");
+        Console.WriteLine("ê·¸ë¦¬ê³  ë‚˜ëŠ” ê°€ìˆ˜ë‹¤.");
     }
 }
 ```
 
-Program.cs Å¬·¡½º¿¡ Robot Å¸ÀÔÀ» ¸Å°³º¯¼ö·Î ¹Þ´Â ¸Þ¼­µå¸¦ ÇÏ³ª ±¸ÇöÇß´Ù.
+Program.cs í´ëž˜ìŠ¤ì— Robot íƒ€ìž…ì„ ë§¤ê°œë³€ìˆ˜ë¡œ ë°›ëŠ” ë©”ì„œë“œë¥¼ í•˜ë‚˜ êµ¬í˜„í–ˆë‹¤.
 
-±×¸®°í ÀÌ ¸Å°³º¯¼öÀÇ ÀÚ¸®¿¡ RobotÀ» »ó¼Ó¹Þ´Â Singer Å¸ÀÔµµ µé¾î°¥ ¼ö ÀÖÀ½À» ÄÚµå¿¡¼­ È®ÀÎÇÒ ¼ö ÀÖ´Ù.
+ê·¸ë¦¬ê³  ì´ ë§¤ê°œë³€ìˆ˜ì˜ ìžë¦¬ì— Robotì„ ìƒì†ë°›ëŠ” Singer íƒ€ìž…ë„ ë“¤ì–´ê°ˆ ìˆ˜ ìžˆìŒì„ ì½”ë“œì—ì„œ í™•ì¸í•  ìˆ˜ ìžˆë‹¤.
 
-±×¸®°í ÄÚµå¸¦ ½ÇÇàÇØ º¸¸é ¿À¹ö¶óÀÌµåµÈ ¸Þ¼­µå¿¡ µû¶ó ´Ù¸£°Ô µ¿ÀÛÇÏ´Â °Íµµ È®ÀÎÇÒ ¼ö ÀÖÀ» °ÍÀÌ´Ù.
+ê·¸ë¦¬ê³  ì½”ë“œë¥¼ ì‹¤í–‰í•´ ë³´ë©´ ì˜¤ë²„ë¼ì´ë“œëœ ë©”ì„œë“œì— ë”°ë¼ ë‹¤ë¥´ê²Œ ë™ìž‘í•˜ëŠ” ê²ƒë„ í™•ì¸í•  ìˆ˜ ìžˆì„ ê²ƒì´ë‹¤.
 
-ÀÌ°ÍÀÌ °¡´ÉÇÑ ÀÌÀ¯´Â Robot Å¬·¡½º¿¡ Á¤ÀÇµÈ °ÍµéÀÌ Singer Å¬·¡½º¿¡µµ Æ÷ÇÔµÇ¾î ÀÖ±â ¶§¹®¿¡ ±×·¸´Ù.
+ì´ê²ƒì´ ê°€ëŠ¥í•œ ì´ìœ ëŠ” Robot í´ëž˜ìŠ¤ì— ì •ì˜ëœ ê²ƒë“¤ì´ Singer í´ëž˜ìŠ¤ì—ë„ í¬í•¨ë˜ì–´ ìžˆê¸° ë•Œë¬¸ì— ê·¸ë ‡ë‹¤.
 
-µû¶ó¼­ Singer Å¸ÀÔÀ» ¸Å°³º¯¼ö·Î ¹Þ´Â ¸Þ¼­µå¿¡´Â Robot Å¸ÀÔÀÌ µé¾î°¥ ¼ö ¾ø´Ù.  
-Singer Å¬·¡½º¿¡´Â Robot Å¬·¡½º¿¡ ¾ø´Â Ãß°¡ÀûÀÎ ±¸ÇöÀÌ Á¸ÀçÇÒ ¼ö ÀÖ±â ¶§¹®ÀÌ´Ù.
+ë”°ë¼ì„œ Singer íƒ€ìž…ì„ ë§¤ê°œë³€ìˆ˜ë¡œ ë°›ëŠ” ë©”ì„œë“œì—ëŠ” Robot íƒ€ìž…ì´ ë“¤ì–´ê°ˆ ìˆ˜ ì—†ë‹¤.  
+Singer í´ëž˜ìŠ¤ì—ëŠ” Robot í´ëž˜ìŠ¤ì— ì—†ëŠ” ì¶”ê°€ì ì¸ êµ¬í˜„ì´ ì¡´ìž¬í•  ìˆ˜ ìžˆê¸° ë•Œë¬¸ì´ë‹¤.
 
 
-## ´ÙÁß »ó¼Ó
+## ë‹¤ì¤‘ ìƒì†
 
-C#¿¡¼­ ´ÙÁß »ó¼ÓÀº ¹®¹ýÀûÀ¸·Î ±ÝÁöµÇ¾î ÀÖ´Ù.
+C#ì—ì„œ ë‹¤ì¤‘ ìƒì†ì€ ë¬¸ë²•ì ìœ¼ë¡œ ê¸ˆì§€ë˜ì–´ ìžˆë‹¤.
 
-³»°¡ Robot Å¬·¡½º¸¦ »ó¼Ó¹ÞÀº ¾ß±¸¼±¼ö ·Îº¿ Å¬·¡½º¸¦ ¸¸µç ´ÙÀ½¿¡ °¡¼ö ·Îº¿ Å¬·¡½º¿Í ¾ß±¸¼±¼ö ·Îº¿ Å¬·¡½º¸¦ µ¿½Ã¿¡ »ó¼Ó¹Þ¾Æ ³ë·¡ÇÏ´Â ¾ß±¸¼±¼ö ·Îº¿À» ¸¸µé°í ½Í´Ù°í ÇØµµ ±×·¸°Ô ÇÒ ¼ö ¾ø´Â °ÍÀÌ´Ù.
+ë‚´ê°€ Robot í´ëž˜ìŠ¤ë¥¼ ìƒì†ë°›ì€ ì•¼êµ¬ì„ ìˆ˜ ë¡œë´‡ í´ëž˜ìŠ¤ë¥¼ ë§Œë“  ë‹¤ìŒì— ê°€ìˆ˜ ë¡œë´‡ í´ëž˜ìŠ¤ì™€ ì•¼êµ¬ì„ ìˆ˜ ë¡œë´‡ í´ëž˜ìŠ¤ë¥¼ ë™ì‹œì— ìƒì†ë°›ì•„ ë…¸ëž˜í•˜ëŠ” ì•¼êµ¬ì„ ìˆ˜ ë¡œë´‡ì„ ë§Œë“¤ê³  ì‹¶ë‹¤ê³  í•´ë„ ê·¸ë ‡ê²Œ í•  ìˆ˜ ì—†ëŠ” ê²ƒì´ë‹¤.
 
-±× ÀÌÀ¯´Â ´ÙÀ½ ±×¸²À» º¸ÀÚ
+ê·¸ ì´ìœ ëŠ” ë‹¤ìŒ ê·¸ë¦¼ì„ ë³´ìž
 
-![8. ´ÙÀÌ¾Æ¸óµå »ó¼Ó](../8.%20´ÙÀÌ¾Æ¸óµå%20»ó¼Ó.png)
+<img width="454" height="513" alt="8  ë‹¤ì´ì•„ëª¬ë“œ ìƒì†" src="https://github.com/user-attachments/assets/52ffbe10-c62f-4c39-8976-a110fcf4140e" />
 
-°¡¼ö ·Îº¿°ú ¾ß±¸¼±¼ö ·Îº¿ ¸ðµÎ Say ¸Þ¼­µå¸¦ °¡Áö°í ÀÖ°í °¢ÀÚ ÀÚ½Å¿¡ ¸Â°Ô ¿À¹ö¶óÀÌµåÇß´Ù.
+ê°€ìˆ˜ ë¡œë´‡ê³¼ ì•¼êµ¬ì„ ìˆ˜ ë¡œë´‡ ëª¨ë‘ Say ë©”ì„œë“œë¥¼ ê°€ì§€ê³  ìžˆê³  ê°ìž ìžì‹ ì— ë§žê²Œ ì˜¤ë²„ë¼ì´ë“œí–ˆë‹¤.
 
-±×¸®°í ±×°ÍÀ» ³ë·¡ÇÏ´Â ¾ß±¸¼±¼ö°¡ »ó¼Ó¹Þ¾Ò´Ù°í ÇÒ ¶§ ³ë·¡ÇÏ´Â ¾ß±¸¼±¼ö°¡ °¡¼öÀÇ Say¸¦ »ó¼Ó¹Þ¾Æ¾ß ÇÒÁö ¾ß±¸¼±¼öÀÇ Say¸¦ »ó¼Ó¹Þ¾Æ¾ß ÇÒÁö ¾Ë ¼ö°¡ ¾ø´Ù.  
-°á±¹ ¹¹µç »ó¼Ó¹Þ°Ô µÉ ÅÙµ¥ ¹®Á¦´Â ¹«¾ùÀ» »ó¼Ó¹Þ°Ô µÉÁö ¸ð¸¥´Ù´Â °ÍÀÌ°í ÇÁ·Î±×·¡¹Ö¿¡¼­ ÀÌ·± ºÒÈ®½Ç¼ºÀº ÀÌ»óÀûÀÌÁö ¾Ê´Ù.
+ê·¸ë¦¬ê³  ê·¸ê²ƒì„ ë…¸ëž˜í•˜ëŠ” ì•¼êµ¬ì„ ìˆ˜ê°€ ìƒì†ë°›ì•˜ë‹¤ê³  í•  ë•Œ ë…¸ëž˜í•˜ëŠ” ì•¼êµ¬ì„ ìˆ˜ê°€ ê°€ìˆ˜ì˜ Sayë¥¼ ìƒì†ë°›ì•„ì•¼ í• ì§€ ì•¼êµ¬ì„ ìˆ˜ì˜ Sayë¥¼ ìƒì†ë°›ì•„ì•¼ í• ì§€ ì•Œ ìˆ˜ê°€ ì—†ë‹¤.  
+ê²°êµ­ ë­ë“  ìƒì†ë°›ê²Œ ë  í…ë° ë¬¸ì œëŠ” ë¬´ì—‡ì„ ìƒì†ë°›ê²Œ ë ì§€ ëª¨ë¥¸ë‹¤ëŠ” ê²ƒì´ê³  í”„ë¡œê·¸ëž˜ë°ì—ì„œ ì´ëŸ° ë¶ˆí™•ì‹¤ì„±ì€ ì´ìƒì ì´ì§€ ì•Šë‹¤.
 
-ÇÁ·Î±×·¡¸ÓÀÇ ½Ç·Â¿¡ µû¶ó ÀÌ·± ºÒÈ®½Ç¼ºÀÇ ¹®Á¦´Â ¾ó¸¶µçÁö È¸ÇÇÇÒ ¼ö ÀÖÀ¸³ª ±× °¡´É¼ºÀ» ¿ÏÀüÈ÷ ¹èÁ¦ÇÏ±â À§ÇØ C#¿¡¼­´Â ´ÙÁß»ó¼ÓÀ» ¿øÃµÀûÀ¸·Î Â÷´ÜÇÏ°í ÀÖ´Ù.
+í”„ë¡œê·¸ëž˜ë¨¸ì˜ ì‹¤ë ¥ì— ë”°ë¼ ì´ëŸ° ë¶ˆí™•ì‹¤ì„±ì˜ ë¬¸ì œëŠ” ì–¼ë§ˆë“ ì§€ íšŒí”¼í•  ìˆ˜ ìžˆìœ¼ë‚˜ ê·¸ ê°€ëŠ¥ì„±ì„ ì™„ì „ížˆ ë°°ì œí•˜ê¸° ìœ„í•´ C#ì—ì„œëŠ” ë‹¤ì¤‘ìƒì†ì„ ì›ì²œì ìœ¼ë¡œ ì°¨ë‹¨í•˜ê³  ìžˆë‹¤.
 
-## ÀÎÅÍÆäÀÌ½º
+## ì¸í„°íŽ˜ì´ìŠ¤
 
-±×·¯³ª ´ÙÁß »ó¼ÓÀÌ ÇÊ¿äÇÒ ¶§°¡ ºÐ¸íÈ÷ ÀÖ´Ù.  
-±× °æ¿ì¸¦ À§ÇØ¼­ ÀÎÅÍÆäÀÌ½º(interface)¶ó´Â °³³äµµ Á¸ÀçÇÑ´Ù.
+ê·¸ëŸ¬ë‚˜ ë‹¤ì¤‘ ìƒì†ì´ í•„ìš”í•  ë•Œê°€ ë¶„ëª…ížˆ ìžˆë‹¤.  
+ê·¸ ê²½ìš°ë¥¼ ìœ„í•´ì„œ ì¸í„°íŽ˜ì´ìŠ¤(interface)ë¼ëŠ” ê°œë…ë„ ì¡´ìž¬í•œë‹¤.
 
-ÀÎÅÍÆäÀÌ½º´Â Å¬·¡½º¿Í ¸¶Âù°¡Áö·Î `interface [ÀÌ¸§]`À¸·Î ¼±¾ðÇÒ ¼ö ÀÖ°í ºñ½ÁÇÏ°Ô `:`(ÄÝ·Ð)À¸·Î »ó¼Óµµ ÇÒ ¼ö ÀÖ´Ù.
+ì¸í„°íŽ˜ì´ìŠ¤ëŠ” í´ëž˜ìŠ¤ì™€ ë§ˆì°¬ê°€ì§€ë¡œ `interface [ì´ë¦„]`ìœ¼ë¡œ ì„ ì–¸í•  ìˆ˜ ìžˆê³  ë¹„ìŠ·í•˜ê²Œ `:`(ì½œë¡ )ìœ¼ë¡œ ìƒì†ë„ í•  ìˆ˜ ìžˆë‹¤.
 
-ÀÎÅÍÆäÀÌ½º¿Í Å¬·¡½ºÀÇ Â÷ÀÌ´Â ±âº»ÀûÀ¸·Î ¸Þ¼­µå·Î¸¸ ±¸¼ºµÇ¾î ÀÖ°í ¸Þ¼­µå°¡ ±¸ÇöµÇÁö ¾Ê°í ¼±¾ðµÇ¾î ÀÖ´Ù´Â Â÷ÀÌ°¡ ÀÖ´Ù.  
-¶Ç Å¬·¡½º´Â ±× ÀÚÃ¼·Î ÀÎ½ºÅÏ½º¸¦ °¡Áú ¼ö ÀÖÁö¸¸ ÀÎÅÍÆäÀÌ½º´Â ÀÎ½ºÅÏ½º¸¦ »ý¼ºÇÒ ¼ö ¾ø´Ù. ¹Ýµå½Ã ÀÎÅÍÆäÀÌ½º¸¦ »ó¼Ó¹ÞÀº Å¬·¡½º·Î¸¸ »ý¼ºÇÒ ¼ö ÀÖ´Ù.
+ì¸í„°íŽ˜ì´ìŠ¤ì™€ í´ëž˜ìŠ¤ì˜ ì°¨ì´ëŠ” ê¸°ë³¸ì ìœ¼ë¡œ ë©”ì„œë“œë¡œë§Œ êµ¬ì„±ë˜ì–´ ìžˆê³  ë©”ì„œë“œê°€ êµ¬í˜„ë˜ì§€ ì•Šê³  ì„ ì–¸ë˜ì–´ ìžˆë‹¤ëŠ” ì°¨ì´ê°€ ìžˆë‹¤.  
+ë˜ í´ëž˜ìŠ¤ëŠ” ê·¸ ìžì²´ë¡œ ì¸ìŠ¤í„´ìŠ¤ë¥¼ ê°€ì§ˆ ìˆ˜ ìžˆì§€ë§Œ ì¸í„°íŽ˜ì´ìŠ¤ëŠ” ì¸ìŠ¤í„´ìŠ¤ë¥¼ ìƒì„±í•  ìˆ˜ ì—†ë‹¤. ë°˜ë“œì‹œ ì¸í„°íŽ˜ì´ìŠ¤ë¥¼ ìƒì†ë°›ì€ í´ëž˜ìŠ¤ë¡œë§Œ ìƒì„±í•  ìˆ˜ ìžˆë‹¤.
 
 ```C#
 interface IInterface
@@ -493,100 +493,100 @@ interface IInterface
 }
 ```
 
-À§ ¿¹½ÃÄÚµåÃ³·³ ¸Þ¼­µå¿¡ ¾Æ¹« ±¸ÇöÀÌ ¾øÀÌ ¼±¾ð¸¸ µÇ¾î ÀÖ°í »ó¼ÓÀ» ¹ÞÀ» °æ¿ì ¹Ýµå½Ã ÇØ´ç ¸Þ¼­µå¸¦ Å¬·¡½º ³»¿¡ ±¸ÇöÇØ¾ß ÇÑ´Ù. ±×·¡¼­ Å¬·¡½º´Â »ó¼ÓÀÌ¶ó ÇÏ°í ÀÎÅÍÆäÀÌ½º´Â ±¸ÇöÀÌ¶ó ÇÑ´Ù.
-(C#¿¡¼­´Â »ó¼Ó°ú ±¸Çö ¸ðµÎ `:`À¸·Î ÅüÄ¡Áö¸¸ ÀÚ¹Ù¿¡¼­´Â »ó¼ÓÀº `extends` ±¸ÇöÀº `implements`·Î Ç¥½ÃÇÑ´Ù.)
+ìœ„ ì˜ˆì‹œì½”ë“œì²˜ëŸ¼ ë©”ì„œë“œì— ì•„ë¬´ êµ¬í˜„ì´ ì—†ì´ ì„ ì–¸ë§Œ ë˜ì–´ ìžˆê³  ìƒì†ì„ ë°›ì„ ê²½ìš° ë°˜ë“œì‹œ í•´ë‹¹ ë©”ì„œë“œë¥¼ í´ëž˜ìŠ¤ ë‚´ì— êµ¬í˜„í•´ì•¼ í•œë‹¤. ê·¸ëž˜ì„œ í´ëž˜ìŠ¤ëŠ” ìƒì†ì´ë¼ í•˜ê³  ì¸í„°íŽ˜ì´ìŠ¤ëŠ” êµ¬í˜„ì´ë¼ í•œë‹¤.
+(C#ì—ì„œëŠ” ìƒì†ê³¼ êµ¬í˜„ ëª¨ë‘ `:`ìœ¼ë¡œ í‰ì¹˜ì§€ë§Œ ìžë°”ì—ì„œëŠ” ìƒì†ì€ `extends` êµ¬í˜„ì€ `implements`ë¡œ í‘œì‹œí•œë‹¤.)
 
-¹Ýµå½Ã »ó¼Ó¹ÞÀº ¸Þ¼­µå¸¦ ±¸ÇöÇØ¾ß ÇÏ¹Ç·Î ´ÙÁß ±¸ÇöÀ¸·Î °°Àº ÀÌ¸§ÀÇ ¸Þ¼­µå°¡ Á¸ÀçÇÑ´Ù°í ÇØµµ ¹®Á¦°¡ µÇÁö ¾Ê´Â´Ù.
+ë°˜ë“œì‹œ ìƒì†ë°›ì€ ë©”ì„œë“œë¥¼ êµ¬í˜„í•´ì•¼ í•˜ë¯€ë¡œ ë‹¤ì¤‘ êµ¬í˜„ìœ¼ë¡œ ê°™ì€ ì´ë¦„ì˜ ë©”ì„œë“œê°€ ì¡´ìž¬í•œë‹¤ê³  í•´ë„ ë¬¸ì œê°€ ë˜ì§€ ì•ŠëŠ”ë‹¤.
 
-¸¶Áö¸·À¸·Î ÀÎÅÍÆäÀÌ½º´Â C#ÀÇ ¾à¼Ó ¹®¹ýÀ¸·Î ÀÌ¸§ÀÌ ÀÎÅÍÆäÀÌ½ºÀÇ I·Î ½ÃÀÛÇÑ´Ù.  
+ë§ˆì§€ë§‰ìœ¼ë¡œ ì¸í„°íŽ˜ì´ìŠ¤ëŠ” C#ì˜ ì•½ì† ë¬¸ë²•ìœ¼ë¡œ ì´ë¦„ì´ ì¸í„°íŽ˜ì´ìŠ¤ì˜ Ië¡œ ì‹œìž‘í•œë‹¤.  
 (ex. `IValidator`, `IMapper`, `IMongoClient`)
 
-## Ãß»ó Å¬·¡½º
+## ì¶”ìƒ í´ëž˜ìŠ¤
 
-Å¬·¡½º¿¡´Â ÀÎÅÍÆäÀÌ½º¿Í ºñ½ÁÇÑ Ãß»ó Å¬·¡½º¶ó´Â °Íµµ Á¸ÀçÇÑ´Ù.
+í´ëž˜ìŠ¤ì—ëŠ” ì¸í„°íŽ˜ì´ìŠ¤ì™€ ë¹„ìŠ·í•œ ì¶”ìƒ í´ëž˜ìŠ¤ë¼ëŠ” ê²ƒë„ ì¡´ìž¬í•œë‹¤.
 
-Ãß»ó Å¬·¡½º´Â Å¬·¡½º¿Í ÀÎÅÍÆäÀÌ½ºÀÇ Áß°£ Á¤µµ¶ó°í º¸¸é µÈ´Ù.
+ì¶”ìƒ í´ëž˜ìŠ¤ëŠ” í´ëž˜ìŠ¤ì™€ ì¸í„°íŽ˜ì´ìŠ¤ì˜ ì¤‘ê°„ ì •ë„ë¼ê³  ë³´ë©´ ëœë‹¤.
 
-Å¬·¡½ºÃ³·³ ÇÊµå¿Í ±¸ÇöµÈ ¸Þ¼­µå¸¦ °¡Áö°í ÀÖÀ» ¼ö ÀÖ°í ÀÎÅÍÆäÀÌ½ºÃ³·³ ±¸ÇöµÇÁö ¾ÊÀº ¸Þ¼­µå(Ãß»ó ¸Þ¼­µå¸¦) °¡Áö°í ÀÖÀ» ¼ö ÀÖÀ¸¸ç ÀÎÅÍÆäÀÌ½º¿Í ¸¶Âù°¡Áö·Î ÀÎ½ºÅÏ½º¸¦ »ý¼ºÇÒ ¼ö ¾ø´Ù.
-Ãß»ó ¸Þ¼­µå´Â ¸Þ¼­µå¿¡ `abstract` Å°¿öµå¸¦ ºÙÀÌ¸é µÈ´Ù.
+í´ëž˜ìŠ¤ì²˜ëŸ¼ í•„ë“œì™€ êµ¬í˜„ëœ ë©”ì„œë“œë¥¼ ê°€ì§€ê³  ìžˆì„ ìˆ˜ ìžˆê³  ì¸í„°íŽ˜ì´ìŠ¤ì²˜ëŸ¼ êµ¬í˜„ë˜ì§€ ì•Šì€ ë©”ì„œë“œ(ì¶”ìƒ ë©”ì„œë“œë¥¼) ê°€ì§€ê³  ìžˆì„ ìˆ˜ ìžˆìœ¼ë©° ì¸í„°íŽ˜ì´ìŠ¤ì™€ ë§ˆì°¬ê°€ì§€ë¡œ ì¸ìŠ¤í„´ìŠ¤ë¥¼ ìƒì„±í•  ìˆ˜ ì—†ë‹¤.
+ì¶”ìƒ ë©”ì„œë“œëŠ” ë©”ì„œë“œì— `abstract` í‚¤ì›Œë“œë¥¼ ë¶™ì´ë©´ ëœë‹¤.
 
 ```C#
 abstract class AbstractClass
 {
-    String Name;                                    // ÇÊµå
-    public void Say()                               // ¸Þ¼­µå
+    String Name;                                    // í•„ë“œ
+    public void Say()                               // ë©”ì„œë“œ
     {
-        Console.WriteLine("³» ÀÌ¸§Àº " + Name);
+        Console.WriteLine("ë‚´ ì´ë¦„ì€ " + Name);
     }
 
-    public abstract void Method();                  // Ãß»ó ¸Þ¼­µå
+    public abstract void Method();                  // ì¶”ìƒ ë©”ì„œë“œ
 }
 ```
 
-´ÙÁß »ó¼ÓÀ» À§ÇØ¼­ ÀÎÅÍÆäÀÌ½º°¡ Á¸ÀçÇÑ´Ù¸é Ãß»ó Å¬·¡½º´Â ¿Ö Á¸ÀçÇÒ±î? (¹°·Ð ÀÎÅÍÆäÀÌ½ºÀÇ Á¸Àç ÀÇ¹Ì´Â ´ÙÁß »ó¼Ó»Ó¸¸ÀÌ ¾Æ´Ï´Ù.)
+ë‹¤ì¤‘ ìƒì†ì„ ìœ„í•´ì„œ ì¸í„°íŽ˜ì´ìŠ¤ê°€ ì¡´ìž¬í•œë‹¤ë©´ ì¶”ìƒ í´ëž˜ìŠ¤ëŠ” ì™œ ì¡´ìž¬í• ê¹Œ? (ë¬¼ë¡  ì¸í„°íŽ˜ì´ìŠ¤ì˜ ì¡´ìž¬ ì˜ë¯¸ëŠ” ë‹¤ì¤‘ ìƒì†ë¿ë§Œì´ ì•„ë‹ˆë‹¤.)
 
-±×°Ç ¹Ù·Î Å¬·¡½º´Â ±× ÀÚÃ¼·Î ÀÎ½ºÅÏ½º°¡ µÇ¾î »ç¿ëÇÒ ¼ö ÀÖÁö¸¸ Ãß»óÅ¬·¡½º´Â ÀÎÅÍÆäÀÌ½ºÃ³·³ »ó¼Ó¹ÞÀº Å¬·¡½º·Î ÀÎ½ºÅÏ½º¸¦ »ý¼ºÇØ¾ß ÇÏ±â ¶§¹®ÀÌ´Ù.
+ê·¸ê±´ ë°”ë¡œ í´ëž˜ìŠ¤ëŠ” ê·¸ ìžì²´ë¡œ ì¸ìŠ¤í„´ìŠ¤ê°€ ë˜ì–´ ì‚¬ìš©í•  ìˆ˜ ìžˆì§€ë§Œ ì¶”ìƒí´ëž˜ìŠ¤ëŠ” ì¸í„°íŽ˜ì´ìŠ¤ì²˜ëŸ¼ ìƒì†ë°›ì€ í´ëž˜ìŠ¤ë¡œ ì¸ìŠ¤í„´ìŠ¤ë¥¼ ìƒì„±í•´ì•¼ í•˜ê¸° ë•Œë¬¸ì´ë‹¤.
 
-Áï ÀÎÅÍÆäÀÌ½º¿Í ´Ù¸£°Ô ¸Þ¼­µå°¡ ±¸ÇöµÇ¾î ÀÖÀ¸¸é¼­µµ ±× ÀÚÃ¼·Î ÀÎ½ºÅÏ½º¸¦ »ý¼ºÇÏÁö ¸»°í ¹Ýµå½Ã »ó¼Ó¹ÞÀº Å¬·¡½º¸¦ »ç¿ëÇØ¾ß ÇÒ ¶§ Ãß»ó Å¬·¡½º·Î ±¸ÇöÇÏ¸é µÈ´Ù. (¸¶Âù°¡Áö·Î ÀÌ°ÍÀÌ Á¸Àç ÀÌÀ¯ÀÇ ÀüºÎ´Â ¾Æ´Ï´Ù.)
+ì¦‰ ì¸í„°íŽ˜ì´ìŠ¤ì™€ ë‹¤ë¥´ê²Œ ë©”ì„œë“œê°€ êµ¬í˜„ë˜ì–´ ìžˆìœ¼ë©´ì„œë„ ê·¸ ìžì²´ë¡œ ì¸ìŠ¤í„´ìŠ¤ë¥¼ ìƒì„±í•˜ì§€ ë§ê³  ë°˜ë“œì‹œ ìƒì†ë°›ì€ í´ëž˜ìŠ¤ë¥¼ ì‚¬ìš©í•´ì•¼ í•  ë•Œ ì¶”ìƒ í´ëž˜ìŠ¤ë¡œ êµ¬í˜„í•˜ë©´ ëœë‹¤. (ë§ˆì°¬ê°€ì§€ë¡œ ì´ê²ƒì´ ì¡´ìž¬ ì´ìœ ì˜ ì „ë¶€ëŠ” ì•„ë‹ˆë‹¤.)
 
-Ãß»óÅ¬·¡½ºµµ ÀÎÅÍÆäÀÌ½ºÃ³·³ ¾à¼ÓÀ¸·Î ÀÌ¸§ÀÌ Abstract·Î ½ÃÀÛÇÑ´Ù.
+ì¶”ìƒí´ëž˜ìŠ¤ë„ ì¸í„°íŽ˜ì´ìŠ¤ì²˜ëŸ¼ ì•½ì†ìœ¼ë¡œ ì´ë¦„ì´ Abstractë¡œ ì‹œìž‘í•œë‹¤.
 
 (ex. `AbstractValidator`)
 
 
-## Obejct Å¬·¡½º - ¸ðµç Å¬·¡½ºÀÇ Á¶»ó
+## Obejct í´ëž˜ìŠ¤ - ëª¨ë“  í´ëž˜ìŠ¤ì˜ ì¡°ìƒ
 
-¿ì¸®°¡ ¸Ç Ã³À½¿¡ ¾Æ¹«°Íµµ ¾ø´Â Robot Å¬·¡½º¸¦ ¸¸µé¾úÀ» ¶§ GetType ¸Þ¼­µå¸¦ »ç¿ëÇß´ø °ÍÀ» ±â¾ïÇØº¸ÀÚ.
+ìš°ë¦¬ê°€ ë§¨ ì²˜ìŒì— ì•„ë¬´ê²ƒë„ ì—†ëŠ” Robot í´ëž˜ìŠ¤ë¥¼ ë§Œë“¤ì—ˆì„ ë•Œ GetType ë©”ì„œë“œë¥¼ ì‚¬ìš©í–ˆë˜ ê²ƒì„ ê¸°ì–µí•´ë³´ìž.
 
-¿ì¸®´Â Robot Å¬·¡½º¿¡ ¾î¶°ÇÑ ¸Þ¼­µåµµ ±¸ÇöÇÑ ÀûÀÌ ¾ø´Ù.  
-±×·³¿¡µµ GetTypeÀÌ¶ó´Â ¸Þ¼­µå´Â »ç¿ëÇÒ ¼ö ÀÖ¾ú´Ù.
+ìš°ë¦¬ëŠ” Robot í´ëž˜ìŠ¤ì— ì–´ë– í•œ ë©”ì„œë“œë„ êµ¬í˜„í•œ ì ì´ ì—†ë‹¤.  
+ê·¸ëŸ¼ì—ë„ GetTypeì´ë¼ëŠ” ë©”ì„œë“œëŠ” ì‚¬ìš©í•  ìˆ˜ ìžˆì—ˆë‹¤.
 
-ÀÌ´Â C#ÀÌ Å¬·¡½º¸¦ »ý¼ºÇÒ ¶§ »ó¼Ó¹Þ´Â Å¬·¡½º¸¦ ¸í½ÃÇÏÁö ¾ÊÀ» °æ¿ì ÀÚµ¿À¸·Î Object Å¬·¡½º¸¦ »ó¼Ó¹Þµµ·Ï ±¸ÇöµÇ¾î ÀÖ±â ¶§¹®ÀÌ´Ù.
+ì´ëŠ” C#ì´ í´ëž˜ìŠ¤ë¥¼ ìƒì„±í•  ë•Œ ìƒì†ë°›ëŠ” í´ëž˜ìŠ¤ë¥¼ ëª…ì‹œí•˜ì§€ ì•Šì„ ê²½ìš° ìžë™ìœ¼ë¡œ Object í´ëž˜ìŠ¤ë¥¼ ìƒì†ë°›ë„ë¡ êµ¬í˜„ë˜ì–´ ìžˆê¸° ë•Œë¬¸ì´ë‹¤.
 
-GetTypeÀÌ¶ó´Â ¸Þ¼­µå´Â Object Å¬·¡½º¿¡ ±¸ÇöµÇ¾î ÀÖ°í µû¶ó¼­ Object Å¬·¡½º¸¦ »ó¼Ó¹ÞÀº Robot Å¬·¡½º¿¡¼­ GetType()ÀÌ¶ó´Â ¸Þ¼­µå¸¦ »ç¿ëÇÒ ¼ö ÀÖ´ø °ÍÀÌ´Ù. (ÀÌ¿Ü¿¡µµ ToString(), GetHashCode() µî ¿©·¯ °¡Áö°¡ ±¸ÇöµÇ¾î ÀÖ´Ù.)
+GetTypeì´ë¼ëŠ” ë©”ì„œë“œëŠ” Object í´ëž˜ìŠ¤ì— êµ¬í˜„ë˜ì–´ ìžˆê³  ë”°ë¼ì„œ Object í´ëž˜ìŠ¤ë¥¼ ìƒì†ë°›ì€ Robot í´ëž˜ìŠ¤ì—ì„œ GetType()ì´ë¼ëŠ” ë©”ì„œë“œë¥¼ ì‚¬ìš©í•  ìˆ˜ ìžˆë˜ ê²ƒì´ë‹¤. (ì´ì™¸ì—ë„ ToString(), GetHashCode() ë“± ì—¬ëŸ¬ ê°€ì§€ê°€ êµ¬í˜„ë˜ì–´ ìžˆë‹¤.)
 
-¸Ç Ã³À½¿¡ C#¿¡¼­ ÆÄÀÌ½ãÃ³·³ º¯¼ö¿¡ Á¤¼ö¸¦ ÀúÀåÇß´Ù°¡ ¹®ÀÚ¿­À» ÀúÀåÇÒ ¼ö ÀÖ´Ù°í ¸»Çß¾ú´Âµ¥ º¯¼ö¸¦ Object·Î ¼±¾ðÇÏ¸é ±×·¸°Ô ÇÒ ¼ö ÀÖ´Ù.
+ë§¨ ì²˜ìŒì— C#ì—ì„œ íŒŒì´ì¬ì²˜ëŸ¼ ë³€ìˆ˜ì— ì •ìˆ˜ë¥¼ ì €ìž¥í–ˆë‹¤ê°€ ë¬¸ìžì—´ì„ ì €ìž¥í•  ìˆ˜ ìžˆë‹¤ê³  ë§í–ˆì—ˆëŠ”ë° ë³€ìˆ˜ë¥¼ Objectë¡œ ì„ ì–¸í•˜ë©´ ê·¸ë ‡ê²Œ í•  ìˆ˜ ìžˆë‹¤.
 
-Robot Å¸ÀÔ º¯¼ö¿¡ RobotÀ» »ó¼Ó¹ÞÀº Singer¸¦ ÇÒ´çÇÒ ¼ö ÀÖ¾ú´ø °ÍÃ³·³ Object Å¸ÀÔÀ¸·Î º¯¼ö¸¦ ¼±¾ðÇÏ¸é Object¸¦ »ó¼Ó¹ÞÀº int, string, Robot, Singer µîÀÌ ¸ðµÎ ÇØ´ç º¯¼ö¿¡ ÇÒ´çµÉ ¼ö ÀÖ´Ù. (Singer´Â Object¸¦ »ó¼Ó¹ÞÀº RobotÀ» »ó¼Ó¹Þ¾ÒÀ¸¹Ç·Î °á°úÀûÀ¸·Î Objectµµ »ó¼Ó¹Þ¾Ò´Ù°í Ç¥ÇöÇÒ ¼ö ÀÖ´Ù.)
+Robot íƒ€ìž… ë³€ìˆ˜ì— Robotì„ ìƒì†ë°›ì€ Singerë¥¼ í• ë‹¹í•  ìˆ˜ ìžˆì—ˆë˜ ê²ƒì²˜ëŸ¼ Object íƒ€ìž…ìœ¼ë¡œ ë³€ìˆ˜ë¥¼ ì„ ì–¸í•˜ë©´ Objectë¥¼ ìƒì†ë°›ì€ int, string, Robot, Singer ë“±ì´ ëª¨ë‘ í•´ë‹¹ ë³€ìˆ˜ì— í• ë‹¹ë  ìˆ˜ ìžˆë‹¤. (SingerëŠ” Objectë¥¼ ìƒì†ë°›ì€ Robotì„ ìƒì†ë°›ì•˜ìœ¼ë¯€ë¡œ ê²°ê³¼ì ìœ¼ë¡œ Objectë„ ìƒì†ë°›ì•˜ë‹¤ê³  í‘œí˜„í•  ìˆ˜ ìžˆë‹¤.)
 
-![9. Object](../9.%20Object.png)  
-*Å¸ÀÔ ¿¡·¯°¡ ¹ß»ýÇÏÁö ¾Ê´Â´Ù.*
+<img width="510" height="235" alt="9  Object" src="https://github.com/user-attachments/assets/f587f630-8213-42c9-bbe6-130f24134178" />
+*íƒ€ìž… ì—ëŸ¬ê°€ ë°œìƒí•˜ì§€ ì•ŠëŠ”ë‹¤.*
 
-±×·¯³ª ÀÌ·± ÇÁ·Î±×·¡¹Ö ¹æ½ÄÀº ¹Ú½Ì°ú ¾ð¹Ú½ÌÇÏ´Â °úÁ¤ÀÌ Á¸ÀçÇÏ¿© ¼º´ÉÀÌ ¶³¾îÁö°í Á¤Àû Å¸ÀÔÀÇ ÀåÁ¡À» ÇØÄ¡¹Ç·Î ±ÇÀåÇÏÁö ¾Ê´Â´Ù. ±×³É ¾Ë¾Æ¸¸ µÎÀÚ
+ê·¸ëŸ¬ë‚˜ ì´ëŸ° í”„ë¡œê·¸ëž˜ë° ë°©ì‹ì€ ë°•ì‹±ê³¼ ì–¸ë°•ì‹±í•˜ëŠ” ê³¼ì •ì´ ì¡´ìž¬í•˜ì—¬ ì„±ëŠ¥ì´ ë–¨ì–´ì§€ê³  ì •ì  íƒ€ìž…ì˜ ìž¥ì ì„ í•´ì¹˜ë¯€ë¡œ ê¶Œìž¥í•˜ì§€ ì•ŠëŠ”ë‹¤. ê·¸ëƒ¥ ì•Œì•„ë§Œ ë‘ìž
 
-## Ãà¾à
+## ì¶•ì•½
 
-¿ì¸®´Â Áö±Ý±îÁö Robot°ú °°Àº ÀÎ½ºÅÏ½º¸¦ »ý¼ºÇÒ ¶§ `new Robot()`À¸·Î ÀÎ½ºÅÏ½º¸¦ »ý¼ºÇß´Ù.
+ìš°ë¦¬ëŠ” ì§€ê¸ˆê¹Œì§€ Robotê³¼ ê°™ì€ ì¸ìŠ¤í„´ìŠ¤ë¥¼ ìƒì„±í•  ë•Œ `new Robot()`ìœ¼ë¡œ ì¸ìŠ¤í„´ìŠ¤ë¥¼ ìƒì„±í–ˆë‹¤.
 
-±×·¯³ª Robot Å¸ÀÔÀÇ º¯¼ö¿¡ RobotÀÇ ÀÚ½Ä Å¬·¡½º¸¦ ÇÒ´çÇÒ °ÍÀÌ ¾Æ´Ï¶ó¸é µÚ¿¡ Robot()Àº »ý·«ÀÌ °¡´ÉÇÏ´Ù.  
-ÄÄÆÄÀÏ·¯°¡ Ãß·ÐÀÌ °¡´ÉÇÏ±â ¶§¹®ÀÌ´Ù.
+ê·¸ëŸ¬ë‚˜ Robot íƒ€ìž…ì˜ ë³€ìˆ˜ì— Robotì˜ ìžì‹ í´ëž˜ìŠ¤ë¥¼ í• ë‹¹í•  ê²ƒì´ ì•„ë‹ˆë¼ë©´ ë’¤ì— Robot()ì€ ìƒëžµì´ ê°€ëŠ¥í•˜ë‹¤.  
+ì»´íŒŒì¼ëŸ¬ê°€ ì¶”ë¡ ì´ ê°€ëŠ¥í•˜ê¸° ë•Œë¬¸ì´ë‹¤.
 
 ```C#
 Robot robot = new();
 ```
 
-À§¿Í °°Àº ÄÚµùÀÌ °¡´ÉÇÏ´Ù. ²Ï Æí¸®ÇÏ´Ù.
+ìœ„ì™€ ê°™ì€ ì½”ë”©ì´ ê°€ëŠ¥í•˜ë‹¤. ê½¤ íŽ¸ë¦¬í•˜ë‹¤.
 
-## Á¦³×¸¯
+## ì œë„¤ë¦­
 
-¿ì¸®°¡ ¸¸µç Å¬·¡½º´Â ÇÊµå´Â string µîÀ¸·Î °íÁ¤µÇ¾î ÀÖ´Ù. Robot Å¬·¡½ºÀÇ ÇÊµå´Â ÀÌ¸§ÀÌ¹Ç·Î stringÀ¸·Î °íÁ¤ÇØ ³õ¾Æµµ Å« ¹®Á¦°¡ µÇÁö ¾Ê´Â´Ù.
+ìš°ë¦¬ê°€ ë§Œë“  í´ëž˜ìŠ¤ëŠ” í•„ë“œëŠ” string ë“±ìœ¼ë¡œ ê³ ì •ë˜ì–´ ìžˆë‹¤. Robot í´ëž˜ìŠ¤ì˜ í•„ë“œëŠ” ì´ë¦„ì´ë¯€ë¡œ stringìœ¼ë¡œ ê³ ì •í•´ ë†“ì•„ë„ í° ë¬¸ì œê°€ ë˜ì§€ ì•ŠëŠ”ë‹¤.
 
-±×·¸Áö¸¸ Queue, Stack °°Àº ÀÚ·á±¸Á¶¿¡ µ¥ÀÌÅÍ¸¦ ÀúÀåÇÒ ¶§ int¸¦ ÀúÀåÇÒ ¼öµµ ÀÖ°í int[]¸¦ ÀúÀåÇÒ ¼öµµ ÀÖ°í ´Ù¸¥ Å¸ÀÔÀ» ÀúÀåÇÒ ¼öµµ ÀÖ´Ù.
+ê·¸ë ‡ì§€ë§Œ Queue, Stack ê°™ì€ ìžë£Œêµ¬ì¡°ì— ë°ì´í„°ë¥¼ ì €ìž¥í•  ë•Œ intë¥¼ ì €ìž¥í•  ìˆ˜ë„ ìžˆê³  int[]ë¥¼ ì €ìž¥í•  ìˆ˜ë„ ìžˆê³  ë‹¤ë¥¸ íƒ€ìž…ì„ ì €ìž¥í•  ìˆ˜ë„ ìžˆë‹¤.
 
-±×·±µ¥ µ¥ÀÌÅÍ Å¸ÀÔ¸¶´Ù Å¬·¡½º¸¦ ±¸ÇöÇÏ´Â °ÍÀº ºñÈ¿À²ÀûÀÌ´Ù. µ¥ÀÌÅÍ ÀúÀå Å¸ÀÔÀ» Object·Î ÇÏ¸é °¡´ÉÀº ÇÏ°ÚÁö¸¸ ¾Õ¼­ ¼³¸íÇß´Ù½ÃÇÇ Object Å¸ÀÔÀ¸·Î ÇÁ·Î±×·¡¹ÖÇÏ´Â °ÍÀº ÀÌ»óÀûÀÌÁö ¾Ê´Ù.
+ê·¸ëŸ°ë° ë°ì´í„° íƒ€ìž…ë§ˆë‹¤ í´ëž˜ìŠ¤ë¥¼ êµ¬í˜„í•˜ëŠ” ê²ƒì€ ë¹„íš¨ìœ¨ì ì´ë‹¤. ë°ì´í„° ì €ìž¥ íƒ€ìž…ì„ Objectë¡œ í•˜ë©´ ê°€ëŠ¥ì€ í•˜ê² ì§€ë§Œ ì•žì„œ ì„¤ëª…í–ˆë‹¤ì‹œí”¼ Object íƒ€ìž…ìœ¼ë¡œ í”„ë¡œê·¸ëž˜ë°í•˜ëŠ” ê²ƒì€ ì´ìƒì ì´ì§€ ì•Šë‹¤.
 
-¿©±â¼­ ÇÊ¿äÇÑ °ÍÀÌ Á¦³×¸¯ÀÌ´Ù.
+ì—¬ê¸°ì„œ í•„ìš”í•œ ê²ƒì´ ì œë„¤ë¦­ì´ë‹¤.
 
 ```C#
 public class Program
 {
     static public void Main(string[] arg)
     {
-        TestClass<string> str = new("Hello");       // Á¦³×¸¯ Å¸ÀÔÀ¸·Î string ¼³Á¤
-        TestClass<int> integer = new(1);            // Á¦³×¸¯ Å¸ÀÔÀ¸·Î int ¼³Á¤
-        TestClass<Robot> robot = new(new());        // Á¦³×¸¯ Å¸ÀÔÀ¸·Î Robot ¼³Á¤
-        TestClass<Queue<int>> q = new(new());       // Á¦³×¸¯ Å¸ÀÔÀ¸·Î Queue<int> ¼³Á¤
-                                                            // QueueÀÇ Á¦³×¸¯ Å¸ÀÔÀº int
+        TestClass<string> str = new("Hello");       // ì œë„¤ë¦­ íƒ€ìž…ìœ¼ë¡œ string ì„¤ì •
+        TestClass<int> integer = new(1);            // ì œë„¤ë¦­ íƒ€ìž…ìœ¼ë¡œ int ì„¤ì •
+        TestClass<Robot> robot = new(new());        // ì œë„¤ë¦­ íƒ€ìž…ìœ¼ë¡œ Robot ì„¤ì •
+        TestClass<Queue<int>> q = new(new());       // ì œë„¤ë¦­ íƒ€ìž…ìœ¼ë¡œ Queue<int> ì„¤ì •
+                                                            // Queueì˜ ì œë„¤ë¦­ íƒ€ìž…ì€ int
     }
 }
 
@@ -602,9 +602,9 @@ class TestClass<E>
 }
 ```
 
-À§ ÄÚµå¿¡¼­ TestClass(classÀÌ¸§) ¿·¿¡ `<E>`¶ó´Â Ç¥½Ã°¡ ÀÖ´Ù. ÀÌ°ÍÀÌ ¹Ù·Î Á¦³×¸¯À¸·Î ¿©±â¿¡ Å¸ÀÔÀ» ¸í½ÃÇÏ¸é Å¬·¡½º ³»ºÎ¿¡ E Å¸ÀÔµéÀÌ ÀüºÎ ÇØ´ç Å¸ÀÔÀ¸·Î º¯È¯µÈ´Ù.
+ìœ„ ì½”ë“œì—ì„œ TestClass(classì´ë¦„) ì˜†ì— `<E>`ë¼ëŠ” í‘œì‹œê°€ ìžˆë‹¤. ì´ê²ƒì´ ë°”ë¡œ ì œë„¤ë¦­ìœ¼ë¡œ ì—¬ê¸°ì— íƒ€ìž…ì„ ëª…ì‹œí•˜ë©´ í´ëž˜ìŠ¤ ë‚´ë¶€ì— E íƒ€ìž…ë“¤ì´ ì „ë¶€ í•´ë‹¹ íƒ€ìž…ìœ¼ë¡œ ë³€í™˜ëœë‹¤.
 
-¿¹¸¦ µé¾î `TestClass<string>` À¸·Î ¼±¾ðÇÏ¸é
+ì˜ˆë¥¼ ë“¤ì–´ `TestClass<string>` ìœ¼ë¡œ ì„ ì–¸í•˜ë©´
 
 ```C#
 class TestClass<string>
@@ -617,15 +617,15 @@ class TestClass<string>
 }
 ```
 
-À§ ÄÚµåÃ³·³ ÄÄÆÄÀÏ °úÁ¤¿¡¼­ º¯È¯µÇ¾î »ç¿ëÇÒ ¼ö ÀÖ´Ù.
+ìœ„ ì½”ë“œì²˜ëŸ¼ ì»´íŒŒì¼ ê³¼ì •ì—ì„œ ë³€í™˜ë˜ì–´ ì‚¬ìš©í•  ìˆ˜ ìžˆë‹¤.
 
-# ´ë¸®ÀÚ
+# ëŒ€ë¦¬ìž
 
-C#ÀÇ °íÀ¯ ¹®¹ýÀ¸·Î ´ë¸®ÀÚ¶ó´Â °ÍÀÌ Á¸ÀçÇÑ´Ù.
+C#ì˜ ê³ ìœ  ë¬¸ë²•ìœ¼ë¡œ ëŒ€ë¦¬ìžë¼ëŠ” ê²ƒì´ ì¡´ìž¬í•œë‹¤.
 
-´ë¸®ÀÚ´Â ¸Þ¼­µå¸¦ ´ë¸®ÇØ¼­ ½ÇÇàÇÏ´Â ¸Þ¼­µå¶ó°í ÀÌÇØÇÏ¸é ½±´Ù.
+ëŒ€ë¦¬ìžëŠ” ë©”ì„œë“œë¥¼ ëŒ€ë¦¬í•´ì„œ ì‹¤í–‰í•˜ëŠ” ë©”ì„œë“œë¼ê³  ì´í•´í•˜ë©´ ì‰½ë‹¤.
 
-´ë¸®ÀÚ¸¦ »ý¼ºÇÏ´Â ¹æ¹ýÀº ¸¶Âù°¡Áö·Î `delegate` Å°¿öµå¸¦ ÀÌ¿ëÇÏ´Â °ÍÀÌ´Ù.
+ëŒ€ë¦¬ìžë¥¼ ìƒì„±í•˜ëŠ” ë°©ë²•ì€ ë§ˆì°¬ê°€ì§€ë¡œ `delegate` í‚¤ì›Œë“œë¥¼ ì´ìš©í•˜ëŠ” ê²ƒì´ë‹¤.
 
 ```C#
 public class Program
@@ -635,11 +635,11 @@ public class Program
 
     }
 
-    delegate int Delegate(int i, int j); // <- ´ë¸®ÀÚ
+    delegate int Delegate(int i, int j); // <- ëŒ€ë¦¬ìž
 }
 ```
 
-À§ ´ë¸®ÀÚ´Â ¸Å°³º¯¼ö·Î Á¤¼ö i,j¸¦ ¹Þ°í Á¤¼ö¸¦ return ÇÏ´Â ¸Þ¼­µå¸¦ ´ë¸®ÇØ¼­ ½ÇÇàÇÒ ¼ö ÀÖ´Ù.
+ìœ„ ëŒ€ë¦¬ìžëŠ” ë§¤ê°œë³€ìˆ˜ë¡œ ì •ìˆ˜ i,jë¥¼ ë°›ê³  ì •ìˆ˜ë¥¼ return í•˜ëŠ” ë©”ì„œë“œë¥¼ ëŒ€ë¦¬í•´ì„œ ì‹¤í–‰í•  ìˆ˜ ìžˆë‹¤.
 
 ```C#
 public class Program
@@ -661,37 +661,37 @@ public class Program
 
     delegate int Delegate(int i, int j);
 
-    static int min(int i, int j)            // ÀÛÀº °ª return
+    static int min(int i, int j)            // ìž‘ì€ ê°’ return
     {
         return i < j ? i : j;
     }
 
-    static int max(int i, int j)            // Å« °ª return
+    static int max(int i, int j)            // í° ê°’ return
     {
         return i > j ? i : j;
     }
 
-    static int plus(int i, int j)           // µÎ ¼ö ÇÕ return
+    static int plus(int i, int j)           // ë‘ ìˆ˜ í•© return
     {
         return i + j;
     }
 }
 ```
 
-À§ ÄÚµå¸¦ ½ÇÇàÇØ º¸¸é °°Àº ÀÌ¸§ÀÇ ¸Þ¼­µå(del)¿Í °°Àº ¸Å°³º¯¼ö(1,2)¸¦ ÀÔ·ÂÇØ¼­ ¼¼ ¹ø Ãâ·ÂÇßÀ½¿¡µµ ´Ù¸£°Ô Ãâ·ÂµÇ´Â °ÍÀ» È®ÀÎÇÒ ¼ö ÀÖ´Ù.
+ìœ„ ì½”ë“œë¥¼ ì‹¤í–‰í•´ ë³´ë©´ ê°™ì€ ì´ë¦„ì˜ ë©”ì„œë“œ(del)ì™€ ê°™ì€ ë§¤ê°œë³€ìˆ˜(1,2)ë¥¼ ìž…ë ¥í•´ì„œ ì„¸ ë²ˆ ì¶œë ¥í–ˆìŒì—ë„ ë‹¤ë¥´ê²Œ ì¶œë ¥ë˜ëŠ” ê²ƒì„ í™•ì¸í•  ìˆ˜ ìžˆë‹¤.
 
-![10. ´ë¸®ÀÚ](../10.%20´ë¸®ÀÚ.png)
+<img width="339" height="101" alt="10  ëŒ€ë¦¬ìž" src="https://github.com/user-attachments/assets/40158b97-7950-48cc-8482-404af732b0f3" />
 
-´ë¸®ÀÚ¿¡ °¢ÀÚ min ¸Þ¼­µå¿Í max ¸Þ¼­µå, plus ¸Þ¼­µå°¡ µé¾îÀÖ±â ¶§¹®ÀÌ´Ù.
+ëŒ€ë¦¬ìžì— ê°ìž min ë©”ì„œë“œì™€ max ë©”ì„œë“œ, plus ë©”ì„œë“œê°€ ë“¤ì–´ìžˆê¸° ë•Œë¬¸ì´ë‹¤.
 
-´ë¸®ÀÚµµ ¸¶Âù°¡Áö·Î Á¦³×¸¯ Å¸ÀÔÀ¸·Î ¼±¾ðÇÒ ¼ö ÀÖ´Ù.
+ëŒ€ë¦¬ìžë„ ë§ˆì°¬ê°€ì§€ë¡œ ì œë„¤ë¦­ íƒ€ìž…ìœ¼ë¡œ ì„ ì–¸í•  ìˆ˜ ìžˆë‹¤.
 
 ```C#
 public class Program
 {
     static public void Main(string[] arg)
     {
-        Delegate<int,int,int> del = min;        // <- int Å¸ÀÔÀ» returnÇÏ°í ¸Å°³º¯¼ö·Î °¢°¢ Á¤¼ö¸¦ ÀÔ·Â¹ÞÀ½
+        Delegate<int,int,int> del = min;        // <- int íƒ€ìž…ì„ returní•˜ê³  ë§¤ê°œë³€ìˆ˜ë¡œ ê°ê° ì •ìˆ˜ë¥¼ ìž…ë ¥ë°›ìŒ
 
         Console.WriteLine(del(1, 2));
 
@@ -704,7 +704,7 @@ public class Program
         Console.WriteLine(del(1, 2));
     }
 
-    delegate T Delegate<T, A, B>(A a, B b);      // <- ¸Å°³º¯¼ö¸¦ Á¦³×¸¯À¸·Î º¯°æ
+    delegate T Delegate<T, A, B>(A a, B b);      // <- ë§¤ê°œë³€ìˆ˜ë¥¼ ì œë„¤ë¦­ìœ¼ë¡œ ë³€ê²½
 
     static int min(int i, int j)           
     {
@@ -723,12 +723,12 @@ public class Program
 }
 ```
 
-## ´ë¸®ÀÚ Á¸Àç ÀÌÀ¯
+## ëŒ€ë¦¬ìž ì¡´ìž¬ ì´ìœ 
 
-À§ ÄÚµå¸¦ º¸¸é ±×³É `min` `miax` `plus` ¸Þ¼­µå¸¦ Ãâ·ÂÇÏ¸é µÉ °ÍÀ» ±ÍÂú°Ô ´ë¸®ÀÚ¿¡ ÇÒ´çÇØ¼­ »ç¿ëÇÏ´Â ÀÌÀ¯¸¦ ¾Ë ¼ö ¾øÀ» °ÍÀÌ´Ù.  
-½ÇÁ¦·Î ´ë¸®ÀÚ´Â Àú·¸°Ô »ç¿ëÇÏÁö ¾Ê´Â´Ù. 
+ìœ„ ì½”ë“œë¥¼ ë³´ë©´ ê·¸ëƒ¥ `min` `miax` `plus` ë©”ì„œë“œë¥¼ ì¶œë ¥í•˜ë©´ ë  ê²ƒì„ ê·€ì°®ê²Œ ëŒ€ë¦¬ìžì— í• ë‹¹í•´ì„œ ì‚¬ìš©í•˜ëŠ” ì´ìœ ë¥¼ ì•Œ ìˆ˜ ì—†ì„ ê²ƒì´ë‹¤.  
+ì‹¤ì œë¡œ ëŒ€ë¦¬ìžëŠ” ì €ë ‡ê²Œ ì‚¬ìš©í•˜ì§€ ì•ŠëŠ”ë‹¤. 
 
-´ë¸®ÀÚ´Â ¸Þ¼­µå¸¦ ¸Å°³º¯¼ö·Î ¹Þ°í ½ÍÀ» ¶§ »ç¿ëÇÏ´Â °ÍÀÌ´Ù.
+ëŒ€ë¦¬ìžëŠ” ë©”ì„œë“œë¥¼ ë§¤ê°œë³€ìˆ˜ë¡œ ë°›ê³  ì‹¶ì„ ë•Œ ì‚¬ìš©í•˜ëŠ” ê²ƒì´ë‹¤.
 
 ```C#
 public class Program
@@ -775,27 +775,27 @@ public class Program
             for(int j = i+1; j < a.Length; j++)
             {
                 if (comp(a[i], a[j]))
-                    (a[i], a[j]) = (a[j], a[i]);    // ½º¿Ò
+                    (a[i], a[j]) = (a[j], a[i]);    // ìŠ¤ì™‘
             }
         }
     }
 }
 ```
 
-`Sort` ¸Þ¼­µå´Â ¹öºí Á¤·Ä ¸Þ¼­µåÀÌ´Ù. CompareÀÌ¶ó´Â ÀÌ¸§ÀÇ ´ë¸®ÀÚ¸¦ ¸Å°³º¯¼ö·Î ¹Þ¾Æ¼­ ´ë¸®ÀÚ¿¡ µû¶ó ¿À¸§Â÷¼ø°ú ³»¸²Â÷¼øÀ¸·Î Á¤·ÄÇÒ ¼ö ÀÖ´Ù.
+`Sort` ë©”ì„œë“œëŠ” ë²„ë¸” ì •ë ¬ ë©”ì„œë“œì´ë‹¤. Compareì´ë¼ëŠ” ì´ë¦„ì˜ ëŒ€ë¦¬ìžë¥¼ ë§¤ê°œë³€ìˆ˜ë¡œ ë°›ì•„ì„œ ëŒ€ë¦¬ìžì— ë”°ë¼ ì˜¤ë¦„ì°¨ìˆœê³¼ ë‚´ë¦¼ì°¨ìˆœìœ¼ë¡œ ì •ë ¬í•  ìˆ˜ ìžˆë‹¤.
 
-![11. ¹öºí Á¤·Ä](../11.%20¹öºí%20Á¤·Ä.png)
+<img width="525" height="146" alt="11  ë²„ë¸” ì •ë ¬" src="https://github.com/user-attachments/assets/3346bb9b-c4ec-4924-a0bd-596b09af1829" />
 
-`Descending` ¸Þ¼­µå¸¦ `Sort`¿¡ ³Ö¾úÀ» ¶§´Â ³»¸²Â÷¼øÀ¸·Î `Ascending` ¸Þ¼­µå¸¦ `Sort`¿¡ ³Ö¾úÀ» ¶§´Â ¿À¸§Â÷¼øÀ¸·Î Á¤·ÄµÈ °ÍÀ» È®ÀÎÇÒ ¼ö ÀÖ´Ù.
+`Descending` ë©”ì„œë“œë¥¼ `Sort`ì— ë„£ì—ˆì„ ë•ŒëŠ” ë‚´ë¦¼ì°¨ìˆœìœ¼ë¡œ `Ascending` ë©”ì„œë“œë¥¼ `Sort`ì— ë„£ì—ˆì„ ë•ŒëŠ” ì˜¤ë¦„ì°¨ìˆœìœ¼ë¡œ ì •ë ¬ëœ ê²ƒì„ í™•ì¸í•  ìˆ˜ ìžˆë‹¤.
 
-## ÀÍ¸í ´ë¸®ÀÚ
+## ìµëª… ëŒ€ë¦¬ìž
 
-´ë¸®ÀÚ¸¦ ¸Å°³º¯¼ö·Î ¹Þ´Â ÀÚ¸®¿¡ ¸Þ¼­µå¸¦ ³ÖÀ¸·Á¸é `Ascending` `Descending` Ã³·³ ¸Þ¼­µå¸¦ ¾îµò°¡¿¡ ±¸ÇöÇØ ³õ¾Æ¾ß ÇÑ´Ù.
+ëŒ€ë¦¬ìžë¥¼ ë§¤ê°œë³€ìˆ˜ë¡œ ë°›ëŠ” ìžë¦¬ì— ë©”ì„œë“œë¥¼ ë„£ìœ¼ë ¤ë©´ `Ascending` `Descending` ì²˜ëŸ¼ ë©”ì„œë“œë¥¼ ì–´ë”˜ê°€ì— êµ¬í˜„í•´ ë†“ì•„ì•¼ í•œë‹¤.
 
-¸Þ¼­µå´Â ÀÏÁ¾ÀÇ ÇÔ¼ö·Î ÄÚµå¸¦ Àç»ç¿ë ÇÒ ¶§ ÁÖ·Î »ç¿ëÇÏ´Â ÆíÀÎµ¥ ¸Å°³º¯¼ö·Î Áý¾î³ÖÀ» ¸Þ¼­µå¸¦ ´Ü ÇÑ ¹ø »ç¿ëÇÒ ¶§ ¸Þ¼­µå¸¦ ±¸ÇöÇØ ³õ´Â °Íº¸´Ù ±× ¸Þ¼­µå¸¦ ±¸ÇöÇØ ³õ´Â °Í ¿Ü¿¡µµ ÀÍ¸í ´ë¸®ÀÚ¸¦ »ý¼ºÇÏ¿© ¸Å°³º¯¼ö·Î ´ëÀÔÇÏ´Â °ÍÀÌ ÇÏ³ªÀÇ ¹æ¹ýÀÌ µÉ ¼ö ÀÖ´Ù.  
-±×¸®°í ÀÌ°ÍÀÌ ¿ì¸®°¡ .NET Core¸¦ »ç¿ëÇÒ ‹š °¡Àå ÀÚÁÖ »ç¿ëÇÏ´Â ¹æ¹ýÀÏ °ÍÀÌ´Ù.
+ë©”ì„œë“œëŠ” ì¼ì¢…ì˜ í•¨ìˆ˜ë¡œ ì½”ë“œë¥¼ ìž¬ì‚¬ìš© í•  ë•Œ ì£¼ë¡œ ì‚¬ìš©í•˜ëŠ” íŽ¸ì¸ë° ë§¤ê°œë³€ìˆ˜ë¡œ ì§‘ì–´ë„£ì„ ë©”ì„œë“œë¥¼ ë‹¨ í•œ ë²ˆ ì‚¬ìš©í•  ë•Œ ë©”ì„œë“œë¥¼ êµ¬í˜„í•´ ë†“ëŠ” ê²ƒë³´ë‹¤ ê·¸ ë©”ì„œë“œë¥¼ êµ¬í˜„í•´ ë†“ëŠ” ê²ƒ ì™¸ì—ë„ ìµëª… ëŒ€ë¦¬ìžë¥¼ ìƒì„±í•˜ì—¬ ë§¤ê°œë³€ìˆ˜ë¡œ ëŒ€ìž…í•˜ëŠ” ê²ƒì´ í•˜ë‚˜ì˜ ë°©ë²•ì´ ë  ìˆ˜ ìžˆë‹¤.  
+ê·¸ë¦¬ê³  ì´ê²ƒì´ ìš°ë¦¬ê°€ .NET Coreë¥¼ ì‚¬ìš©í•  Â‹Âš ê°€ìž¥ ìžì£¼ ì‚¬ìš©í•˜ëŠ” ë°©ë²•ì¼ ê²ƒì´ë‹¤.
 
-À§ Á¤·Ä ÄÚµå¸¦ ÀÍ¸í ´ë¸®ÀÚ·Î ¹Ù²ã º¸°Ú´Ù.
+ìœ„ ì •ë ¬ ì½”ë“œë¥¼ ìµëª… ëŒ€ë¦¬ìžë¡œ ë°”ê¿” ë³´ê² ë‹¤.
 
 ```C#
 public class Program
@@ -829,7 +829,7 @@ public class Program
             Console.Write(a[i] + " ");
     }
 
-    //static bool Ascending(int i, int j)   »ç¿ë X
+    //static bool Ascending(int i, int j)   ì‚¬ìš© X
     //{
     //    return i > j;
     //}
@@ -855,17 +855,17 @@ public class Program
 }
 ```
 
-À§ ÄÚµåÃ³·³ `delegate(¸Å°³º¯¼ö) {ÄÚµåºí·°}`À¸·Î ÀÍ¸í ´ë¸®ÀÚ¸¦ »ý¼ºÇÒ ¼ö ÀÖ´Ù.  
-¿ÏÀüÈ÷ °°Àº ÄÚµå¸¦ ÀÍ¸í ´ë¸®ÀÚ·Î º¯È¯ÇÑ °ÍÀÏ »ÓÀÌ¹Ç·Î µ¿ÀÏÇÑ °á°ú°¡ ³ªÅ¸³¯ °ÍÀÌ´Ù.
+ìœ„ ì½”ë“œì²˜ëŸ¼ `delegate(ë§¤ê°œë³€ìˆ˜) {ì½”ë“œë¸”ëŸ­}`ìœ¼ë¡œ ìµëª… ëŒ€ë¦¬ìžë¥¼ ìƒì„±í•  ìˆ˜ ìžˆë‹¤.  
+ì™„ì „ížˆ ê°™ì€ ì½”ë“œë¥¼ ìµëª… ëŒ€ë¦¬ìžë¡œ ë³€í™˜í•œ ê²ƒì¼ ë¿ì´ë¯€ë¡œ ë™ì¼í•œ ê²°ê³¼ê°€ ë‚˜íƒ€ë‚  ê²ƒì´ë‹¤.
 
-![11. ¹öºí Á¤·Ä](../11.%20¹öºí%20Á¤·Ä.png)
+<img width="525" height="146" alt="11  ë²„ë¸” ì •ë ¬" src="https://github.com/user-attachments/assets/9f3a9435-c355-4649-ace8-f300ca2b3007" />
 
-# ¶÷´Ù½Ä
+# ëžŒë‹¤ì‹
 
-¶÷´Ù½ÄÀº ÀÍ¸í ´ë¸®ÀÚ¸¦ Á» ´õ °£´ÜÇÏ°Ô ±¸ÇöÇÒ ¼ö ÀÖµµ·Ï µµÀÔµÈ ¹®¹ýÀÌ´Ù.  
-µû¶ó¼­ ¾ÕÀ¸·Î´Â ÀÍ¸í ´ë¸®ÀÚ¸¦ »ç¿ëÇÒ ÀÏÀº ¾øÀ» °ÍÀÌ°í ´ëºÎºÐ ¶÷´Ù½ÄÀ¸·Î ÄÚµùÇÒ °ÍÀÌ´Ù.
+ëžŒë‹¤ì‹ì€ ìµëª… ëŒ€ë¦¬ìžë¥¼ ì¢€ ë” ê°„ë‹¨í•˜ê²Œ êµ¬í˜„í•  ìˆ˜ ìžˆë„ë¡ ë„ìž…ëœ ë¬¸ë²•ì´ë‹¤.  
+ë”°ë¼ì„œ ì•žìœ¼ë¡œëŠ” ìµëª… ëŒ€ë¦¬ìžë¥¼ ì‚¬ìš©í•  ì¼ì€ ì—†ì„ ê²ƒì´ê³  ëŒ€ë¶€ë¶„ ëžŒë‹¤ì‹ìœ¼ë¡œ ì½”ë”©í•  ê²ƒì´ë‹¤.
 
-C#¿¡¼­ ¶÷´Ù½ÄÀº µîÈ£(`=`)¿Í ºñ±³¿¬»êÀÚ(`>`)¸¦ Á¶ÇÕÇÑ È­»ìÇ¥(`=>`)¸¦ ÀÌ¿ëÇÏ¿© ±¸ÇöÇÒ ¼ö ÀÖ´Ù.
+C#ì—ì„œ ëžŒë‹¤ì‹ì€ ë“±í˜¸(`=`)ì™€ ë¹„êµì—°ì‚°ìž(`>`)ë¥¼ ì¡°í•©í•œ í™”ì‚´í‘œ(`=>`)ë¥¼ ì´ìš©í•˜ì—¬ êµ¬í˜„í•  ìˆ˜ ìžˆë‹¤.
 
 ```C#
 public class Program
@@ -879,21 +879,21 @@ public class Program
 
         Console.WriteLine("\n");
 
-        Sort(a, (i, j) => i > j);           // ¶÷´Ù½Ä
+        Sort(a, (i, j) => i > j);           // ëžŒë‹¤ì‹
 
         for (int i = 0; i < a.Length; i++)
             Console.Write(a[i] + " ");
 
         Console.WriteLine("\n");
 
-        Sort(a, (i, j) => i < j);           // ¶÷´Ù½Ä
+        Sort(a, (i, j) => i < j);           // ëžŒë‹¤ì‹
         
         
         for (int i = 0; i < a.Length; i++)
             Console.Write(a[i] + " ");
     }
 
-    //static bool Ascending(int i, int j)   »ç¿ë X
+    //static bool Ascending(int i, int j)   ì‚¬ìš© X
     //{
     //    return i < j;
     //}
@@ -919,35 +919,35 @@ public class Program
 }
 ```
 
-À§Ã³·³ ±âÁ¸¿¡ ÀÍ¸í ´ë¸®ÀÚ°¡ µé¾î°£ ÀÚ¸®°¡ ¶÷´Ù½ÄÀ¸·Î ´ëÃ¼µÈ °ÍÀ» º¸ÀÚ. ¸Å°³º¯¼ö·Î µÎ °³ÀÇ °ªÀÌ ÇÊ¿äÇÏ°í µÎ ¸Å°³º¯¼ö¸¦ ºñ±³ÇÑ °á°ú¸¦ returnÇÑ´Ù.  
-¸Å°³º¯¼öÀÇ Å¸ÀÔÀ» ÁöÁ¤ÇÏÁö ¾ÊÀº ÀÌÀ¯´Â Sort¿¡ ÁöÁ¤µÈ ¸Å°³º¯¼ö ´ë¸®ÀÚ¿¡ Å¸ÀÔÀÌ Á¤¼ö·Î ¼³Á¤µÇ¾î ÀÖ±â ¶§¹®ÀÌ´Ù.  
-¸¸¾à ´ë¸®ÀÚÀÇ ¸Å°³º¯¼ö¸¦ Á¦³×¸¯ Å¸ÀÔÀ¸·Î ÁöÁ¤ÇßÀ» °æ¿ì ¶÷´Ù½Ä ¸Å°³º¯¼ö¿¡µµ Å¸ÀÔÀ» ¸í½ÃÇØ ÁÖ¾î¾ß ÇÑ´Ù.
+ìœ„ì²˜ëŸ¼ ê¸°ì¡´ì— ìµëª… ëŒ€ë¦¬ìžê°€ ë“¤ì–´ê°„ ìžë¦¬ê°€ ëžŒë‹¤ì‹ìœ¼ë¡œ ëŒ€ì²´ëœ ê²ƒì„ ë³´ìž. ë§¤ê°œë³€ìˆ˜ë¡œ ë‘ ê°œì˜ ê°’ì´ í•„ìš”í•˜ê³  ë‘ ë§¤ê°œë³€ìˆ˜ë¥¼ ë¹„êµí•œ ê²°ê³¼ë¥¼ returní•œë‹¤.  
+ë§¤ê°œë³€ìˆ˜ì˜ íƒ€ìž…ì„ ì§€ì •í•˜ì§€ ì•Šì€ ì´ìœ ëŠ” Sortì— ì§€ì •ëœ ë§¤ê°œë³€ìˆ˜ ëŒ€ë¦¬ìžì— íƒ€ìž…ì´ ì •ìˆ˜ë¡œ ì„¤ì •ë˜ì–´ ìžˆê¸° ë•Œë¬¸ì´ë‹¤.  
+ë§Œì•½ ëŒ€ë¦¬ìžì˜ ë§¤ê°œë³€ìˆ˜ë¥¼ ì œë„¤ë¦­ íƒ€ìž…ìœ¼ë¡œ ì§€ì •í–ˆì„ ê²½ìš° ëžŒë‹¤ì‹ ë§¤ê°œë³€ìˆ˜ì—ë„ íƒ€ìž…ì„ ëª…ì‹œí•´ ì£¼ì–´ì•¼ í•œë‹¤.
 
-## ¶÷´Ù½Ä ¹®¹ý
+## ëžŒë‹¤ì‹ ë¬¸ë²•
 
-´ÙÀ½°ú °°Àº °æ¿ì°¡ ÀÖ´Ù°í ¾Ë°í ³Ñ¾î°¡ÀÚ
+ë‹¤ìŒê³¼ ê°™ì€ ê²½ìš°ê°€ ìžˆë‹¤ê³  ì•Œê³  ë„˜ì–´ê°€ìž
 
 ```C#
-(i, j) => i - j;                // ¶÷´Ù½ÄÀÌ ÇÑ ÁÙ·Î ³¡³¯ °æ¿ì {ÄÚµåºí·°} »ý·« °¡´É
-i => Console.Write(i);       // ¸Å°³º¯¼ö°¡ ÇÏ³ªÀÏ °æ¿ì °ýÈ£,() »ý·« °¡´É
-(i, j) => { ÄÚµåºí·°}           // ÀÏ¹ÝÀûÀÎ ¶÷´Ù½Ä
+(i, j) => i - j;                // ëžŒë‹¤ì‹ì´ í•œ ì¤„ë¡œ ëë‚  ê²½ìš° {ì½”ë“œë¸”ëŸ­} ìƒëžµ ê°€ëŠ¥
+i => Console.Write(i);       // ë§¤ê°œë³€ìˆ˜ê°€ í•˜ë‚˜ì¼ ê²½ìš° ê´„í˜¸,() ìƒëžµ ê°€ëŠ¥
+(i, j) => { ì½”ë“œë¸”ëŸ­}           // ì¼ë°˜ì ì¸ ëžŒë‹¤ì‹
 ```
 
-## ¶÷´Ù½ÄÀ» »ç¿ëÇÏ·Á¸é
+## ëžŒë‹¤ì‹ì„ ì‚¬ìš©í•˜ë ¤ë©´
 
-¶÷´Ù½ÄÀ» »ç¿ëÇÏ·Á¸é ¹Ýµå½Ã ´ë¸®ÀÚ°¡ Á¸ÀçÇØ¾ß ÇÑ´Ù. (À§ ¹öºí Á¤·Ä ¸Þ¼­µå¿¡µµ delegate CompareÀÌ¶ó´Â ´ë¸®ÀÚ°¡ ±¸ÇöµÇ¾î ÀÖ´Â °ÍÀ» È®ÀÎÇÒ ¼ö ÀÖ´Ù.)  
-±×·¯³ª ¶÷´Ù½ÄÀ» »ç¿ëÇÏ±â À§ÇØ¼­ ¸Å¹ø ´ë¸®ÀÚ¸¦ ±¸ÇöÇØ¾ß ÇÏ´Â °Ç Á¶±Ý ±ÍÂúÀ» ¼ö ÀÖ´Ù. 
-(¸Å°³º¯¼ö °³¼ö¸¸Å­ ´ë¸®ÀÚ¸¦ »ý¼ºÇØ¾ß ÇÏ±â ¶§¹®)
+ëžŒë‹¤ì‹ì„ ì‚¬ìš©í•˜ë ¤ë©´ ë°˜ë“œì‹œ ëŒ€ë¦¬ìžê°€ ì¡´ìž¬í•´ì•¼ í•œë‹¤. (ìœ„ ë²„ë¸” ì •ë ¬ ë©”ì„œë“œì—ë„ delegate Compareì´ë¼ëŠ” ëŒ€ë¦¬ìžê°€ êµ¬í˜„ë˜ì–´ ìžˆëŠ” ê²ƒì„ í™•ì¸í•  ìˆ˜ ìžˆë‹¤.)  
+ê·¸ëŸ¬ë‚˜ ëžŒë‹¤ì‹ì„ ì‚¬ìš©í•˜ê¸° ìœ„í•´ì„œ ë§¤ë²ˆ ëŒ€ë¦¬ìžë¥¼ êµ¬í˜„í•´ì•¼ í•˜ëŠ” ê±´ ì¡°ê¸ˆ ê·€ì°®ì„ ìˆ˜ ìžˆë‹¤. 
+(ë§¤ê°œë³€ìˆ˜ ê°œìˆ˜ë§Œí¼ ëŒ€ë¦¬ìžë¥¼ ìƒì„±í•´ì•¼ í•˜ê¸° ë•Œë¬¸)
 
-±×·¯¹Ç·Î C#¿¡¼­´Â ´ë¸®ÀÚ¸¦ ³»°¡ Á÷Á¢ »ý¼ºÇÏ¿© »ç¿ëÇÒ ÇÊ¿ä ¾øÀÌ »ç¿ëÇÒ ¼ö ÀÖµµ·Ï ³»ÀåµÈ ´ë¸®ÀÚµéÀÌ Á¸ÀçÇÑ´Ù.
+ê·¸ëŸ¬ë¯€ë¡œ C#ì—ì„œëŠ” ëŒ€ë¦¬ìžë¥¼ ë‚´ê°€ ì§ì ‘ ìƒì„±í•˜ì—¬ ì‚¬ìš©í•  í•„ìš” ì—†ì´ ì‚¬ìš©í•  ìˆ˜ ìžˆë„ë¡ ë‚´ìž¥ëœ ëŒ€ë¦¬ìžë“¤ì´ ì¡´ìž¬í•œë‹¤.
 
-¹Ù·Î <b>Action</b>°ú <b>Func</b>ÀÌ´Ù.
+ë°”ë¡œ <b>Action</b>ê³¼ <b>Func</b>ì´ë‹¤.
 
-ActionÀº void Å¸ÀÔÀÇ ´ë¸®ÀÚ°í FuncÀº return °ªÀÌ Á¸ÀçÇÏ´Â ´ë¸®ÀÚ¶ó°í »ý°¢ÇÏ¸é µÈ´Ù.
+Actionì€ void íƒ€ìž…ì˜ ëŒ€ë¦¬ìžê³  Funcì€ return ê°’ì´ ì¡´ìž¬í•˜ëŠ” ëŒ€ë¦¬ìžë¼ê³  ìƒê°í•˜ë©´ ëœë‹¤.
 
-0°³ºÎÅÍ ÃÖ´ë 16°³ÀÇ ¸Å°³º¯¼ö¸¦ ÀÔ·Â¹Þ´Â ´ë¸®ÀÚµéÀÌ°í 17°³ ÀÌ»óÀÇ ¸Å°³º¯¼ö¸¦ ¹Þ´Â ¶÷´Ù½ÄÀ» »ç¿ëÇÏ°í ½ÍÀ¸¸é ±¸ÇöÇØ¾ß°ÚÁö¸¸ ±×Á¤µµ·Î ¸¹Àº ¸Å°³º¯¼ö°¡ ÇÊ¿äÇÒ ÀÏÀ» ¾Æ¸¶ ¾øÀ» °ÍÀÌ´Ù.
+0ê°œë¶€í„° ìµœëŒ€ 16ê°œì˜ ë§¤ê°œë³€ìˆ˜ë¥¼ ìž…ë ¥ë°›ëŠ” ëŒ€ë¦¬ìžë“¤ì´ê³  17ê°œ ì´ìƒì˜ ë§¤ê°œë³€ìˆ˜ë¥¼ ë°›ëŠ” ëžŒë‹¤ì‹ì„ ì‚¬ìš©í•˜ê³  ì‹¶ìœ¼ë©´ êµ¬í˜„í•´ì•¼ê² ì§€ë§Œ ê·¸ì •ë„ë¡œ ë§Žì€ ë§¤ê°œë³€ìˆ˜ê°€ í•„ìš”í•  ì¼ì„ ì•„ë§ˆ ì—†ì„ ê²ƒì´ë‹¤.
 
-ÀÌ·¸°Ô¸¸ ¾Ë°í ÀÖÀÚ.
+ì´ë ‡ê²Œë§Œ ì•Œê³  ìžˆìž.
 
 ```C#
 public class Program
@@ -975,7 +975,7 @@ public class Program
             Console.Write(a[i] + " ");
     }
 
-    //static bool Ascending(int i, int j)   »ç¿ë X
+    //static bool Ascending(int i, int j)   ì‚¬ìš© X
     //{
     //    return i < j;
     //}
@@ -985,7 +985,7 @@ public class Program
     //    return i > j;
     //}
 
-    //delegate T Compare<T, I, J>(I i, J j); ´ë¸®ÀÚ X
+    //delegate T Compare<T, I, J>(I i, J j); ëŒ€ë¦¬ìž X
 
     static void Sort<T>(T[] a, Func<T, T, bool> comp)
     {
