@@ -101,3 +101,42 @@ appsettings.json 파일에 다음과 같은 ```키:값```을 추가한다.
 
 ```dotnet database update 0```으로 db 초기화  
 그리고 InitialCreate 단계가 삭제될 때까지 ```dotnet ef migrations remove``` 명령어 실행
+
+## Postgres 유저 생성
+
+관리자 이름(postgres)로 dbms 서버에 접속한다.  
+`psql -U postgres -p [포트번호(5432)]`
+
+다음 sql 명령어로 유저를 생성한다.
+
+```SQL
+CREATE ROLE [사용자 이름] WITH LOGIN PASSWORD '[패스워드]';
+```
+
+`CREATE ROLE` 역할 생성
+`WITH LOGIN` 로그인 역할 부여
+`PASSWORD '[패스워드]'` 패스워드 설정
+
+그리고 다음 명령어로 db를 생성하고 소유 유저를 설정한다.
+
+```SQL
+CREATE DATABASE [db이름] OWNER [유저이름];
+```
+
+`\du` 명령어로 유저 목록을 확인한다.
+
+마지막으로 '\q' 명령어로 dbms에서 나간 후 `psql -U [유저이름] -p [포트번호]` 명령어로 접속이 되는지 확인한다.
+
+### 유저 삭제
+
+`\l` 명령어로 삭제하고 싶은 유저가 소유한 db를 조회한 다음에 다음 sql 명령어로 db를 우선 삭제한다.
+
+```SQL
+DROP DATABASE [db이름]
+```
+
+그리고 다음 명령어로 유저를 삭제한다.
+
+```SQL
+DROP ROLE [유저이름]
+```
