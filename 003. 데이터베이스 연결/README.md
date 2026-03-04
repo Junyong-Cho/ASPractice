@@ -262,6 +262,11 @@ using (var scope = app.Services.CreateScope())
 
 위와 같이 작성하면 dotnet ef database update 명령어가 필요 없이 실행할 때마다 데이터베이스를 업데이트할 것이다.
 
+## 이미 존재하는 DB에 마이그레이션 없이 연결하기
+
+`dotnet ef dbcontext scaffold "[커넥션스트링]" Npgsql.EntityFrameworkCore.PostgreSQL -o [경로] -c [dbContext파일명]` 명령어를 프로젝트 터미널에 입력하면 
+경로에 db 구조 파일과 dbcontext 파일이 생긴다.
+
 # 마무리
 
 이것으로 Db와 프로젝트를 연결해 보았다.
